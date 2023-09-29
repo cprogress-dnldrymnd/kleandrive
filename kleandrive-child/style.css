@@ -82,30 +82,33 @@ h2.sc_item_title {
     .single-post .page_content_wrap h1 {
       font-size: 75px; } }
 
-.wp-block-quote.wp-block-quote.wp-block-quote > * {
-  position: relative;
-  z-index: 1; }
-  .wp-block-quote.wp-block-quote.wp-block-quote > *:first-child:before {
-    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32.536" height="21.834" viewBox="0 0 32.536 21.834"><path id="Icon_open-double-quote-sans-left" data-name="Icon open-double-quote-sans-left" d="M32.536,21.834V0l-12.2,10.917V21.834Zm-20.335,0V0L0,10.917V21.834Z" fill="%230e62f2"/></svg>'); }
-.wp-block-quote.wp-block-quote.wp-block-quote:before {
-  content: "";
-  background-color: #0e62f2;
-  border-radius: 13px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 10px;
-  right: 10px;
-  width: auto; }
-.wp-block-quote.wp-block-quote.wp-block-quote:after {
-  content: "";
-  background-color: #f6f6f6;
-  border-radius: 13px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  bottom: 0;
-  right: 0; }
+.wp-block-quote.wp-block-quote.wp-block-quote {
+  padding: 30px 40px 30px 60px; }
+  .wp-block-quote.wp-block-quote.wp-block-quote > * {
+    position: relative;
+    z-index: 1; }
+    .wp-block-quote.wp-block-quote.wp-block-quote > *:first-child:before {
+      margin-left: -30px;
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32.536" height="21.834" viewBox="0 0 32.536 21.834"><path id="Icon_open-double-quote-sans-left" data-name="Icon open-double-quote-sans-left" d="M32.536,21.834V0l-12.2,10.917V21.834Zm-20.335,0V0L0,10.917V21.834Z" fill="%230e62f2"/></svg>'); }
+  .wp-block-quote.wp-block-quote.wp-block-quote:before {
+    content: "";
+    background-color: #0e62f2;
+    border-radius: 13px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 10px;
+    right: 10px;
+    width: auto; }
+  .wp-block-quote.wp-block-quote.wp-block-quote:after {
+    content: "";
+    background-color: #f6f6f6;
+    border-radius: 13px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 0;
+    right: 0; }
 
 .post_header_single .post_meta.post_meta_categories a:not(.post_sponsored_label) {
   background-color: #0e62f2 !important; }
