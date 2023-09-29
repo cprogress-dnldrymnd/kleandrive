@@ -129,6 +129,7 @@ h2.sc_item_title {
     left: 0 !important;
     top: 0 !important; }
     .post_header_wrap .post_header .content_wrap {
-      max-width: 1240px !important; }
+      max-width: 1240px !important;
+      margin-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
