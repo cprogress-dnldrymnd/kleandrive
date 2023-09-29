@@ -43,7 +43,9 @@
         }
     }
 }
-
+.sc_item_title.sc_item_title {
+    line-height: 1.2 !important;
+}
 h1, h1.sc_item_title {
     @media(min-width: 992px) {
         font-size: 100px;
