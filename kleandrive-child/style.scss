@@ -82,11 +82,16 @@ h2.sc_item_title {
         background-color: #0e62f2 !important;
     }
 }
-
+.single-post {
+    .page_content_wrap {
+        background-color: #fff;
+    }
+}
 .wp-block-quote.wp-block-quote.wp-block-quote {
     background-color: #f6f6f6 !important;
     > * {
         position: relative;
+        z-index: 1;
     }
     &:before {
         content: "";
@@ -101,7 +106,7 @@ h2.sc_item_title {
     }
     &:after {
         content: "";
-        background-color: #ffffff;
+        background-color: #F6F6F6;
         border-radius: 13px;
         position: absolute;
         left: 10px;

@@ -76,10 +76,14 @@ h2.sc_item_title {
 .post_layout_band .post_content_wrap .post_meta_item.post_categories a:not(:hover) {
   background-color: #0e62f2 !important; }
 
+.single-post .page_content_wrap {
+  background-color: #fff; }
+
 .wp-block-quote.wp-block-quote.wp-block-quote {
   background-color: #f6f6f6 !important; }
   .wp-block-quote.wp-block-quote.wp-block-quote > * {
-    position: relative; }
+    position: relative;
+    z-index: 1; }
   .wp-block-quote.wp-block-quote.wp-block-quote:before {
     content: "";
     background-color: #0e62f2;
@@ -92,7 +96,7 @@ h2.sc_item_title {
     width: auto; }
   .wp-block-quote.wp-block-quote.wp-block-quote:after {
     content: "";
-    background-color: #ffffff;
+    background-color: #F6F6F6;
     border-radius: 13px;
     position: absolute;
     left: 10px;
