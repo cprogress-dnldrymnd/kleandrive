@@ -11,19 +11,27 @@
   border-radius: 0 !important; }
 
 /*Blog*/
-.sc_blogger_default.sc_blogger_default_classic_time .sc_blogger_item_default.sc_blogger_item_on_plate .sc_blogger_item_content {
+.sc_blogger_default.sc_blogger_default_classic_time
+.sc_blogger_item_default.sc_blogger_item_on_plate
+.sc_blogger_item_content {
   padding: 45px 27px !important;
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
 
 .sc_blogger_default.sc_blogger_default_classic_time .post_meta.sc_blogger_item_meta.post_meta_date .post_date {
   background-color: #fff;
   color: var(--theme-color-text);
   box-shadow: 0px 20px 44px #00000026; }
 
-.sc_blogger_default.sc_blogger_default_classic_time .post_meta.sc_blogger_item_meta.post_meta_date a, .sc_blogger_default.sc_blogger_default_classic_time .post_meta.sc_blogger_item_meta.post_meta_date a:hover {
+.sc_blogger_default.sc_blogger_default_classic_time .post_meta.sc_blogger_item_meta.post_meta_date a,
+.sc_blogger_default.sc_blogger_default_classic_time .post_meta.sc_blogger_item_meta.post_meta_date a:hover {
   color: var(--theme-color-text); }
 
 .sc_button_wrap {
   margin-bottom: 0 !important; }
+  .sc_button_wrap .sc_button.sc_button_default {
+    border: 2px solid var(--theme-color-text_hover); }
+    .sc_button_wrap .sc_button.sc_button_default:hover {
+      background-color: transparent;
+      color: var(--theme-color-text_hover); }
 
 /*# sourceMappingURL=style.css.map */
