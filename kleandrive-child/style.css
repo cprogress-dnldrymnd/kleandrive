@@ -79,29 +79,27 @@ h2.sc_item_title {
 .single-post .page_content_wrap {
   background-color: #fff; }
 
-.wp-block-quote.wp-block-quote.wp-block-quote {
-  background-color: #f6f6f6 !important; }
-  .wp-block-quote.wp-block-quote.wp-block-quote > * {
-    position: relative;
-    z-index: 1; }
-  .wp-block-quote.wp-block-quote.wp-block-quote:before {
-    content: "";
-    background-color: #0e62f2;
-    border-radius: 13px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 10px;
-    right: 10px;
-    width: auto; }
-  .wp-block-quote.wp-block-quote.wp-block-quote:after {
-    content: "";
-    background-color: #F6F6F6;
-    border-radius: 13px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    bottom: 0;
-    right: 0; }
+.wp-block-quote.wp-block-quote.wp-block-quote > * {
+  position: relative;
+  z-index: 1; }
+.wp-block-quote.wp-block-quote.wp-block-quote:before {
+  content: "";
+  background-color: #0e62f2;
+  border-radius: 13px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 10px;
+  right: 10px;
+  width: auto; }
+.wp-block-quote.wp-block-quote.wp-block-quote:after {
+  content: "";
+  background-color: #F6F6F6;
+  border-radius: 13px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 0;
+  right: 0; }
 
 /*# sourceMappingURL=style.css.map */
