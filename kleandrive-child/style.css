@@ -73,7 +73,7 @@ h2.sc_item_title {
     h2.sc_item_title {
       font-size: 35px; } }
 
-.post_layout_band .post_content_wrap .post_meta_item.post_categories a {
-  background-color: var(--theme-color-text_hover); }
+.post_layout_band .post_content_wrap .post_meta_item.post_categories a:not(:hover) {
+  background-color: var(--theme-color-text_hover) !important; }
 
 /*# sourceMappingURL=style.css.map */
