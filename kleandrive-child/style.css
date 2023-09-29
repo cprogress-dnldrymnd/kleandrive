@@ -28,9 +28,9 @@
 
 .sc_button_wrap {
   margin-bottom: 0 !important; }
-  .sc_button_wrap .sc_button.sc_button_default {
+  .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default {
     border: 2px solid var(--theme-color-text_hover); }
-    .sc_button_wrap .sc_button.sc_button_default:hover {
+    .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default:hover {
       background-color: transparent;
       color: var(--theme-color-text_hover); }
 
