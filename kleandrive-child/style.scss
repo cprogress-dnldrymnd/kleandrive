@@ -148,8 +148,8 @@ h2.sc_item_title {
             max-width: 1240px !important;
             margin-left: 0;
             @media(max-width: 1439px) {
-                padding-left: 15px;
-                padding-right: 15px;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
             }
         }
     }
