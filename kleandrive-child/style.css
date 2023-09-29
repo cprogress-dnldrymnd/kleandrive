@@ -135,5 +135,9 @@ h2.sc_item_title {
         .post_header_wrap .post_header .content_wrap {
           padding-left: 15px !important;
           padding-right: 15px !important; } }
+  @media (max-width: 1024px) {
+    .post_header_wrap {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

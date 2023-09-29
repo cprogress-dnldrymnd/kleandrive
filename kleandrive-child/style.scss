@@ -153,4 +153,8 @@ h2.sc_item_title {
             }
         }
     }
+    @media(max-width: 1024px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
