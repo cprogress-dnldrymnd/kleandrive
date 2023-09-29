@@ -82,7 +82,11 @@ h2.sc_item_title {
         background-color: #0E62F2 !important;
     }
 }
-
+.single-post {
+    .page_content_wrap {
+        background-color: #fff;
+    }
+}
 .wp-block-quote.wp-block-quote.wp-block-quote {
     background-color: #F6F6F6;
     &:before {
