@@ -85,6 +85,8 @@ h2.sc_item_title {
 .wp-block-quote.wp-block-quote.wp-block-quote > * {
   position: relative;
   z-index: 1; }
+  .wp-block-quote.wp-block-quote.wp-block-quote > *:first-child:before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32.536" height="21.834" viewBox="0 0 32.536 21.834"><path id="Icon_open-double-quote-sans-left" data-name="Icon open-double-quote-sans-left" d="M32.536,21.834V0l-12.2,10.917V21.834Zm-20.335,0V0L0,10.917V21.834Z" fill="%230e62f2"/></svg>'); }
 .wp-block-quote.wp-block-quote.wp-block-quote:before {
   content: "";
   background-color: #0e62f2;
