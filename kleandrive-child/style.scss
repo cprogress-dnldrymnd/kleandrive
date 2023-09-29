@@ -46,8 +46,32 @@
 .sc_item_title.sc_item_title {
     line-height: 1.2 !important;
 }
-h1, h1.sc_item_title {
-    @media(min-width: 992px) {
+h1,
+h1.sc_item_title {
+    @media (min-width: 1025px) {
         font-size: 100px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 80px;
+    }
+    @media (max-width: 767px) {
+        font-size: 60px;
+    }
+    @media (max-width: 575px) {
+        font-size: 50px;
+    }
+}
+
+h2,
+h2.sc_item_title {
+    font-size: 60px;
+    @media (max-width: 1024px) {
+        font-size: 50px;
+    }
+    @media (max-width: 767px) {
+        font-size: 40px;
+    }
+    @media (max-width: 575px) {
+        font-size: 35px;
     }
 }
