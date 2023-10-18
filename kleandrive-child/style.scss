@@ -577,6 +577,9 @@ section.careers-archive {
         .fake-input {
             font-weight: 300;
             color: var(--primary-color);
+            &.active {
+                color: var(--accent-color);
+            }
         }
         .select-file {
             cursor: pointer;

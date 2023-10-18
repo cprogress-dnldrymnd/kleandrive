@@ -144,7 +144,7 @@ $main_query = get_queried_object();
         });
 
         jQuery('input[name="CV"]').change(function(event) {
-            jQuery('.fake-input').text(jQuery(this).val().replace(/C:\\fakepath\\/i, ''));
+            jQuery('.fake-input').text(jQuery(this).val().replace(/C:\\fakepath\\/i, '')).addClass('active');
             jQuery('.form-file').addClass('focused');
         });
     });
