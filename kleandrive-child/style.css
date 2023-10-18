@@ -316,23 +316,13 @@ section.careers-archive {
   display: block;
   line-height: 1.4;
   min-height: 65px; }
+#applyModal .fake-input-wrapper {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 36px; }
 #applyModal input[type="file"] {
   padding-top: 13px;
   padding-bottom: 13px; }
-#applyModal .form-file {
-  padding-left: 36px; }
-  #applyModal .form-file p {
-    display: flex;
-    align-items: center; }
-  #applyModal .form-file .select-file {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-    text-decoration: underline;
-    color: var(--primary-color);
-    cursor: pointer; }
-  #applyModal .form-file .wpcf7-form-control-wrap {
-    display: none; }
 
 html.overflow-hidden.overflow-hidden {
   overflow: hidden; }
