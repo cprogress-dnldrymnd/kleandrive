@@ -16,17 +16,19 @@ $terms = _get_terms_details('careers-category');
 				<?= do_shortcode('[trx_sc_layouts layout="22454"]') ?>
 			</div>
 			<?php if ($terms) { ?>
-				<div class="category-wrapper">
-					<?php foreach ($terms as $key => $term) { ?>
-						<?php
-						if ($main_query->term_id == $key) {
-							$selected = 'selected';
-						} else {
-							$selected = '';
-						}
-						?>
-						<a class="<?= $selected ?>" href="<?= get_term_link($key) ?>"> <?= $term['name'] ?> </a>
-					<?php } ?>
+				<div class="category-wrapper text-center">
+					<div class="inner display-inline-block">
+						<?php foreach ($terms as $key => $term) { ?>
+							<?php
+							if ($main_query->term_id == $key) {
+								$selected = 'selected';
+							} else {
+								$selected = '';
+							}
+							?>
+							<a class="<?= $selected ?>" href="<?= get_term_link($key) ?>"> <?= $term['name'] ?> </a>
+						<?php } ?>
+					</div>
 				</div>
 			<?php } ?>
 			<div id="results">
