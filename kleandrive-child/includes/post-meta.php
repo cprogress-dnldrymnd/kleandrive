@@ -32,7 +32,7 @@ Container::make('post_meta', __('Careers Details'))
                     'accordion_title' => 'Responsibilites',
                 ),
                 array(
-                    'accordion_title' => 'Knowledge & Experience',
+                    'accordion_title' => 'Requirements',
                 ),
             ))
             ->set_header_template('<%- accordion_title  %>')
