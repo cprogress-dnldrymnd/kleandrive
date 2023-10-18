@@ -28,3 +28,17 @@ Container::make('post_meta', __('Careers Details'))
             ))
             ->set_header_template('<%- accordion_title  %>')
     ));
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Career Settings
+/*-----------------------------------------------------------------------------------*/
+
+
+Container::make('post_meta', __('Blog Settings'))
+    ->where('post_type', '=', 'careers')
+    ->add_fields(array(
+        Field::make('image', 'logo', 'Logo'),
+        Field::make('text', 'artilce_url', 'Article URL'),
+       
+    ));
