@@ -256,6 +256,9 @@ section.careers-archive {
       section.careers-archive .career-wrapper .career-holder .header .career-title h3 {
         margin-right: 25px;
         margin-bottom: 0; }
+        @media screen and (min-width: 992px) {
+          section.careers-archive .career-wrapper .career-holder .header .career-title h3 {
+            font-size: 37px; } }
       section.careers-archive .career-wrapper .career-holder .header .career-title span {
         color: gray;
         font-size: 26px;

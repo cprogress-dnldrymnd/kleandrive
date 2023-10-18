@@ -465,6 +465,9 @@ section.careers-archive {
                     h3 {
                         margin-right: 25px;
                         margin-bottom: 0;
+                        @include respond-to(md-lg) {
+                            font-size: 37px;
+                        }
                     }
                     span {
                         color: gray;
