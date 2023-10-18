@@ -340,6 +340,6 @@ section.careers-archive {
     padding-bottom: 13px; }
 
 html.overflow-hidden.overflow-hidden {
-  overflow: hidden; }
+  overflow: hidden !important; }
 
 /*# sourceMappingURL=style.css.map */

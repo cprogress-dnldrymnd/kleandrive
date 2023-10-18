@@ -577,6 +577,6 @@ section.careers-archive {
 }
 html {
     &.overflow-hidden.overflow-hidden {
-        overflow: hidden;
+        overflow: hidden !important;
     }
 }

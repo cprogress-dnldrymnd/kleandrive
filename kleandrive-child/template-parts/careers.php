@@ -110,22 +110,21 @@ $terms = _get_terms_details('careers-category');
             </div>
         </div>
     </section>
-    <!-- Modal -->
-    <div class="modal right fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-        <div class="modal-dialog align-center">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title mb-4" id="applyModalLabel">Apply for our <span></span> position</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body contact-form-v2">
-                    <?= do_shortcode('[contact-form-7 id="3e15b09" title="Careers Form"]') ?>
-                </div>
+</main>
+<!-- Modal -->
+<div class="modal right fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog align-center">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mb-4" id="applyModalLabel">Apply for our <span></span> position</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body contact-form-v2">
+                <?= do_shortcode('[contact-form-7 id="3e15b09" title="Careers Form"]') ?>
             </div>
         </div>
     </div>
-</main>
-
+</div>
 <script>
     jQuery(document).ready(function($) {
 
