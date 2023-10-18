@@ -11,7 +11,8 @@
   --primary-color: #19191a;
   --accent-color: #0e62f2;
   --white-color: #fff;
-  --black-color: #000; }
+  --black-color: #000;
+  --light-blue-color: #0E62F20D; }
 
 .no-border-radius img {
   border-radius: 0 !important; }
@@ -289,6 +290,10 @@ section.careers-archive {
       color: var(--white-color);
       font-size: 14px;
       margin-bottom: 72px; }
+
+.post-type-archive-careers
+.page_content_wrap {
+  background-color: var(--light-blue-color); }
 
 #applyModal .contact-form-v2 .wpcf7 br {
   display: none; }
