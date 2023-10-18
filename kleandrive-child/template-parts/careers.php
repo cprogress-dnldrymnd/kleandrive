@@ -115,7 +115,7 @@ $terms = _get_terms_details('careers-category');
         <div class="modal-dialog align-center">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="applyModalLabel">Apply for our <span></span> position</h5>
+                    <h5 class="modal-title mb-4" id="applyModalLabel">Apply for our <span></span> position</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body contact-form-v2">
