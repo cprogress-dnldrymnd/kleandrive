@@ -524,6 +524,9 @@ section.careers-archive {
                 text-decoration: none;
                 border-radius: 30px;
                 display: inline-block;
+                font-weight: 300;
+                line-height: 1;
+                text-transform: uppercase;
                 &:not(:last-child) {
                     margin-right: 18px;
                 }

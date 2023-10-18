@@ -298,7 +298,10 @@ section.careers-archive {
         font-size: 14px;
         text-decoration: none;
         border-radius: 30px;
-        display: inline-block; }
+        display: inline-block;
+        font-weight: 300;
+        line-height: 1;
+        text-transform: uppercase; }
         section.careers-archive .category-wrapper .inner a:not(:last-child) {
           margin-right: 18px; }
 
