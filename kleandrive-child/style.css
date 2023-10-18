@@ -329,7 +329,8 @@ section.careers-archive {
   #applyModal div.wpcf7 .form-style-3 .style-line[class*="icon-"] textarea,
   #applyModal div.wpcf7 .form-style-3 .style-line[class*="icon-"] select,
   #applyModal div.wpcf7 .form-style-3 .style-line[class*="icon-"] input {
-    font-weight: 300; }
+    font-weight: 300;
+    color: var(--accent-color); }
   #applyModal .fake-input-wrapper {
     position: absolute;
     top: 0;
