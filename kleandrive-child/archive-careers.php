@@ -133,7 +133,7 @@ $terms = _get_terms_details('careers-category');
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body contact-form-v2">
-					<?= do_shortcode(carbon_get_theme_option('careers_contact_form')) ?>
+					<?= do_shortcode('[contact-form-7 id="3e15b09" title="Careers Form"]') ?>
 				</div>
 			</div>
 		</div>
