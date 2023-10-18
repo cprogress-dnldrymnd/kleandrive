@@ -334,4 +334,7 @@ section.careers-archive {
   #applyModal .form-file .wpcf7-form-control-wrap {
     display: none; }
 
+html.overflow-hidden.overflow-hidden {
+  overflow: hidden; }
+
 /*# sourceMappingURL=style.css.map */
