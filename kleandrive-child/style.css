@@ -359,4 +359,7 @@ section.careers-archive {
 html.overflow-hidden.overflow-hidden {
   overflow: hidden !important; }
 
+.sc_team .trx_addons_columns_wrap > [class*="trx_addons_column-"] {
+  padding-right: 20px; }
+
 /*# sourceMappingURL=style.css.map */
