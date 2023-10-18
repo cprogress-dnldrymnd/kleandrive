@@ -186,7 +186,7 @@
                 &.button-border-pimary {
                     border-color: var(--primary-color) !important;
                     @include on-event {
-                        border-color: var(--theme-color-text_hover);
+                        border-color: var(--theme-color-text_hover) !important;
                     }
                 }
                 @include on-event {
