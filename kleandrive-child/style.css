@@ -200,11 +200,5 @@ section.careers-archive {
         margin-bottom: 30px; } }
     section.careers-archive .career-wrapper .career-holder:not(:last-child) {
       margin-bottom: 40px; }
-  section.careers-archive .footer {
-    margin-right: -40px;
-    margin-bottom: -90px; }
-    @media screen and (max-width: 575px) {
-      section.careers-archive .footer {
-        margin-left: -40px; } }
 
 /*# sourceMappingURL=style.css.map */
