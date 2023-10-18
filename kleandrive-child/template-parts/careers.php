@@ -12,7 +12,7 @@ $main_query = get_queried_object();
                 <div class="category-wrapper text-center">
 
                     <div class="inner d-inline-block">
-                        <a  class="<?= is_post_type_archive() ? 'selected' : '' ?>" href="<?= get_post_type_archive_link('careers') ?>">
+                        <a class="<?= is_post_type_archive() ? 'selected' : '' ?>" href="<?= get_post_type_archive_link('careers') ?>">
                             All
                         </a>
                         <?php foreach ($terms as $key => $term) { ?>
@@ -58,8 +58,12 @@ $main_query = get_queried_object();
                                                     <div class="accordion-item d-block d-sm-none">
                                                         <h2 class="accordion-header" id="heading<?= get_the_ID() . '-description'  ?>">
                                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= get_the_ID() . '-description'  ?>" aria-expanded="false" aria-controls="collapse<?= get_the_ID() . '-description'  ?>">
-                                                                <i class="fa-solid fa-plus"></i>
-                                                                <i class="fa-solid fa-minus"></i>
+                                                                <svg class="fa-plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                                                </svg>
+                                                                <svg class="fa-minus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                                                                </svg>
                                                                 <span> Job Description </span>
                                                             </button>
                                                         </h2>
