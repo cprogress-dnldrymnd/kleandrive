@@ -538,5 +538,7 @@ section.careers-archive {
     background-color: var(--light-blue-color);
 }
 #applyModal {
-    
+    br {
+        display: none !important;
+    }
 }

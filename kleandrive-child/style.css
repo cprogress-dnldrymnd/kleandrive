@@ -308,4 +308,7 @@ section.careers-archive {
 .post-type-archive-careers .page_content_wrap {
   background-color: var(--light-blue-color); }
 
+#applyModal br {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */
