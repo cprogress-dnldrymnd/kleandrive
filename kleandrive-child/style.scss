@@ -289,9 +289,6 @@ section.careers-archive {
     padding-top: 80px;
     padding-bottom: 150px;
     .filter-wrapper {
-        border-bottom: 1px solid #d4d4d4;
-        margin-bottom: 40px;
-        padding-bottom: 40px;
         @include respond-to(mobile) {
             flex-direction: column;
             h2 {

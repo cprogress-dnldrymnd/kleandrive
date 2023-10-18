@@ -148,15 +148,11 @@ h2.sc_item_title {
 section.careers-archive {
   padding-top: 80px;
   padding-bottom: 150px; }
-  section.careers-archive .filter-wrapper {
-    border-bottom: 1px solid #d4d4d4;
-    margin-bottom: 40px;
-    padding-bottom: 40px; }
-    @media screen and (max-width: 575px) {
-      section.careers-archive .filter-wrapper {
-        flex-direction: column; }
-        section.careers-archive .filter-wrapper h2 {
-          margin-bottom: 15px !important; } }
+  @media screen and (max-width: 575px) {
+    section.careers-archive .filter-wrapper {
+      flex-direction: column; }
+      section.careers-archive .filter-wrapper h2 {
+        margin-bottom: 15px !important; } }
   section.careers-archive .load-more {
     margin-top: 50px; }
   section.careers-archive .career-wrapper .career-holder {
