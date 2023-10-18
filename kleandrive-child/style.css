@@ -342,6 +342,8 @@ section.careers-archive {
     #applyModal .fake-input-wrapper .fake-input {
       font-weight: 300;
       color: var(--primary-color); }
+      #applyModal .fake-input-wrapper .fake-input.active {
+        color: var(--accent-color); }
     #applyModal .fake-input-wrapper .select-file {
       cursor: pointer;
       color: var(--accent-color);
