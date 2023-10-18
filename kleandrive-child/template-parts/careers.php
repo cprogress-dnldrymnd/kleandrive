@@ -12,7 +12,7 @@ $main_query = get_queried_object();
                 <div class="category-wrapper text-center">
 
                     <div class="inner d-inline-block">
-                        <a href="<?= get_post_type_archive_link('careers') ?>">
+                        <a  class="<?= is_post_type_archive() ? 'selected' : '' ?>" href="<?= get_post_type_archive_link('careers') ?>">
                             All
                         </a>
                         <?php foreach ($terms as $key => $term) { ?>
