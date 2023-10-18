@@ -316,6 +316,9 @@ section.careers-archive {
   display: block;
   line-height: 1.4;
   min-height: 65px; }
+#applyModal input[type="file"] {
+  padding-top: 13px;
+  padding-bottom: 13px; }
 #applyModal .form-file {
   padding-left: 36px; }
   #applyModal .form-file p {
