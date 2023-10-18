@@ -9,6 +9,124 @@
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
 
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xxxs" {
+        @media screen and (max-width: 360px) {
+            @content;
+        }
+    }
+    @if $breakpoint == "xxs" {
+        @media screen and (max-width: 480px) {
+            @content;
+        }
+    }
+    @if $breakpoint == "mobile" {
+        @media screen and (max-width: 575px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "mobile-xs" {
+        @media (min-width: 576px) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "mobile-sm" {
+        @media (min-width: 576px) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "mobile-md" {
+        @media (min-width: 576px) and (max-width: 1199px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == "mobile-lg" {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+
+
+    @if $breakpoint == "xs" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "xs-sm" {
+        @media screen and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "xs-md" {
+        @media screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "sm" {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    
+
+    @if $breakpoint == "sm-lg" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "sm-md" {
+        @media (min-width: 768px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "md" {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "md-lg" {
+        @media screen and (min-width: 992px)  {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "lg" {
+        @media screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+
+
+    @if $breakpoint == "small-lg" {
+        @media (min-width: 1200px) and (max-width: 1439px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "xs-lg" {
+        @media screen and (max-width: 1439px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "lg-lg" {
+        @media screen and (min-width: 1440px) {
+            @content;
+        }
+    }
+}
+
 .no-border-radius img {
     border-radius: 0 !important;
 }
@@ -154,14 +272,98 @@ h2.sc_item_title {
         .content_wrap {
             max-width: 1240px !important;
             margin-left: 0;
-            @media(max-width: 1439px) {
+            @media (max-width: 1439px) {
                 padding-left: 15px !important;
                 padding-right: 15px !important;
             }
         }
     }
-    @media(max-width: 1024px) {
+    @media (max-width: 1024px) {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+}
+//Careers
+
+section.careers-archive {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    .filter-wrapper {
+        border-bottom: 1px solid #d4d4d4;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        @include respond-to(mobile) {
+            flex-direction: column;
+            h2 {
+                margin-bottom: 15px !important;
+            }
+        }
+    }
+    .load-more {
+        margin-top: 50px;
+    }
+    .career-wrapper {
+        .career-holder {
+            padding: 40px 40px 90px 40px;
+            box-shadow: 0px 29px 35px #0000000d;
+            .header {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                .career-title {
+                    h3 {
+                        margin-right: 25px;
+                        margin-bottom: 0;
+                    }
+                    span {
+                        color: gray;
+                        font-size: 26px;
+                        font-weight: 300;
+                        @include respond-to(xs) {
+                            font-size: 18px;
+                        }
+                    }
+                    @include respond-to(xs) {
+                        margin-bottom: 20px;
+                    }
+                }
+                .salary {
+                    white-space: nowrap;
+                }
+                .location {
+                    svg {
+                        margin-right: 15px;
+                    }
+                    @include respond-to(xs) {
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                @include respond-to(xs) {
+                    flex-wrap: wrap;
+                }
+            }
+
+            .body {
+                .career-description {
+                    margin-bottom: 30px;
+                }
+                @include respond-to(xs) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .footer {
+        margin-right: -40px;
+        margin-bottom: -90px;
+        @include respond-to(mobile) {
+            margin-left: -40px;
+        }
     }
 }

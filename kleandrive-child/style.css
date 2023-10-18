@@ -145,4 +145,62 @@ h2.sc_item_title {
       padding-top: 50px;
       padding-bottom: 50px; } }
 
+section.careers-archive {
+  padding-top: 80px;
+  padding-bottom: 150px; }
+  section.careers-archive .filter-wrapper {
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 40px;
+    padding-bottom: 40px; }
+    @media screen and (max-width: 575px) {
+      section.careers-archive .filter-wrapper {
+        flex-direction: column; }
+        section.careers-archive .filter-wrapper h2 {
+          margin-bottom: 15px !important; } }
+  section.careers-archive .load-more {
+    margin-top: 50px; }
+  section.careers-archive .career-wrapper .career-holder {
+    padding: 40px 40px 90px 40px;
+    box-shadow: 0px 29px 35px #0000000d; }
+    section.careers-archive .career-wrapper .career-holder .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px; }
+      section.careers-archive .career-wrapper .career-holder .header .career-title h3 {
+        margin-right: 25px;
+        margin-bottom: 0; }
+      section.careers-archive .career-wrapper .career-holder .header .career-title span {
+        color: gray;
+        font-size: 26px;
+        font-weight: 300; }
+        @media screen and (max-width: 767px) {
+          section.careers-archive .career-wrapper .career-holder .header .career-title span {
+            font-size: 18px; } }
+      @media screen and (max-width: 767px) {
+        section.careers-archive .career-wrapper .career-holder .header .career-title {
+          margin-bottom: 20px; } }
+      section.careers-archive .career-wrapper .career-holder .header .salary {
+        white-space: nowrap; }
+      section.careers-archive .career-wrapper .career-holder .header .location svg {
+        margin-right: 15px; }
+      @media screen and (max-width: 767px) {
+        section.careers-archive .career-wrapper .career-holder .header .location span {
+          font-size: 20px; } }
+      @media screen and (max-width: 767px) {
+        section.careers-archive .career-wrapper .career-holder .header {
+          flex-wrap: wrap; } }
+    section.careers-archive .career-wrapper .career-holder .body .career-description {
+      margin-bottom: 30px; }
+    @media screen and (max-width: 767px) {
+      section.careers-archive .career-wrapper .career-holder .body {
+        margin-bottom: 30px; } }
+    section.careers-archive .career-wrapper .career-holder:not(:last-child) {
+      margin-bottom: 40px; }
+  section.careers-archive .footer {
+    margin-right: -40px;
+    margin-bottom: -90px; }
+    @media screen and (max-width: 575px) {
+      section.careers-archive .footer {
+        margin-left: -40px; } }
+
 /*# sourceMappingURL=style.css.map */
