@@ -12,9 +12,12 @@ $terms = _get_terms_details('careers-category');
 	<?php get_template_part('template-parts/archive/archive', 'banner') ?>
 	<section class="careers-archive background-light">
 		<div class="container container wide w-960">
+			<div class="head">
+				<?= do_shortcode('[trx_sc_layouts layout="22454"]') ?>
+			</div>
 			<div class="filter-wrapper justify-space-between align--center">
 				<div class="inner">
-					<h2 class="m-0">Open positions</h2>
+					<h2 class="m-0">C</h2>
 				</div>
 				<div class="inner">
 					<select id="location" name="location" class="nice-select-js nice-select-style-1 nice-select-transparent">
