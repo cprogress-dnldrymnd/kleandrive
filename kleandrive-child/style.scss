@@ -553,6 +553,11 @@ section.careers-archive {
         line-height: 1.4;
         min-height: 65px;
     }
+
+    input[type="file"] {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
     .form-file {
         padding-left: 36px;
         p {
