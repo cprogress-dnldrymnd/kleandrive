@@ -92,8 +92,12 @@ $terms = _get_terms_details('careers-category');
 														<div class="accordion-item">
 															<h2 class="accordion-header" id="heading<?= get_the_ID() . '-' . $key ?>">
 																<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= get_the_ID() . '-' . $key ?>" aria-expanded="false" aria-controls="collapse<?= get_the_ID() . '-' . $key ?>">
-																	<i class="fa-solid fa-plus"></i>
-																	<i class="fa-solid fa-minus"></i>
+																	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+																		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+																	</svg>
+																	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+																		<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+																	</svg>
 																	<span> <?= $acc['accordion_title'] ?></span>
 																</button>
 															</h2>
@@ -111,7 +115,7 @@ $terms = _get_terms_details('careers-category');
 									</div>
 									<div class="footer">
 										<div class="sc_item_button sc_button_wrap">
-											<button data-title="<?php the_title() ?>" data-bs-toggle="modal" data-bs-target="#applyModal" class="sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
+											<button data-title="<?php the_title() ?>" data-bs-toggle="modal" data-bs-target="#applyModal" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
 												<span class="sc_button_text"><span class="sc_button_title">Apply Now</span></span>
 											</button>
 										</div>
@@ -150,7 +154,6 @@ $terms = _get_terms_details('careers-category');
 
 <script>
 	jQuery(document).ready(function($) {
-		jQuery('#location').change();
 
 		jQuery(document).on("click", '.apply-button', function(event) {
 			$title = jQuery(this).attr('data-title');
