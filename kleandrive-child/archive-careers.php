@@ -51,8 +51,8 @@ $terms = _get_terms_details('careers-category');
 
 							<div class="career-holder background-white post-item">
 								<div class="inner">
-									<div class="header justify-space-between">
-										<div class="career-title align-center d-flex align-items-center justify-content-between">
+									<div class="header">
+										<div class="career-title w-100 align-center d-flex align-items-center justify-content-between">
 											<h3><?php the_title() ?></h3>
 											<span class="salary">£ <?= $salary ?></span>
 										</div>
