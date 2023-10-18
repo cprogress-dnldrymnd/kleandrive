@@ -309,20 +309,24 @@ section.careers-archive {
   background-color: var(--light-blue-color); }
 
 #applyModal .form-file-column {
-  position: relative; }
+  margin-bottom: 37px; }
   #applyModal .form-file-column .column-1_1 {
-    padding-bottom: 37px;
-    margin-bottom: 37px; }
+    padding-bottom: 0;
+    position: relative; }
 #applyModal br {
   display: none !important; }
 #applyModal .fake-input-wrapper {
   position: absolute;
   top: 0;
   left: 36px;
-  right: 0;
+  right: 30px;
   bottom: 1px;
   z-index: 999;
   background-color: var(--white-color); }
+  #applyModal .fake-input-wrapper .select-file {
+    cursor: pointer;
+    color: var(--accent-color);
+    text-decoration: underline; }
 #applyModal input[type="file"] {
   padding-top: 13px;
   padding-bottom: 13px; }
