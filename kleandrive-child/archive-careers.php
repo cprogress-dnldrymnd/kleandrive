@@ -107,9 +107,9 @@ $terms = _get_terms_details('careers-category');
 										<?php } ?>
 									</div>
 									<div class="footer">
-										<div class="button-box text-right">
-											<button type="button" class="button accent-button apply-button" data-title="<?php the_title() ?>" data-bs-toggle="modal" data-bs-target="#applyModal">
-												<span>APPLY FOR THIS POSITION</span><span class="arrow right white rotated"><span></span></span>
+										<div class="sc_item_button sc_button_wrap">
+											<button data-title="<?php the_title() ?>" data-bs-toggle="modal" data-bs-target="#applyModal" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left">
+												<span class="sc_button_text"><span class="sc_button_title">What We Do</span></span></a><a href="#" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark"><span class="sc_button_text"><span class="sc_button_title">Apply Now</span></span>
 											</button>
 										</div>
 									</div>

@@ -160,8 +160,12 @@ section.careers-archive {
   section.careers-archive .load-more {
     margin-top: 50px; }
   section.careers-archive .career-wrapper .career-holder {
-    padding: 40px 40px 90px 40px;
+    padding: 20px;
     box-shadow: 0px 29px 35px #0000000d; }
+    section.careers-archive .career-wrapper .career-holder .inner {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto; }
     section.careers-archive .career-wrapper .career-holder .header {
       display: flex;
       justify-content: space-between;
