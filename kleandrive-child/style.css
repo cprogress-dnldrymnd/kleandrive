@@ -1,58 +1,362 @@
 /*
-Error: Invalid CSS after "...nclude on-event": expected "}", was ", &: active, &:..."
-        on line 146 of style.scss
-
-141:         &:active,
-142:         &:focus {
-143:             @content;
-144:         }
-145:     } @else {
-146:         @include on-event, &: active, &: focus {
-147:             @content;
-148:         }
-149:     }
-150: }
-151: :root {
-
-Backtrace:
-style.scss:146
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:349:in `else_block'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:336:in `if_directive'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:246:in `mixin_directive'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+ Theme Name:   Kleandrive Child Theme
+ Theme URI:    http://planty.themerex.net
+ Description:  Kleandrive Child Theme
+ Template:     kleandrive
+ Text Domain:  Kleandrive
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...nclude on-event\": expected \"}\", was \", &: active, &:...\"\A         on line 146 of style.scss\A \A 141:         &:active,\A 142:         &:focus {\A 143:             @content;\A 144:         }\A 145:     } @else {\A 146:         @include on-event, &: active, &: focus {\A 147:             @content;\A 148:         }\A 149:     }\A 150: }\A 151: :root {"; }
+/* =Child-Theme customization starts here
+------------------------------------------------------------ */
+:root {
+  --primary-color: #19191a;
+  --accent-color: #0e62f2;
+  --white-color: #fff;
+  --black-color: #000;
+  --light-blue-color: #0e62f20d; }
+
+.no-border-radius img {
+  border-radius: 0 !important; }
+
+/*Blog*/
+.sc_blogger_default.sc_blogger_default_classic_time
+.sc_blogger_item_default.sc_blogger_item_on_plate
+.sc_blogger_item_content {
+  padding: 45px 27px !important;
+  background-color: #ffffff; }
+
+.sc_blogger_default.sc_blogger_default_classic_time .post_meta.sc_blogger_item_meta.post_meta_date .post_date {
+  background-color: #fff;
+  color: var(--theme-color-text);
+  box-shadow: 0px 20px 44px #00000026; }
+
+.sc_blogger_default.sc_blogger_default_classic_time .post_meta.sc_blogger_item_meta.post_meta_date a,
+.sc_blogger_default.sc_blogger_default_classic_time .post_meta.sc_blogger_item_meta.post_meta_date a:hover {
+  color: var(--theme-color-text); }
+
+.sc_button_wrap {
+  margin-bottom: 0 !important; }
+  .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default {
+    border: 2px solid var(--theme-color-text_hover) !important; }
+    .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary {
+      border-color: var(--primary-color) !important; }
+      .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary:hover, .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary:active, .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary:focus {
+        border-color: var(--theme-color-text_hover); }
+    .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default:hover, .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default:active, .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default:focus {
+      background-color: transparent;
+      color: var(--theme-color-text_hover); }
+
+.sc_item_title.sc_item_title {
+  line-height: 1.2 !important; }
+
+h1,
+h1.sc_item_title {
+  font-size: 100px; }
+  @media (max-width: 1199px) {
+    h1,
+    h1.sc_item_title {
+      font-size: 90px; } }
+  @media (max-width: 1024px) {
+    h1,
+    h1.sc_item_title {
+      font-size: 80px; } }
+  @media (max-width: 767px) {
+    h1,
+    h1.sc_item_title {
+      font-size: 60px; } }
+  @media (max-width: 575px) {
+    h1,
+    h1.sc_item_title {
+      font-size: 50px; } }
+
+h2,
+h2.sc_item_title {
+  font-size: 60px; }
+  @media (max-width: 1024px) {
+    h2,
+    h2.sc_item_title {
+      font-size: 50px; } }
+  @media (max-width: 767px) {
+    h2,
+    h2.sc_item_title {
+      font-size: 40px; } }
+  @media (max-width: 575px) {
+    h2,
+    h2.sc_item_title {
+      font-size: 35px; } }
+
+.post_layout_band .post_content_wrap .post_meta_item.post_categories a:not(:hover) {
+  background-color: #0e62f2 !important; }
+
+.single-post .page_content_wrap {
+  background-color: #fff; }
+  @media (min-width: 992px) {
+    .single-post .page_content_wrap h1 {
+      font-size: 75px; } }
+
+.wp-block-quote.wp-block-quote.wp-block-quote {
+  padding: 30px 40px 30px 60px; }
+  .wp-block-quote.wp-block-quote.wp-block-quote > * {
+    position: relative;
+    z-index: 1; }
+    .wp-block-quote.wp-block-quote.wp-block-quote > *:first-child:before {
+      margin-left: -30px;
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32.536" height="21.834" viewBox="0 0 32.536 21.834"><path id="Icon_open-double-quote-sans-left" data-name="Icon open-double-quote-sans-left" d="M32.536,21.834V0l-12.2,10.917V21.834Zm-20.335,0V0L0,10.917V21.834Z" fill="%230e62f2"/></svg>'); }
+  .wp-block-quote.wp-block-quote.wp-block-quote:before {
+    content: "";
+    background-color: #0e62f2;
+    border-radius: 13px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 10px;
+    right: 10px;
+    width: auto; }
+  .wp-block-quote.wp-block-quote.wp-block-quote:after {
+    content: "";
+    background-color: #f6f6f6;
+    border-radius: 13px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 0;
+    right: 0; }
+
+.post_header_single .post_meta.post_meta_categories a:not(.post_sponsored_label) {
+  background-color: #0e62f2 !important; }
+
+.post_header_wrap {
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .post_header_wrap .post_featured {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: auto !important;
+    min-height: 0 !important; }
+  .post_header_wrap .post_header {
+    text-align: left;
+    max-width: 100%;
+    width: 100%;
+    position: relative !important;
+    transform: none !important;
+    left: 0 !important;
+    top: 0 !important; }
+    .post_header_wrap .post_header .content_wrap {
+      max-width: 1240px !important;
+      margin-left: 0; }
+      @media (max-width: 1439px) {
+        .post_header_wrap .post_header .content_wrap {
+          padding-left: 15px !important;
+          padding-right: 15px !important; } }
+  @media (max-width: 1024px) {
+    .post_header_wrap {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+
+.accordion-style-1 .accordion-item {
+  border: none; }
+.accordion-style-1 .accordion-body {
+  font-size: 15px;
+  font-weight: 300; }
+.accordion-style-1 .accordion-header .accordion-button {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 10px 0; }
+  .accordion-style-1 .accordion-header .accordion-button:after {
+    content: none; }
+  .accordion-style-1 .accordion-header .accordion-button svg {
+    width: 30px;
+    height: 30px; }
+  .accordion-style-1 .accordion-header .accordion-button span {
+    font-size: 14px;
+    margin-left: 12px;
+    font-weight: 500;
+    color: var(--black-color); }
+  .accordion-style-1 .accordion-header .accordion-button svg {
+    color: var(--accent-color); }
+  .accordion-style-1 .accordion-header .accordion-button[aria-expanded="false"] .fa-plus {
+    display: inline; }
+  .accordion-style-1 .accordion-header .accordion-button[aria-expanded="false"] .fa-minus {
+    display: none; }
+  .accordion-style-1 .accordion-header .accordion-button[aria-expanded="true"] .fa-plus {
+    display: none; }
+  .accordion-style-1 .accordion-header .accordion-button[aria-expanded="true"] .fa-minus {
+    display: inline; }
+
+.modal.modal {
+  padding-right: 0 !important;
+  z-index: 999999;
+  overflow: hidden; }
+  .modal.modal .modal-dialog {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: var(--white-color);
+    max-width: 775px;
+    padding: 0;
+    width: 100%;
+    transition: 500ms;
+    transform: translateX(100%); }
+    .modal.modal .modal-dialog .modal-content {
+      height: 100%;
+      position: static;
+      border: none;
+      border-radius: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 11%; }
+      .modal.modal .modal-dialog .modal-content .modal-header,
+      .modal.modal .modal-dialog .modal-content .modal-body {
+        padding: 0;
+        border: none; }
+    .modal.modal .modal-dialog .modal-title {
+      font-size: 36px;
+      line-height: 1; }
+    .modal.modal .modal-dialog .btn-close {
+      position: absolute;
+      top: 30px;
+      right: 30px; }
+  .modal.modal.show .modal-dialog {
+    transform: translateX(0); }
+
+.modal-backdrop.modal-backdrop {
+  width: 0;
+  right: 0;
+  left: auto;
+  background: #01141cbf;
+  opacity: 1;
+  z-index: 9999;
+  transition: 500ms; }
+  .modal-backdrop.modal-backdrop.show {
+    width: 100% !important; }
+
+section.careers-archive {
+  padding-bottom: 150px;
+  font-family: stolzl, sans-serif; }
+  @media screen and (max-width: 575px) {
+    section.careers-archive .filter-wrapper {
+      flex-direction: column; }
+      section.careers-archive .filter-wrapper h2 {
+        margin-bottom: 15px !important; } }
+  section.careers-archive .load-more {
+    margin-top: 50px; }
+  section.careers-archive .career-wrapper .career-holder {
+    padding: 45px 20px;
+    box-shadow: 0px 29px 35px #0000000d;
+    background-color: #fff;
+    border-radius: 15px; }
+    section.careers-archive .career-wrapper .career-holder .inner {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto; }
+    section.careers-archive .career-wrapper .career-holder .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px; }
+      section.careers-archive .career-wrapper .career-holder .header .career-title h3 {
+        margin-right: 25px;
+        margin-bottom: 0; }
+        @media screen and (min-width: 992px) {
+          section.careers-archive .career-wrapper .career-holder .header .career-title h3 {
+            font-size: 37px; } }
+      section.careers-archive .career-wrapper .career-holder .header .career-title span {
+        color: gray;
+        font-size: 26px;
+        font-weight: 300; }
+        @media screen and (max-width: 767px) {
+          section.careers-archive .career-wrapper .career-holder .header .career-title span {
+            font-size: 18px; } }
+      @media screen and (max-width: 767px) {
+        section.careers-archive .career-wrapper .career-holder .header .career-title {
+          margin-bottom: 20px; } }
+      section.careers-archive .career-wrapper .career-holder .header .salary {
+        white-space: nowrap; }
+      @media screen and (max-width: 767px) {
+        section.careers-archive .career-wrapper .career-holder .header {
+          flex-wrap: wrap; } }
+    section.careers-archive .career-wrapper .career-holder .body .accordion-holder {
+      margin-bottom: 40px; }
+    section.careers-archive .career-wrapper .career-holder .body .career-description {
+      margin-bottom: 30px;
+      font-size: 15px;
+      font-weight: 300; }
+    @media screen and (max-width: 767px) {
+      section.careers-archive .career-wrapper .career-holder .body {
+        margin-bottom: 30px; } }
+    section.careers-archive .career-wrapper .career-holder:not(:last-child) {
+      margin-bottom: 40px; }
+  section.careers-archive .category-wrapper {
+    margin-bottom: 72px; }
+    section.careers-archive .category-wrapper .inner {
+      padding: 20px;
+      border-radius: 50px;
+      background-color: var(--white-color); }
+      section.careers-archive .category-wrapper .inner a {
+        background-color: var(--accent-color);
+        padding: 4px 20px;
+        color: var(--white-color);
+        font-size: 14px;
+        text-decoration: none;
+        border-radius: 30px;
+        display: inline-block;
+        font-weight: 300;
+        line-height: 1;
+        text-transform: uppercase;
+        border: 2px solid var(--accent-color); }
+        section.careers-archive .category-wrapper .inner a:not(:last-child) {
+          margin-right: 18px; }
+        section.careers-archive .category-wrapper .inner a.selected {
+          background-color: var(--primary-color);
+          pointer-events: none;
+          background: transparent;
+          color: var(--accent-color); }
+        section.careers-archive .category-wrapper .inner a:hover, section.careers-archive .category-wrapper .inner a:active, section.careers-archive .category-wrapper .inner a:focus {
+          transform: translateX(-5px); }
+
+.post-type-archive-careers .page_content_wrap {
+  background-color: var(--light-blue-color); }
+
+#applyModal {
+  font-family: "stolzl", sans-serif; }
+  #applyModal .form-file-column {
+    margin-bottom: 37px;
+    position: relative; }
+    #applyModal .form-file-column .column-1_1 {
+      padding-bottom: 0; }
+  #applyModal br {
+    display: none !important; }
+  #applyModal div.wpcf7 .form-style-3 .style-line[class*="icon-"] textarea,
+  #applyModal div.wpcf7 .form-style-3 .style-line[class*="icon-"] select,
+  #applyModal div.wpcf7 .form-style-3 .style-line[class*="icon-"] input {
+    font-weight: 300;
+    color: var(--accent-color); }
+  #applyModal .fake-input-wrapper {
+    position: absolute;
+    top: 0;
+    left: 36px;
+    right: 30px;
+    bottom: 1px;
+    z-index: 999;
+    background-color: var(--white-color); }
+    #applyModal .fake-input-wrapper .fake-input {
+      font-weight: 300;
+      color: var(--primary-color); }
+      #applyModal .fake-input-wrapper .fake-input.active {
+        color: var(--accent-color); }
+    #applyModal .fake-input-wrapper .select-file {
+      cursor: pointer;
+      color: var(--accent-color);
+      text-decoration: underline; }
+  #applyModal input[type="file"] {
+    padding-top: 13px;
+    padding-bottom: 13px; }
+
+html.overflow-hidden.overflow-hidden {
+  overflow: hidden !important; }
+
+/*# sourceMappingURL=style.css.map */
