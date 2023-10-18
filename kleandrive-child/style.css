@@ -311,6 +311,8 @@ section.careers-archive {
           pointer-events: none;
           background: transparent;
           color: var(--accent-color); }
+        section.careers-archive .category-wrapper .inner a:hover, section.careers-archive .category-wrapper .inner a:active, section.careers-archive .category-wrapper .inner a:focus {
+          transform: translateX(-5px); }
 
 .post-type-archive-careers .page_content_wrap {
   background-color: var(--light-blue-color); }

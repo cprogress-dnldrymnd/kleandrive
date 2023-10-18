@@ -538,6 +538,9 @@ section.careers-archive {
                     background: transparent;
                     color: var(--accent-color);
                 }
+                @include on-event() {
+                    transform: translateX(-5px);
+                }
             }
         }
     }
