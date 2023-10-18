@@ -137,15 +137,13 @@
 @mixin on-event($self: false) {
     @if $self {
         &,
-        &:hover,
+        @include on-event,
         &:active,
         &:focus {
             @content;
         }
     } @else {
-        &:hover,
-        &:active,
-        &:focus {
+        @include on-event, &: active, &: focus {
             @content;
         }
     }
@@ -184,9 +182,12 @@
             &.sc_button_default {
                 border: 2px solid var(--theme-color-text_hover) !important;
                 &.button-border-pimary {
-                    border-color: var(--primary-color);
+                    border-color: var(--primary-color) !important;
+                    @include on-event {
+                        border-color: var(--theme-color-text_hover);
+                    }
                 }
-                &:hover {
+                @include on-event {
                     background-color: transparent;
                     color: var(--theme-color-text_hover);
                 }
@@ -600,5 +601,3 @@ html {
         overflow: hidden !important;
     }
 }
-
-
