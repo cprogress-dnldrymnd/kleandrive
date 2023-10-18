@@ -551,8 +551,11 @@ section.careers-archive {
         }
     }
 }
-.post-type-archive-careers .page_content_wrap {
-    background-color: var(--light-blue-color);
+.post-type-archive-careers,
+.tax-careers-category {
+    .page_content_wrap {
+        background-color: var(--light-blue-color);
+    }
 }
 #applyModal {
     font-family: "stolzl", sans-serif;
@@ -604,7 +607,7 @@ html {
     }
 }
 .sc_team {
-    .trx_addons_columns_wrap>[class*="trx_addons_column-"] {
+    .trx_addons_columns_wrap > [class*="trx_addons_column-"] {
         padding-right: 20px;
     }
 }

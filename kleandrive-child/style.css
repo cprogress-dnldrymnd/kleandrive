@@ -318,7 +318,8 @@ section.careers-archive {
         section.careers-archive .category-wrapper .inner a:hover, section.careers-archive .category-wrapper .inner a:active, section.careers-archive .category-wrapper .inner a:focus {
           transform: translateX(-5px); }
 
-.post-type-archive-careers .page_content_wrap {
+.post-type-archive-careers .page_content_wrap,
+.tax-careers-category .page_content_wrap {
   background-color: var(--light-blue-color); }
 
 #applyModal {
