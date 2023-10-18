@@ -8,7 +8,19 @@
 
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
-
+@mixin inputs {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="file"],
+    span.fake-input,
+    select,
+    textarea {
+        @content;
+    }
+}
 @mixin respond-to($breakpoint) {
     @if $breakpoint == "xxxs" {
         @media screen and (max-width: 360px) {
@@ -122,7 +134,29 @@
         }
     }
 }
-
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+    @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
+:root {
+    --primary-color :#19191a;
+    --accent-color: #0E62F2;
+    --white-color: #fff;
+    --black-color: #000;
+}
 .no-border-radius img {
     border-radius: 0 !important;
 }
@@ -393,7 +427,7 @@ h2.sc_item_title {
 
 section.careers-archive {
     padding-bottom: 150px;
-    font-family: stolzl,sans-serif;
+    font-family: stolzl, sans-serif;
     .filter-wrapper {
         @include respond-to(mobile) {
             flex-direction: column;
@@ -469,6 +503,110 @@ section.careers-archive {
             }
         }
     }
-    .footer {
+    .contact-form-v2 {
+        .wpcf7 {
+            br {
+                display: none;
+            }
+            @include inputs {
+                width: 100%;
+            }
+            .wpcf7-submit {
+                border: none;
+                color: #fff;
+            }
+            .button-box {
+                position: relative;
+                background-color: var(--accent-color);
+                margin-top: 50px;
+                .wpcf7-submit {
+                    background-color: transparent;
+                    z-index: 1;
+                    position: relative;
+                }
+                .arrow {
+                    position: absolute;
+                    right: 25px;
+                    bottom: 18px;
+                }
+                .wpcf7-spinner {
+                    position: absolute;
+                }
+                @include on-event {
+                    background-color: #3a4046;
+                }
+            }
+            .form-group {
+                position: relative;
+                margin-bottom: 10px;
+                .wpcf7-form-control-wrap {
+                    position: static;
+                }
+                .wpcf7-not-valid-tip {
+                    position: absolute;
+                    right: 0;
+                    top: 30px;
+                    font-size: 14px;
+                    bottom: auto;
+                }
+                .form-label {
+                    position: absolute;
+                    font-size: 23px;
+                    margin: 0;
+                    color: var(--primary-color);
+                    top: 25px;
+                    z-index: 1;
+                    transition: 300ms;
+                }
+                &.focused,
+                &.filled {
+                    .form-label {
+                        top: 4px;
+                        font-size: 16px;
+                    }
+                }
+                &.form-file {
+                    .select-file {
+                        position: absolute;
+                        right: 0;
+                        bottom: 20px;
+                        text-decoration: underline;
+                        color: var(--accent-color);
+                        cursor: pointer;
+                    }
+                    .wpcf7-form-control-wrap {
+                        display: none;
+                    }
+                }
+            }
+            .form-group-checkbox {
+                margin-top: 40px;
+                .wpcf7-list-item {
+                    margin-left: 0;
+                    margin-right: 16px;
+                }
+                .form-label {
+                    font-size: 15px;
+                    color: #5b5b5b;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+            }
+            form {
+                &.sent {
+                    color: #46b450;
+                }
+                &.invalid {
+                    color: #dc3232;
+                }
+                .wpcf7-response-output {
+                    margin-left: 0;
+                    margin-right: 0;
+                    border: none;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
