@@ -142,8 +142,7 @@
         &:focus {
             @content;
         }
-    }
-    @else {
+    } @else {
         &:hover,
         &:active,
         &:focus {
@@ -152,8 +151,8 @@
     }
 }
 :root {
-    --primary-color :#19191a;
-    --accent-color: #0E62F2;
+    --primary-color: #19191a;
+    --accent-color: #0e62f2;
     --white-color: #fff;
     --black-color: #000;
 }
@@ -503,6 +502,8 @@ section.careers-archive {
             }
         }
     }
+}
+#applyModal {
     .contact-form-v2 {
         .wpcf7 {
             br {

@@ -8,8 +8,8 @@
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
 :root {
-  --primary-color:#19191a;
-  --accent-color: #0E62F2;
+  --primary-color: #19191a;
+  --accent-color: #0e62f2;
   --white-color: #fff;
   --black-color: #000; }
 
@@ -278,87 +278,88 @@ section.careers-archive {
         margin-bottom: 30px; } }
     section.careers-archive .career-wrapper .career-holder:not(:last-child) {
       margin-bottom: 40px; }
-  section.careers-archive .contact-form-v2 .wpcf7 br {
+
+#applyModal .contact-form-v2 .wpcf7 br {
+  display: none; }
+#applyModal .contact-form-v2 .wpcf7 input[type="text"],
+#applyModal .contact-form-v2 .wpcf7 input[type="email"],
+#applyModal .contact-form-v2 .wpcf7 input[type="number"],
+#applyModal .contact-form-v2 .wpcf7 input[type="tel"],
+#applyModal .contact-form-v2 .wpcf7 input[type="password"],
+#applyModal .contact-form-v2 .wpcf7 input[type="file"],
+#applyModal .contact-form-v2 .wpcf7 span.fake-input,
+#applyModal .contact-form-v2 .wpcf7 select,
+#applyModal .contact-form-v2 .wpcf7 textarea {
+  width: 100%; }
+#applyModal .contact-form-v2 .wpcf7 .wpcf7-submit {
+  border: none;
+  color: #fff; }
+#applyModal .contact-form-v2 .wpcf7 .button-box {
+  position: relative;
+  background-color: var(--accent-color);
+  margin-top: 50px; }
+  #applyModal .contact-form-v2 .wpcf7 .button-box .wpcf7-submit {
+    background-color: transparent;
+    z-index: 1;
+    position: relative; }
+  #applyModal .contact-form-v2 .wpcf7 .button-box .arrow {
+    position: absolute;
+    right: 25px;
+    bottom: 18px; }
+  #applyModal .contact-form-v2 .wpcf7 .button-box .wpcf7-spinner {
+    position: absolute; }
+  #applyModal .contact-form-v2 .wpcf7 .button-box:hover, #applyModal .contact-form-v2 .wpcf7 .button-box:active, #applyModal .contact-form-v2 .wpcf7 .button-box:focus {
+    background-color: #3a4046; }
+#applyModal .contact-form-v2 .wpcf7 .form-group {
+  position: relative;
+  margin-bottom: 10px; }
+  #applyModal .contact-form-v2 .wpcf7 .form-group .wpcf7-form-control-wrap {
+    position: static; }
+  #applyModal .contact-form-v2 .wpcf7 .form-group .wpcf7-not-valid-tip {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-size: 14px;
+    bottom: auto; }
+  #applyModal .contact-form-v2 .wpcf7 .form-group .form-label {
+    position: absolute;
+    font-size: 23px;
+    margin: 0;
+    color: var(--primary-color);
+    top: 25px;
+    z-index: 1;
+    transition: 300ms; }
+  #applyModal .contact-form-v2 .wpcf7 .form-group.focused .form-label, #applyModal .contact-form-v2 .wpcf7 .form-group.filled .form-label {
+    top: 4px;
+    font-size: 16px; }
+  #applyModal .contact-form-v2 .wpcf7 .form-group.form-file .select-file {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    text-decoration: underline;
+    color: var(--accent-color);
+    cursor: pointer; }
+  #applyModal .contact-form-v2 .wpcf7 .form-group.form-file .wpcf7-form-control-wrap {
     display: none; }
-  section.careers-archive .contact-form-v2 .wpcf7 input[type="text"],
-  section.careers-archive .contact-form-v2 .wpcf7 input[type="email"],
-  section.careers-archive .contact-form-v2 .wpcf7 input[type="number"],
-  section.careers-archive .contact-form-v2 .wpcf7 input[type="tel"],
-  section.careers-archive .contact-form-v2 .wpcf7 input[type="password"],
-  section.careers-archive .contact-form-v2 .wpcf7 input[type="file"],
-  section.careers-archive .contact-form-v2 .wpcf7 span.fake-input,
-  section.careers-archive .contact-form-v2 .wpcf7 select,
-  section.careers-archive .contact-form-v2 .wpcf7 textarea {
-    width: 100%; }
-  section.careers-archive .contact-form-v2 .wpcf7 .wpcf7-submit {
-    border: none;
-    color: #fff; }
-  section.careers-archive .contact-form-v2 .wpcf7 .button-box {
-    position: relative;
-    background-color: var(--accent-color);
-    margin-top: 50px; }
-    section.careers-archive .contact-form-v2 .wpcf7 .button-box .wpcf7-submit {
-      background-color: transparent;
-      z-index: 1;
-      position: relative; }
-    section.careers-archive .contact-form-v2 .wpcf7 .button-box .arrow {
-      position: absolute;
-      right: 25px;
-      bottom: 18px; }
-    section.careers-archive .contact-form-v2 .wpcf7 .button-box .wpcf7-spinner {
-      position: absolute; }
-    section.careers-archive .contact-form-v2 .wpcf7 .button-box:hover, section.careers-archive .contact-form-v2 .wpcf7 .button-box:active, section.careers-archive .contact-form-v2 .wpcf7 .button-box:focus {
-      background-color: #3a4046; }
-  section.careers-archive .contact-form-v2 .wpcf7 .form-group {
-    position: relative;
-    margin-bottom: 10px; }
-    section.careers-archive .contact-form-v2 .wpcf7 .form-group .wpcf7-form-control-wrap {
-      position: static; }
-    section.careers-archive .contact-form-v2 .wpcf7 .form-group .wpcf7-not-valid-tip {
-      position: absolute;
-      right: 0;
-      top: 30px;
-      font-size: 14px;
-      bottom: auto; }
-    section.careers-archive .contact-form-v2 .wpcf7 .form-group .form-label {
-      position: absolute;
-      font-size: 23px;
-      margin: 0;
-      color: var(--primary-color);
-      top: 25px;
-      z-index: 1;
-      transition: 300ms; }
-    section.careers-archive .contact-form-v2 .wpcf7 .form-group.focused .form-label, section.careers-archive .contact-form-v2 .wpcf7 .form-group.filled .form-label {
-      top: 4px;
-      font-size: 16px; }
-    section.careers-archive .contact-form-v2 .wpcf7 .form-group.form-file .select-file {
-      position: absolute;
-      right: 0;
-      bottom: 20px;
-      text-decoration: underline;
-      color: var(--accent-color);
-      cursor: pointer; }
-    section.careers-archive .contact-form-v2 .wpcf7 .form-group.form-file .wpcf7-form-control-wrap {
-      display: none; }
-  section.careers-archive .contact-form-v2 .wpcf7 .form-group-checkbox {
-    margin-top: 40px; }
-    section.careers-archive .contact-form-v2 .wpcf7 .form-group-checkbox .wpcf7-list-item {
-      margin-left: 0;
-      margin-right: 16px; }
-    section.careers-archive .contact-form-v2 .wpcf7 .form-group-checkbox .form-label {
-      font-size: 15px;
-      color: #5b5b5b;
-      font-weight: 400;
-      margin-bottom: 0; }
-  section.careers-archive .contact-form-v2 .wpcf7 form.sent {
-    color: #46b450; }
-  section.careers-archive .contact-form-v2 .wpcf7 form.invalid {
-    color: #dc3232; }
-  section.careers-archive .contact-form-v2 .wpcf7 form .wpcf7-response-output {
+#applyModal .contact-form-v2 .wpcf7 .form-group-checkbox {
+  margin-top: 40px; }
+  #applyModal .contact-form-v2 .wpcf7 .form-group-checkbox .wpcf7-list-item {
     margin-left: 0;
-    margin-right: 0;
-    border: none;
-    padding: 0;
-    text-align: center; }
+    margin-right: 16px; }
+  #applyModal .contact-form-v2 .wpcf7 .form-group-checkbox .form-label {
+    font-size: 15px;
+    color: #5b5b5b;
+    font-weight: 400;
+    margin-bottom: 0; }
+#applyModal .contact-form-v2 .wpcf7 form.sent {
+  color: #46b450; }
+#applyModal .contact-form-v2 .wpcf7 form.invalid {
+  color: #dc3232; }
+#applyModal .contact-form-v2 .wpcf7 form .wpcf7-response-output {
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  padding: 0;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
