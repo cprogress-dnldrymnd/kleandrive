@@ -29,7 +29,7 @@ Container::make('post_meta', __('Careers Details'))
             ))
             ->set_default_value(array(
                 array(
-                    'accordion_title' => 'Responsibilites',
+                    'accordion_title' => 'Responsibilities',
                 ),
                 array(
                     'accordion_title' => 'Requirements',
