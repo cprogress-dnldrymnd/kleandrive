@@ -561,6 +561,9 @@ section.careers-archive {
         bottom: 1px;
         z-index: 999;
         background-color: var(--white-color);
+        .fake-input {
+            font-weight: 300;
+        }
         .select-file {
             cursor: pointer;
             color: var(--accent-color);
