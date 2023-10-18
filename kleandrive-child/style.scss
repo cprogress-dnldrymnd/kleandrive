@@ -425,6 +425,7 @@ h2.sc_item_title {
     left: auto;
     background: #01141cbf;
     opacity: 1;
+    z-index: 9999;
     transition: 500ms;
     &.show {
         width: 100% !important;
