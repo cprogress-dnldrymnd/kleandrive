@@ -504,6 +504,8 @@ section.careers-archive {
         }
     }
     .category-wrapper {
+        margin-bottom: 72px;
+
         .inner {
             padding: 20px;
             border-radius: 50px;
@@ -513,9 +515,9 @@ section.careers-archive {
                 padding: 6px 20px;
                 color: var(--white-color);
                 font-size: 14px;
-                margin-bottom: 72px;
                 text-decoration: none;
                 border-radius: 30px;
+                display: inline-block;
                 &:not(:last-child) {
                     margin-right: 18px;
                 }
