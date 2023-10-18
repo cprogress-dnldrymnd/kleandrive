@@ -109,7 +109,7 @@ $terms = _get_terms_details('careers-category');
 									<div class="footer">
 										<div class="sc_item_button sc_button_wrap">
 											<button data-title="<?php the_title() ?>" data-bs-toggle="modal" data-bs-target="#applyModal" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left">
-												<span class="sc_button_text"><span class="sc_button_title">What We Do</span></span></a><a href="#" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark"><span class="sc_button_text"><span class="sc_button_title">Apply Now</span></span>
+												<span class="sc_button_text"><span class="sc_button_title">Apply Now</span></span>
 											</button>
 										</div>
 									</div>
