@@ -5,7 +5,7 @@
 get_header();
 $DisplayData = new DisplayData();
 $GetData = new GetData;
-$terms = $GetData->get_terms_details('location');
+$terms = _get_terms_details('careers-category');
 
 ?>
 <main id="main">

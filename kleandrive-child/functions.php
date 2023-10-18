@@ -1,14 +1,16 @@
 <?php
+
 /**
  * Child-Theme functions and definitions
  */
 
 // Load rtl.css because it is not autoloaded from the child theme
-if ( ! function_exists( 'planty_child_load_rtl' ) ) {
-	add_filter( 'wp_enqueue_scripts', 'planty_child_load_rtl', 3000 );
-	function planty_child_load_rtl() {
-		if ( is_rtl() ) {
-			wp_enqueue_style( 'planty-style-rtl', get_template_directory_uri() . '/rtl.css' );
+if (!function_exists('planty_child_load_rtl')) {
+	add_filter('wp_enqueue_scripts', 'planty_child_load_rtl', 3000);
+	function planty_child_load_rtl()
+	{
+		if (is_rtl()) {
+			wp_enqueue_style('planty-style-rtl', get_template_directory_uri() . '/rtl.css');
 		}
 	}
 }
@@ -24,4 +26,26 @@ function tissue_paper_register_custom_fields()
 
 require_once('includes/post-types.php');
 
-?>
+function _get_terms_details($taxonomy, $hide_empty = false, $order = false)
+{
+	$args = array(
+		'taxonomy' => $taxonomy,
+		'hide_empty' => $hide_empty,
+	);
+	if ($order) {
+		$args['meta_key'] = '_order';
+		$args['orderby'] = '_order';
+	}
+	$terms = get_terms($args);
+
+	if (!$terms) return;
+	$term_array = array();
+	foreach ($terms as $term) {
+		$term_array[$term->term_id] = array(
+			'name' => $term->name,
+			'short_description' => carbon_get_term_meta($term->term_id, 'short_description'),
+			'icon' => carbon_get_term_meta($term->term_id, 'icon'),
+		);
+	}
+	return $term_array;
+}
