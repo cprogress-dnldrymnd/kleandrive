@@ -331,7 +331,7 @@ h2.sc_item_title {
             &:after {
                 content: none;
             }
-         
+
             svg {
                 width: 30px;
                 height: 30px;
@@ -362,7 +362,6 @@ h2.sc_item_title {
                 }
             }
         }
-    
     }
 }
 
@@ -540,5 +539,24 @@ section.careers-archive {
 #applyModal {
     br {
         display: none !important;
+    }
+
+    .fake-input {
+        display: block;
+        line-height: 1.4;
+        min-height: 65px;
+    }
+    .form-file {
+        .select-file {
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            text-decoration: underline;
+            color: $accent-color;
+            cursor: pointer;
+        }
+        .wpcf7-form-control-wrap {
+            display: none;
+        }
     }
 }
