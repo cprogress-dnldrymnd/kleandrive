@@ -537,6 +537,13 @@ section.careers-archive {
     background-color: var(--light-blue-color);
 }
 #applyModal {
+    .form-file-column {
+        > .column-1_1 {
+            & + p {
+                display: none !important;
+            }
+        }
+    }
     br {
         display: none !important;
     }
@@ -547,6 +554,11 @@ section.careers-archive {
         min-height: 65px;
     }
     .form-file {
+        padding-left: 36px;
+        p {
+            display: flex;
+            align-items: center;
+        }
         .select-file {
             position: absolute;
             right: 0;

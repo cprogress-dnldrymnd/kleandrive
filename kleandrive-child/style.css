@@ -308,20 +308,27 @@ section.careers-archive {
 .post-type-archive-careers .page_content_wrap {
   background-color: var(--light-blue-color); }
 
+#applyModal .form-file-column > .column-1_1 + p {
+  display: none !important; }
 #applyModal br {
   display: none !important; }
 #applyModal .fake-input {
   display: block;
   line-height: 1.4;
   min-height: 65px; }
-#applyModal .form-file .select-file {
-  position: absolute;
-  right: 0;
-  bottom: 20px;
-  text-decoration: underline;
-  color: var(--primary-color);
-  cursor: pointer; }
-#applyModal .form-file .wpcf7-form-control-wrap {
-  display: none; }
+#applyModal .form-file {
+  padding-left: 36px; }
+  #applyModal .form-file p {
+    display: flex;
+    align-items: center; }
+  #applyModal .form-file .select-file {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer; }
+  #applyModal .form-file .wpcf7-form-control-wrap {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
