@@ -537,6 +537,7 @@ section.careers-archive {
     background-color: var(--light-blue-color);
 }
 #applyModal {
+    font-family: "stolzl", sans-serif;
     .form-file-column {
         margin-bottom: 37px;
         .column-1_1 {
@@ -547,7 +548,11 @@ section.careers-archive {
     br {
         display: none !important;
     }
-
+    div.wpcf7 .form-style-3 .style-line[class*="icon-"] textarea,
+    div.wpcf7 .form-style-3 .style-line[class*="icon-"] select,
+    div.wpcf7 .form-style-3 .style-line[class*="icon-"] input {
+        font-weight: 300;
+    }
     .fake-input-wrapper {
         position: absolute;
         top: 0;
