@@ -10,10 +10,11 @@ $main_query = get_queried_object();
             </div>
             <?php if ($terms) { ?>
                 <div class="category-wrapper text-center">
-                    <a href="<?= get_post_type_archive_link('careers') ?>">
-                        All
-                    </a>
+
                     <div class="inner d-inline-block">
+                        <a href="<?= get_post_type_archive_link('careers') ?>">
+                            All
+                        </a>
                         <?php foreach ($terms as $key => $term) { ?>
                             <?php
                             if ($main_query->term_id == $key) {
