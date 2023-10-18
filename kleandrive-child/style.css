@@ -12,7 +12,7 @@
   --accent-color: #0e62f2;
   --white-color: #fff;
   --black-color: #000;
-  --light-blue-color: #0E62F20D; }
+  --light-blue-color: #0e62f20d; }
 
 .no-border-radius img {
   border-radius: 0 !important; }
@@ -283,16 +283,18 @@ section.careers-archive {
     padding: 20px;
     border-radius: 50px;
     background-color: var(--white-color); }
-    section.careers-archive .category-wrapper .inner a:not(:last-child) {
-      margin-right: 18px;
+    section.careers-archive .category-wrapper .inner a {
       background-color: var(--accent-color);
       padding: 6px 20px;
       color: var(--white-color);
       font-size: 14px;
-      margin-bottom: 72px; }
+      margin-bottom: 72px;
+      text-decoration: none;
+      border-radius: 30px; }
+      section.careers-archive .category-wrapper .inner a:not(:last-child) {
+        margin-right: 18px; }
 
-.post-type-archive-careers
-.page_content_wrap {
+.post-type-archive-careers .page_content_wrap {
   background-color: var(--light-blue-color); }
 
 #applyModal .contact-form-v2 .wpcf7 br {
