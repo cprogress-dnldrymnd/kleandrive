@@ -3,8 +3,7 @@
  * The template for displaying any archive page.
  */
 get_header();
-$DisplayData = new DisplayData();
-$GetData = new GetData;
+
 $terms = _get_terms_details('careers-category');
 
 ?>
