@@ -15,28 +15,20 @@ $terms = _get_terms_details('careers-category');
 			<div class="head">
 				<?= do_shortcode('[trx_sc_layouts layout="22454"]') ?>
 			</div>
-			<div class="filter-wrapper justify-space-between align--center">
-				<div class="inner">
-					<h2 class="m-0">C</h2>
+			<?php if ($terms) { ?>
+				<div class="category-wrapper">
+					<?php foreach ($terms as $key => $term) { ?>
+						<?php
+						if ($main_query->term_id == $key) {
+							$selected = 'selected';
+						} else {
+							$selected = '';
+						}
+						?>
+						<a class="<?= $selected ?>" href="<?= get_term_link($key) ?>"> <?= $term['name'] ?> </a>
+					<?php } ?>
 				</div>
-				<div class="inner">
-					<select id="location" name="location" class="nice-select-js nice-select-style-1 nice-select-transparent">
-						<option value=""> All Locations </option>
-						<?php if ($terms) { ?>
-							<?php foreach ($terms as $key => $term) { ?>
-								<?php
-								if ($main_query->term_id == $key) {
-									$selected = 'selected';
-								} else {
-									$selected = '';
-								}
-								?>
-								<option <?= $selected ?> value="<?= $key ?>"> <?= $term['name'] ?> </option>
-							<?php } ?>
-						<?php } ?>
-					</select>
-				</div>
-			</div>
+			<?php } ?>
 			<div id="results">
 				<div class="results-holder">
 					<div class="career-wrapper">
