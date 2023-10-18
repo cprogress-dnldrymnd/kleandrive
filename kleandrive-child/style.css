@@ -339,7 +339,8 @@ section.careers-archive {
     z-index: 999;
     background-color: var(--white-color); }
     #applyModal .fake-input-wrapper .fake-input {
-      font-weight: 300; }
+      font-weight: 300;
+      color: var(--primary-color); }
     #applyModal .fake-input-wrapper .select-file {
       cursor: pointer;
       color: var(--accent-color);
