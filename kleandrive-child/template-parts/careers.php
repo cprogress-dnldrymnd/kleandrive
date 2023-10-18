@@ -1,5 +1,6 @@
 <?php
 $terms = _get_terms_details('careers-category');
+$main_query = get_queried_object();
 ?>
 <main id="main">
     <section class="careers-archive background-light">
@@ -9,6 +10,9 @@ $terms = _get_terms_details('careers-category');
             </div>
             <?php if ($terms) { ?>
                 <div class="category-wrapper text-center">
+                    <a href="<?= get_post_type_archive_link('careers') ?>">
+                        All
+                    </a>
                     <div class="inner d-inline-block">
                         <?php foreach ($terms as $key => $term) { ?>
                             <?php
