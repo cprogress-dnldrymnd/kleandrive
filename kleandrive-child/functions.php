@@ -12,5 +12,6 @@ if ( ! function_exists( 'planty_child_load_rtl' ) ) {
 		}
 	}
 }
+require_once('includes/post-types.php');
 
 ?>
