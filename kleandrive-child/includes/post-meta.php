@@ -36,7 +36,9 @@ Container::make('post_meta', __('Careers Details'))
 
 
 Container::make('post_meta', __('Blog Settings'))
-    ->where('post_type', '=', 'careers')
+    ->where('post_type', '=', 'post')
+    ->set_context('side')
+    ->set_priority('high')
     ->add_fields(array(
         Field::make('image', 'logo', 'Logo'),
         Field::make('text', 'artilce_url', 'Article URL'),
