@@ -311,10 +311,10 @@ section.careers-archive {
 #applyModal {
   font-family: "stolzl", sans-serif; }
   #applyModal .form-file-column {
-    margin-bottom: 37px; }
+    margin-bottom: 37px;
+    position: relative; }
     #applyModal .form-file-column .column-1_1 {
-      padding-bottom: 0;
-      position: relative; }
+      padding-bottom: 0; }
   #applyModal br {
     display: none !important; }
   #applyModal div.wpcf7 .form-style-3 .style-line[class*="icon-"] textarea,
