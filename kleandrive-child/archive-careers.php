@@ -17,7 +17,7 @@ $terms = _get_terms_details('careers-category');
 			</div>
 			<?php if ($terms) { ?>
 				<div class="category-wrapper text-center">
-					<div class="inner display-inline-block">
+					<div class="inner d-inline-block">
 						<?php foreach ($terms as $key => $term) { ?>
 							<?php
 							if ($main_query->term_id == $key) {
