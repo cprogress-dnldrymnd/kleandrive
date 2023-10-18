@@ -323,18 +323,20 @@ h2.sc_item_title {
         .accordion-button {
             background-color: transparent;
             box-shadow: none;
-            padding: 14px 0;
+            padding: 10px 0;
             &:after {
                 content: none;
             }
-            svg,
-            span {
-                font-size: 20px;
+         
+            svg {
+                width: 30px;
+                height: 30px;
             }
             span {
+                font-size: 14px;
                 margin-left: 12px;
                 font-weight: 500;
-                color: #000;
+                color: var(--black-color);
             }
             svg {
                 color: var(--accent-color);
@@ -355,6 +357,9 @@ h2.sc_item_title {
                     display: inline;
                 }
             }
+        }
+        .accordion-body {
+            font-size: 15px;
         }
     }
 }
@@ -474,24 +479,19 @@ section.careers-archive {
                 .salary {
                     white-space: nowrap;
                 }
-                .location {
-                    svg {
-                        margin-right: 15px;
-                    }
-                    @include respond-to(xs) {
-                        span {
-                            font-size: 20px;
-                        }
-                    }
-                }
+
                 @include respond-to(xs) {
                     flex-wrap: wrap;
                 }
             }
 
             .body {
+                .accordion-holder {
+                    margin-bottom: 40px;
+                }
                 .career-description {
                     margin-bottom: 30px;
+                    font-size: 15px;
                 }
                 @include respond-to(xs) {
                     margin-bottom: 30px;

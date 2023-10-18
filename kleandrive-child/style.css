@@ -157,16 +157,17 @@ h2.sc_item_title {
 .accordion-style-1 .accordion-header .accordion-button {
   background-color: transparent;
   box-shadow: none;
-  padding: 14px 0; }
+  padding: 10px 0; }
   .accordion-style-1 .accordion-header .accordion-button:after {
     content: none; }
-  .accordion-style-1 .accordion-header .accordion-button svg,
+  .accordion-style-1 .accordion-header .accordion-button svg {
+    width: 30px;
+    height: 30px; }
   .accordion-style-1 .accordion-header .accordion-button span {
-    font-size: 20px; }
-  .accordion-style-1 .accordion-header .accordion-button span {
+    font-size: 14px;
     margin-left: 12px;
     font-weight: 500;
-    color: #000; }
+    color: var(--black-color); }
   .accordion-style-1 .accordion-header .accordion-button svg {
     color: var(--accent-color); }
   .accordion-style-1 .accordion-header .accordion-button[aria-expanded="false"] .fa-plus {
@@ -177,6 +178,8 @@ h2.sc_item_title {
     display: none; }
   .accordion-style-1 .accordion-header .accordion-button[aria-expanded="true"] .fa-minus {
     display: inline; }
+.accordion-style-1 .accordion-header .accordion-body {
+  font-size: 15px; }
 
 .modal.modal {
   padding-right: 0 !important;
@@ -264,16 +267,14 @@ section.careers-archive {
           margin-bottom: 20px; } }
       section.careers-archive .career-wrapper .career-holder .header .salary {
         white-space: nowrap; }
-      section.careers-archive .career-wrapper .career-holder .header .location svg {
-        margin-right: 15px; }
-      @media screen and (max-width: 767px) {
-        section.careers-archive .career-wrapper .career-holder .header .location span {
-          font-size: 20px; } }
       @media screen and (max-width: 767px) {
         section.careers-archive .career-wrapper .career-holder .header {
           flex-wrap: wrap; } }
+    section.careers-archive .career-wrapper .career-holder .body .accordion-holder {
+      margin-bottom: 40px; }
     section.careers-archive .career-wrapper .career-holder .body .career-description {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-size: 15px; }
     @media screen and (max-width: 767px) {
       section.careers-archive .career-wrapper .career-holder .body {
         margin-bottom: 30px; } }
