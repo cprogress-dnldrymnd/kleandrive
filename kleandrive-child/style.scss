@@ -319,6 +319,10 @@ h2.sc_item_title {
     .accordion-item {
         border: none;
     }
+    .accordion-body {
+        font-size: 15px;
+        font-weight: 300;
+    }
     .accordion-header {
         .accordion-button {
             background-color: transparent;
@@ -358,9 +362,7 @@ h2.sc_item_title {
                 }
             }
         }
-        .accordion-body {
-            font-size: 15px;
-        }
+    
     }
 }
 
@@ -492,6 +494,7 @@ section.careers-archive {
                 .career-description {
                     margin-bottom: 30px;
                     font-size: 15px;
+                    font-weight: 300;
                 }
                 @include respond-to(xs) {
                     margin-bottom: 30px;

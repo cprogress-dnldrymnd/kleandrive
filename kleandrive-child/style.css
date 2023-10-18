@@ -154,6 +154,9 @@ h2.sc_item_title {
 
 .accordion-style-1 .accordion-item {
   border: none; }
+.accordion-style-1 .accordion-body {
+  font-size: 15px;
+  font-weight: 300; }
 .accordion-style-1 .accordion-header .accordion-button {
   background-color: transparent;
   box-shadow: none;
@@ -178,8 +181,6 @@ h2.sc_item_title {
     display: none; }
   .accordion-style-1 .accordion-header .accordion-button[aria-expanded="true"] .fa-minus {
     display: inline; }
-.accordion-style-1 .accordion-header .accordion-body {
-  font-size: 15px; }
 
 .modal.modal {
   padding-right: 0 !important;
@@ -274,7 +275,8 @@ section.careers-archive {
       margin-bottom: 40px; }
     section.careers-archive .career-wrapper .career-holder .body .career-description {
       margin-bottom: 30px;
-      font-size: 15px; }
+      font-size: 15px;
+      font-weight: 300; }
     @media screen and (max-width: 767px) {
       section.careers-archive .career-wrapper .career-holder .body {
         margin-bottom: 30px; } }
