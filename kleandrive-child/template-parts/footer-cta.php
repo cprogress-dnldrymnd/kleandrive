@@ -1,9 +1,21 @@
 <?php
-$overwrite_footer_cta = carbon_get_the_post_meta('overwrite_footer_cta');
-$heading = carbon_get_the_post_meta('heading');
-$button_text = carbon_get_the_post_meta('button_text');
-$button_url = carbon_get_the_post_meta('button_url');
-$target = carbon_get_the_post_meta('target');
+
+
+if (is_home()) {
+    $blog_page_id = get_option( 'page_for_posts' );
+
+    $overwrite_footer_cta = carbon_get_post_meta($blog_page_id, 'overwrite_footer_cta');
+    $heading = carbon_get_post_meta($blog_page_id, 'heading');
+    $button_text = carbon_get_post_meta($blog_page_id, 'button_text');
+    $button_url = carbon_get_post_meta($blog_page_id, 'button_url');
+    $target = carbon_get_post_meta($blog_page_id, 'target');
+} else {
+    $overwrite_footer_cta = carbon_get_the_post_meta('overwrite_footer_cta');
+    $heading = carbon_get_the_post_meta('heading');
+    $button_text = carbon_get_the_post_meta('button_text');
+    $button_url = carbon_get_the_post_meta('button_url');
+    $target = carbon_get_the_post_meta('target');
+}
 
 $footer_cta_heading = carbon_get_theme_option('footer_cta_heading');
 $footer_cta_button_text = carbon_get_theme_option('footer_cta_button_text');
