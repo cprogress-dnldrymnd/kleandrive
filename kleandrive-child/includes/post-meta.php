@@ -69,6 +69,11 @@ Container::make('post_meta', __('Footer Settings'))
     ->set_priority('high')
     ->add_fields(array(
         Field::make('checkbox', 'overwrite_footer_cta', 'Overwrite Footer CTA'),
+        Field::make('select', 'target', 'Target')
+        ->set_options( array(
+            '_self' => 'Self',
+            '_blank' => 'New Tab',
+        )),
         Field::make('text', 'heading', 'Heading')
             ->set_conditional_logic(array(
                 array(
