@@ -650,6 +650,8 @@ html {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
+            margin-left: -1rem;
+            margin-right: -1rem;
             [class*="col"] {
                 flex: 0 0 auto;
                 padding-left: 1rem;

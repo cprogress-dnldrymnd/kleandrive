@@ -392,7 +392,9 @@ html.overflow-hidden.overflow-hidden {
     .footer-cta .container .row {
       display: flex;
       align-items: center;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-left: -1rem;
+      margin-right: -1rem; }
       .footer-cta .container .row [class*="col"] {
         flex: 0 0 auto;
         padding-left: 1rem;
