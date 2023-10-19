@@ -433,7 +433,9 @@ html.overflow-hidden.overflow-hidden {
       box-sizing: border-box;
       font-size: 11px;
       line-height: 14px;
-      letter-spacing: 0.6px; }
+      letter-spacing: 0.6px;
+      isplay: inline-block;
+      font-weight: 300; }
       .widget_categories.widget_categories ul li a:hover, .widget_categories.widget_categories ul li a:active, .widget_categories.widget_categories ul li a:focus {
         color: var(--white-color) !important;
         background-color: var(--primary-color); }
@@ -487,7 +489,9 @@ aside .post_item .post_info .post_categories > a {
   box-sizing: border-box;
   font-size: 11px;
   line-height: 14px;
-  letter-spacing: 0.6px; }
+  letter-spacing: 0.6px;
+  isplay: inline-block;
+  font-weight: 300; }
   .widget_area .post_item .post_info .post_categories > a:hover, .widget_area .post_item .post_info .post_categories > a:active, .widget_area .post_item .post_info .post_categories > a:focus,
   aside .post_item .post_info .post_categories > a:hover,
   aside .post_item .post_info .post_categories > a:active,
@@ -497,8 +501,5 @@ aside .post_item .post_info .post_categories > a {
   .widget_area .post_item .post_info .post_categories > a:before,
   aside .post_item .post_info .post_categories > a:before {
     content: none !important; }
-  .widget_area .post_item .post_info .post_categories > a:not(:first-child),
-  aside .post_item .post_info .post_categories > a:not(:first-child) {
-    display: none; }
 
 /*# sourceMappingURL=style.css.map */
