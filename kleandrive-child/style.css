@@ -450,6 +450,12 @@ html.overflow-hidden.overflow-hidden {
     color: var(--theme-color-alter_text);
     -webkit-border-radius: 15px;
     -ms-border-radius: 15px;
-    border-radius: 15px; }
+    border-radius: 15px;
+    box-shadow: 0px 20px 44px #0000000D; }
+    .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search {
+      border-radius: 15px 15px 0 0; }
+    .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories {
+      margin-top: 0;
+      border-radius: 0 0 15px 15px; }
 
 /*# sourceMappingURL=style.css.map */
