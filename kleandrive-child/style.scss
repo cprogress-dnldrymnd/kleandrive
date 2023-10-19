@@ -760,7 +760,7 @@ aside .post_item {
     }
     .post_info {
         .post_info_item {
-            a {
+            > a {
                 @include category-style();
                 &:not(:first-child) {
                     display: none;
