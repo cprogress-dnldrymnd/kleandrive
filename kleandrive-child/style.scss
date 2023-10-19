@@ -611,3 +611,25 @@ html {
         padding-right: 20px;
     }
 }
+
+.footer-cta {
+    background-color: var(--accent-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+        max-width: 1320px;
+        .row {
+            display: flex;
+            align-items: center;
+            [class*="col"] {
+                flex: 0 0 auto;
+            }
+            .col-lg-8 {
+                width: 66.66666667%;
+            }
+            .col-lg-4 {
+                width: 33.33333333%;
+            }
+        }
+    }
+}
