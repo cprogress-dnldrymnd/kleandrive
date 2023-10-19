@@ -434,7 +434,7 @@ html.overflow-hidden.overflow-hidden {
       font-size: 11px;
       line-height: 14px;
       letter-spacing: 0.6px;
-      isplay: inline-block;
+      display: inline-block;
       font-weight: 300; }
       .widget_categories.widget_categories ul li a:hover, .widget_categories.widget_categories ul li a:active, .widget_categories.widget_categories ul li a:focus {
         color: var(--white-color) !important;
@@ -490,7 +490,7 @@ aside .post_item .post_info .post_categories > a {
   font-size: 11px;
   line-height: 14px;
   letter-spacing: 0.6px;
-  isplay: inline-block;
+  display: inline-block;
   font-weight: 300; }
   .widget_area .post_item .post_info .post_categories > a:hover, .widget_area .post_item .post_info .post_categories > a:active, .widget_area .post_item .post_info .post_categories > a:focus,
   aside .post_item .post_info .post_categories > a:hover,
