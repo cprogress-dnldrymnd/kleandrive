@@ -414,7 +414,9 @@ html.overflow-hidden.overflow-hidden {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 15px;
+  margin-top: 0; }
   .widget_categories.widget_categories ul li {
     margin-right: 7px; }
     .widget_categories.widget_categories ul li a {
@@ -430,9 +432,7 @@ html.overflow-hidden.overflow-hidden {
       box-sizing: border-box;
       font-size: 11px;
       line-height: 14px;
-      letter-spacing: 0.6px;
-      margin-bottom: 15px;
-      margin-top: 0; }
+      letter-spacing: 0.6px; }
       .widget_categories.widget_categories ul li a:hover, .widget_categories.widget_categories ul li a:active, .widget_categories.widget_categories ul li a:focus {
         color: var(--white-color) !important;
         background-color: var(--primary-color); }

@@ -678,6 +678,9 @@ html {
         flex-wrap: wrap;
         padding-left: 0;
         list-style: none;
+        margin-bottom: 15px;
+        margin-top: 0;
+
         li {
             margin-right: 7px;
             a {
@@ -694,9 +697,7 @@ html {
                 font-size: 11px;
                 line-height: 14px;
                 letter-spacing: 0.6px;
-                margin-bottom: 15px;
-                margin-top: 0;
-                @include on-event( ) {
+                @include on-event() {
                     color: var(--white-color) !important;
                     background-color: var(--primary-color);
                 }
