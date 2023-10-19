@@ -455,7 +455,16 @@ html.overflow-hidden.overflow-hidden {
     border-radius: 15px;
     box-shadow: 0px 20px 44px #0000000d; }
     .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search {
-      border-radius: 15px 15px 0 0; }
+      border-radius: 15px 15px 0 0;
+      position: relative; }
+      .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search:before {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        height: 10px;
+        left: 0;
+        right: 0;
+        background-color: var(--white-color); }
     .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories {
       margin-top: 0;
       border-radius: 0 0 15px 15px;
