@@ -432,6 +432,9 @@ html.overflow-hidden.overflow-hidden {
       line-height: 14px;
       letter-spacing: 0.6px;
       margin-bottom: 15px; }
+      .widget_categories ul li a:hover, .widget_categories ul li a:active, .widget_categories ul li a:focus {
+        color: var(--white-color);
+        background-color: var(--primary-color); }
       .widget_categories ul li a:before {
         content: none !important; }
 

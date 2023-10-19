@@ -695,6 +695,10 @@ html {
                 line-height: 14px;
                 letter-spacing: 0.6px;
                 margin-bottom: 15px;
+                @include on-event( ) {
+                    color: var(--white-color);
+                    background-color: var(--primary-color);
+                }
                 &:before {
                     content: none !important;
                 }
