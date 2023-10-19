@@ -640,6 +640,10 @@ html {
             width: 100%;
             margin: 0 !important;
             text-align: center;
+            @include on-event() {
+                background: var(--primary-color) !important;
+                border-color: var(--primary-color)!important;
+            }
         }
         .row {
             display: flex;
