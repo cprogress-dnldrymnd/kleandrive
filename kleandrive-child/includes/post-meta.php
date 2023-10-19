@@ -71,7 +71,7 @@ Container::make('post_meta', __('Footer Settings'))
         Field::make('checkbox', 'overwrite_footer_cta', 'Overwrite Footer CTA'),
         Field::make('select', 'target', 'Target')
         ->set_options( array(
-            '_self' => 'Self',
+            '_self' => 'Same Window',
             '_blank' => 'New Tab',
         )),
         Field::make('text', 'heading', 'Heading')
