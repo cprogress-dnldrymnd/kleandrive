@@ -672,7 +672,7 @@ html {
         }
     }
 }
-.widget_categories {
+.widget_categories.widget_categories {
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -695,8 +695,9 @@ html {
                 line-height: 14px;
                 letter-spacing: 0.6px;
                 margin-bottom: 15px;
+                margin-top: 0;
                 @include on-event( ) {
-                    color: var(--white-color);
+                    color: var(--white-color) !important;
                     background-color: var(--primary-color);
                 }
                 &:before {

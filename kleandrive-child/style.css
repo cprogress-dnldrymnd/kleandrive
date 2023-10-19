@@ -410,14 +410,14 @@ html.overflow-hidden.overflow-hidden {
           .footer-cta .container .row .col-lg-4 {
             width: 100%; } }
 
-.widget_categories ul {
+.widget_categories.widget_categories ul {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   list-style: none; }
-  .widget_categories ul li {
+  .widget_categories.widget_categories ul li {
     margin-right: 7px; }
-    .widget_categories ul li a {
+    .widget_categories.widget_categories ul li a {
       -webkit-border-radius: 15px;
       -ms-border-radius: 15px;
       border-radius: 15px;
@@ -431,11 +431,12 @@ html.overflow-hidden.overflow-hidden {
       font-size: 11px;
       line-height: 14px;
       letter-spacing: 0.6px;
-      margin-bottom: 15px; }
-      .widget_categories ul li a:hover, .widget_categories ul li a:active, .widget_categories ul li a:focus {
-        color: var(--white-color);
+      margin-bottom: 15px;
+      margin-top: 0; }
+      .widget_categories.widget_categories ul li a:hover, .widget_categories.widget_categories ul li a:active, .widget_categories.widget_categories ul li a:focus {
+        color: var(--white-color) !important;
         background-color: var(--primary-color); }
-      .widget_categories ul li a:before {
+      .widget_categories.widget_categories ul li a:before {
         content: none !important; }
 
 /*# sourceMappingURL=style.css.map */
