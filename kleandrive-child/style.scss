@@ -763,6 +763,8 @@ aside .post_item {
         .post_categories {
             > a {
                 @include category-style();
+                margin-bottom: 5px;
+                margin-right: 5px;
             }
         }
     }

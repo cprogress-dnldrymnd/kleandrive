@@ -491,7 +491,9 @@ aside .post_item .post_info .post_categories > a {
   line-height: 14px;
   letter-spacing: 0.6px;
   display: inline-block;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-right: 5px; }
   .widget_area .post_item .post_info .post_categories > a:hover, .widget_area .post_item .post_info .post_categories > a:active, .widget_area .post_item .post_info .post_categories > a:focus,
   aside .post_item .post_info .post_categories > a:hover,
   aside .post_item .post_info .post_categories > a:active,
