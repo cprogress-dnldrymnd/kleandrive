@@ -627,6 +627,8 @@ html {
         }
         .sc_button {
             color: var(--white-color);
+            max-width: 200px;
+            width: 100%;
         }
         .row {
             display: flex;
