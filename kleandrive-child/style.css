@@ -382,10 +382,11 @@ html.overflow-hidden.overflow-hidden {
           text-align: right; } }
     .footer-cta .container .sc_button {
       color: var(--white-color) !important;
+      border-color: var(--white-color) !important;
       max-width: 200px;
       width: 100%;
       margin: 0 !important;
-      text-align: center; }
+      justify-content: center; }
       .footer-cta .container .sc_button:hover, .footer-cta .container .sc_button:active, .footer-cta .container .sc_button:focus {
         background: var(--primary-color) !important;
         border-color: var(--primary-color) !important; }

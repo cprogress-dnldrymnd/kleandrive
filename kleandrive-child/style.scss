@@ -636,10 +636,11 @@ html {
         }
         .sc_button {
             color: var(--white-color) !important;
+            border-color: var(--white-color) !important;
             max-width: 200px;
             width: 100%;
             margin: 0 !important;
-            text-align: center;
+            justify-content: center;
             @include on-event() {
                 background: var(--primary-color) !important;
                 border-color: var(--primary-color)!important;
