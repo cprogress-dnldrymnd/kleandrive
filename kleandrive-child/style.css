@@ -370,7 +370,11 @@ html.overflow-hidden.overflow-hidden {
   .footer-cta .container {
     max-width: 1320px; }
     .footer-cta .container .heading-box h2 {
-      font-size: 39px; }
+      font-size: 39px;
+      margin-top: 0;
+      color: var(--white-color); }
+    .footer-cta .container .sc_button {
+      color: var(--white-color); }
     .footer-cta .container .row {
       display: flex;
       align-items: center; }

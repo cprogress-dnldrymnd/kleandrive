@@ -621,7 +621,12 @@ html {
         .heading-box {
             h2 {
                 font-size: 39px;
+                margin-top: 0;
+                color: var(--white-color);
             }
+        }
+        .sc_button {
+            color: var(--white-color);
         }
         .row {
             display: flex;
