@@ -418,7 +418,8 @@ html.overflow-hidden.overflow-hidden {
   .widget_categories.widget_categories ul li {
     margin-right: 7px;
     margin-bottom: 15px;
-    margin-top: 0; }
+    margin-top: 0;
+    line-height: 1; }
     .widget_categories.widget_categories ul li a {
       -webkit-border-radius: 15px;
       -ms-border-radius: 15px;
