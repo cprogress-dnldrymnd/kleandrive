@@ -672,3 +672,29 @@ html {
         }
     }
 }
+.widget_categories {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style: none;
+        li {
+            margin-right: 7px;
+            a {
+                -webkit-border-radius: 15px;
+                -ms-border-radius: 15px;
+                border-radius: 15px;
+                background-color: var(--theme-color-text_link2);
+                color: var(--theme-color-inverse_link);
+                text-transform: uppercase;
+                padding: 6px 17px 5px;
+                -webkit-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box;
+                font-size: 11px;
+                line-height: 14px;
+                letter-spacing: 0.6px;
+            }
+        }
+    }
+}
