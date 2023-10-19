@@ -26,7 +26,7 @@ do_action('planty_action_content_wrap_end');
 ?>
 </div>
 
-<?php get_template_part('template-parts/footer-cta') ?>
+
 <?php
 
 do_action('planty_action_after_content_wrap');
@@ -60,6 +60,7 @@ if ($planty_show_widgets || $planty_show_related) {
 do_action('planty_action_page_content_wrap_end');
 ?>
 </div>
+<?php get_template_part('template-parts/footer-cta') ?>
 <?php
 do_action('planty_action_after_page_content_wrap');
 
