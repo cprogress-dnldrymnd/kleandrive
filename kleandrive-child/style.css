@@ -376,19 +376,19 @@ html.overflow-hidden.overflow-hidden {
       color: var(--white-color); }
     .footer-cta .container .sc_item_button {
       display: block; }
+      .footer-cta .container .sc_item_button .sc_button.sc_button.sc_button {
+        color: var(--white-color) !important;
+        border-color: var(--white-color) !important;
+        max-width: 200px;
+        width: 100%;
+        margin: 0 !important;
+        justify-content: center; }
+        .footer-cta .container .sc_item_button .sc_button.sc_button.sc_button:hover, .footer-cta .container .sc_item_button .sc_button.sc_button.sc_button:active, .footer-cta .container .sc_item_button .sc_button.sc_button.sc_button:focus {
+          background: var(--primary-color) !important;
+          border-color: var(--primary-color) !important; }
       @media (min-width: 1025px) {
         .footer-cta .container .sc_item_button {
           text-align: right; } }
-    .footer-cta .container .sc_button {
-      color: var(--white-color) !important;
-      border-color: var(--white-color) !important;
-      max-width: 200px;
-      width: 100%;
-      margin: 0 !important;
-      justify-content: center; }
-      .footer-cta .container .sc_button:hover, .footer-cta .container .sc_button:active, .footer-cta .container .sc_button:focus {
-        background: var(--primary-color) !important;
-        border-color: var(--primary-color) !important; }
     .footer-cta .container .row {
       display: flex;
       align-items: center;

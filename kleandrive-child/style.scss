@@ -629,22 +629,23 @@ html {
         }
         .sc_item_button {
             display: block;
+            .sc_button.sc_button.sc_button {
+                color: var(--white-color) !important;
+                border-color: var(--white-color) !important;
+                max-width: 200px;
+                width: 100%;
+                margin: 0 !important;
+                justify-content: center;
+                @include on-event() {
+                    background: var(--primary-color) !important;
+                    border-color: var(--primary-color) !important;
+                }
+            }
             @media (min-width: 1025px) {
                 text-align: right;
             }
         }
-        .sc_button {
-            color: var(--white-color) !important;
-            border-color: var(--white-color) !important;
-            max-width: 200px;
-            width: 100%;
-            margin: 0 !important;
-            justify-content: center;
-            @include on-event() {
-                background: var(--primary-color) !important;
-                border-color: var(--primary-color)!important;
-            }
-        }
+
         .row {
             display: flex;
             align-items: center;
