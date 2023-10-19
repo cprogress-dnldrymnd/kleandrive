@@ -377,7 +377,8 @@ html.overflow-hidden.overflow-hidden {
       color: var(--white-color);
       max-width: 200px;
       width: 100%;
-      margin: 0 !important; }
+      margin: 0 !important;
+      text-align: center; }
     .footer-cta .container .row {
       display: flex;
       align-items: center;
