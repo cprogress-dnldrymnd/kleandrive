@@ -758,7 +758,7 @@ aside .post_item {
         display: -webkit-box;
     }
     .post_info {
-        .post_info_item {
+        .post_categories {
             > a {
                 @include category-style();
                 &:not(:first-child) {
