@@ -22,8 +22,24 @@ $footer_cta_button_url = carbon_get_theme_option('footer_cta_button_url');
                             echo $footer_cta_heading;
                         }
                         ?>
-                        
                     </h2>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sc_item_button sc_button_wrap">
+                    <a href="#" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark">
+                        <span class="sc_button_text">
+                            <span class="sc_button_title">
+                                <?php
+                                if ($overwrite_footer_cta && $button_text) {
+                                    echo $button_text;
+                                } else {
+                                    echo $footer_cta_button_text;
+                                }
+                                ?>
+                            </span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
