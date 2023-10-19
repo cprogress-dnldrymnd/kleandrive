@@ -3,10 +3,12 @@ $overwrite_footer_cta = carbon_get_the_post_meta('overwrite_footer_cta');
 $heading = carbon_get_the_post_meta('heading');
 $button_text = carbon_get_the_post_meta('button_text');
 $button_url = carbon_get_the_post_meta('button_url');
+$target = carbon_get_the_post_meta('target');
 
 $footer_cta_heading = carbon_get_theme_option('footer_cta_heading');
 $footer_cta_button_text = carbon_get_theme_option('footer_cta_button_text');
 $footer_cta_button_url = carbon_get_theme_option('footer_cta_button_url');
+$footer_cta_target = carbon_get_theme_option('footer_cta_target');
 
 
 if ($overwrite_footer_cta && $heading) {
@@ -26,6 +28,13 @@ if ($overwrite_footer_cta && $button_url) {
 } else {
     $button_url_val = $footer_cta_button_url;
 }
+
+
+if ($overwrite_footer_cta && $target) {
+    $target_val = $target;
+} else {
+    $target_val = $target;
+}
 ?>
 
 <section class="footer-cta">
@@ -40,7 +49,7 @@ if ($overwrite_footer_cta && $button_url) {
             </div>
             <div class="col-lg-4">
                 <div class="sc_item_button sc_button_wrap">
-                    <a href="<?= $button_url_val ?>" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark">
+                    <a target="<?= $target_val ?>" href="<?= $button_url_val ?>" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark">
                         <span class="sc_button_text">
                             <span class="sc_button_title">
                                 <?= $button_text_val ?>
