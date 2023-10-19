@@ -631,6 +631,7 @@ html {
         .row {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             [class*="col"] {
                 flex: 0 0 auto;
                 padding-left: 1rem;
@@ -638,9 +639,18 @@ html {
             }
             .col-lg-8 {
                 width: 66.66666667%;
+                @media (max-width: 1024px) {
+                    width: 100%;
+                }
             }
             .col-lg-4 {
                 width: 33.33333333%;
+                @media (max-width: 1024px) {
+                    width: 100%;
+                }
+                @media (min-width: 1025px) {
+                    text-align: right;
+                }
             }
         }
     }
