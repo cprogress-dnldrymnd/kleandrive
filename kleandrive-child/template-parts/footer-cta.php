@@ -13,7 +13,7 @@ $button_url = carbon_get_the_post_meta('button_url');
                     <h2>
                         <?php
                         if ($overwrite_footer_cta && $heading) {
-                            echo $overwrite_footer_cta;
+                            echo $heading;
                         } else {
                             echo 'Find out how we can help you';
                         }
