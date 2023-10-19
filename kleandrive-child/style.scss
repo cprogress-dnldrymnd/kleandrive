@@ -694,8 +694,9 @@ html {
                 font-size: 11px;
                 line-height: 14px;
                 letter-spacing: 0.6px;
+                margin-bottom: 15px;
                 &:before {
-                    content: none;
+                    content: none !important;
                 }
             }
         }

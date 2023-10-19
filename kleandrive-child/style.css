@@ -430,8 +430,9 @@ html.overflow-hidden.overflow-hidden {
       box-sizing: border-box;
       font-size: 11px;
       line-height: 14px;
-      letter-spacing: 0.6px; }
+      letter-spacing: 0.6px;
+      margin-bottom: 15px; }
       .widget_categories ul li a:before {
-        content: none; }
+        content: none !important; }
 
 /*# sourceMappingURL=style.css.map */
