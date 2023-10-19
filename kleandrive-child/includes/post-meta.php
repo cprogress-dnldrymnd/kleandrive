@@ -1,12 +1,27 @@
 <?php
+
 use Carbon_Fields\Container;
 use Carbon_Fields\Complex_Container;
 use Carbon_Fields\Field;
 
+
+/*-----------------------------------------------------------------------------------*/
+/* Footer Settings
+/*-----------------------------------------------------------------------------------*/
+
+Container::make('theme_options', __('Theme Settings'))
+    ->set_priority('high')
+    ->add_tab('FOOTER CTA', array(
+        Field::make('text', 'footer_cta_heading', 'Heading'),
+        Field::make('text', 'footer_cta_button_text', 'Button Text'),
+        Field::make('text', 'footer_cta_button_url', 'Button URL'),
+    ));
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /* Career Settings
 /*-----------------------------------------------------------------------------------*/
-
 
 Container::make('post_meta', __('Careers Details'))
     ->where('post_type', '=', 'careers')
