@@ -373,7 +373,6 @@ html.overflow-hidden.overflow-hidden {
     max-width: 1320px; }
     .footer-cta .container .heading-box h2 {
       font-size: 39px;
-      margin-top: 0;
       color: var(--white-color); }
     .footer-cta .container .sc_item_button {
       display: block; }
@@ -402,7 +401,8 @@ html.overflow-hidden.overflow-hidden {
         width: 66.66666667%; }
         @media (max-width: 1024px) {
           .footer-cta .container .row .col-lg-8 {
-            width: 100%; } }
+            width: 100%;
+            margin-bottom: 2rem; } }
       .footer-cta .container .row .col-lg-4 {
         width: 33.33333333%; }
         @media (max-width: 1024px) {
