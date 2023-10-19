@@ -1,5 +1,4 @@
 <?php
-
 use Carbon_Fields\Container;
 use Carbon_Fields\Complex_Container;
 use Carbon_Fields\Field;
@@ -31,10 +30,8 @@ Container::make('post_meta', __('Careers Details'))
 
 
 /*-----------------------------------------------------------------------------------*/
-/* Career Settings
+/* Blog Settings
 /*-----------------------------------------------------------------------------------*/
-
-
 Container::make('post_meta', __('Blog Settings'))
     ->where('post_type', '=', 'post')
     ->set_context('side')
@@ -42,5 +39,24 @@ Container::make('post_meta', __('Blog Settings'))
     ->add_fields(array(
         Field::make('image', 'logo', 'Logo'),
         Field::make('text', 'artilce_url', 'Article URL'),
-       
+
+    ));
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Footer Settings
+/*-----------------------------------------------------------------------------------*/
+Container::make('post_meta', __('Footer Settings'))
+    ->where('post_type', '=', 'post')
+    ->or_where('post_type', '=', 'page')
+    ->or_where('post_type', '=', 'product')
+    ->set_context('side')
+    ->set_priority('high')
+    ->add_fields(array(
+        Field::make('checkbox', 'overwrite_footer_cta', 'Overwrite Footer CTA'),
+        Field::make('text', 'heading', 'Heading'),
+        Field::make('text', 'button_text', 'Button Text'),
+        Field::make('text', 'button_url', 'Button URL'),
+
     ));
