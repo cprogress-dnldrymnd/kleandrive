@@ -10,7 +10,6 @@ use Carbon_Fields\Field;
 /*-----------------------------------------------------------------------------------*/
 
 Container::make('theme_options', __('Theme Settings'))
-    ->set_priority('high')
     ->add_tab('FOOTER CTA', array(
         Field::make('text', 'footer_cta_heading', 'Heading'),
         Field::make('text', 'footer_cta_button_text', 'Button Text'),
