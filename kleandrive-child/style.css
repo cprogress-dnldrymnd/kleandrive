@@ -414,11 +414,11 @@ html.overflow-hidden.overflow-hidden {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  list-style: none;
-  margin-bottom: 15px;
-  margin-top: 0; }
+  list-style: none; }
   .widget_categories.widget_categories ul li {
-    margin-right: 7px; }
+    margin-right: 7px;
+    margin-bottom: 15px;
+    margin-top: 0; }
     .widget_categories.widget_categories ul li a {
       -webkit-border-radius: 15px;
       -ms-border-radius: 15px;

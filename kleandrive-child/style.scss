@@ -678,11 +678,12 @@ html {
         flex-wrap: wrap;
         padding-left: 0;
         list-style: none;
-        margin-bottom: 15px;
-        margin-top: 0;
+  
 
         li {
             margin-right: 7px;
+            margin-bottom: 15px;
+            margin-top: 0;
             a {
                 -webkit-border-radius: 15px;
                 -ms-border-radius: 15px;
