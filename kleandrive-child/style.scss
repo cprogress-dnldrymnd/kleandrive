@@ -717,14 +717,12 @@ html {
             padding: 0;
             border-radius: 0;
             .widget {
-                &:not(.widget_search):not(.widget_categories) {
-                    padding: 4.1em 0;
-                    background-color: var(--theme-color-alter_bg_color);
-                    color: var(--theme-color-alter_text);
-                    -webkit-border-radius: 15px;
-                    -ms-border-radius: 15px;
-                    border-radius: 15px;
-                }
+                padding: 50px;
+                background-color: var(--theme-color-alter_bg_color);
+                color: var(--theme-color-alter_text);
+                -webkit-border-radius: 15px;
+                -ms-border-radius: 15px;
+                border-radius: 15px;
             }
         }
     }
