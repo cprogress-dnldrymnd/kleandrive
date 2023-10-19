@@ -616,6 +616,9 @@ html {
     background-color: var(--accent-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    * {
+        box-sizing: border-box;
+    }
     .container {
         max-width: 1320px;
         .heading-box {
