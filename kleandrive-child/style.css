@@ -375,8 +375,13 @@ html.overflow-hidden.overflow-hidden {
       font-size: 39px;
       margin-top: 0;
       color: var(--white-color); }
+    .footer-cta .container .sc_item_button {
+      display: block; }
+      @media (min-width: 1025px) {
+        .footer-cta .container .sc_item_button {
+          text-align: right; } }
     .footer-cta .container .sc_button {
-      color: var(--white-color);
+      color: var(--white-color) !important;
       max-width: 200px;
       width: 100%;
       margin: 0 !important;
@@ -399,8 +404,5 @@ html.overflow-hidden.overflow-hidden {
         @media (max-width: 1024px) {
           .footer-cta .container .row .col-lg-4 {
             width: 100%; } }
-        @media (min-width: 1025px) {
-          .footer-cta .container .row .col-lg-4 {
-            text-align: right; } }
 
 /*# sourceMappingURL=style.css.map */

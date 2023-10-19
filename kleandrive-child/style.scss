@@ -628,8 +628,14 @@ html {
                 color: var(--white-color);
             }
         }
+        .sc_item_button {
+            display: block;
+            @media (min-width: 1025px) {
+                text-align: right;
+            }
+        }
         .sc_button {
-            color: var(--white-color);
+            color: var(--white-color) !important;
             max-width: 200px;
             width: 100%;
             margin: 0 !important;
@@ -654,9 +660,6 @@ html {
                 width: 33.33333333%;
                 @media (max-width: 1024px) {
                     width: 100%;
-                }
-                @media (min-width: 1025px) {
-                    text-align: right;
                 }
             }
         }
