@@ -11,6 +11,11 @@ use Carbon_Fields\Field;
 
 Container::make('theme_options', __('Theme Settings'))
     ->add_tab('FOOTER CTA', array(
+        Field::make('select', 'footer_cta_target', 'Target')
+            ->set_options(array(
+                '_self' => 'Same Window',
+                '_blank' => 'New Tab',
+            )),
         Field::make('text', 'footer_cta_heading', 'Heading'),
         Field::make('text', 'footer_cta_button_text', 'Button Text'),
         Field::make('text', 'footer_cta_button_url', 'Button URL'),
@@ -70,10 +75,10 @@ Container::make('post_meta', __('Footer Settings'))
     ->add_fields(array(
         Field::make('checkbox', 'overwrite_footer_cta', 'Overwrite Footer CTA'),
         Field::make('select', 'target', 'Target')
-        ->set_options( array(
-            '_self' => 'Same Window',
-            '_blank' => 'New Tab',
-        )),
+            ->set_options(array(
+                '_self' => 'Same Window',
+                '_blank' => 'New Tab',
+            )),
         Field::make('text', 'heading', 'Heading')
             ->set_conditional_logic(array(
                 array(
