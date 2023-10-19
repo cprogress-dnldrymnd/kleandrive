@@ -618,11 +618,18 @@ html {
     padding-bottom: 60px;
     .container {
         max-width: 1320px;
+        .heading-box {
+            h2 {
+                font-size: 39px;
+            }
+        }
         .row {
             display: flex;
             align-items: center;
             [class*="col"] {
                 flex: 0 0 auto;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
             .col-lg-8 {
                 width: 66.66666667%;

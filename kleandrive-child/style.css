@@ -369,11 +369,15 @@ html.overflow-hidden.overflow-hidden {
   padding-bottom: 60px; }
   .footer-cta .container {
     max-width: 1320px; }
+    .footer-cta .container .heading-box h2 {
+      font-size: 39px; }
     .footer-cta .container .row {
       display: flex;
       align-items: center; }
       .footer-cta .container .row [class*="col"] {
-        flex: 0 0 auto; }
+        flex: 0 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem; }
       .footer-cta .container .row .col-lg-8 {
         width: 66.66666667%; }
       .footer-cta .container .row .col-lg-4 {
