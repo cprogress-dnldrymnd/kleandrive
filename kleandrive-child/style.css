@@ -461,10 +461,11 @@ html.overflow-hidden.overflow-hidden {
         content: '';
         position: absolute;
         bottom: -10px;
-        height: 10px;
+        height: 30px;
         left: 0;
         right: 0;
-        background-color: var(--white-color); }
+        background-color: var(--white-color);
+        z-index: 1; }
     .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories {
       margin-top: 0;
       border-radius: 0 0 15px 15px;
@@ -476,7 +477,8 @@ html.overflow-hidden.overflow-hidden {
         right: 50px;
         position: absolute;
         background-color: #f2f7ff;
-        top: 0; }
+        top: 0;
+        z-index: 2; }
 
 .widget_area .post_item .post_title,
 aside .post_item .post_title {
