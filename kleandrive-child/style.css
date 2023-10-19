@@ -456,6 +456,15 @@ html.overflow-hidden.overflow-hidden {
       border-radius: 15px 15px 0 0; }
     .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories {
       margin-top: 0;
-      border-radius: 0 0 15px 15px; }
+      border-radius: 0 0 15px 15px;
+      position: relative; }
+      .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories:before {
+        content: '';
+        height: 1px;
+        left: 50px;
+        right: 50px;
+        position: absolute;
+        background-color: #F2F7FF;
+        top: 0; }
 
 /*# sourceMappingURL=style.css.map */
