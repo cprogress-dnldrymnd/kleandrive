@@ -515,4 +515,7 @@ aside .post_item .post_info .post_categories > a {
   aside .post_item .post_info .post_categories > a:before {
     content: none !important; }
 
+section.our-process-page .row {
+  --bs-gutter-x: 6vw; }
+
 /*# sourceMappingURL=style.css.map */
