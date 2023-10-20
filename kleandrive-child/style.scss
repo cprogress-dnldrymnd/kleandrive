@@ -882,7 +882,6 @@ section.our-process-page {
             transition: 300ms;
             opacity: 0;
             visibility: hidden;
-            z-index: -1;
         }
         .hover-box {
             position: absolute;
@@ -900,7 +899,7 @@ section.our-process-page {
             font-weight: 300;
             transform: translateX(-100px);
             font-size: 25px;
-
+            z-index: 1;
             ul {
                 display: flex;
                 flex-wrap: wrap;
