@@ -787,6 +787,13 @@ section.our-process-page {
     .row {
         --bs-gutter-x: 6vw;
         --bs-gutter-y: 8vw;
+        .process-holder {
+            .row {
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+            }
+        }
     }
     .stage {
         font-size: 14px;

@@ -121,5 +121,4 @@ Container::make('post_meta', __('Our Process Settings'))
             ))
             ->set_header_template('<%- heading  %>')
             ->set_layout('tabbed-vertical')
-
     ));
