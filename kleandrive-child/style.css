@@ -515,6 +515,9 @@ aside .post_item .post_info .post_categories > a {
   aside .post_item .post_info .post_categories > a:before {
     content: none !important; }
 
+.page-template-page-template-process {
+  background-color: #F2F7FF; }
+
 section.our-process-page {
   font-family: stolzl, sans-serif; }
   section.our-process-page .process-holder .row {
