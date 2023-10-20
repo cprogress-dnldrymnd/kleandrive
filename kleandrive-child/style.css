@@ -516,7 +516,7 @@ aside .post_item .post_info .post_categories > a {
     content: none !important; }
 
 section.our-process-page .row {
-  --bs-gutter-x: 6vw;
+  --bs-gutter-x: 12vw;
   --bs-gutter-y: 8vw; }
 
 /*# sourceMappingURL=style.css.map */
