@@ -526,8 +526,9 @@ section.our-process-page {
   section.our-process-page .process-holder .row {
     --bs-gutter-x: 10vw;
     --bs-gutter-y: 0; }
-    section.our-process-page .process-holder .row .column-text {
-      margin-top: 100px; }
+    @media (min-width: 768px) {
+      section.our-process-page .process-holder .row .column-text {
+        margin-top: 100px; } }
     section.our-process-page .process-holder .row:nth-child(even) .column-text {
       text-align: right; }
     section.our-process-page .process-holder .row:nth-child(even) .circle {
@@ -559,10 +560,11 @@ section.our-process-page {
         @media (max-width: 767px) {
           section.our-process-page .process-holder .row:not(:last-child):before {
             left: 0; } }
-    section.our-process-page .process-holder .row:first-child:before {
-      top: 100px; }
-    section.our-process-page .process-holder .row:nth-last-child(2):before {
-      bottom: -100px; }
+    @media (min-width: 768px) {
+      section.our-process-page .process-holder .row:first-child:before {
+        top: 100px; }
+      section.our-process-page .process-holder .row:nth-last-child(2):before {
+        bottom: -100px; } }
   section.our-process-page .stage {
     font-size: 14px;
     letter-spacing: 0.84px;

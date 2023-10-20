@@ -796,10 +796,11 @@ section.our-process-page {
             --bs-gutter-x: 10vw;
             --bs-gutter-y: 0;
             .column-text {
-                margin-top: 100px;
+                @media (min-width: 768px) {
+                    margin-top: 100px;
+                }
             }
             &:nth-child(even) {
-                
                 .column-text {
                     text-align: right;
                 }
@@ -807,20 +808,19 @@ section.our-process-page {
                     right: 0;
                     transform: translateX(50%);
                 }
-                @media(min-width: 768px) {
+                @media (min-width: 768px) {
                     flex-direction: row-reverse;
                 }
-                @media(max-width: 767px) {
+                @media (max-width: 767px) {
                     flex-direction: column-reverse;
                 }
-
             }
             &:nth-child(odd) {
                 .circle {
                     left: 0;
                     transform: translateX(-50%);
                 }
-                @media(max-width: 767px) {
+                @media (max-width: 767px) {
                     flex-direction: column-reverse;
                 }
             }
@@ -840,14 +840,16 @@ section.our-process-page {
                     }
                 }
             }
-            &:first-child {
-                &:before {
-                    top: 100px;
+            @media (min-width: 768px) {
+                &:first-child {
+                    &:before {
+                        top: 100px;
+                    }
                 }
-            }
-            &:nth-last-child(2) {
-                &:before {
-                    bottom: -100px;
+                &:nth-last-child(2) {
+                    &:before {
+                        bottom: -100px;
+                    }
                 }
             }
         }
@@ -935,15 +937,14 @@ section.our-process-page {
                         border-radius: 10px;
                         background-color: var(--white-color);
                     }
-                    @media(max-width: 1199px) {
+                    @media (max-width: 1199px) {
                         font-size: 20px;
                     }
-                    @media(max-width: 991px) {
+                    @media (max-width: 991px) {
                         font-size: 18px;
                         width: 100%;
                         margin-bottom: 15px;
                     }
-                    
                 }
             }
         }
