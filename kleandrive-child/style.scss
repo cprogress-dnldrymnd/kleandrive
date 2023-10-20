@@ -796,6 +796,9 @@ section.our-process-page {
             --bs-gutter-y: 0;
             &:nth-child(even) {
                 flex-direction: row-reverse;
+                .column-text {
+                    text-align: right;
+                }
                 .circle {
                     right: 0;
                     transform: translateX(50%);
