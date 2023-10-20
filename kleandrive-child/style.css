@@ -576,13 +576,24 @@ section.our-process-page {
   section.our-process-page .image-box {
     border-radius: 20px;
     overflow: hidden; }
-    section.our-process-page .image-box .hover-box {
+    section.our-process-page .image-box:before {
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
       right: 0;
       bottom: 0;
       background-color: var(--accent-color);
+      transition: 300ms;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1; }
+    section.our-process-page .image-box .hover-box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
       color: var(--white-color);
       display: flex;
       align-items: center;
@@ -593,18 +604,6 @@ section.our-process-page {
       font-weight: 300;
       transform: translateX(-100px);
       font-size: 25px; }
-      section.our-process-page .image-box .hover-box:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: var(--accent-color);
-        transition: 300ms;
-        opacity: 0;
-        visibility: hidden;
-        z-index: -1; }
       section.our-process-page .image-box .hover-box ul {
         display: flex;
         flex-wrap: wrap;
