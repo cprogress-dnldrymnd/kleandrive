@@ -107,7 +107,7 @@ Container::make('post_meta', __('Footer Settings'))
 /*-----------------------------------------------------------------------------------*/
 /* Our Process Page Settings
 /*-----------------------------------------------------------------------------------*/
-Container::make('post_meta', __('Footer Settings'))
+Container::make('post_meta', __('Our Process Settings'))
     ->where('post_template', '=', 'templates/page-template-process.php')
     ->add_fields(array(
         Field::make('complex', 'process', 'Process')
