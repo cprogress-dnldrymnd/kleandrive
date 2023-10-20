@@ -783,7 +783,9 @@ aside .post_item {
 }
 
 .page-template-page-template-process {
-    background-color: #F2F7FF;
+    .page_content_wrap {
+        background-color: #f2f7ff;
+    }
 }
 section.our-process-page {
     font-family: stolzl, sans-serif;
@@ -824,7 +826,7 @@ section.our-process-page {
             position: absolute;
             left: 0;
             transform: translateX(-50%);
-            background-color: #F2F7FF;
+            background-color: #f2f7ff;
             &.active {
                 border-color: var(--accent-color);
             }
