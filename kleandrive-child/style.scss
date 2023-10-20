@@ -799,15 +799,16 @@ section.our-process-page {
                 @media (min-width: 768px) {
                     margin-top: 100px;
                 }
+                @media (max-width: 575px) {
+                    padding-left: 20px;
+                }
             }
             &:nth-child(even) {
                 .column-text {
                     @media (min-width: 768px) {
                         text-align: right;
                     }
-                    @media (max-width: 575px) {
-                        padding-left: 20px;
-                    }
+                   
                 }
                 .circle {
                     right: 0;
