@@ -587,7 +587,7 @@ section.our-process-page .image-box {
     visibility: hidden;
     transition: 500ms;
     font-weight: 300;
-    transform: translateX(-100); }
+    transform: translateX(-100px); }
     section.our-process-page .image-box .hover-box ul {
       display: flex;
       flex-wrap: wrap;
@@ -609,7 +609,8 @@ section.our-process-page .image-box {
           background-color: var(--white-color); }
   section.our-process-page .image-box:hover .hover-box, section.our-process-page .image-box:active .hover-box, section.our-process-page .image-box:focus .hover-box {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    transform: translateX(0); }
 
 section.page-heading {
   padding-top: 100px;
