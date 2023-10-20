@@ -831,6 +831,11 @@ section.our-process-page {
                     top: 100px;
                 }
             }
+            &:last-child {
+                &:before {
+                    bottom: -100px;
+                }
+            }
         }
     }
     .stage {

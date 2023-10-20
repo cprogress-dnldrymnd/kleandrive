@@ -548,6 +548,8 @@ section.our-process-page {
         bottom: 0; }
     section.our-process-page .process-holder .row:first-child:before {
       top: 100px; }
+    section.our-process-page .process-holder .row:last-child:before {
+      bottom: -100px; }
   section.our-process-page .stage {
     font-size: 14px;
     letter-spacing: 0.84px;
