@@ -550,15 +550,15 @@ section.our-process-page {
     font-weight: 500;
     margin-bottom: 12px;
     color: var(--primary-color); }
-    section.our-process-page .stage .circle {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      border: 4px solid #e9e9e9;
-      position: absolute;
-      background-color: #f2f7ff; }
-      section.our-process-page .stage .circle.active {
-        border-color: var(--accent-color); }
+  section.our-process-page .circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 4px solid #e9e9e9;
+    position: absolute;
+    background-color: #f2f7ff; }
+    section.our-process-page .circle.active {
+      border-color: var(--accent-color); }
   @media (min-width: 992px) {
     section.our-process-page .heading-box h2 {
       font-size: 60px; } }
