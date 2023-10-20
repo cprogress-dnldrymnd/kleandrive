@@ -592,7 +592,7 @@ section.our-process-page {
         section.our-process-page .image-box .hover-box ul li {
           flex: 0 0 auto;
           width: 50%; }
-    section.our-process-page .image-box:hover, section.our-process-page .image-box:active, section.our-process-page .image-box:focus {
+    section.our-process-page .image-box:hover .hover-box, section.our-process-page .image-box:active .hover-box, section.our-process-page .image-box:focus .hover-box {
       opacity: 1;
       visibility: visible; }
 

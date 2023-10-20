@@ -892,8 +892,10 @@ section.our-process-page {
             }
         }
         @include on-event() {
-            opacity: 1;
-            visibility: visible
+            .hover-box {
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
 }
