@@ -630,7 +630,9 @@ section.our-process-page {
               font-size: 20px; } }
           @media (max-width: 991px) {
             section.our-process-page .image-box .hover-box ul li {
-              font-size: 18px; } }
+              font-size: 18px;
+              width: 100%;
+              margin-bottom: 15px; } }
     section.our-process-page .image-box:hover:before, section.our-process-page .image-box:active:before, section.our-process-page .image-box:focus:before {
       opacity: 1;
       visibility: visible; }
