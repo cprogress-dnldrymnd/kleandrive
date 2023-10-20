@@ -569,23 +569,32 @@ section.our-process-page {
   @media (min-width: 992px) {
     section.our-process-page .heading-box h2 {
       font-size: 60px; } }
-  section.our-process-page .image-box .hover-box {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    display: flex;
-    align-items: center;
-    padding: 5vw; }
-    section.our-process-page .image-box .hover-box ul {
+  section.our-process-page .image-box {
+    border-radius: 20px;
+    overflow: hidden; }
+    section.our-process-page .image-box .hover-box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--accent-color);
+      color: var(--white-color);
       display: flex;
-      flex-wrap: wrap; }
-      section.our-process-page .image-box .hover-box ul li {
-        flex: 0 0 auto;
-        width: 50%; }
+      align-items: center;
+      padding: 5vw;
+      opacity: 0;
+      visibility: hidden;
+      transition: 500ms; }
+      section.our-process-page .image-box .hover-box ul {
+        display: flex;
+        flex-wrap: wrap; }
+        section.our-process-page .image-box .hover-box ul li {
+          flex: 0 0 auto;
+          width: 50%; }
+    section.our-process-page .image-box:hover, section.our-process-page .image-box:active, section.our-process-page .image-box:focus {
+      opacity: 1;
+      visibility: visible; }
 
 section.page-heading {
   padding-top: 100px;

@@ -866,6 +866,8 @@ section.our-process-page {
     }
 
     .image-box {
+        border-radius: 20px;
+        overflow: hidden;
         .hover-box {
             position: absolute;
             left: 0;
@@ -877,6 +879,9 @@ section.our-process-page {
             display: flex;
             align-items: center;
             padding: 5vw;
+            opacity: 0;
+            visibility: hidden;
+            transition: 500ms;
             ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -885,6 +890,10 @@ section.our-process-page {
                     width: 50%;
                 }
             }
+        }
+        @include on-event() {
+            opacity: 1;
+            visibility: visible
         }
     }
 }
