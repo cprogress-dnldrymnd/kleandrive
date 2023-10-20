@@ -593,6 +593,18 @@ section.our-process-page {
       font-weight: 300;
       transform: translateX(-100px);
       font-size: 25px; }
+      section.our-process-page .image-box .hover-box:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--accent-color);
+        transition: 300ms;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1; }
       section.our-process-page .image-box .hover-box ul {
         display: flex;
         flex-wrap: wrap;
@@ -612,25 +624,13 @@ section.our-process-page {
             margin-right: 10px;
             border-radius: 10px;
             background-color: var(--white-color); }
-      section.our-process-page .image-box .hover-box:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: var(--accent-color);
-        transition: 300ms;
-        opacity: 0;
-        visibility: hidden;
-        z-index: -1; }
+    section.our-process-page .image-box:hover:before, section.our-process-page .image-box:active:before, section.our-process-page .image-box:focus:before {
+      opacity: 1;
+      visibility: visible; }
     section.our-process-page .image-box:hover .hover-box, section.our-process-page .image-box:active .hover-box, section.our-process-page .image-box:focus .hover-box {
       opacity: 1;
       visibility: visible;
       transform: translateX(0); }
-      section.our-process-page .image-box:hover .hover-box:before, section.our-process-page .image-box:active .hover-box:before, section.our-process-page .image-box:focus .hover-box:before {
-        opacity: 1;
-        visibility: visible; }
   @media (max-width: 1199px) {
     section.our-process-page {
       padding-bottom: 100px; } }
