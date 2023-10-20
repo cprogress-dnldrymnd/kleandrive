@@ -900,6 +900,7 @@ section.our-process-page {
             transform: translateX(-100px);
             font-size: 25px;
             z-index: 1;
+            transition-delay: 200ms;
             ul {
                 display: flex;
                 flex-wrap: wrap;
