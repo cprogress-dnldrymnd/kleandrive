@@ -662,7 +662,8 @@ section.our-process-page {
           @media (max-width: 575px) {
             section.our-process-page .image-box .hover-box ul li {
               font-size: 15px;
-              margin-bottom: 5px; } }
+              margin-bottom: 5px;
+              padding-left: 20px; } }
       @media (max-width: 575px) {
         section.our-process-page .image-box .hover-box {
           position: relative; } }
