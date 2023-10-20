@@ -536,6 +536,9 @@ section.our-process-page {
     @media (min-width: 768px) {
       section.our-process-page .process-holder .row:nth-child(even) {
         flex-direction: row-reverse; } }
+    @media (max-width: 767px) {
+      section.our-process-page .process-holder .row:nth-child(even) {
+        flex-direction: column-reverse; } }
     section.our-process-page .process-holder .row:nth-child(odd) .circle {
       left: 0;
       transform: translateX(-50%); }
