@@ -830,7 +830,7 @@ section.our-process-page {
                     top: 100px;
                 }
             }
-            &:last-child {
+            &:nth-last-child(2) {
                 &:before {
                     bottom: -100px;
                 }
