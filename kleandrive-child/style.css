@@ -538,6 +538,9 @@ section.our-process-page {
     section.our-process-page .process-holder .row:nth-child(odd) .circle {
       left: 0;
       transform: translateX(-50%); }
+    @media (max-width: 767px) {
+      section.our-process-page .process-holder .row:nth-child(odd) {
+        flex-direction: column-reverse; } }
     section.our-process-page .process-holder .row:not(:last-child) {
       padding-bottom: 8vw; }
       section.our-process-page .process-holder .row:not(:last-child):before {
@@ -549,6 +552,9 @@ section.our-process-page {
         transform: translateX(-50%);
         top: 0;
         bottom: 0; }
+        @media (max-width: 767px) {
+          section.our-process-page .process-holder .row:not(:last-child):before {
+            left: 0; } }
     section.our-process-page .process-holder .row:first-child:before {
       top: 100px; }
     section.our-process-page .process-holder .row:nth-last-child(2):before {

@@ -813,6 +813,9 @@ section.our-process-page {
                     left: 0;
                     transform: translateX(-50%);
                 }
+                @media(max-width: 767px) {
+                    flex-direction: column-reverse;
+                }
             }
             &:not(:last-child) {
                 padding-bottom: 8vw;
@@ -825,6 +828,9 @@ section.our-process-page {
                     transform: translateX(-50%);
                     top: 0;
                     bottom: 0;
+                    @media (max-width: 767px) {
+                        left: 0;
+                    }
                 }
             }
             &:first-child {
