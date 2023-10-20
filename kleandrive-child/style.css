@@ -648,6 +648,9 @@ section.our-process-page {
             margin-right: 10px;
             border-radius: 10px;
             background-color: var(--white-color); }
+            @media (max-width: 575px) {
+              section.our-process-page .image-box .hover-box ul li:before {
+                background-color: var(--primary-color); } }
           @media (max-width: 1199px) {
             section.our-process-page .image-box .hover-box ul li {
               font-size: 20px; } }
@@ -656,6 +659,10 @@ section.our-process-page {
               font-size: 18px;
               width: 100%;
               margin-bottom: 15px; } }
+          @media (max-width: 575px) {
+            section.our-process-page .image-box .hover-box ul li {
+              font-size: 15px;
+              margin-bottom: 5px; } }
       @media (max-width: 575px) {
         section.our-process-page .image-box .hover-box {
           position: relative; } }
