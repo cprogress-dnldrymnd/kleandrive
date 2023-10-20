@@ -26,7 +26,10 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="column-holder">
-                                <div class="stage text-uppercase"><?= $proc['stage'] ?></div>
+                                <div class="stage text-uppercase">
+                                    <div class="circle"></div>
+                                    <?= $proc['stage'] ?>
+                                </div>
                                 <div class="heading-box">
                                     <h2><?= $proc['heading'] ?></h2>
                                 </div>
