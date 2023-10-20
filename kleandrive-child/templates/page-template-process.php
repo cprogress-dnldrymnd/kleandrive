@@ -14,7 +14,9 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="column-holder">
-
+                            <div class="image-box">
+                                <img src="<?= wp_get_attachment_image_url($proc['image'], 'large') ?>" alt="<?= $proc['heading'] ?>">
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
