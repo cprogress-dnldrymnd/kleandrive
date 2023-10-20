@@ -585,7 +585,8 @@ section.our-process-page {
       padding: 2vw;
       opacity: 0;
       visibility: hidden;
-      transition: 500ms; }
+      transition: 500ms;
+      font-weight: 300; }
       section.our-process-page .image-box .hover-box ul {
         display: flex;
         flex-wrap: wrap;
