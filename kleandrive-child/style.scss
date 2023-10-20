@@ -786,7 +786,7 @@ section.our-process-page {
 
     .process-holder {
         .row {
-            --bs-gutter-x: 6vw;
+            --bs-gutter-x: 10vw;
             --bs-gutter-y: 8vw;
             &:nth-child(even) {
                 flex-direction: row-reverse;
@@ -806,7 +806,13 @@ section.our-process-page {
             width: 35px;
             height: 35px;
             border-radius: 50%;
-            border: 4px solid var(--accent-color);
+            border: 4px solid #E9E9E9;
+            position: absolute;
+            left: 0;
+            transform: translateX(-50%);
+            &.active {
+                border-color: var(--accent-color);
+            }
         }
     }
     .heading-box {

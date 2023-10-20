@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 position-relative">
                             <div class="column-holder">
                                 <div class="stage text-uppercase">
                                     <div class="circle"></div>
