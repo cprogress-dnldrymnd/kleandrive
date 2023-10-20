@@ -20,7 +20,7 @@
             <div class="process-holder">
                 <?php foreach ($process as $key => $proc) { ?>
                     <div class="row position-relative">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="column-holder">
                                 <div class="image-box position-relative">
                                     <img src="<?= wp_get_attachment_image_url($proc['image'], 'large') ?>" alt="<?= esc_html($proc['heading']) ?>">
@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 position-relative">
+                        <div class="col-md-6 position-relative">
                             <div class="column-holder column-text">
                                 <div class="circle  <?= $key == 0 ? 'active' : '' ?>"></div>
                                 <div class="stage text-uppercase">
