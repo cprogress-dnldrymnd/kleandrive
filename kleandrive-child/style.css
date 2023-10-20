@@ -600,7 +600,7 @@ section.our-process-page .image-box {
         align-items: center;
         margin-bottom: 30px; }
         section.our-process-page .image-box .hover-box ul li:before {
-          content: '';
+          content: "";
           width: 3px;
           height: 3px;
           flex: 0 0 3px;
@@ -619,5 +619,9 @@ section.page-heading {
   @media (min-width: 992px) {
     section.page-heading h1 {
       font-size: 60px; } }
+  section.page-heading svg {
+    width: 30px;
+    height: 30px;
+    color: var(--primary-color); }
 
 /*# sourceMappingURL=style.css.map */
