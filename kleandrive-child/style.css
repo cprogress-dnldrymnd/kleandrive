@@ -516,7 +516,8 @@ aside .post_item .post_info .post_categories > a {
     content: none !important; }
 
 .page-template-page-template-process {
-  font-family: stolzl, sans-serif; }
+  font-family: stolzl, sans-serif;
+  font-weight: 300; }
   .page-template-page-template-process .page_content_wrap {
     background-color: #f2f7ff; }
 
