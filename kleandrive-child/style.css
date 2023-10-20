@@ -522,6 +522,8 @@ section.our-process-page {
     --bs-gutter-y: 8vw; }
     section.our-process-page .process-holder .row:nth-child(even) {
       flex-direction: row-reverse; }
+    section.our-process-page .process-holder .row:not(:last-child) {
+      margin-bottom: 8vw; }
   section.our-process-page .stage {
     font-size: 14px;
     letter-spacing: 0.84px;
