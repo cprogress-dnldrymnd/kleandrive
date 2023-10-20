@@ -576,7 +576,10 @@ section.our-process-page {
     right: 0;
     bottom: 0;
     background-color: var(--accent-color);
-    color: var(--white-color); }
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    padding: 5vw; }
     section.our-process-page .image-box .hover-box ul {
       display: flex;
       flex-wrap: wrap; }

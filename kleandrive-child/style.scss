@@ -874,6 +874,9 @@ section.our-process-page {
             bottom: 0;
             background-color: var(--accent-color);
             color: var(--white-color);
+            display: flex;
+            align-items: center;
+            padding: 5vw;
             ul {
                 display: flex;
                 flex-wrap: wrap;
