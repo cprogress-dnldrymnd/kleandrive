@@ -909,12 +909,28 @@ section.our-process-page {
                     }
                 }
             }
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: var(--accent-color);
+                transition: 500ms;
+                opacity: 0;
+                visibility: hidden;
+            }
         }
         @include on-event() {
             .hover-box {
                 opacity: 1;
                 visibility: visible;
                 transform: translateX(0);
+                &:before {
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
         }
     }
