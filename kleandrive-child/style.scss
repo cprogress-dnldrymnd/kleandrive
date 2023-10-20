@@ -791,6 +791,9 @@ section.our-process-page {
             &:nth-child(even) {
                 flex-direction: row-reverse;
             }
+            &:not(:last-child) {
+                margin-bottom: 8vw;
+            }
         }
     }
     .stage {
