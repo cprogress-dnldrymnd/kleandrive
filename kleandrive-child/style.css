@@ -663,6 +663,9 @@ section.our-process-page {
   @media (max-width: 991px) {
     section.our-process-page {
       padding-bottom: 50px; } }
+  @media (max-width: 650px) {
+    section.our-process-page {
+      padding-left: 40px; } }
 
 section.page-heading {
   padding-top: 100px;
