@@ -112,7 +112,7 @@ Container::make('post_meta', __('Our Process Settings'))
     ->add_fields(array(
         Field::make('complex', 'process', 'Process')
             ->add_fields(array(
-                Field::make('text', 'image', 'Image'),
+                Field::make('image', 'image', 'Image'),
                 Field::make('text', 'stage', 'Stage'),
                 Field::make('text', 'heading', 'Heading'),
                 Field::make('rich_text', 'description', 'Description')->set_width(50),
