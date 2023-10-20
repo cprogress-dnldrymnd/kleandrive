@@ -624,6 +624,12 @@ section.our-process-page {
             margin-right: 10px;
             border-radius: 10px;
             background-color: var(--white-color); }
+          @media (max-width: 1199px) {
+            section.our-process-page .image-box .hover-box ul li {
+              font-size: 20px; } }
+          @media (max-width: 991px) {
+            section.our-process-page .image-box .hover-box ul li {
+              font-size: 18px; } }
     section.our-process-page .image-box:hover:before, section.our-process-page .image-box:active:before, section.our-process-page .image-box:focus:before {
       opacity: 1;
       visibility: visible; }

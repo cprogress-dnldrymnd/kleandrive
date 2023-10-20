@@ -921,6 +921,13 @@ section.our-process-page {
                         border-radius: 10px;
                         background-color: var(--white-color);
                     }
+                    @media(max-width: 1199px) {
+                        font-size: 20px;
+                    }
+                    @media(max-width: 991px) {
+                        font-size: 18px;
+                    }
+                    
                 }
             }
         }
