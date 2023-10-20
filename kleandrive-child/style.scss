@@ -805,6 +805,9 @@ section.our-process-page {
                     @media (min-width: 768px) {
                         text-align: right;
                     }
+                    @media (max-width: 575px) {
+                        padding-left: 20px;
+                    }
                 }
                 .circle {
                     right: 0;

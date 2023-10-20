@@ -532,6 +532,9 @@ section.our-process-page {
     @media (min-width: 768px) {
       section.our-process-page .process-holder .row:nth-child(even) .column-text {
         text-align: right; } }
+    @media (max-width: 575px) {
+      section.our-process-page .process-holder .row:nth-child(even) .column-text {
+        padding-left: 20px; } }
     section.our-process-page .process-holder .row:nth-child(even) .circle {
       right: 0;
       transform: translateX(50%); }
