@@ -103,3 +103,22 @@ Container::make('post_meta', __('Footer Settings'))
             )),
 
     ));
+
+/*-----------------------------------------------------------------------------------*/
+/* Our Process Page Settings
+/*-----------------------------------------------------------------------------------*/
+Container::make('post_meta', __('Footer Settings'))
+    ->where('post_template', '=', 'templates/page-template-process.php')
+    ->add_fields(array(
+        Field::make('complex', 'process', 'Process')
+            ->add_fields(array(
+                Field::make('text', 'image', 'Image'),
+                Field::make('text', 'stage', 'Stage'),
+                Field::make('text', 'heading', 'Heading'),
+                Field::make('rich_text', 'description', 'Description')->set_width(50),
+                Field::make('rich_text', 'image_overlay_text', 'Image Overlay Text')->set_width(50),
+
+            ))
+            ->set_header_template('<%- heading  %>')
+
+    ));
