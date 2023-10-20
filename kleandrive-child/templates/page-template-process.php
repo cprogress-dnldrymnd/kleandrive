@@ -25,10 +25,10 @@
                             </div>
                         </div>
                         <div class="col-lg-6 position-relative">
-                            <div class="circle  <?= $key == 0 ? 'active' : '' ?>"></div>
-                            <?= $proc['stage'] ?>
                             <div class="column-holder column-text">
+                                <div class="circle  <?= $key == 0 ? 'active' : '' ?>"></div>
                                 <div class="stage text-uppercase">
+                                    <?= $proc['stage'] ?>
                                 </div>
                                 <div class="heading-box">
                                     <h2><?= $proc['heading'] ?></h2>

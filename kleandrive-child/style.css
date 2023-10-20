@@ -553,7 +553,8 @@ section.our-process-page {
     letter-spacing: 0.84px;
     font-weight: 500;
     margin-bottom: 12px;
-    color: var(--primary-color); }
+    color: var(--primary-color);
+    padding-top: 10px; }
   section.our-process-page .circle {
     width: 35px;
     height: 35px;
