@@ -54,3 +54,11 @@ function _get_terms_details($taxonomy, $hide_empty = false, $order = false)
 	}
 	return $term_array;
 }
+
+function footer_cta() {
+	ob_start();
+	get_template_part('template-parts/footer-cta');
+	return ob_get_clean();
+}
+
+add_shortcode('footer_cta', 'footer_cta');
