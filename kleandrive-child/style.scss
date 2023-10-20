@@ -734,7 +734,7 @@ html {
                     border-radius: 15px 15px 0 0;
                     position: relative;
                     &:before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         bottom: -10px;
                         height: 30px;
@@ -783,15 +783,13 @@ aside .post_item {
 }
 section.our-process-page {
     font-family: stolzl, sans-serif;
-
-    .row {
-        --bs-gutter-x: 6vw;
-        --bs-gutter-y: 8vw;
-        .process-holder {
-            .row {
-                &:nth-child(even) {
-                    flex-direction: row-reverse;
-                }
+    
+    .process-holder {
+        .row {
+            --bs-gutter-x: 6vw;
+            --bs-gutter-y: 8vw;
+            &:nth-child(even) {
+                flex-direction: row-reverse;
             }
         }
     }
@@ -803,7 +801,7 @@ section.our-process-page {
     }
     .heading-box {
         h2 {
-            @media(min-width: 992px) {
+            @media (min-width: 992px) {
                 font-size: 60px;
             }
         }

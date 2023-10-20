@@ -458,7 +458,7 @@ html.overflow-hidden.overflow-hidden {
       border-radius: 15px 15px 0 0;
       position: relative; }
       .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search:before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -10px;
         height: 30px;
@@ -517,10 +517,10 @@ aside .post_item .post_info .post_categories > a {
 
 section.our-process-page {
   font-family: stolzl, sans-serif; }
-  section.our-process-page .row {
+  section.our-process-page .process-holder .row {
     --bs-gutter-x: 6vw;
     --bs-gutter-y: 8vw; }
-    section.our-process-page .row .process-holder .row:nth-child(even) {
+    section.our-process-page .process-holder .row:nth-child(even) {
       flex-direction: row-reverse; }
   section.our-process-page .stage {
     font-size: 14px;
