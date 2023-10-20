@@ -794,6 +794,9 @@ section.our-process-page {
         .row {
             --bs-gutter-x: 10vw;
             --bs-gutter-y: 0;
+            .column-text {
+                margin-top: 100px;
+            }
             &:nth-child(even) {
                 flex-direction: row-reverse;
                 .column-text {
@@ -821,6 +824,11 @@ section.our-process-page {
                     transform: translateX(-50%);
                     top: 0;
                     bottom: 0;
+                }
+            }
+            &:first-child {
+                &:before {
+                    top: 100px;
                 }
             }
         }

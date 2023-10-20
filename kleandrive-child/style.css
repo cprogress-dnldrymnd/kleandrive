@@ -523,6 +523,8 @@ section.our-process-page {
   section.our-process-page .process-holder .row {
     --bs-gutter-x: 10vw;
     --bs-gutter-y: 0; }
+    section.our-process-page .process-holder .row .column-text {
+      margin-top: 100px; }
     section.our-process-page .process-holder .row:nth-child(even) {
       flex-direction: row-reverse; }
       section.our-process-page .process-holder .row:nth-child(even) .column-text {
@@ -544,6 +546,8 @@ section.our-process-page {
         transform: translateX(-50%);
         top: 0;
         bottom: 0; }
+    section.our-process-page .process-holder .row:first-child:before {
+      top: 100px; }
   section.our-process-page .stage {
     font-size: 14px;
     letter-spacing: 0.84px;
