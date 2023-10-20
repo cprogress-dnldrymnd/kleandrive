@@ -16,7 +16,7 @@
         <div class="container">
             <div class="process-holder">
                 <?php foreach ($process as $key => $proc) { ?>
-                    <div class="row">
+                    <div class="row position-relative">
                         <div class="col-lg-6">
                             <div class="column-holder">
                                 <div class="image-box">
