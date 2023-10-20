@@ -789,6 +789,7 @@ aside .post_item {
     }
 }
 section.our-process-page {
+    padding-bottom: 200px;
     .process-holder {
         .row {
             --bs-gutter-x: 10vw;
@@ -934,6 +935,12 @@ section.our-process-page {
                 }
             }
         }
+    }
+    @media(max-width: 1199px) {
+        padding-bottom: 100px;
+    }
+    @media(max-width: 991px) {
+        padding-bottom: 50px;
     }
 }
 
