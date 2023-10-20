@@ -783,12 +783,12 @@ aside .post_item {
 }
 
 .page-template-page-template-process {
+    font-family: stolzl, sans-serif;
     .page_content_wrap {
         background-color: #f2f7ff;
     }
 }
 section.our-process-page {
-    font-family: stolzl, sans-serif;
     .process-holder {
         .row {
             --bs-gutter-x: 10vw;
@@ -883,6 +883,7 @@ section.our-process-page {
             visibility: hidden;
             transition: 500ms;
             font-weight: 300;
+            transform: translateX(-100);
             ul {
                 display: flex;
                 flex-wrap: wrap;
