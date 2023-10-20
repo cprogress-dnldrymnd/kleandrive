@@ -582,16 +582,28 @@ section.our-process-page {
       color: var(--white-color);
       display: flex;
       align-items: center;
-      padding: 5vw;
+      padding: 2vw;
       opacity: 0;
       visibility: hidden;
       transition: 500ms; }
       section.our-process-page .image-box .hover-box ul {
         display: flex;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0; }
         section.our-process-page .image-box .hover-box ul li {
           flex: 0 0 auto;
-          width: 50%; }
+          width: 50%;
+          display: flex;
+          align-items: center; }
+          section.our-process-page .image-box .hover-box ul li:before {
+            content: '';
+            width: 3px;
+            height: 3px;
+            flex: 0 0 3px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: var(--white-color); }
     section.our-process-page .image-box:hover .hover-box, section.our-process-page .image-box:active .hover-box, section.our-process-page .image-box:focus .hover-box {
       opacity: 1;
       visibility: visible; }
