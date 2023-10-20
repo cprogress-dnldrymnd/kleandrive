@@ -9,9 +9,6 @@
 <section class="page-heading">
     <div class="container">
         <h1><?php the_title() ?></h1>
-        <div class="elementor-icon">
-            <i aria-hidden="true" class="fas fa-chevron-down"></i>
-        </div>
     </div>
 </section>
 <?php if ($process) { ?>
