@@ -26,8 +26,8 @@
                         </div>
                         <div class="col-lg-6 position-relative">
                             <div class="column-holder">
-                                <div class="stage text-uppercase <?= $key == 0 ? 'active' : '' ?>">
-                                    <div class="circle"></div>
+                                <div class="stage text-uppercase">
+                                    <div class="circle  <?= $key == 0 ? 'active' : '' ?>"></div>
                                     <?= $proc['stage'] ?>
                                 </div>
                                 <div class="heading-box">
