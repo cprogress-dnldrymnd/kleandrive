@@ -824,6 +824,7 @@ section.our-process-page {
             position: absolute;
             left: 0;
             transform: translateX(-50%);
+            background-color: #F2F7FF;
             &.active {
                 border-color: var(--accent-color);
             }
