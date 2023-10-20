@@ -796,6 +796,16 @@ section.our-process-page {
             --bs-gutter-y: 0;
             &:nth-child(even) {
                 flex-direction: row-reverse;
+                .circle {
+                    right: 0;
+                    transform: translateX(-50%);
+                }
+            }
+            &:nth-child(odd) {
+                .circle {
+                    left: 0;
+                    transform: translateX(-50%);
+                }
             }
             &:not(:last-child) {
                 padding-bottom: 8vw;
@@ -824,8 +834,7 @@ section.our-process-page {
             border-radius: 50%;
             border: 4px solid #e9e9e9;
             position: absolute;
-            left: 0;
-            transform: translateX(-50%);
+           
             background-color: #f2f7ff;
             &.active {
                 border-color: var(--accent-color);

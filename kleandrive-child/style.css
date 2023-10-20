@@ -525,6 +525,12 @@ section.our-process-page {
     --bs-gutter-y: 0; }
     section.our-process-page .process-holder .row:nth-child(even) {
       flex-direction: row-reverse; }
+      section.our-process-page .process-holder .row:nth-child(even) .circle {
+        right: 0;
+        transform: translateX(-50%); }
+    section.our-process-page .process-holder .row:nth-child(odd) .circle {
+      left: 0;
+      transform: translateX(-50%); }
     section.our-process-page .process-holder .row:not(:last-child) {
       padding-bottom: 8vw; }
       section.our-process-page .process-holder .row:not(:last-child):before {
@@ -548,8 +554,6 @@ section.our-process-page {
       border-radius: 50%;
       border: 4px solid #e9e9e9;
       position: absolute;
-      left: 0;
-      transform: translateX(-50%);
       background-color: #f2f7ff; }
       section.our-process-page .stage .circle.active {
         border-color: var(--accent-color); }
