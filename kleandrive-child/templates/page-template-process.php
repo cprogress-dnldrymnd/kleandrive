@@ -10,8 +10,8 @@
 <?php if ($process) { ?>
     <section class="our-process-page">
         <div class="container">
-            <?php foreach ($process as $proc) { ?>
-                <div class="row">
+            <div class="row">
+                <?php foreach ($process as $proc) { ?>
                     <div class="col-lg-6">
                         <div class="column-holder">
                             <div class="image-box">
@@ -30,8 +30,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            <?php } ?>
+                <?php } ?>
+            </div>
         </div>
     </section>
 <?php } ?>
