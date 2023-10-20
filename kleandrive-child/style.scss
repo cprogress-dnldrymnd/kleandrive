@@ -810,6 +810,10 @@ section.our-process-page {
                 @media(min-width: 768px) {
                     flex-direction: row-reverse;
                 }
+                @media(max-width: 767px) {
+                    flex-direction: column-reverse;
+                }
+
             }
             &:nth-child(odd) {
                 .circle {
