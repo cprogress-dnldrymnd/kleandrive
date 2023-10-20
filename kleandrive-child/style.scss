@@ -793,11 +793,16 @@ section.our-process-page {
             }
             &:not(:last-child) {
                 margin-bottom: 8vw;
-            }
-            &:before {
-                content: '';
-                width: 4px;
-                background-color: #E9E9E9;
+                &:before {
+                    content: "";
+                    width: 4px;
+                    background-color: #e9e9e9;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 0;
+                    bottom: 0;
+                }
             }
         }
     }
@@ -811,7 +816,7 @@ section.our-process-page {
             width: 35px;
             height: 35px;
             border-radius: 50%;
-            border: 4px solid #E9E9E9;
+            border: 4px solid #e9e9e9;
             position: absolute;
             left: 0;
             transform: translateX(-50%);
