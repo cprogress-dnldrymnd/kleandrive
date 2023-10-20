@@ -14,12 +14,12 @@
 <?php if ($process) { ?>
     <section class="our-process-page">
         <div class="container">
-            <div class="row">
-                <?php foreach ($process as $proc) { ?>
+            <?php foreach ($process as $proc) { ?>
+                <div class="row">
                     <div class="col-lg-6">
                         <div class="column-holder">
                             <div class="image-box">
-                                <img src="<?= wp_get_attachment_image_url($proc['image'], 'large') ?>" alt="<?= $proc['heading'] ?>">
+                                <img src="<?= wp_get_attachment_image_url($proc['image'], 'large') ?>" alt="<?= esc_html($proc['heading']) ?>">
                             </div>
                         </div>
                     </div>
@@ -34,8 +34,8 @@
                             </div>
                         </div>
                     </div>
-                <?php } ?>
-            </div>
+                </div>
+            <?php } ?>
         </div>
     </section>
 <?php } ?>
