@@ -612,18 +612,20 @@ section.our-process-page {
       top: 0;
       right: 0;
       bottom: 0;
-      color: var(--white-color);
       display: flex;
       align-items: center;
-      padding: 2vw;
-      opacity: 0;
-      visibility: hidden;
       transition: 200ms;
       font-weight: 300;
-      transform: translateX(-100px);
       font-size: 25px;
       z-index: 1;
       transition-delay: 200ms; }
+      @media (min-width: 576px) {
+        section.our-process-page .image-box .hover-box {
+          opacity: 0;
+          visibility: hidden;
+          padding: 2vw;
+          transform: translateX(-100px);
+          color: var(--white-color); } }
       section.our-process-page .image-box .hover-box ul {
         display: flex;
         flex-wrap: wrap;
@@ -654,13 +656,14 @@ section.our-process-page {
       @media (max-width: 575px) {
         section.our-process-page .image-box .hover-box {
           position: relative; } }
-    section.our-process-page .image-box:hover:before, section.our-process-page .image-box:active:before, section.our-process-page .image-box:focus:before {
-      opacity: 1;
-      visibility: visible; }
-    section.our-process-page .image-box:hover .hover-box, section.our-process-page .image-box:active .hover-box, section.our-process-page .image-box:focus .hover-box {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(0); }
+    @media (min-width: 576px) {
+      section.our-process-page .image-box:hover:before, section.our-process-page .image-box:active:before, section.our-process-page .image-box:focus:before {
+        opacity: 1;
+        visibility: visible; }
+      section.our-process-page .image-box:hover .hover-box, section.our-process-page .image-box:active .hover-box, section.our-process-page .image-box:focus .hover-box {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0); } }
     @media (max-width: 575px) {
       section.our-process-page .image-box {
         display: flex;

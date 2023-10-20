@@ -913,18 +913,20 @@ section.our-process-page {
             top: 0;
             right: 0;
             bottom: 0;
-            color: var(--white-color);
             display: flex;
             align-items: center;
-            padding: 2vw;
-            opacity: 0;
-            visibility: hidden;
             transition: 200ms;
             font-weight: 300;
-            transform: translateX(-100px);
             font-size: 25px;
             z-index: 1;
             transition-delay: 200ms;
+            @media (min-width: 576px) {
+                opacity: 0;
+                visibility: hidden;
+                padding: 2vw;
+                transform: translateX(-100px);
+                color: var(--white-color);
+            }
             ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -959,15 +961,17 @@ section.our-process-page {
                 position: relative;
             }
         }
-        @include on-event() {
-            &:before {
-                opacity: 1;
-                visibility: visible;
-            }
-            .hover-box {
-                opacity: 1;
-                visibility: visible;
-                transform: translateX(0);
+        @media (min-width: 576px) {
+            @include on-event() {
+                &:before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .hover-box {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateX(0);
+                }
             }
         }
         @media (max-width: 575px) {
