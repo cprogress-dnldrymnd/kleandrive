@@ -15,7 +15,7 @@
     <section class="our-process-page">
         <div class="container">
             <div class="process-holder">
-                <?php foreach ($process as $proc) { ?>
+                <?php foreach ($process as $key => $proc) { ?>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="column-holder">
@@ -26,7 +26,7 @@
                         </div>
                         <div class="col-lg-6 position-relative">
                             <div class="column-holder">
-                                <div class="stage text-uppercase">
+                                <div class="stage text-uppercase <?= $key == 0 ? 'active' : '' ?>">
                                     <div class="circle"></div>
                                     <?= $proc['stage'] ?>
                                 </div>
