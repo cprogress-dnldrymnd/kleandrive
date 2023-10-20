@@ -864,7 +864,9 @@ section.our-process-page {
             }
         }
     }
-
+    .description-box {
+        font-size: 15px;
+    }
     .image-box {
         border-radius: 20px;
         overflow: hidden;
@@ -884,6 +886,7 @@ section.our-process-page {
             transition: 500ms;
             font-weight: 300;
             transform: translateX(-100px);
+            font-size: 25px;
             ul {
                 display: flex;
                 flex-wrap: wrap;
