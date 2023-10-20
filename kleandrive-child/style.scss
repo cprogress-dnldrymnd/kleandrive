@@ -789,7 +789,6 @@ aside .post_item {
 }
 section.our-process-page {
     font-family: stolzl, sans-serif;
-
     .process-holder {
         .row {
             --bs-gutter-x: 10vw;
@@ -862,6 +861,26 @@ section.our-process-page {
         h2 {
             @media (min-width: 992px) {
                 font-size: 60px;
+            }
+        }
+    }
+
+    .image-box {
+        .hover-box {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--accent-color);
+            color: var(--white-color);
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
             }
         }
     }

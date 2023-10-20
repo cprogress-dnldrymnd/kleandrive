@@ -19,8 +19,11 @@
                     <div class="row position-relative">
                         <div class="col-lg-6">
                             <div class="column-holder">
-                                <div class="image-box">
+                                <div class="image-box position-relative">
                                     <img src="<?= wp_get_attachment_image_url($proc['image'], 'large') ?>" alt="<?= esc_html($proc['heading']) ?>">
+                                    <div class="hover-box">
+                                        <?= wpautop($proc['image_overlay_text']) ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
