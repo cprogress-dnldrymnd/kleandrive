@@ -519,7 +519,7 @@ section.our-process-page {
   font-family: stolzl, sans-serif; }
   section.our-process-page .process-holder .row {
     --bs-gutter-x: 10vw;
-    --bs-gutter-y: 8vw; }
+    --bs-gutter-y: 0; }
     section.our-process-page .process-holder .row:nth-child(even) {
       flex-direction: row-reverse; }
     section.our-process-page .process-holder .row:not(:last-child) {
