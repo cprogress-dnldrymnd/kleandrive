@@ -10,7 +10,7 @@ if (!function_exists('planty_child_load_rtl')) {
 	function planty_child_load_rtl()
 	{
 
-		if (is_post_type_archive('careers') || is_tax('careers-category') ) {
+		if (is_post_type_archive('careers') || is_tax('careers-category') || is_page_template('templates/page-template-process.php') ) {
 			wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 			wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js');
 		}
