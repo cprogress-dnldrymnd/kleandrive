@@ -787,7 +787,7 @@ section.our-process-page {
     .process-holder {
         .row {
             --bs-gutter-x: 10vw;
-            --bs-gutter-y: 8vw;
+            --bs-gutter-y: 0;
             &:nth-child(even) {
                 flex-direction: row-reverse;
             }
