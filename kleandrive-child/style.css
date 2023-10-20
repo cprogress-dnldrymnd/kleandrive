@@ -524,6 +524,10 @@ section.our-process-page {
       flex-direction: row-reverse; }
     section.our-process-page .process-holder .row:not(:last-child) {
       margin-bottom: 8vw; }
+    section.our-process-page .process-holder .row:before {
+      content: '';
+      width: 4px;
+      background-color: #E9E9E9; }
   section.our-process-page .stage {
     font-size: 14px;
     letter-spacing: 0.84px;

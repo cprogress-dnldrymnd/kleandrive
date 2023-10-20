@@ -794,6 +794,11 @@ section.our-process-page {
             &:not(:last-child) {
                 margin-bottom: 8vw;
             }
+            &:before {
+                content: '';
+                width: 4px;
+                background-color: #E9E9E9;
+            }
         }
     }
     .stage {
