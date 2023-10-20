@@ -802,11 +802,17 @@ section.our-process-page {
             }
             &:nth-child(even) {
                 .column-text {
-                    text-align: right;
+                    @media (min-width: 768px) {
+                        text-align: right;
+                    }
                 }
                 .circle {
                     right: 0;
                     transform: translateX(50%);
+                    @media (max-width: 767px) {
+                        left: 0;
+                        transform: translateX(-50%);
+                    }
                 }
                 @media (min-width: 768px) {
                     flex-direction: row-reverse;
