@@ -527,7 +527,7 @@ section.our-process-page {
       flex-direction: row-reverse; }
       section.our-process-page .process-holder .row:nth-child(even) .circle {
         right: 0;
-        transform: translateX(-50%); }
+        transform: translateX(50%); }
     section.our-process-page .process-holder .row:nth-child(odd) .circle {
       left: 0;
       transform: translateX(-50%); }
