@@ -794,7 +794,7 @@ section.page-heading {
     padding: 40px;
     display: inline-block;
     max-width: 355px;
-    transform: translate(-100%, -10px);
+    transform: translate(calc(-100% - 85px), -10px);
     background-color: var(--white-color);
     border-radius: 13px;
     box-shadow: 0px 12px 44px #00000029;
