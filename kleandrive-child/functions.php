@@ -12,7 +12,8 @@ if (!function_exists('planty_child_load_rtl')) {
 
 		wp_register_script( 'elementor-partner-widget-js', get_stylesheet_directory_uri().'/includes/elementor-widgets/partners/partners-script.js' );
 		wp_register_script( 'elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js' );
-
+		wp_register_style( 'elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css' );
+		
 		if (is_post_type_archive('careers') || is_tax('careers-category') || is_page_template('templates/page-template-process.php') ) {
 			wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 			wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js');

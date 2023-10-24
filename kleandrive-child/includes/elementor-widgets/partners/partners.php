@@ -32,7 +32,7 @@ class Elementor_Partners extends \Elementor\Widget_Base
         return ['partners'];
     }
 
-   
+
     protected function register_controls()
     {
 
@@ -86,9 +86,12 @@ class Elementor_Partners extends \Elementor\Widget_Base
 
         include(__DIR__ . '/render.php');
     }
-
-    public function get_script_depends() {
-		return [ 'elementor-swiper-js', 'elementor-partner-widget-js'];
-	}
-
+    public function get_style_depends()
+    {
+        return ['elementor-swiper-css'];
+    }
+    public function get_script_depends()
+    {
+        return ['elementor-swiper-js', 'elementor-partner-widget-js'];
+    }
 }
