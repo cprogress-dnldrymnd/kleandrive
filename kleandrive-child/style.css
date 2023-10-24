@@ -788,11 +788,11 @@ section.page-heading {
   .partner-slider.partner-style-2 .swiper-slide .inner .description-box {
     font-weight: 400;
     color: var(--primary-color);
-    line-height: 45px;
     margin-top: 30px; }
     @media (min-width: 1025px) {
       .partner-slider.partner-style-2 .swiper-slide .inner .description-box {
-        font-size: 25px; } }
+        font-size: 25px;
+        line-height: 45px; } }
   .partner-slider.partner-style-2 .swiper-slide .inner .sc_button {
     background-color: var(--accent-color) !important;
     border: 2px solid var(--accent-color) !important; }
