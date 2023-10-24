@@ -81,7 +81,6 @@ class Elementor_Partners extends \Elementor\Widget_Base
      */
     protected function render()
     {
-
         $settings = $this->get_settings_for_display();
 
         include(__DIR__ . '/render.php');
