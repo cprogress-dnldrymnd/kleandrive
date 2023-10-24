@@ -1,12 +1,4 @@
 <?php
-function register_new_widgets( $widgets_manager ) {
-
-	require_once( get_stylesheet_directory_uri(). '/elementor-widgets/partners.php' );
-
-	$widgets_manager->register( new \Elementor_Partners() );
-
-}
-add_action( 'elementor/widgets/register', 'register_new_widgets' );
 
 
 class Elementor_Partners extends \Elementor\Widget_Base {
@@ -36,3 +28,11 @@ class Elementor_Partners extends \Elementor\Widget_Base {
 	}
 
 }
+function register_new_widgets( $widgets_manager ) {
+
+	require_once( get_stylesheet_directory_uri(). '/elementor-widgets/partners.php' );
+
+	$widgets_manager->register( new \Elementor_Partners() );
+
+}
+add_action( 'elementor/widgets/register', 'register_new_widgets' );
