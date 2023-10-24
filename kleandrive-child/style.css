@@ -767,7 +767,8 @@ section.page-heading {
       position: absolute;
       right: 0; }
   .partner-slider.partner-style-2 .image-mobile-only {
-    display: none; }
+    display: none;
+    margin-bottom: 1rem; }
     @media (max-width: 1024px) {
       .partner-slider.partner-style-2 .image-mobile-only {
         display: block; } }

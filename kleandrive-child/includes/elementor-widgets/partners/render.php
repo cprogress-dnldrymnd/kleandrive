@@ -21,9 +21,6 @@ $partners = get_posts($args);
                     ?>
                     <div class="swiper-slide">
                         <div class="inner">
-                            <div class="description-box">
-                                <?= $partner->post_content ?>
-                            </div>
                             <?php if ($style == 'partner-style-2') { ?>
                                 <?php if ($logo) { ?>
                                     <div class="image image-mobile-only">
@@ -31,6 +28,9 @@ $partners = get_posts($args);
                                     </div>
                                 <?php } ?>
                             <?php } ?>
+                            <div class="description-box">
+                                <?= $partner->post_content ?>
+                            </div>
 
                             <?php if ($style == 'partner-style-1') { ?>
                                 <div class="logo-box">
