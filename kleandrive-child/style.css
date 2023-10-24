@@ -728,6 +728,7 @@ section.page-heading {
     margin-bottom: 2rem; }
   .partner-slider .swiper-slide .inner .logo-box {
     display: flex;
+    align-items: center;
     max-width: 350px;
     margin-left: auto;
     margin-right: auto; }
@@ -735,8 +736,11 @@ section.page-heading {
       flex: 0 0 85px;
       max-width: 85px;
       margin-right: 1rem; }
-    .partner-slider .swiper-slide .inner .logo-box .title {
+    .partner-slider .swiper-slide .inner .logo-box .title-holder .title {
       font-weight: 500;
-      font-size: 24px; }
+      font-size: 24px;
+      color: var(--primary-color); }
+    .partner-slider .swiper-slide .inner .logo-box .title-holder .website {
+      font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

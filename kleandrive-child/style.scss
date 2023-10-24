@@ -1037,7 +1037,6 @@ section.page-heading {
         transform: scale(-1, -1) translate(-32px, 0px);
         transform-origin: left;
     }
-    
 }
 
 .partner-slider {
@@ -1055,6 +1054,7 @@ section.page-heading {
             }
             .logo-box {
                 display: flex;
+                align-items: center;
                 max-width: 350px;
                 margin-left: auto;
                 margin-right: auto;
@@ -1063,11 +1063,14 @@ section.page-heading {
                     max-width: 85px;
                     margin-right: 1rem;
                 }
-                .title {
-                    font-weight: 500;
-                    font-size: 24px;
+                .title-holder {
+                    .title {
+                        font-weight: 500;
+                        font-size: 24px;
+                        color: var(--primary-color);
+                    }
                     .website {
-                        
+                        font-size: 15px;
                     }
                 }
             }

@@ -30,10 +30,10 @@ $partners = get_posts($args);
                                     </div>
                                 <?php } ?>
 
-                                <div class="title">
+                                <div class="title-holder">
                                     <div class="title"><?= $partner->post_title ?></div>
                                     <?php if ($website) { ?>
-                                        <a href="<?= $website ?>"><?= $website ?></a>
+                                        <a href="<?= $website ?>" class="website"><?= $website ?></a>
                                     <?php } ?>
 
                                 </div>
