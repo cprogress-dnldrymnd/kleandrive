@@ -766,6 +766,18 @@ section.page-heading {
       transform: translateY(-100%);
       position: absolute;
       right: 0; }
+  .partner-slider.partner-style-2 .partner-wrapper {
+    position: relative; }
+    .partner-slider.partner-style-2 .partner-wrapper:after {
+      content: "\e9ca";
+      font-family: "fontello";
+      display: inline-block;
+      position: relative;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--accent-color);
+      font-size: 35px;
+      transform: rotate(180deg); }
   .partner-slider.partner-style-2 .swiper-slide .inner .description-box {
     font-size: 25px;
     font-weight: 400;

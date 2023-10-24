@@ -1110,6 +1110,21 @@ section.page-heading {
         }
     }
     &.partner-style-2 {
+        .partner-wrapper {
+            position: relative;
+            &:after {
+                content: "\e9ca";
+                font-family: "fontello";
+                display: inline-block;
+                position: relative;
+                font-weight: 400;
+                line-height: 1.5;
+                color: var(--accent-color);
+                font-size: 35px;
+                transform: rotate(180deg);
+            }
+          
+        }
         .swiper-slide {
             .inner {
                 .description-box {
