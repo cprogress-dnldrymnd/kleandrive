@@ -1081,6 +1081,7 @@ section.page-heading {
     }
     &.partner-style-1 {
         .partner-wrapper {
+            position: relative;
             .swiper-wrapper {
                 position: relative;
                 &:before,
