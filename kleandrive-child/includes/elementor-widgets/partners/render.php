@@ -34,7 +34,7 @@ $partners = get_posts($args);
                                     <div class="title-holder">
                                         <div class="title"><?= $partner->post_title ?></div>
                                         <?php if ($website) { ?>
-                                            <a href="<?= $website ?>" class="website"><?= $website ?></a>
+                                            <a target="_blank" href="<?= $website ?>" class="website"><?= $website ?></a>
                                         <?php } ?>
 
                                     </div>
@@ -42,8 +42,8 @@ $partners = get_posts($args);
                             <?php } else { ?>
                                 <?php if ($website) { ?>
                                     <div class="sc_item_button sc_button_wrap">
-                                        <a href="<?= $website ?>" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
-                                            <span class="sc_button_text"><span class="sc_button_title">Apply Now</span></span>
+                                        <a target="_blank" href="<?= $website ?>" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
+                                            <span class="sc_button_text"><span class="sc_button_title">Visit Website</span></span>
                                         </a>
                                     </div>
                                 <?php } ?>
