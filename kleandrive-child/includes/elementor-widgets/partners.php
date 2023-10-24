@@ -39,8 +39,19 @@ if (get_current_user_id() == 1) {
             $this->start_controls_section(
                 'content_section',
                 [
-                    'label' => esc_html__('Content', 'elementor-oembed-widget'),
+                    'label' => esc_html__('Partners Slider', 'elementor-oembed-widget'),
                     'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+                ]
+            );
+
+
+            $this->add_control(
+                'important_note',
+                [
+                    'label' => esc_html__('', 'textdomain'),
+                    'type' => \Elementor\Controls_Manager::RAW_HTML,
+                    'raw' => esc_html__('This widget will display partners slider', 'textdomain'),
+                    'content_classes' => '',
                 ]
             );
 
