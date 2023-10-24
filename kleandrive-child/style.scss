@@ -1040,9 +1040,6 @@ section.page-heading {
 }
 
 .partner-slider {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     .swiper {
         z-index: 1;
@@ -1083,6 +1080,9 @@ section.page-heading {
         }
     }
     &.partner-style-1 {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
         .description-box {
             text-align: center;
         }
