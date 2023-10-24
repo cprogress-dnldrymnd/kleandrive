@@ -1134,11 +1134,13 @@ section.page-heading {
         .swiper-slide {
             .inner {
                 .description-box {
-                    font-size: 25px;
                     font-weight: 400;
                     color: var(--primary-color);
                     line-height: 45px;
                     margin-top: 30px;
+                    @media (min-width: 1025px) {
+                        font-size: 25px;
+                    }
                 }
                 .sc_button {
                     background-color: var(--accent-color) !important;
