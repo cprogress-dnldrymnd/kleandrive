@@ -777,6 +777,8 @@ section.page-heading {
     .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:hover, .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:active, .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:focus {
       background-color: var(--primary-color) !important;
       border: 2px solid var(--primary-color) !important; }
+  .partner-slider.partner-style-2 .swiper-pagination-style {
+    text-align: left; }
 
 .swiper-pagination-style.swiper-pagination-style.swiper-pagination-style {
   position: static;
