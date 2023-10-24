@@ -165,3 +165,14 @@ new newTaxonomy(array(
 		'rewrite' => array('slug' => 'careers-category')
 	)
 ));
+
+new newPostType(array(
+	'name' => 'Partners',
+	'singular_name' => 'Partner',
+	'icon' => 'dashicons-businesswoman',
+	'supports' => array( 'title', 'editor', 'revisions','page-attributes'),
+	'hierarchical' => false,
+	'has_archive' => false,
+	'publicly_queryable' => false,
+	'show_in_admin_bar' => false,
+));
