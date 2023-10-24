@@ -746,7 +746,8 @@ section.page-heading {
     .partner-slider .swiper-slide .inner .logo-box .title-holder .website {
       font-size: 15px;
       color: var(--e-global-color-text);
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: 300; }
   .partner-slider.partner-style-1 .partner-wrapper {
     position: relative; }
     .partner-slider.partner-style-1 .partner-wrapper:before, .partner-slider.partner-style-1 .partner-wrapper:after {
