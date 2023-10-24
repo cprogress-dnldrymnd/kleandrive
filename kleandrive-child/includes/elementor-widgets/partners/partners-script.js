@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
         slidesPerView: 1,
     });
 
-    const mySwiperPartner = new Swiper(".mySwiperPartnernoThumb", {
+    const mySwiperPartnernoThumb = new Swiper(".mySwiperPartnernoThumb", {
         loop: true,
         autoplay: true,
         slidesPerView: 1,
@@ -16,7 +16,7 @@ jQuery(document).ready(function () {
         },
     });
 
-    const mySwiperPartner = new Swiper(".mySwiperPartnerThumb", {
+    const mySwiperPartnerThumb = new Swiper(".mySwiperPartnerThumb", {
         loop: true,
         autoplay: true,
         slidesPerView: 1,
@@ -25,7 +25,7 @@ jQuery(document).ready(function () {
             clickable: true
         },
         thumbs: {
-            swiper: mySwiperPartner,
+            swiper: mySwiperPartnerThumb,
         },
     });
 
