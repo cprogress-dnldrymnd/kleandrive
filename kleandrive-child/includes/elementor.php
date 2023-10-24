@@ -1,7 +1,7 @@
 <?php
 function register_new_widgets( $widgets_manager ) {
 
-	require_once( __DIR__ . '/widgets/partners.php' );
+	require_once( get_stylesheet_directory_uri(). '/elementor-widgets/partners.php' );
 
 	$widgets_manager->register( new \Elementor_Partners() );
 
