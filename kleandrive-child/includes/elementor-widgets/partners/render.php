@@ -8,7 +8,7 @@ $args = array(
 $partners = get_posts($args);
 ?>
 <div class="partner-slider <?= $style ?>">
-    <div class="swiper">
+    <div class="swiper mySwiperPartner">
         <div class="swiper-wrapper">
             <?php foreach ($partners as $partner) { ?>
                 <div class="swiper-slide">
