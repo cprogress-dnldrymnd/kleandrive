@@ -1,9 +1,12 @@
 <?php
-function register_new_widgets( $widgets_manager ) {
+if (get_current_user_id() == 1) {
 
-	require_once( get_stylesheet_directory_uri(). '/elementor-widgets/partners.php' );
+    function register_new_widgets($widgets_manager)
+    {
 
-	$widgets_manager->register( new \Elementor_Partners() );
+        require_once(get_stylesheet_directory_uri() . '/elementor-widgets/partners.php');
 
+        $widgets_manager->register(new \Elementor_Partners());
+    }
+    add_action('elementor/widgets/register', 'register_new_widgets');
 }
-add_action( 'elementor/widgets/register', 'register_new_widgets' );
