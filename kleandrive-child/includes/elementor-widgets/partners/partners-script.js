@@ -6,7 +6,17 @@ jQuery(document).ready(function () {
         slidesPerView: 1,
     });
 
-    const mySwiperPartner = new Swiper(".mySwiperPartner", {
+    const mySwiperPartner = new Swiper(".mySwiperPartnernoThumb", {
+        loop: true,
+        autoplay: true,
+        slidesPerView: 1,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+    });
+
+    const mySwiperPartner = new Swiper(".mySwiperPartnerThumb", {
         loop: true,
         autoplay: true,
         slidesPerView: 1,

@@ -31,7 +31,7 @@ $partners = get_posts($args);
             </div>
         <?php } ?>
 
-        <div class="swiper mySwiperPartner">
+        <div class="swiper mySwiperPartner <?= $style == 'partner-style-2' ? 'mySwiperPartnerThumb' : 'mySwiperPartnernoThumb' ?>">
             <div class="swiper-wrapper">
                 <?php foreach ($partners as $partner) { ?>
                     <?php
