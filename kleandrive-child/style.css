@@ -763,8 +763,13 @@ section.page-heading {
       position: absolute;
       right: 0; }
 
-.swiper-pagination-style {
+.swiper-pagination-style.swiper-pagination-style.swiper-pagination-style {
   position: static;
   margin-top: 2rem; }
+  .swiper-pagination-style.swiper-pagination-style.swiper-pagination-style .swiper-pagination-bullet {
+    margin-left: 3px;
+    margin-right: 3px; }
+    .swiper-pagination-style.swiper-pagination-style.swiper-pagination-style .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: var(--accent-color); }
 
 /*# sourceMappingURL=style.css.map */

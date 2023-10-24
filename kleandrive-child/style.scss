@@ -1105,7 +1105,14 @@ section.page-heading {
     }
 }
 
-.swiper-pagination-style {
+.swiper-pagination-style.swiper-pagination-style.swiper-pagination-style {
     position: static;
     margin-top: 2rem;
+    .swiper-pagination-bullet {
+        margin-left: 3px;
+        margin-right: 3px;
+        &.swiper-pagination-bullet-active {
+            background-color: var(--accent-color);
+        }
+    }
 }
