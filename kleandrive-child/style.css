@@ -721,6 +721,8 @@ section.page-heading {
   margin-left: auto;
   margin-right: auto;
   position: relative; }
+  .partner-slider .swiper {
+    z-index: 1; }
   .partner-slider .swiper-slide .inner .description-box {
     text-align: center;
     font-size: 15px;
