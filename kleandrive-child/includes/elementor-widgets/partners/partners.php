@@ -55,16 +55,6 @@ if (get_current_user_id() == 1) {
                 ]
             );
 
-            $this->add_control(
-                'url',
-                [
-                    'label' => esc_html__('URL to embed', 'elementor-oembed-widget'),
-                    'type' => \Elementor\Controls_Manager::TEXT,
-                    'input_type' => 'url',
-                    'placeholder' => esc_html__('https://your-link.com', 'elementor-oembed-widget'),
-                ]
-            );
-
             $this->end_controls_section();
         }
 
@@ -85,6 +75,8 @@ if (get_current_user_id() == 1) {
             echo '<div class="oembed-elementor-widget">';
             echo ($html) ? $html : $settings['url'];
             echo '</div>';
+
+            include(__DIR__ . '/render.php');
         }
     }
 }
