@@ -1136,10 +1136,10 @@ section.page-heading {
                 .description-box {
                     font-weight: 400;
                     color: var(--primary-color);
-                    line-height: 45px;
                     margin-top: 30px;
                     @media (min-width: 1025px) {
                         font-size: 25px;
+                        line-height: 45px;
                     }
                 }
                 .sc_button {
