@@ -133,4 +133,5 @@ Container::make('post_meta', __('Partner Settings'))
     ->add_fields(array(
         Field::make('text', 'website', 'Website'),
         Field::make('image', 'logo', 'Logo'),
+        Field::make('image', 'alt_logo', 'Alt Logo'),
     ));
