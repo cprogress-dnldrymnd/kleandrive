@@ -742,7 +742,9 @@ section.page-heading {
       font-size: 24px;
       color: var(--primary-color); }
     .partner-slider .swiper-slide .inner .logo-box .title-holder .website {
-      font-size: 15px; }
+      font-size: 15px;
+      color: var(--e-global-color-text);
+      text-decoration: none; }
   .partner-slider.partner-style-1:before, .partner-slider.partner-style-1:after {
     content: "\e9ca";
     font-family: "fontello";
