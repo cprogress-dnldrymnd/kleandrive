@@ -771,6 +771,8 @@ section.page-heading {
     font-weight: 400;
     color: var(--primary-color);
     line-height: 45px; }
+  .partner-slider.partner-style-2 .swiper-slide .inner .sc_button {
+    background-color: var(--accent-color) !important; }
 
 .swiper-pagination-style.swiper-pagination-style.swiper-pagination-style {
   position: static;
