@@ -56,25 +56,28 @@ $partners = get_posts($args);
             </div>
         </div>
         <?php if ($style == 'partner-style-2') { ?>
-            <div thumbsSlider="" class="swiper mySwiperPartnerThumbImages">
-                <div class="swiper-wrapper">
-                    <?php foreach ($partners as $partner) { ?>
-                        <?php
-                        $logo = carbon_get_post_meta($partner->ID, 'logo');
-                        $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
+            <div class="mySwiperPartnerThumbImages-Holder">
+                <div thumbsSlider="" class="swiper mySwiperPartnerThumbImages">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($partners as $partner) { ?>
+                            <?php
+                            $logo = carbon_get_post_meta($partner->ID, 'logo');
+                            $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
 
-                        $logo_val = $alt_logo ? $alt_logo : $logo;
-                        ?>
-                        <div class="swiper-slide">
-                            <?php if ($logo) { ?>
-                                <div class="image-box">
-                                    <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>" alt="<?= $partner->post_title ?>">
-                                </div>
-                            <?php } ?>
-                        </div>
-                    <?php } ?>
+                            $logo_val = $alt_logo ? $alt_logo : $logo;
+                            ?>
+                            <div class="swiper-slide">
+                                <?php if ($logo) { ?>
+                                    <div class="image-box">
+                                        <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>" alt="<?= $partner->post_title ?>">
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        <?php } ?>
+                    </div>
                 </div>
             </div>
+
         <?php } ?>
     </div>
     <div class="swiper-pagination swiper-pagination-style"></div>
