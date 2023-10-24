@@ -30,6 +30,7 @@ function tissue_paper_register_custom_fields()
 
 
 require_once('includes/post-types.php');
+require_once('includes/elementor.php');
 
 function _get_terms_details($taxonomy, $hide_empty = false, $order = false)
 {
