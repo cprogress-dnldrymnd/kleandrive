@@ -4,7 +4,6 @@ class Elementor_Partners extends \Elementor\Widget_Base
 
     public function __construct() {
 		add_action( 'init', [ $this, 'i18n' ] );
-		add_action( 'plugins_loaded', [ $this, 'init' ] );
 	}
 
 	public function init() {
@@ -21,7 +20,7 @@ class Elementor_Partners extends \Elementor\Widget_Base
 	public function widget_styles() {
 		wp_register_style( 'my-swiper', plugins_url( 'assets/vendor/css/swiper.css', __FILE__ ) );
 	}
-    
+
     public function get_name()
     {
         return 'widget_name';
