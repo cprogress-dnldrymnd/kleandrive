@@ -1,6 +1,6 @@
 
 jQuery(document).ready(function () {
-    var mySwiperPartnerThumb = new Swiper(".mySwiperPartnerThumb", {
+    var mySwiperPartnerThumbImages = new Swiper(".mySwiperPartnerThumbImages", {
         loop: true,
         watchSlidesProgress: true,
         slidesPerView: 1,
@@ -25,7 +25,7 @@ jQuery(document).ready(function () {
             clickable: true
         },
         thumbs: {
-            swiper: mySwiperPartnerThumb,
+            swiper: mySwiperPartnerThumbImages,
         },
     });
 

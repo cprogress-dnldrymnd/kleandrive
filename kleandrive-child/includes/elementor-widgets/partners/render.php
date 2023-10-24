@@ -10,7 +10,7 @@ $partners = get_posts($args);
 <div class="partner-slider <?= $style ?>">
     <div class="partner-wrapper">
         <?php if ($style == 'partner-style-2') { ?>
-            <div thumbsSlider="" class="swiper mySwiperPartnerThumb">
+            <div thumbsSlider="" class="swiper mySwiperPartnerThumbImages">
                 <div class="swiper-wrapper">
                     <?php foreach ($partners as $partner) { ?>
                         <?php
