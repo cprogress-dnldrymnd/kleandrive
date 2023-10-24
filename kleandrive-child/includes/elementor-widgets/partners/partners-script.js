@@ -4,6 +4,7 @@ jQuery(document).ready(function () {
         loop: true,
         watchSlidesProgress: true,
         slidesPerView: 1,
+        effect: "fade",
     });
 
     const mySwiperPartnernoThumb = new Swiper(".mySwiperPartnernoThumb", {
