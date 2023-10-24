@@ -128,7 +128,7 @@ Container::make('post_meta', __('Our Process Settings'))
 /*-----------------------------------------------------------------------------------*/
 /* Our Process Page Settings
 /*-----------------------------------------------------------------------------------*/
-Container::make('post_meta', __('Our Process Settings'))
+Container::make('post_meta', __('Partner Settings'))
     ->where('post_type', '=', 'partners')
     ->add_fields(array(
         Field::make('text', 'website', 'Website'),
