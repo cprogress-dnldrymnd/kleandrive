@@ -25,7 +25,7 @@ if (get_current_user_id() == 1) {
 
         public function get_categories()
         {
-            return ['kleandrive'];
+            return ['basic'];
         }
 
         public function get_keywords()
