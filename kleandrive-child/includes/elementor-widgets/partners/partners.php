@@ -88,7 +88,7 @@ class Elementor_Partners extends \Elementor\Widget_Base
     }
 
     public function get_script_depends() {
-		return [ 'elementor-frontend', 'elementor-partner-widget-js'];
+		return [ 'elementor-swiper-js', 'elementor-partner-widget-js'];
 	}
 
 }
