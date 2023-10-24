@@ -44,8 +44,8 @@ $partners = get_posts($args);
                     </div>
                 <?php }  ?>
             </div>
-            <div class="swiper-pagination swiper-pagination-style"></div>
         </div>
+        <div class="swiper-pagination swiper-pagination-style"></div>
     </div>
 </div>
 <?
