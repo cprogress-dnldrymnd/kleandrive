@@ -1080,24 +1080,32 @@ section.page-heading {
         }
     }
     &.partner-style-1 {
-        &:before,
-        &:after {
-            content: "\e9ca";
-            font-family: "fontello";
-            display: inline-block;
+        .swiper-wrapper {
             position: relative;
-            font-weight: 400;
-            line-height: 1.5;
-            color: #0e62f21a;
-            font-size: 60px;
-        }
-        &:before {
-            transform: translateX(-50%) rotate(180deg);
-        }
-        &:after {
-            transform: translateY(-100%);
-            position: absolute;
-            right: 0;
+            &:before,
+            &:after {
+                content: "\e9ca";
+                font-family: "fontello";
+                display: inline-block;
+                position: relative;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #0e62f21a;
+                font-size: 60px;
+            }
+            &:before {
+                transform: translateX(-50%) rotate(180deg);
+            }
+            &:after {
+                transform: translateY(-100%);
+                position: absolute;
+                right: 0;
+            }
         }
     }
+}
+
+.swiper-pagination-style {
+    position: static;
+    margin-top: 2rem;
 }
