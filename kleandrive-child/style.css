@@ -701,4 +701,19 @@ section.page-heading {
     height: 30px;
     color: var(--primary-color); }
 
+.partners-testimonial .sc_testimonials_item_content p {
+  font-size: 25px;
+  line-height: 45px;
+  color: #19191a; }
+.partners-testimonial .sc_testimonials_item_author {
+  display: none; }
+.partners-testimonial .slider_pagination_wrap.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 150px;
+  padding: 0; }
+.partners-testimonial .sc_testimonials_modern .sc_item_slider.slider_outer_pagination_pos_bottom {
+  padding-bottom: 0 !important; }
+.partners-testimonial .sc_testimonials_modern .sc_testimonials_item:before {
+  transform: scale(-1, -1) translate(-32px, 0px);
+  transform-origin: left; }
+
 /*# sourceMappingURL=style.css.map */
