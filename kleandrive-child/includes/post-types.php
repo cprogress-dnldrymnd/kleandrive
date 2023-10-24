@@ -170,7 +170,7 @@ new newPostType(array(
 	'name' => 'Partners',
 	'singular_name' => 'Partner',
 	'icon' => 'dashicons-businesswoman',
-	'supports' => array( 'title', 'editor', 'revisions','page-attributes'),
+	'supports' => array( 'title', 'editor', 'revisions', 'thumbnail'),
 	'hierarchical' => false,
 	'has_archive' => false,
 	'publicly_queryable' => false,
