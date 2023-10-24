@@ -39,6 +39,14 @@ $partners = get_posts($args);
 
                                     </div>
                                 </div>
+                            <?php } else { ?>
+                                <?php if ($website) { ?>
+                                    <div class="sc_item_button sc_button_wrap">
+                                        <a href="<?= $website ?>" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
+                                            <span class="sc_button_text"><span class="sc_button_title">Apply Now</span></span>
+                                        </a>
+                                    </div>
+                                <?php } ?>
                             <?php } ?>
                         </div>
                     </div>
