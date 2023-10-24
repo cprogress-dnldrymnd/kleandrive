@@ -1083,7 +1083,9 @@ section.page-heading {
         }
     }
     &.partner-style-1 {
-        text-align: center;
+        .description-box {
+            text-align: center;
+        }
         .partner-wrapper {
             position: relative;
             &:before,
