@@ -1113,6 +1113,7 @@ section.page-heading {
         .image-mobile-only {
             display: none;
             margin-bottom: 1rem;
+            margin-top: 1rem;
             @media (max-width: 1024px) {
                 display: block;
             }
