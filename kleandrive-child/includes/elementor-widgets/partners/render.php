@@ -14,6 +14,7 @@ $partners = get_posts($args);
                 <?php
                 $logo = carbon_get_post_meta($partner->post_id, 'logo');
                 $alt_logo = carbon_get_post_meta($partner->post_id, 'alt_logo');
+                $website = carbon_get_post_meta($partner->post_id, 'website');
                 ?>
                 <div class="swiper-slide">
                     <div class="inner">
@@ -23,11 +24,18 @@ $partners = get_posts($args);
 
                         <?php if ($style == 'partner-style-1') { ?>
                             <div class="logo-box">
-                                <div class="image">
-                                    <img src="<?= wp_get_attachment_image_url($logo, 'medium') ?>" alt="<?= $partner->post_title ?>">
-                                </div>
+                                <?php if ($logo) { ?>
+                                    <div class="image">
+                                        <img src="<?= wp_get_attachment_image_url($logo, 'medium') ?>" alt="<?= $partner->post_title ?>">
+                                    </div>
+                                <?php } ?>
+
                                 <div class="title">
-                                    <?= $partner->post_title ?>
+                                    <div class="title"><?= $partner->post_title ?></div>
+                                    <?php if ($website) { ?>
+                                        <a href="<?= $website ?>"><?= $website ?></a>
+                                    <?php } ?>
+
                                 </div>
                             </div>
                         <?php } ?>

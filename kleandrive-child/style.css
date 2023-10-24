@@ -716,4 +716,27 @@ section.page-heading {
   transform: scale(-1, -1) translate(-32px, 0px);
   transform-origin: left; }
 
+.partner-slider .swiper-slide .inner {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
+  .partner-slider .swiper-slide .inner .description-box {
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 2rem; }
+  .partner-slider .swiper-slide .inner .logo-box {
+    display: flex;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto; }
+    .partner-slider .swiper-slide .inner .logo-box .image {
+      flex: 0 0 85px;
+      max-width: 85px;
+      margin-right: 1rem; }
+    .partner-slider .swiper-slide .inner .logo-box .title {
+      font-weight: 500;
+      font-size: 24px; }
+
 /*# sourceMappingURL=style.css.map */
