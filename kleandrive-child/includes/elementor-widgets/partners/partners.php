@@ -55,6 +55,19 @@ if (get_current_user_id() == 1) {
                 ]
             );
 
+            $this->add_control(
+                'style',
+                [
+                    'label' => esc_html__( 'Style', 'textdomain' ),
+                    'type' => \Elementor\Controls_Manager::SELECT,
+                    'default' => 'partner-style-1',
+                    'options' => [
+                        'partner-style-1' => esc_html__( 'Style 1', 'textdomain' ),
+                        'partner-style-2' => esc_html__( 'Style 2', 'textdomain' ),
+                    ],
+                ]
+            );
+
             $this->end_controls_section();
         }
 
