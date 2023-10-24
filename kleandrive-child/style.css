@@ -766,6 +766,11 @@ section.page-heading {
       transform: translateY(-100%);
       position: absolute;
       right: 0; }
+  .partner-slider.partner-style-2 .image-mobile-only {
+    display: none; }
+    @media (max-width: 1024px) {
+      .partner-slider.partner-style-2 .image-mobile-only {
+        display: block; } }
   .partner-slider.partner-style-2 .partner-wrapper {
     position: relative; }
     .partner-slider.partner-style-2 .partner-wrapper:before {
@@ -801,6 +806,9 @@ section.page-heading {
     position: absolute; }
     .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide {
       text-align: center; }
+    @media (max-width: 1024px) {
+      .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder {
+        display: none; } }
   .partner-slider.partner-style-2 .swiper-pagination-style {
     text-align: left; }
 

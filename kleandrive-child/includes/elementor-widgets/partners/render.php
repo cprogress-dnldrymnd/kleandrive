@@ -24,6 +24,13 @@ $partners = get_posts($args);
                             <div class="description-box">
                                 <?= $partner->post_content ?>
                             </div>
+                            <?php if ($style == 'partner-style-2') { ?>
+                                <?php if ($logo) { ?>
+                                    <div class="image image-mobile-only">
+                                        <img src="<?= wp_get_attachment_image_url($logo, 'medium') ?>" alt="<?= $partner->post_title ?>">
+                                    </div>
+                                <?php } ?>
+                            <?php } ?>
 
                             <?php if ($style == 'partner-style-1') { ?>
                                 <div class="logo-box">
