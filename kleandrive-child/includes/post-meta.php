@@ -122,3 +122,15 @@ Container::make('post_meta', __('Our Process Settings'))
             ->set_header_template('<%- heading  %>')
             ->set_layout('tabbed-vertical')
     ));
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Our Process Page Settings
+/*-----------------------------------------------------------------------------------*/
+Container::make('post_meta', __('Our Process Settings'))
+    ->where('post_type', '=', 'partners')
+    ->add_fields(array(
+        Field::make('text', 'website', 'Website'),
+        Field::make('image', 'logo', 'Logo'),
+    ));
