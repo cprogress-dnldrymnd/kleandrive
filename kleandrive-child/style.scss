@@ -1120,6 +1120,11 @@ section.page-heading {
                 }
                 .sc_button {
                     background-color: var(--accent-color) !important;
+                    border: 2px solid var(--accent-color) !important;
+                    @include on-event() {
+                        background-color: var(--primary-color) !important;
+                        border: 2px solid var(--primary-color) !important;
+                    }
                 }
             }
         }

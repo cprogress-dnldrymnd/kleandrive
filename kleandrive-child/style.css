@@ -772,7 +772,11 @@ section.page-heading {
     color: var(--primary-color);
     line-height: 45px; }
   .partner-slider.partner-style-2 .swiper-slide .inner .sc_button {
-    background-color: var(--accent-color) !important; }
+    background-color: var(--accent-color) !important;
+    border: 2px solid var(--accent-color) !important; }
+    .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:hover, .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:active, .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:focus {
+      background-color: var(--primary-color) !important;
+      border: 2px solid var(--primary-color) !important; }
 
 .swiper-pagination-style.swiper-pagination-style.swiper-pagination-style {
   position: static;
