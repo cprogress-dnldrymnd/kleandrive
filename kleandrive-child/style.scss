@@ -1112,7 +1112,7 @@ section.page-heading {
     &.partner-style-2 {
         .partner-wrapper {
             position: relative;
-            &:after {
+            &:before {
                 content: "\e9ca";
                 font-family: "fontello";
                 display: inline-block;
@@ -1132,6 +1132,7 @@ section.page-heading {
                     font-weight: 400;
                     color: var(--primary-color);
                     line-height: 45px;
+                    margin-top: 30px;
                 }
                 .sc_button {
                     background-color: var(--accent-color) !important;
@@ -1151,6 +1152,7 @@ section.page-heading {
             background-color: var(--white-color);
             border-radius: 13px;
             box-shadow: 0px 12px 44px #00000029;
+            position: absolute;
         }
         .swiper-pagination-style {
             text-align: left;

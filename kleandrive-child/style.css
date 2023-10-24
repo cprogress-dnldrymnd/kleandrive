@@ -768,7 +768,7 @@ section.page-heading {
       right: 0; }
   .partner-slider.partner-style-2 .partner-wrapper {
     position: relative; }
-    .partner-slider.partner-style-2 .partner-wrapper:after {
+    .partner-slider.partner-style-2 .partner-wrapper:before {
       content: "\e9ca";
       font-family: "fontello";
       display: inline-block;
@@ -782,7 +782,8 @@ section.page-heading {
     font-size: 25px;
     font-weight: 400;
     color: var(--primary-color);
-    line-height: 45px; }
+    line-height: 45px;
+    margin-top: 30px; }
   .partner-slider.partner-style-2 .swiper-slide .inner .sc_button {
     background-color: var(--accent-color) !important;
     border: 2px solid var(--accent-color) !important; }
@@ -796,7 +797,8 @@ section.page-heading {
     transform: translate(-100%, -10px);
     background-color: var(--white-color);
     border-radius: 13px;
-    box-shadow: 0px 12px 44px #00000029; }
+    box-shadow: 0px 12px 44px #00000029;
+    position: absolute; }
   .partner-slider.partner-style-2 .swiper-pagination-style {
     text-align: left; }
 
