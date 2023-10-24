@@ -12,9 +12,9 @@ $partners = get_posts($args);
         <div class="swiper-wrapper">
             <?php foreach ($partners as $partner) { ?>
                 <?php
-                $logo = carbon_get_post_meta($partner->post_id, 'logo');
-                $alt_logo = carbon_get_post_meta($partner->post_id, 'alt_logo');
-                $website = carbon_get_post_meta($partner->post_id, 'website');
+                $logo = carbon_get_post_meta($partner->ID, 'logo');
+                $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
+                $website = carbon_get_post_meta($partner->ID, 'website');
                 ?>
                 <div class="swiper-slide">
                     <div class="inner">
