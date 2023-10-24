@@ -33,7 +33,7 @@ class Elementor_Partners extends \Elementor\Widget_Base
     }
 
     public function get_script_depends() {
-		return [ 'elementor-partner-widget-js'];
+		return [ 'swiper', 'elementor-partner-widget-js'];
 	}
 
     protected function register_controls()
