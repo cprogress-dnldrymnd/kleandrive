@@ -10,7 +10,7 @@ if (get_current_user_id() == 1) {
 
         public function get_title()
         {
-            return esc_html__('My Widget Name', 'textdomain');
+            return esc_html__('Partners', 'textdomain');
         }
 
         public function get_icon()
