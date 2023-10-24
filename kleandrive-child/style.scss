@@ -1129,7 +1129,13 @@ section.page-heading {
             }
         }
         .mySwiperPartnerThumbImages-Holder {
-
+            padding: 40px;
+            display: inline-block;
+            max-width: 355px;
+            transform: translate(-100%, -10px);
+            background-color: var(--white-color);
+            border-radius: 13px;
+            box-shadow: 0px 12px 44px #00000029;
         }
         .swiper-pagination-style {
             text-align: left;
