@@ -8,16 +8,18 @@ $args = array(
 $partners = get_posts($args);
 ?>
 <div class="partner-slider <?= $style ?>">
-    <div class="swiper-wrapper">
-        <?php foreach ($partners as $partner) { ?>
-            <div class="swiper-slide">
-                <div class="inner">
-                    <div class="description-box">
-                        <?= $partner->post_content ?>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <?php foreach ($partners as $partner) { ?>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="description-box">
+                            <?= $partner->post_content ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <?php }  ?>
+            <?php }  ?>
+        </div>
     </div>
 </div>
 <?
