@@ -7,6 +7,15 @@ jQuery(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true
         },
+        thumbs: {
+            swiper: mySwiperPartner,
+        },
     });
-    
+
+    var mySwiperPartnerThumb = new Swiper(".mySwiperPartnerThumb", {
+        loop: true,
+        watchSlidesProgress: true,
+        slidesPerView: 1,
+    });
+
 });
