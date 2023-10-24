@@ -2,25 +2,6 @@
 class Elementor_Partners extends \Elementor\Widget_Base
 {
 
-    public function __construct() {
-		add_action( 'init', [ $this, 'i18n' ] );
-	}
-
-	public function init() {
-		add_action( 'elementor/frontend/before_register_scripts', [ $this, 'widget_scripts' ] );
-		add_action( 'elementor/frontend/after_enqueue_styles', [ $this, 'widget_styles' ], 11 );			
-	}
-
-	public function widget_scripts() {
-		if ( ! wp_script_is( 'swiper' ) ) {
-			wp_register_script( 'swiper', plugins_url( 'assets/widget_js/ext/swiper-bundle.min.js', __FILE__ ), [ 'jquery' ], self::VERSION, true );		
-		}
-	}
-	
-	public function widget_styles() {
-		wp_register_style( 'my-swiper', plugins_url( 'assets/vendor/css/swiper.css', __FILE__ ) );
-	}
-
     public function get_name()
     {
         return 'widget_name';
