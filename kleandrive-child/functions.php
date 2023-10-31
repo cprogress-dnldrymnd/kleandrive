@@ -67,3 +67,9 @@ function footer_cta() {
 }
 
 add_shortcode('footer_cta', 'footer_cta');
+
+function action_planty_action_before_body() {
+	echo 'sdsds';
+}
+
+add_action('planty_action_before_body', 'action_planty_action_before_body');
