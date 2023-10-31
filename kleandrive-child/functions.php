@@ -75,4 +75,4 @@ function action_planty_action_before_body() {
 	
 }
 
-add_action('planty_action_page_content_start_text', 'action_planty_action_before_body');
+add_action('planty_action_content_wrap_start', 'action_planty_action_before_body');
