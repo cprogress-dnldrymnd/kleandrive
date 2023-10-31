@@ -69,7 +69,10 @@ function footer_cta() {
 add_shortcode('footer_cta', 'footer_cta');
 
 function action_planty_action_before_body() {
-	echo 'test';
+	if(is_home()) {
+		echo do_shortcode('[trx_sc_layouts layout="22919"]');
+	}
+	
 }
 
 add_action('planty_action_page_content_start_text', 'action_planty_action_before_body');
