@@ -72,4 +72,4 @@ function action_planty_action_before_body() {
 	echo 'test';
 }
 
-add_action('planty_action_before_body', 'planty_action_page_content_start_text');
+add_action('planty_action_page_content_start_text', 'action_planty_action_before_body');
