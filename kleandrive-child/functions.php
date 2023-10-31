@@ -69,6 +69,7 @@ function footer_cta() {
 add_shortcode('footer_cta', 'footer_cta');
 
 function action_planty_action_before_body() {
+	echo 'test';
 }
 
-add_action('planty_action_before_body', 'action_planty_action_before_body');
+add_action('planty_action_before_body', 'planty_action_page_content_start_text');
