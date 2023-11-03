@@ -72,7 +72,6 @@ function action_planty_action_before_body() {
 	if(is_home()) {
 		echo do_shortcode('[trx_sc_layouts layout="22919"]');
 	}
-	
 }
 
 add_action('planty_action_content_wrap_start', 'action_planty_action_before_body');
