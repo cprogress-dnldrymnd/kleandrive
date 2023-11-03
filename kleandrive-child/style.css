@@ -287,6 +287,8 @@ section.careers-archive {
     @media screen and (max-width: 767px) {
       section.careers-archive .career-wrapper .career-holder .body {
         margin-bottom: 30px; } }
+    section.careers-archive .career-wrapper .career-holder .footer .sc_item_button .sc_button:not(:hover) {
+      background-color: var(--accent-color); }
     section.careers-archive .career-wrapper .career-holder:not(:last-child) {
       margin-bottom: 40px; }
   section.careers-archive .category-wrapper {

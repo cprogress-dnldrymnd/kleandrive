@@ -508,7 +508,13 @@ section.careers-archive {
                     margin-bottom: 30px;
                 }
             }
-
+            .footer {
+                .sc_item_button .sc_button {
+                    &:not(:hover) {
+                        background-color: var(--accent-color);
+                    }
+                }
+            }
             &:not(:last-child) {
                 margin-bottom: 40px;
             }
