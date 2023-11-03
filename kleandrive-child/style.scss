@@ -1005,6 +1005,11 @@ section.page-heading {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
+    .description-box {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     h1 {
         @media (min-width: 992px) {
             font-size: 60px;
