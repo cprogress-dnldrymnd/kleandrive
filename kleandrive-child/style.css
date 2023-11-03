@@ -296,10 +296,12 @@ section.careers-archive {
   section.careers-archive .category-wrapper {
     margin-bottom: 72px; }
     section.careers-archive .category-wrapper .inner {
-      padding: 20px;
+      padding: 15px 20px;
       border-radius: 50px;
       background-color: var(--white-color); }
       section.careers-archive .category-wrapper .inner a {
+        margin-top: 5px;
+        margin-bottom: 5px;
         background-color: var(--accent-color);
         padding: 4px 20px;
         color: var(--white-color);
