@@ -30,6 +30,8 @@ Container::make('theme_options', __('Theme Settings'))
 Container::make('post_meta', __('Careers Details'))
     ->where('post_type', '=', 'careers')
     ->add_fields(array(
+        Field::make('text', 'location', 'Location'),
+        Field::make('text', 'work_type', 'Work Type'),
         Field::make('text', 'salary', 'Salary'),
         Field::make('complex', 'accordion', 'Accordion')
             ->add_fields(array(
