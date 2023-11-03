@@ -161,6 +161,8 @@ h2.sc_item_title {
 .accordion-style-1 .accordion-body {
   font-size: 15px;
   font-weight: 300; }
+  .accordion-style-1 .accordion-body ul li:not(:last-child) {
+    margin-bottom: 10px; }
 .accordion-style-1 .accordion-header .accordion-button {
   background-color: transparent;
   box-shadow: none;

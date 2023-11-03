@@ -328,6 +328,13 @@ h2.sc_item_title {
     .accordion-body {
         font-size: 15px;
         font-weight: 300;
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
     .accordion-header {
         .accordion-button {
