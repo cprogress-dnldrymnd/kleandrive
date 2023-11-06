@@ -953,12 +953,15 @@ section.our-process-page {
                 flex-wrap: wrap;
                 list-style: none;
                 padding: 0;
+                margin-bottom: 0;
                 li {
                     flex: 0 0 auto;
                     width: 100%;
                     display: flex;
                     align-items: center;
-                    margin-bottom: 30px;
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
                     &:before {
                         content: "";
                         width: 3px;

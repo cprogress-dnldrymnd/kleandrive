@@ -639,13 +639,15 @@ section.our-process-page {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        padding: 0; }
+        padding: 0;
+        margin-bottom: 0; }
         section.our-process-page .image-box .hover-box ul li {
           flex: 0 0 auto;
           width: 100%;
           display: flex;
-          align-items: center;
-          margin-bottom: 30px; }
+          align-items: center; }
+          section.our-process-page .image-box .hover-box ul li:not(:last-child) {
+            margin-bottom: 30px; }
           section.our-process-page .image-box .hover-box ul li:before {
             content: "";
             width: 3px;
