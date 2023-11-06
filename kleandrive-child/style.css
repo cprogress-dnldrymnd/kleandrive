@@ -642,7 +642,7 @@ section.our-process-page {
         padding: 0; }
         section.our-process-page .image-box .hover-box ul li {
           flex: 0 0 auto;
-          width: 50%;
+          width: 100%;
           display: flex;
           align-items: center;
           margin-bottom: 30px; }
