@@ -598,6 +598,9 @@ section.our-process-page {
   @media (min-width: 992px) {
     section.our-process-page .heading-box h2 {
       font-size: 60px; } }
+  @media (max-width: 1199px) {
+    section.our-process-page .heading-box h2 {
+      font-size: 50px; } }
   section.our-process-page .description-box {
     font-size: 15px; }
   section.our-process-page .image-box {
