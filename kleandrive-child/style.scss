@@ -1246,6 +1246,15 @@ section.page-heading {
         }
     }
     .sc_testimonials_item_author {
+        text-align: center;
+        .sc_testimonials_item_author_data {
+            text-align: left;
+        }
+        .sc_testimonials_item_author_avatar {
+            &::before {
+                content: none;
+            }
+        }
         .sc_testimonials_item_author_subtitle {
             font-size: 15px;
             color: #9A9A9A;

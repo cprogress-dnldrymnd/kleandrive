@@ -861,8 +861,14 @@ section.page-heading {
       font-weight: 300;
       color: #9a9a9a;
       font-size: 15px; }
-  .sc_testimonials_slider.sc_testimonials_slider.sc_testimonials_slider .sc_testimonials_item_author .sc_testimonials_item_author_subtitle {
-    font-size: 15px;
-    color: #9A9A9A; }
+  .sc_testimonials_slider.sc_testimonials_slider.sc_testimonials_slider .sc_testimonials_item_author {
+    text-align: center; }
+    .sc_testimonials_slider.sc_testimonials_slider.sc_testimonials_slider .sc_testimonials_item_author .sc_testimonials_item_author_data {
+      text-align: left; }
+    .sc_testimonials_slider.sc_testimonials_slider.sc_testimonials_slider .sc_testimonials_item_author .sc_testimonials_item_author_avatar::before {
+      content: none; }
+    .sc_testimonials_slider.sc_testimonials_slider.sc_testimonials_slider .sc_testimonials_item_author .sc_testimonials_item_author_subtitle {
+      font-size: 15px;
+      color: #9A9A9A; }
 
 /*# sourceMappingURL=style.css.map */
