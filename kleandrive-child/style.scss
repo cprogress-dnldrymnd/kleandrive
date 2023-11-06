@@ -1205,3 +1205,16 @@ section.page-heading {
         }
     }
 }
+
+.desktop-only {
+    @media(max-width: 1024px) {
+        display: none !important
+    }
+}
+
+
+.mobile-only {
+    @media(min-width: 1025px) {
+        display: none !important
+    }
+}

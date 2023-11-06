@@ -835,4 +835,12 @@ section.page-heading {
     .swiper-pagination-style.swiper-pagination-style.swiper-pagination-style .swiper-pagination-bullet.swiper-pagination-bullet-active {
       background-color: var(--accent-color); }
 
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none !important; } }
+
+@media (min-width: 1025px) {
+  .mobile-only {
+    display: none !important; } }
+
 /*# sourceMappingURL=style.css.map */
