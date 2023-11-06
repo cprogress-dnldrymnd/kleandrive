@@ -18,7 +18,7 @@ $description = carbon_get_the_post_meta('description');
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
         </svg>
-     
+
     </div>
 </section>
 <?php if ($process) { ?>
@@ -31,9 +31,11 @@ $description = carbon_get_the_post_meta('description');
                             <div class="column-holder">
                                 <div class="image-box position-relative">
                                     <img src="<?= wp_get_attachment_image_url($proc['image'], 'large') ?>" alt="<?= esc_html($proc['heading']) ?>">
-                                    <div class="hover-box">
-                                        <?= wpautop($proc['image_overlay_text']) ?>
-                                    </div>
+                                    <?php if ($image_overlay_text) { ?>
+                                        <div class="hover-box">
+                                            <?= wpautop($proc['image_overlay_text']) ?>
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
