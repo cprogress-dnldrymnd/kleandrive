@@ -911,20 +911,23 @@ section.our-process-page {
     .image-box {
         border-radius: 20px;
         overflow: hidden;
-        &:before {
-            @media (min-width: 576px) {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                background-color: var(--accent-color);
-                transition: 300ms;
-                opacity: 0;
-                visibility: hidden;
+        &.has-overlay {
+            &:before {
+                @media (min-width: 576px) {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: var(--accent-color);
+                    transition: 300ms;
+                    opacity: 0;
+                    visibility: hidden;
+                }
             }
         }
+
         .hover-box {
             position: absolute;
             left: 0;
@@ -1207,14 +1210,13 @@ section.page-heading {
 }
 
 .desktop-only {
-    @media(max-width: 1024px) {
-        display: none !important
+    @media (max-width: 1024px) {
+        display: none !important;
     }
 }
 
-
 .mobile-only {
-    @media(min-width: 1025px) {
-        display: none !important
+    @media (min-width: 1025px) {
+        display: none !important;
     }
 }

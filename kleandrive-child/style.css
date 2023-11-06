@@ -604,7 +604,7 @@ section.our-process-page {
     border-radius: 20px;
     overflow: hidden; }
     @media (min-width: 576px) {
-      section.our-process-page .image-box:before {
+      section.our-process-page .image-box.has-overlay:before {
         content: "";
         position: absolute;
         left: 0;

@@ -29,7 +29,7 @@ $description = carbon_get_the_post_meta('description');
                     <div class="row position-relative">
                         <div class="col-md-6">
                             <div class="column-holder">
-                                <div class="image-box position-relative">
+                                <div class="image-box position-relative <?= $image_overlay_text ? 'has-overlay' : '' ?>">
                                     <img src="<?= wp_get_attachment_image_url($proc['image'], 'large') ?>" alt="<?= esc_html($proc['heading']) ?>">
                                     <?php if ($image_overlay_text) { ?>
                                         <div class="hover-box">
