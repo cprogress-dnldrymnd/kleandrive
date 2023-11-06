@@ -595,12 +595,9 @@ section.our-process-page {
     background-color: #f2f7ff; }
     section.our-process-page .circle.active {
       border-color: var(--accent-color); }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     section.our-process-page .heading-box h2 {
       font-size: 60px; } }
-  @media (max-width: 1199px) {
-    section.our-process-page .heading-box h2 {
-      font-size: 50px; } }
   section.our-process-page .description-box {
     font-size: 15px; }
   section.our-process-page .image-box {

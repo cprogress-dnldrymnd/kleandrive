@@ -900,12 +900,10 @@ section.our-process-page {
     }
     .heading-box {
         h2 {
-            @media (min-width: 992px) {
+            @media (min-width: 1200px) {
                 font-size: 60px;
             }
-            @media(max-width: 1199px) {
-                font-size: 50px;
-            }
+          
         }
     }
     .description-box {
