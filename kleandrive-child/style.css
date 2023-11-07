@@ -906,7 +906,8 @@ section.savings-calculator {
     section.savings-calculator #calculator h4 {
       color: inherit; }
     section.savings-calculator #calculator .form-group label {
-      font-weight: 400; }
+      font-weight: 400;
+      margin-bottom: 10px; }
     section.savings-calculator #calculator .form-group input {
       color: inherit;
       border: 2px solid;
