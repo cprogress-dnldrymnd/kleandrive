@@ -10,11 +10,11 @@ if (!function_exists('planty_child_load_rtl')) {
 	function planty_child_load_rtl()
 	{
 
-		wp_register_script( 'elementor-partner-widget-js', get_stylesheet_directory_uri().'/includes/elementor-widgets/partners/partners-script.js' );
-		wp_register_script( 'elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js' );
-		wp_register_style( 'elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css' );
-		
-		if (is_post_type_archive('careers') || is_tax('careers-category') || is_page_template('templates/page-template-process.php') ) {
+		wp_register_script('elementor-partner-widget-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/partners/partners-script.js');
+		wp_register_script('elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
+		wp_register_style('elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
+
+		if (is_post_type_archive('careers') || is_tax('careers-category') || is_page_template('templates/page-template-process.php')) {
 			wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 			wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js');
 		}
@@ -60,7 +60,8 @@ function _get_terms_details($taxonomy, $hide_empty = false, $order = false)
 	return $term_array;
 }
 
-function footer_cta() {
+function footer_cta()
+{
 	ob_start();
 	get_template_part('template-parts/footer-cta');
 	return ob_get_clean();
@@ -68,8 +69,9 @@ function footer_cta() {
 
 add_shortcode('footer_cta', 'footer_cta');
 
-function action_planty_action_before_body() {
-	if(is_home()) {
+function action_planty_action_before_body()
+{
+	if (is_home()) {
 		echo do_shortcode('[trx_sc_layouts layout="22919"]');
 	}
 }
@@ -78,10 +80,16 @@ add_action('planty_action_content_wrap_start', 'action_planty_action_before_body
 
 
 
-function append_query_string( $url, $post, $leavename=false ) {
-	if ( $post->post_type == 'post' ) {
-		$url = add_query_arg( 'foo', 'bar', $url );
+function append_query_string($url, $post, $leavename = false)
+{
+	if ($post->post_type == 'post') {
+		$artilce_url = carbon_get_the_post_meta('artilce_url');
+		if ($artilce_url) {
+			$url = $artilce_url;
+		} else {
+			$url = add_query_arg('foo', 'bar', $url);
+		}
 	}
 	return $url;
 }
-add_filter( 'post_link', 'append_query_string', 10, 3 );
+add_filter('post_link', 'append_query_string', 10, 3);
