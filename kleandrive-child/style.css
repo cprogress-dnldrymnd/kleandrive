@@ -899,29 +899,29 @@ section.savings-calculator {
   color: var(--white-color); }
   section.savings-calculator .form-part {
     background-color: var(--accent-color); }
-  section.savings-calculator #calculator {
+  section.savings-calculator #calculator .holder {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto; }
-    section.savings-calculator #calculator h4 {
-      color: inherit; }
-    section.savings-calculator #calculator .btn {
-      background-color: var(--primary-color); }
-    section.savings-calculator #calculator .form-group label {
-      font-weight: 400;
-      margin-bottom: 10px;
-      min-height: 51px;
-      display: flex;
-      align-items: flex-end; }
-    section.savings-calculator #calculator .form-group input {
-      color: inherit;
-      border: 2px solid;
-      border-radius: 5px;
-      padding: 10px; }
-      section.savings-calculator #calculator .form-group input[type="number"] {
-        -moz-appearance: textfield; }
-        section.savings-calculator #calculator .form-group input[type="number"]::-webkit-outer-spin-button, section.savings-calculator #calculator .form-group input[type="number"]::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0; }
+  section.savings-calculator #calculator h4 {
+    color: inherit; }
+  section.savings-calculator #calculator .btn {
+    background-color: var(--primary-color); }
+  section.savings-calculator #calculator .form-group label {
+    font-weight: 400;
+    margin-bottom: 10px;
+    min-height: 51px;
+    display: flex;
+    align-items: flex-end; }
+  section.savings-calculator #calculator .form-group input {
+    color: inherit;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px; }
+    section.savings-calculator #calculator .form-group input[type="number"] {
+      -moz-appearance: textfield; }
+      section.savings-calculator #calculator .form-group input[type="number"]::-webkit-outer-spin-button, section.savings-calculator #calculator .form-group input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

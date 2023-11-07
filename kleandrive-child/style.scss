@@ -1295,9 +1295,11 @@ section.savings-calculator {
         background-color: var(--accent-color);
     }
     #calculator {
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        .holder {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         h4 {
             color: inherit;
         }
