@@ -115,7 +115,7 @@ function smashing_post_column($column, $post_id)
 	}
 }
 
-function suppress_if_blurb($title, $id = null)
+function action_the_title($title, $id = null)
 {
 	if (get_post_type() == 'post') {
 		$logo = carbon_get_the_post_meta('logo');
@@ -129,4 +129,4 @@ function suppress_if_blurb($title, $id = null)
 		return $title;
 	}
 }
-add_filter('the_title', 'suppress_if_blurb', 10, 2);
+add_filter('the_title', 'action_the_title', 10, 2);
