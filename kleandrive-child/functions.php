@@ -117,13 +117,14 @@ function smashing_post_column($column, $post_id)
 
 function suppress_if_blurb($title, $id = null)
 {
+	if ($post->post_type == 'post') {
+		$logo = carbon_get_the_post_meta('logo');
 
-	$logo = carbon_get_the_post_meta('logo');
-
-	if ($logo) {
-		return $title . '<div class="blog-logo">' . wp_get_attachment_image($logo, 'medium') . '</div>';
-	} else {
-		return $title;
+		if ($logo) {
+			return $title . '<div class="blog-logo">' . wp_get_attachment_image($logo, 'medium') . '</div>';
+		} else {
+			return $title;
+		}
 	}
 }
 add_filter('the_title', 'suppress_if_blurb', 10, 2);
