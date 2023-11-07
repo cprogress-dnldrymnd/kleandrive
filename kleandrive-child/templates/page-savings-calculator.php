@@ -75,6 +75,36 @@ $description = carbon_get_the_post_meta('description');
                 </div>
             </div>
         </div>
+
+        <div class="form-part py-5 form-result">
+            <div class="container">
+                <div class="holder">
+                    <h4>Summary outputs</h4>
+                    <table>
+                        <tr>
+                            <th>Total CO2 savings (tonnes)</th>
+                            <td id="TotalCO2savings"></td>
+                        </tr>
+                        <tr>
+                            <th>Total NOx damage cost savings (£)</th>
+                            <td id="TotalNOxdamagecostsavings"></td>
+                        </tr>
+                        <tr>
+                            <th>Total Particulate Matter damage cost savings (£)</th>
+                            <td id="TotalParticulateMatterdamagecostsavings"></td>
+                        </tr>
+                        <tr>
+                            <th>Operational cost savings (£)</th>
+                            <td id="Operationalcostsavings"></td>
+                        </tr>
+                        <tr>
+                            <th>Capital cost savings over buying new electric buses (£)</th>
+                            <td id="Capitalcostsavingsoverbuyingnewelectricbuses"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
         <div class="form-part py-5 d-none">
             <div class="container">
                 <div class="holder">
