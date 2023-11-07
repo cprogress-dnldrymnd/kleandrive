@@ -938,7 +938,8 @@ section.savings-calculator {
   section.savings-calculator #calculator .btn {
     background-color: var(--primary-color);
     border-radius: 50px;
-    border: none; }
+    border: none;
+    padding: 13px 33px; }
   section.savings-calculator #calculator .form-group label {
     font-weight: 400;
     margin-bottom: 10px;
