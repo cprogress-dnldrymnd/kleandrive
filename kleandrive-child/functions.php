@@ -80,7 +80,7 @@ add_action('planty_action_content_wrap_start', 'action_planty_action_before_body
 
 function append_query_string( $url, $post, $leavename=false ) {
 	if ( $post->post_type == 'post' ) {
-		$url = '#';
+		$url = add_query_arg( 'foo', 'bar', $url );
 	}
 	return $url;
 }
