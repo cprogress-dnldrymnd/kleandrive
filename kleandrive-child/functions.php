@@ -121,7 +121,7 @@ function suppress_if_blurb($title, $id = null)
 	$logo = carbon_get_the_post_meta('logo');
 
 	if ($logo) {
-		return $title . wp_get_attachment_image($logo, 'medium');
+		return $title . '<div class="blog-logo">' . wp_get_attachment_image($logo, 'medium') . '</div>';
 	} else {
 		return $title;
 	}
