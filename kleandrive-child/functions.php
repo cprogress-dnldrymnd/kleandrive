@@ -75,3 +75,13 @@ function action_planty_action_before_body() {
 }
 
 add_action('planty_action_content_wrap_start', 'action_planty_action_before_body');
+
+
+
+function append_query_string( $url, $post, $leavename=false ) {
+	if ( $post->post_type == 'post' ) {
+		$url = '#';
+	}
+	return $url;
+}
+add_filter( 'post_link', 'append_query_string', 10, 3 );
