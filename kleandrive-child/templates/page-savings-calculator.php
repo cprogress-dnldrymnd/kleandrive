@@ -202,7 +202,6 @@ $description = carbon_get_the_post_meta('description');
             $TotalCO2savings = Math.round(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000);
             $TotalNOxdamagecostsavings = Math.round($annual_mileage * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
             $TotalParticulateMatterdamagecostsavings = Math.round($annual_mileage * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
-            $TotalParticulateMatterdamagecostsavings = Math.round($annual_mileage * $remaining_life * $no_of_buses_converted * $BlendedaveragePMsaving / 1000000);
             $Operationalcostsavings = Math.round(($est_annual_op_cost * $no_of_buses_converted * $remaining_life) / 3);
             $Capitalcostsavingsoverbuyingnewelectricbuses = Math.round($no_of_buses_converted * $Incrementalcaptialcostsavings);
 
