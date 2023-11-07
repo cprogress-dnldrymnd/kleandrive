@@ -904,6 +904,8 @@ section.savings-calculator {
   section.savings-calculator table {
     background-color: transparent;
     text-align: left; }
+    section.savings-calculator table th {
+      font-weight: 400; }
   section.savings-calculator #calculator .holder {
     max-width: 800px;
     margin-left: auto;
