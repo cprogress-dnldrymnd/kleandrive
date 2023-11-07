@@ -918,5 +918,10 @@ section.savings-calculator {
       border: 2px solid;
       border-radius: 5px;
       padding: 10px; }
+      section.savings-calculator #calculator .form-group input[type="number"] {
+        -moz-appearance: textfield; }
+        section.savings-calculator #calculator .form-group input[type="number"]::-webkit-outer-spin-button, section.savings-calculator #calculator .form-group input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

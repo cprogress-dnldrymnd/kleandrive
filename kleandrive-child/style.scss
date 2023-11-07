@@ -1317,6 +1317,14 @@ section.savings-calculator {
                 border: 2px solid;
                 border-radius: 5px;
                 padding: 10px;
+                &[type="number"] {
+                    -moz-appearance: textfield;
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
             }
         }
     }
