@@ -27,12 +27,27 @@ $description = carbon_get_the_post_meta('description');
             Kleanbus model assumptions
         </h4>
 
-        <div class="form-control">
-            <label for="">
-                
-            </label>
-            <input type="text">
-        </div>
+        <form>
+            <div class="form-group">
+                <label for="annual_mileage">Annual mileage (km)</label>
+                <input type="text" class="form-control" id="annual_mileage" aria-describedby="emailHelp" placeholder="Enter email" name="annual_mileage">
+            </div>
+
+            <div class="form-group">
+                <label for="annual_mileage">Annual mileage (km)</label>
+                <input type="text" class="form-control" id="annual_mileage" aria-describedby="emailHelp" placeholder="Enter email" name="annual_mileage">
+            </div>
+            <div class="form-group">
+                <label for="annual_mileage">Annual mileage (km)</label>
+                <input type="text" class="form-control" id="annual_mileage" aria-describedby="emailHelp" placeholder="Enter email" name="annual_mileage">
+            </div>
+            <div class="form-group">
+                <label for="annual_mileage">Annual mileage (km)</label>
+                <input type="text" class="form-control" id="annual_mileage" aria-describedby="emailHelp" placeholder="Enter email" name="annual_mileage">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 </section>
 <?php the_content() ?>
