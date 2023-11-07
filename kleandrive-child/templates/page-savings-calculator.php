@@ -216,8 +216,8 @@ Capitalcostsavingsoverbuyingnewelectricbuses
 
 
             $TotalCO2savings = parseInt(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000);
-            $TotalNOxdamagecostsavings = parseInt($annual_mileage * $remaining_life * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
-            $TotalParticulateMatterdamagecostsavings = parseInt($annual_mileage * $remaining_life * $no_of_buses_converted * $BlendedaveragePMsaving / 1000000);
+            $TotalNOxdamagecostsavings = parseInt($annual_mileage * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
+            $TotalParticulateMatterdamagecostsavings = parseInt($annual_mileage * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
             $TotalParticulateMatterdamagecostsavings = parseInt($annual_mileage * $remaining_life * $no_of_buses_converted * $BlendedaveragePMsaving / 1000000);
             $Operationalcostsavings = parseInt(($est_annual_op_cost * $no_of_buses_converted * $remaining_life) / 3);
             $Capitalcostsavingsoverbuyingnewelectricbuses = parseInt($no_of_buses_converted * $Incrementalcaptialcostsavings);
