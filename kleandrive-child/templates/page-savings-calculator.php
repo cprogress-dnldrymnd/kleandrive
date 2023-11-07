@@ -39,26 +39,26 @@ $description = carbon_get_the_post_meta('description');
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="annual_mileage">Annual mileage (km)</label>
-                                <input type="text" class="form-control" id="annual_mileage" name="annual_mileage" placeholder="Enter Annual mileage">
+                                <input type="text" class="form-control" id="annual_mileage" name="annual_mileage">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="remaining_life">Remaining life (Yrs)</label>
-                                <input type="text" class="form-control" id="remaining_life" name="remaining_life" placeholder="Enter Remaining life">
+                                <input type="text" class="form-control" id="remaining_life" name="remaining_life">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="no_of_buses_converted">No of buses converted</label>
-                                <input type="text" class="form-control" id="no_of_buses_converted" name="no_of_buses_converted" placeholder="Enter No of buses converted">
+                                <input type="text" class="form-control" id="no_of_buses_converted" name="no_of_buses_converted">
                             </div>
                         </div>
                         <div class="col-lg-6">
 
                             <div class="form-group">
                                 <label for="est_annual_op_cost">Estimated annual operational costs for existing bus</label>
-                                <input type="text" class="form-control" id="est_annual_op_cost" name="est_annual_op_cost" placeholder="Enter Estimated annual operational costs for existing bus">
+                                <input type="text" class="form-control" id="est_annual_op_cost" name="est_annual_op_cost">
                             </div>
                         </div>
 
