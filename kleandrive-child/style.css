@@ -919,11 +919,13 @@ section.savings-calculator {
     background-color: transparent;
     text-align: left; }
     section.savings-calculator #calculator table th {
-      font-weight: 400; }
+      font-weight: 400;
+      width: 70%; }
+    section.savings-calculator #calculator table td {
+      width: 30%; }
     section.savings-calculator #calculator table th,
     section.savings-calculator #calculator table td {
       text-align: left;
-      width: 50%;
       background-color: transparent;
       border: 1px solid;
       color: var(--white-color); }

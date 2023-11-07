@@ -1319,11 +1319,14 @@ section.savings-calculator {
             text-align: left;
             th {
                 font-weight: 400;
+                width: 70%;
+            }
+            td {
+                width: 30%;
             }
             th,
             td {
                 text-align: left;
-                width: 50%;
                 background-color: transparent;
                 border: 1px solid;
                 color: var(--white-color);
