@@ -893,8 +893,10 @@ section.page-heading {
     max-height: 70px;
     width: auto; }
 
+.page-template-page-savings-calculator {
+  font-family: stolzl, sans-serif; }
+
 section.savings-calculator {
-  font-family: stolzl, sans-serif;
   margin-bottom: 100px;
   color: var(--white-color); }
   section.savings-calculator .form-part {
@@ -905,7 +907,7 @@ section.savings-calculator {
         overflow: hidden;
         position: relative; }
         section.savings-calculator .form-part.form-result .holder:before {
-          content: '';
+          content: "";
           position: absolute;
           width: 30px;
           height: 30px;
@@ -918,7 +920,8 @@ section.savings-calculator {
     text-align: left; }
     section.savings-calculator #calculator table th {
       font-weight: 400; }
-    section.savings-calculator #calculator table th, section.savings-calculator #calculator table td {
+    section.savings-calculator #calculator table th,
+    section.savings-calculator #calculator table td {
       text-align: left;
       width: 50%;
       background-color: transparent;

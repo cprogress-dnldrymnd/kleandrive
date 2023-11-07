@@ -1286,9 +1286,10 @@ section.page-heading {
         width: auto;
     }
 }
-
-section.savings-calculator {
+.page-template-page-savings-calculator {
     font-family: stolzl, sans-serif;
+}
+section.savings-calculator {
     margin-bottom: 100px;
     color: var(--white-color);
     .form-part {
@@ -1299,19 +1300,19 @@ section.savings-calculator {
                 overflow: hidden;
                 position: relative;
                 &:before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     width: 30px;
                     height: 30px;
                     top: 0;
                     left: 0;
-                    transform: translate(15px,-50%) rotate(135deg);
+                    transform: translate(15px, -50%) rotate(135deg);
                     background-color: var(--accent-color);
                 }
             }
         }
     }
-    
+
     #calculator {
         table {
             background-color: transparent;
@@ -1319,7 +1320,8 @@ section.savings-calculator {
             th {
                 font-weight: 400;
             }
-            th, td {
+            th,
+            td {
                 text-align: left;
                 width: 50%;
                 background-color: transparent;
