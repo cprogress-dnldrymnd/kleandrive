@@ -899,9 +899,13 @@ section.savings-calculator {
   color: var(--white-color); }
   section.savings-calculator .bottom {
     background-color: var(--accent-color); }
-  section.savings-calculator #calculator .form-group label {
-    font-weight: bold; }
-  section.savings-calculator #calculator .form-group input {
-    color: inherit; }
+  section.savings-calculator #calculator {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+    section.savings-calculator #calculator .form-group label {
+      font-weight: bold; }
+    section.savings-calculator #calculator .form-group input {
+      color: inherit; }
 
 /*# sourceMappingURL=style.css.map */
