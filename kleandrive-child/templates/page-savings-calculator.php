@@ -27,7 +27,7 @@ $description = carbon_get_the_post_meta('description');
 
         </div>
     </div>
-    <div class="bottom">
+    <div class="bottom py-5">
         <div class="container">
             <h4 class="mb-4">
                 Kleanbus model assumptions
