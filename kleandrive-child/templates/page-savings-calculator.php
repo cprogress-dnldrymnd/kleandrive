@@ -80,7 +80,7 @@ $description = carbon_get_the_post_meta('description');
             <div class="container">
                 <div class="holder">
                     <h4>Summary outputs</h4>
-                    <table>
+                    <table class="table w-100">
                         <tr>
                             <th>Total CO2 savings (tonnes)</th>
                             <td id="TotalCO2savings"></td>
