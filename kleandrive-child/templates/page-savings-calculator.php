@@ -68,7 +68,7 @@ $description = carbon_get_the_post_meta('description');
                 </div>
             </div>
         </div>
-        <div class="form-part py-5">
+        <div class="form-part py-5 d-none">
             <div class="container">
                 <div class="holder">
                     <div class="table-holder mb-4">
