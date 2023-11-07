@@ -1293,6 +1293,12 @@ section.savings-calculator {
     color: var(--white-color);
     .form-part {
         background-color: var(--accent-color);
+        &.form-result {
+            background-color: var(--primary-color);
+        }
+    }
+    table {
+        background-color: transparent;
     }
     #calculator {
         .holder {
