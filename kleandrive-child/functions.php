@@ -89,6 +89,8 @@ function append_query_string($url, $post, $leavename = false)
 		} else {
 			$url = add_query_arg('foo', 'bar', $url);
 		}
+	} else 	if ($post->post_type == 'cpt_team') {
+		$url = "#";
 	}
 	return $url;
 }
