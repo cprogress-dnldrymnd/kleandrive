@@ -108,15 +108,22 @@ function smashing_post_column($column, $post_id)
 	$artilce_url = '';
 	if ('artilce_url' === $column) {
 		$artilce_url = carbon_get_the_post_meta('artilce_url');
-		if($artilce_url) {
+		if ($artilce_url) {
 			echo '<strong>External URL</strong> <br>';
 		}
 		echo $artilce_url;
 	}
 }
 
-function suppress_if_blurb( $title, $id = null ) {
+function suppress_if_blurb($title, $id = null)
+{
 
-    return 'xx';
+	$logo = carbon_get_the_post_meta('logo');
+
+	if ($logo) {
+		return $title . wp_get_attachment_image($logo, 'medium');
+	} else {
+		return $title;
+	}
 }
-add_filter( 'the_title', 'suppress_if_blurb', 10, 2 );
+add_filter('the_title', 'suppress_if_blurb', 10, 2);
