@@ -69,7 +69,7 @@ $description = carbon_get_the_post_meta('description');
                         </div>
 
                         <div class="col-lg-12">
-                            <button type="submit" class="btn btn-secondary">Submit</button>
+                            <button type="submit" class="btn btn-secondary">Calculate</button>
                         </div>
                     </div>
                 </div>
