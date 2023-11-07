@@ -907,7 +907,8 @@ section.savings-calculator {
       color: inherit; }
     section.savings-calculator #calculator .form-group label {
       font-weight: 400;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      min-height: 51px; }
     section.savings-calculator #calculator .form-group input {
       color: inherit;
       border: 2px solid;
