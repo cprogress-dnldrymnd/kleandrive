@@ -205,6 +205,11 @@ Capitalcostsavingsoverbuyingnewelectricbuses
             $IncrementalCO2benefitvsNewBEV = parseFloat(jQuery('input[name="IncrementalCO2benefitvsNewBEV"]').val());
             $Incrementalcaptialcostsavings = parseFloat(jQuery('input[name="Incrementalcaptialcostsavings"]').val());
 
+            if ($est_annual_op_cost) {
+                $est_annual_op_cost = $est_annual_op_cost
+            } else {
+                $est_annual_op_cost = 0;
+            }
 
 
             $TotalCO2savings = parseInt(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000);
@@ -220,7 +225,7 @@ Capitalcostsavingsoverbuyingnewelectricbuses
             jQuery('#Operationalcostsavings').text($Operationalcostsavings.toLocaleString('en-US'));
             jQuery('#Capitalcostsavingsoverbuyingnewelectricbuses').text($Capitalcostsavingsoverbuyingnewelectricbuses.toLocaleString('en-US'));
 
-            
+
 
             e.preventDefault();
 
