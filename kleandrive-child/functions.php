@@ -93,3 +93,21 @@ function append_query_string($url, $post, $leavename = false)
 	return $url;
 }
 add_filter('post_link', 'append_query_string', 10, 3);
+
+
+add_filter('manage_post_posts_columns', 'smashing_filter_posts_columns');
+function smashing_filter_posts_columns($columns)
+{
+	$columns['artilce_url'] = __('Article URL');
+	return $columns;
+}
+
+add_action('manage_post_posts_custom_column', 'smashing_post_column', 10, 2);
+function smashing_post_column($column, $post_id)
+{
+	$artilce_url = '';
+	if ('artilce_url' === $column) {
+		$artilce_url = carbon_get_the_post_meta('artilce_url');
+		echo $artilce_url;
+	}
+}
