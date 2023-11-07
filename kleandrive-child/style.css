@@ -932,7 +932,7 @@ section.savings-calculator {
     section.savings-calculator #calculator table tr {
       border: none; }
   section.savings-calculator #calculator .holder {
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto; }
   section.savings-calculator #calculator h4 {
