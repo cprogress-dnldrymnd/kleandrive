@@ -22,7 +22,18 @@ $description = carbon_get_the_post_meta('description');
     </div>
 </section>
 <section class="savings-calculator">
+    <div class="container">
+        <h4>
+            Kleanbus model assumptions
+        </h4>
 
+        <div class="form-control">
+            <label for="">
+                
+            </label>
+            <input type="text">
+        </div>
+    </div>
 </section>
 <?php the_content() ?>
 <?php get_footer() ?>
