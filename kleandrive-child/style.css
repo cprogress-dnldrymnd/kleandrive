@@ -906,6 +906,9 @@ section.savings-calculator {
     text-align: left; }
     section.savings-calculator table th {
       font-weight: 400; }
+    section.savings-calculator table th, section.savings-calculator table td {
+      text-align: left;
+      width: 50%; }
   section.savings-calculator #calculator .holder {
     max-width: 800px;
     margin-left: auto;

@@ -1303,6 +1303,10 @@ section.savings-calculator {
         th {
             font-weight: 400;
         }
+        th, td {
+            text-align: left;
+            width: 50%;
+        }
     }
     #calculator {
         .holder {
