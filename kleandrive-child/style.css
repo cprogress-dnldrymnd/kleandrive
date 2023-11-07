@@ -905,6 +905,8 @@ section.savings-calculator {
     margin-right: auto; }
     section.savings-calculator #calculator h4 {
       color: inherit; }
+    section.savings-calculator #calculator .btn {
+      background-color: var(--primary-color); }
     section.savings-calculator #calculator .form-group label {
       font-weight: 400;
       margin-bottom: 10px;
@@ -916,7 +918,5 @@ section.savings-calculator {
       border: 2px solid;
       border-radius: 5px;
       padding: 10px; }
-    section.savings-calculator #calculator .form-group .btn {
-      background-color: var(--primary-color); }
 
 /*# sourceMappingURL=style.css.map */

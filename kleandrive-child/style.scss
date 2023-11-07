@@ -1301,6 +1301,9 @@ section.savings-calculator {
         h4 {
             color: inherit;
         }
+        .btn {
+            background-color: var(--primary-color);
+        }
         .form-group {
             label {
                 font-weight: 400;
@@ -1314,10 +1317,6 @@ section.savings-calculator {
                 border: 2px solid;
                 border-radius: 5px;
                 padding: 10px;
-            }
-
-            .btn {
-                background-color: var(--primary-color);
             }
         }
     }
