@@ -30,22 +30,22 @@ $description = carbon_get_the_post_meta('description');
         <form>
             <div class="form-group">
                 <label for="annual_mileage">Annual mileage (km)</label>
-                <input type="text" class="form-control" id="annual_mileage" aria-describedby="emailHelp" placeholder="Enter email" name="annual_mileage">
+                <input type="text" class="form-control" id="annual_mileage" name="annual_mileage">
+            </div>
+            <div class="form-group">
+                <label for="remaining_life">Remaining life (Yrs)</label>
+                <input type="text" class="form-control" id="remaining_life" name="remaining_life">
             </div>
 
             <div class="form-group">
-                <label for="annual_mileage">Annual mileage (km)</label>
-                <input type="text" class="form-control" id="annual_mileage" aria-describedby="emailHelp" placeholder="Enter email" name="annual_mileage">
-            </div>
-            <div class="form-group">
-                <label for="annual_mileage">Annual mileage (km)</label>
-                <input type="text" class="form-control" id="annual_mileage" aria-describedby="emailHelp" placeholder="Enter email" name="annual_mileage">
-            </div>
-            <div class="form-group">
-                <label for="annual_mileage">Annual mileage (km)</label>
-                <input type="text" class="form-control" id="annual_mileage" aria-describedby="emailHelp" placeholder="Enter email" name="annual_mileage">
+                <label for="no_of_buses_converted">No of buses converted</label>
+                <input type="text" class="form-control" id="no_of_buses_converted" name="no_of_buses_converted">
             </div>
 
+            <div class="form-group">
+                <label for="est_annual_op_cost">Estimated annual operational costs for existing bus</label>
+                <input type="text" class="form-control" id="est_annual_op_cost" name="est_annual_op_cost">
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
