@@ -906,10 +906,11 @@ section.savings-calculator {
     section.savings-calculator #calculator h4 {
       color: inherit; }
     section.savings-calculator #calculator .form-group label {
-      font-weight: 500; }
+      font-weight: 400; }
     section.savings-calculator #calculator .form-group input {
       color: inherit;
       border: 2px solid;
-      border-radius: 5px; }
+      border-radius: 5px;
+      padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
