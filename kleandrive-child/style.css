@@ -893,4 +893,16 @@ section.page-heading {
     max-height: 70px;
     width: auto; }
 
+section.savings-calculator {
+  font-family: stolzl, sans-serif; }
+  section.savings-calculator #calculator {
+    padding: 2rem;
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    color: var(--white-color); }
+    section.savings-calculator #calculator .form-group label {
+      font-weight: bold; }
+    section.savings-calculator #calculator .form-group input {
+      color: inherit; }
+
 /*# sourceMappingURL=style.css.map */

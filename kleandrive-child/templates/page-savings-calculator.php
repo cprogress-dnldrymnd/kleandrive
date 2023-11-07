@@ -27,7 +27,7 @@ $description = carbon_get_the_post_meta('description');
             Kleanbus model assumptions
         </h4>
 
-        <form>
+        <form id="calculator">
             <div class="form-group">
                 <label for="annual_mileage">Annual mileage (km)</label>
                 <input type="text" class="form-control" id="annual_mileage" name="annual_mileage">

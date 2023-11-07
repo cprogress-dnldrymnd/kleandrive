@@ -1280,9 +1280,29 @@ section.page-heading {
 }
 
 .blog-logo {
-    margin-top: 20px;;
+    margin-top: 20px;
     img {
         max-height: 70px;
         width: auto;
+    }
+}
+
+section.savings-calculator {
+    font-family: stolzl, sans-serif;
+
+    #calculator {
+        padding:2rem;
+        background-color: var(--accent-color);
+        border-radius: 20px;
+        color: var(--white-color);
+        .form-group {
+            label {
+                font-weight: bold;
+            }
+            input {
+                color: inherit;
+            }
+            
+        }
     }
 }
