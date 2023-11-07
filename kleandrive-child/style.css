@@ -887,8 +887,10 @@ section.page-heading {
       color: #9a9a9a;
       font-weight: 300; }
 
-.blog-logo img {
-  max-height: 70px;
-  width: auto; }
+.blog-logo {
+  margin-top: 20px; }
+  .blog-logo img {
+    max-height: 70px;
+    width: auto; }
 
 /*# sourceMappingURL=style.css.map */
