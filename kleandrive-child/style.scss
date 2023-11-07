@@ -1309,7 +1309,8 @@ section.savings-calculator {
                 text-align: left;
                 width: 50%;
                 background-color: transparent;
-                border: none;
+                border: 1px solid;
+                color: var(--white-color);
             }
             tr {
                 border: none;
