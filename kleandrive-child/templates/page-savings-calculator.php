@@ -207,7 +207,7 @@ Capitalcostsavingsoverbuyingnewelectricbuses
 
 
 
-            $TotalNOxdamagecostsavings = ($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000;
+            $TotalNOxdamagecostsavings = parseInt(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000);
 
 
             jQuery('#TotalNOxdamagecostsavings').text($TotalNOxdamagecostsavings.toLocaleString('en-US'));
