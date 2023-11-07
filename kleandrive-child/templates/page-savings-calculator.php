@@ -192,18 +192,18 @@ Capitalcostsavingsoverbuyingnewelectricbuses
 <script>
     jQuery(document).ready(function() {
         jQuery('#calculate').click(function(e) {
-            $annual_mileage = jQuery('input[name="annual_mileage"]').val();
-            $remaining_life = jQuery('input[name="remaining_life"]').val();
-            $no_of_buses_converted = jQuery('input[name="no_of_buses_converted"]').val();
-            $est_annual_op_cost = jQuery('input[name="est_annual_op_cost"]').val();
+            $annual_mileage = parseFloat(jQuery('input[name="annual_mileage"]').val());
+            $remaining_life = parseFloat(jQuery('input[name="remaining_life"]').val());
+            $no_of_buses_converted = parseFloat(jQuery('input[name="no_of_buses_converted"]').val());
+            $est_annual_op_cost = parseFloat(jQuery('input[name="est_annual_op_cost"]').val());
 
-            $NOxRoadTransport = jQuery('input[name="NOxRoadTransport"]').val();
-            $ParticulateMatterRoadTransport = jQuery('input[name="ParticulateMatterRoadTransport"]').val();
-            $BlendedaverageCO2saving = jQuery('input[name="BlendedaverageCO2saving"]').val();
-            $BlendedaverageNOxsaving = jQuery('input[name="BlendedaverageNOxsaving"]').val();
-            $BlendedaveragePMsaving = jQuery('input[name="BlendedaveragePMsaving"]').val();
-            $IncrementalCO2benefitvsNewBEV = jQuery('input[name="IncrementalCO2benefitvsNewBEV"]').val();
-            $Incrementalcaptialcostsavings = jQuery('input[name="Incrementalcaptialcostsavings"]').val();
+            $NOxRoadTransport = parseFloat(jQuery('input[name="NOxRoadTransport"]').val());
+            $ParticulateMatterRoadTransport = parseFloat(jQuery('input[name="ParticulateMatterRoadTransport"]').val());
+            $BlendedaverageCO2saving = parseFloat(jQuery('input[name="BlendedaverageCO2saving"]').val());
+            $BlendedaverageNOxsaving = parseFloat(jQuery('input[name="BlendedaverageNOxsaving"]').val());
+            $BlendedaveragePMsaving = parseFloat(jQuery('input[name="BlendedaveragePMsaving"]').val());
+            $IncrementalCO2benefitvsNewBEV = parseFloat(jQuery('input[name="IncrementalCO2benefitvsNewBEV"]').val());
+            $Incrementalcaptialcostsavings = parseFloat(jQuery('input[name="Incrementalcaptialcostsavings"]').val());
 
 
 
