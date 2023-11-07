@@ -149,3 +149,17 @@ function customize_team_post_type_labels($args, $post_type)
 
 	return $args;
 }
+
+
+function action_wp_footer()
+{
+?>
+	<script>
+		jQuery(document).ready(function() {
+			jQuery('.cpt_team .sc_team_item_link').removeAttr('href');
+		});
+	</script>
+<?php
+}
+
+add_action('wp_footer', 'action_wp_footer');
