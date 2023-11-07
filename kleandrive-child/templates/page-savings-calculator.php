@@ -24,13 +24,14 @@ $description = carbon_get_the_post_meta('description');
 <section class="savings-calculator">
     <div class="top">
         <div class="container">
-            <h4>
-                Kleanbus model assumptions
-            </h4>
+
         </div>
     </div>
     <div class="bottom">
         <div class="container">
+            <h4 class="mb-4">
+                Kleanbus model assumptions
+            </h4>
             <form id="calculator">
                 <div class="form-group">
                     <label for="annual_mileage">Annual mileage (km)</label>
