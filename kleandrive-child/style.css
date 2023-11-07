@@ -901,14 +901,18 @@ section.savings-calculator {
     background-color: var(--accent-color); }
     section.savings-calculator .form-part.form-result {
       background-color: var(--primary-color); }
-  section.savings-calculator table {
+  section.savings-calculator #calculator table {
     background-color: transparent;
     text-align: left; }
-    section.savings-calculator table th {
+    section.savings-calculator #calculator table th {
       font-weight: 400; }
-    section.savings-calculator table th, section.savings-calculator table td {
+    section.savings-calculator #calculator table th, section.savings-calculator #calculator table td {
       text-align: left;
-      width: 50%; }
+      width: 50%;
+      background-color: transparent;
+      border: none; }
+    section.savings-calculator #calculator table tr {
+      border: none; }
   section.savings-calculator #calculator .holder {
     max-width: 800px;
     margin-left: auto;

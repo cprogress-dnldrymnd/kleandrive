@@ -1297,18 +1297,24 @@ section.savings-calculator {
             background-color: var(--primary-color);
         }
     }
-    table {
-        background-color: transparent;
-        text-align: left;
-        th {
-            font-weight: 400;
-        }
-        th, td {
-            text-align: left;
-            width: 50%;
-        }
-    }
+    
     #calculator {
+        table {
+            background-color: transparent;
+            text-align: left;
+            th {
+                font-weight: 400;
+            }
+            th, td {
+                text-align: left;
+                width: 50%;
+                background-color: transparent;
+                border: none;
+            }
+            tr {
+                border: none;
+            }
+        }
         .holder {
             max-width: 800px;
             margin-left: auto;
