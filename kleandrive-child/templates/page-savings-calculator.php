@@ -29,11 +29,11 @@ $description = carbon_get_the_post_meta('description');
     </div>
     <div class="bottom py-5">
         <div class="container">
-            <h4 class="mb-4">
-                Kleanbus model assumptions
-            </h4>
-            <div id="calculator">
 
+            <div id="calculator">
+                <h4 class="mb-4">
+                    Kleanbus model assumptions
+                </h4>
                 <form>
                     <div class="row">
                         <div class="col-lg-6">

@@ -1298,6 +1298,9 @@ section.savings-calculator {
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+        h4 {
+            color: inherit;
+        }
         .form-group {
             label {
                 font-weight: 500;
