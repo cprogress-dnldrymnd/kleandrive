@@ -894,7 +894,8 @@ section.page-heading {
     width: auto; }
 
 section.savings-calculator {
-  font-family: stolzl, sans-serif; }
+  font-family: stolzl, sans-serif;
+  margin-bottom: 100px; }
   section.savings-calculator #calculator {
     padding: 2rem;
     background-color: var(--accent-color);
