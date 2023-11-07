@@ -911,8 +911,8 @@ section.savings-calculator {
           height: 30px;
           top: 0;
           left: 0;
-          transform: translateY(-50%) rotate(90deg);
-          background-color: var(--white-color); }
+          transform: translate(15px, -50%) rotate(135deg);
+          background-color: var(--accent-color); }
   section.savings-calculator #calculator table {
     background-color: transparent;
     text-align: left; }
