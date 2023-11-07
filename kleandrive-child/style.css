@@ -916,5 +916,7 @@ section.savings-calculator {
       border: 2px solid;
       border-radius: 5px;
       padding: 10px; }
+    section.savings-calculator #calculator .form-group .btn {
+      background-color: var(--primary-color); }
 
 /*# sourceMappingURL=style.css.map */
