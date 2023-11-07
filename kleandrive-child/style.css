@@ -902,7 +902,8 @@ section.savings-calculator {
     section.savings-calculator .form-part.form-result {
       background-color: var(--primary-color); }
   section.savings-calculator table {
-    background-color: transparent; }
+    background-color: transparent;
+    text-align: left; }
   section.savings-calculator #calculator .holder {
     max-width: 800px;
     margin-left: auto;
