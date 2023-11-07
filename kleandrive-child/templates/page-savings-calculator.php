@@ -28,6 +28,13 @@ $description = carbon_get_the_post_meta('description');
         </div>
     </div>
     <form id="calculator">
+        <input type="hidden" name="NOxRoadTransport" value="17892.6280819244">
+        <input type="hidden" name="ParticulateMatterRoadTransport" value="130884.092045588">
+        <input type="hidden" name="BlendedaverageCO2saving" value="1311.648328125">
+        <input type="hidden" name="BlendedaverageNOxsaving" value="4.9216236328125">
+        <input type="hidden" name="BlendedaveragePMsaving" value="0.03670732421875">
+        <input type="hidden" name="IncrementalCO2benefitvsNewBEV" value="227.7">
+        <input type="hidden" name="Incrementalcaptialcostsavings" value="350000">
         <div class="form-part py-5">
             <div class="container">
                 <div class="holder">
