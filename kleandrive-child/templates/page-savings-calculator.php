@@ -71,7 +71,7 @@ $description = carbon_get_the_post_meta('description');
         <div class="form-part py-5">
             <div class="container">
                 <div class="holder">
-                    <figure class="wp-block-table">
+                    <div class="table-holder mb-4">
                         <h4>Damage cost assumptions:</h4>
                         <table>
                             <tr>
@@ -84,13 +84,10 @@ $description = carbon_get_the_post_meta('description');
                                 <td>£130,884</td>
                                 <td>Air Quality damage cost update 2023 – FINAL Report Report for Defra ECM_61369</td>
                             </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
                         </table>
+                    </div>
 
+                    <div class="table-holder">
                         <h4>Damage cost assumptions: Greenhouse gas reporting: conversion factors 2021 - GOV.UK (www.gov.uk)</h4>
                         <table>
                             <tr>
@@ -129,7 +126,7 @@ $description = carbon_get_the_post_meta('description');
                                 <td></td>
                             </tr>
                         </table>
-                    </figure>
+                    </div>
                 </div>
             </div>
         </div>
