@@ -1306,6 +1306,8 @@ section.savings-calculator {
                 font-weight: 400;
                 margin-bottom: 10px;
                 min-height: 51px;
+                display: flex;
+                align-items: flex-end;
             }
             input {
                 color: inherit;
