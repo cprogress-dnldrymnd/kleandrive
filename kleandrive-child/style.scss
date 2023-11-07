@@ -903,7 +903,6 @@ section.our-process-page {
             @media (min-width: 1200px) {
                 font-size: 60px;
             }
-          
         }
     }
     .description-box {
@@ -1231,8 +1230,6 @@ section.page-heading {
     }
 }
 
-
-
 .sc_testimonials_slider.sc_testimonials_slider.sc_testimonials_slider {
     max-width: 765px;
     margin-left: auto;
@@ -1276,8 +1273,15 @@ section.page-heading {
         }
         .sc_testimonials_item_author_subtitle {
             font-size: 15px;
-            color: #9A9A9A;
+            color: #9a9a9a;
             font-weight: 300;
         }
+    }
+}
+
+.blog-logo {
+    img {
+        max-height: 70px;
+        width: auto;
     }
 }
