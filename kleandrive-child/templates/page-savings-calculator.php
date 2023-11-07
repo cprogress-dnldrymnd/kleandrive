@@ -27,7 +27,7 @@ $description = carbon_get_the_post_meta('description');
 
         </div>
     </div>
-    <form id="calculator">
+    <div id="calculator">
         <input type="hidden" name="NOxRoadTransport" value="17892.6280819244">
         <input type="hidden" name="ParticulateMatterRoadTransport" value="130884.092045588">
         <input type="hidden" name="BlendedaverageCO2saving" value="1311.648328125">
@@ -69,7 +69,7 @@ $description = carbon_get_the_post_meta('description');
                         </div>
 
                         <div class="col-lg-12">
-                            <button type="submit" class="btn btn-secondary">Calculate</button>
+                            <button id="calculate" type="submit" class="btn btn-secondary">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -167,8 +167,54 @@ $description = carbon_get_the_post_meta('description');
                 </div>
             </div>
         </div>
-    </form>
-
+    </div>
 </section>
-<?php the_content() ?>
+
+
+<input type="hidden" name="NOxRoadTransport" value="17892.6280819244">
+<input type="hidden" name="ParticulateMatterRoadTransport" value="130884.092045588">
+<input type="hidden" name="BlendedaverageCO2saving" value="1311.648328125">
+<input type="hidden" name="BlendedaverageNOxsaving" value="4.9216236328125">
+<input type="hidden" name="BlendedaveragePMsaving" value="0.03670732421875">
+<input type="hidden" name="IncrementalCO2benefitvsNewBEV" value="227.7">
+<input type="hidden" name="Incrementalcaptialcostsavings" value="350000">
+
+annual_mileage
+remaining_life
+no_of_buses_converted
+est_annual_op_cost
+
+
+TotalNOxdamagecostsavings
+TotalParticulateMatterdamagecostsavings
+Operationalcostsavings
+Capitalcostsavingsoverbuyingnewelectricbuses
+<script>
+    jQuery(document).ready(function() {
+        jQuery('#calculate').click(function(e) {
+            $annual_mileage = jQuery('input[name="annual_mileage"]').val();
+            $remaining_life = jQuery('input[name="remaining_life"]').val();
+            $no_of_buses_converted = jQuery('input[name="no_of_buses_converted"]').val();
+            $est_annual_op_cost = jQuery('input[name="est_annual_op_cost"]').val();
+
+            $NOxRoadTransport = jQuery('input[name="NOxRoadTransport"]').val();
+            $ParticulateMatterRoadTransport = jQuery('input[name="ParticulateMatterRoadTransport"]').val();
+            $BlendedaverageCO2saving = jQuery('input[name="BlendedaverageCO2saving"]').val();
+            $BlendedaverageNOxsaving = jQuery('input[name="BlendedaverageNOxsaving"]').val();
+            $BlendedaveragePMsaving = jQuery('input[name="BlendedaveragePMsaving"]').val();
+            $IncrementalCO2benefitvsNewBEV = jQuery('input[name="IncrementalCO2benefitvsNewBEV"]').val();
+            $Incrementalcaptialcostsavings = jQuery('input[name="Incrementalcaptialcostsavings"]').val();
+
+
+
+            $TotalNOxdamagecostsavings = ($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000;
+
+
+            jQuery('#TotalNOxdamagecostsavings').text($TotalNOxdamagecostsavings);
+
+            e.preventDefault();
+
+        });
+    });
+</script>
 <?php get_footer() ?>
