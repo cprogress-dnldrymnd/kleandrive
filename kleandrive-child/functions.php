@@ -115,9 +115,8 @@ function smashing_post_column($column, $post_id)
 	}
 }
 
-function action_planty_action_before_full_post_content() {
-	echo 'sdsds';
+function suppress_if_blurb( $title, $id = null ) {
 
+    return 'xx';
 }
-
-add_action('planty_action_before_full_post_content', 'action_planty_action_before_full_post_content');
+add_filter( 'the_title', 'suppress_if_blurb', 10, 2 );
