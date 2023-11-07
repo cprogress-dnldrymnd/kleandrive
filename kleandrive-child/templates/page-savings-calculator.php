@@ -27,14 +27,13 @@ $description = carbon_get_the_post_meta('description');
 
         </div>
     </div>
-    <div class="bottom py-5">
-        <div class="container">
-
-            <div id="calculator">
-                <h4 class="mb-4">
-                    Kleanbus model assumptions
-                </h4>
-                <form>
+    <form id="calculator">
+        <div class="form-part py-5">
+            <div class="container">
+                <div class="holder">
+                    <h4 class="mb-4">
+                        Kleanbus model assumptions
+                    </h4>
                     <div class="row g-4">
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -66,10 +65,20 @@ $description = carbon_get_the_post_meta('description');
                             <button type="submit" class="btn btn-secondary">Submit</button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="form-part py-5">
+            <div class="container">
+                <div class="holder">
+                    <h4 class="mb-4">
+                        Damage cost assumptions:
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </form>
+
 </section>
 <?php the_content() ?>
 <?php get_footer() ?>

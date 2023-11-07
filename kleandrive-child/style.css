@@ -897,7 +897,7 @@ section.savings-calculator {
   font-family: stolzl, sans-serif;
   margin-bottom: 100px;
   color: var(--white-color); }
-  section.savings-calculator .bottom {
+  section.savings-calculator .form-part {
     background-color: var(--accent-color); }
   section.savings-calculator #calculator {
     max-width: 600px;
