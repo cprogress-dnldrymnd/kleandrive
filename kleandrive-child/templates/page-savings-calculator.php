@@ -191,25 +191,28 @@ Operationalcostsavings
 Capitalcostsavingsoverbuyingnewelectricbuses
 <script>
     jQuery(document).ready(function() {
-        jQuery('#calculate').click(function(e) {
-            $annual_mileage = parseFloat(jQuery('input[name="annual_mileage"]').val());
-            $remaining_life = parseFloat(jQuery('input[name="remaining_life"]').val());
-            $no_of_buses_converted = parseFloat(jQuery('input[name="no_of_buses_converted"]').val());
-            $est_annual_op_cost = parseFloat(jQuery('input[name="est_annual_op_cost"]').val());
 
-            $NOxRoadTransport = parseFloat(jQuery('input[name="NOxRoadTransport"]').val());
-            $ParticulateMatterRoadTransport = parseFloat(jQuery('input[name="ParticulateMatterRoadTransport"]').val());
-            $BlendedaverageCO2saving = parseFloat(jQuery('input[name="BlendedaverageCO2saving"]').val());
-            $BlendedaverageNOxsaving = parseFloat(jQuery('input[name="BlendedaverageNOxsaving"]').val());
-            $BlendedaveragePMsaving = parseFloat(jQuery('input[name="BlendedaveragePMsaving"]').val());
-            $IncrementalCO2benefitvsNewBEV = parseFloat(jQuery('input[name="IncrementalCO2benefitvsNewBEV"]').val());
-            $Incrementalcaptialcostsavings = parseFloat(jQuery('input[name="Incrementalcaptialcostsavings"]').val());
-
-            if ($est_annual_op_cost) {
-                $est_annual_op_cost = $est_annual_op_cost
+        function input_value($input) {
+            if ($input) {
+                return $input;
             } else {
-                $est_annual_op_cost = 0;
+                return 0;
             }
+        }
+
+        jQuery('#calculate').click(function(e) {
+            $annual_mileage = input_value(parseFloat(jQuery('input[name="annual_mileage"]').val()));
+            $remaining_life = input_value(parseFloat(jQuery('input[name="remaining_life"]').val()));
+            $no_of_buses_converted = input_value(parseFloat(jQuery('input[name="no_of_buses_converted"]').val()));
+            $est_annual_op_cost = input_value(parseFloat(jQuery('input[name="est_annual_op_cost"]').val()));
+
+            $NOxRoadTransport = input_value(parseFloat(jQuery('input[name="NOxRoadTransport"]').val()));
+            $ParticulateMatterRoadTransport = input_value(parseFloat(jQuery('input[name="ParticulateMatterRoadTransport"]').val()));
+            $BlendedaverageCO2saving = input_value(parseFloat(jQuery('input[name="BlendedaverageCO2saving"]').val()));
+            $BlendedaverageNOxsaving = input_value(parseFloat(jQuery('input[name="BlendedaverageNOxsaving"]').val()));
+            $BlendedaveragePMsaving = input_value(parseFloat(jQuery('input[name="BlendedaveragePMsaving"]').val()));
+            $IncrementalCO2benefitvsNewBEV = input_value(parseFloat(jQuery('input[name="IncrementalCO2benefitvsNewBEV"]').val()));
+            $Incrementalcaptialcostsavings = input_value(parseFloat(jQuery('input[name="Incrementalcaptialcostsavings"]').val()));
 
 
             $TotalCO2savings = parseInt(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000);
