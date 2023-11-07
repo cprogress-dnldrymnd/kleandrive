@@ -167,6 +167,24 @@ $description = carbon_get_the_post_meta('description');
                 </div>
             </div>
         </div>
+        <div class="py-5">
+            <div class="container">
+                <div class="holder">
+                    <h2>
+                        Lorem ipsum dolor sit amet
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis eius accusamus, possimus vitae quia, sed assumenda odit voluptatem tempora illo, accusantium nobis impedit ipsum. Delectus neque qui architecto quos.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis eius accusamus, possimus vitae quia, sed assumenda odit voluptatem tempora illo, accusantium nobis impedit ipsum. Delectus neque qui architecto quos.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis eius accusamus, possimus vitae quia, sed assumenda odit voluptatem tempora illo, accusantium nobis impedit ipsum. Delectus neque qui architecto quos.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
