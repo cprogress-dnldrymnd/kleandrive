@@ -117,7 +117,7 @@ function smashing_post_column($column, $post_id)
 
 function suppress_if_blurb($title, $id = null)
 {
-	if ($post->post_type == 'post') {
+	if (get_post_type() == 'post') {
 		$logo = carbon_get_the_post_meta('logo');
 
 		if ($logo) {
@@ -125,6 +125,8 @@ function suppress_if_blurb($title, $id = null)
 		} else {
 			return $title;
 		}
+	} else {
+		return $title;
 	}
 }
 add_filter('the_title', 'suppress_if_blurb', 10, 2);
