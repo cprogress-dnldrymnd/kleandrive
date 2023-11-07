@@ -141,6 +141,7 @@ $planty_post_format = empty( $planty_post_format ) ? 'standard' : str_replace( '
 				);
 			} else {
 				// Post content area
+				var_dump($planty_template_args);
 				planty_show_post_content( $planty_template_args, '<div class="post_content_inner">', '</div>' );
 			}
 
