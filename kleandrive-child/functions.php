@@ -108,6 +108,9 @@ function smashing_post_column($column, $post_id)
 	$artilce_url = '';
 	if ('artilce_url' === $column) {
 		$artilce_url = carbon_get_the_post_meta('artilce_url');
+		if($artilce_url) {
+			echo '<strong>External URL</strong>';
+		}
 		echo $artilce_url;
 	}
 }
