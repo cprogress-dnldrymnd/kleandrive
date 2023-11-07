@@ -199,12 +199,12 @@ $description = carbon_get_the_post_meta('description');
             $Incrementalcaptialcostsavings = input_value(parseFloat(jQuery('input[name="Incrementalcaptialcostsavings"]').val()));
 
 
-            $TotalCO2savings = Math.round(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000);
-            $TotalNOxdamagecostsavings = Math.round($annual_mileage * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
-            $TotalParticulateMatterdamagecostsavings = Math.round($annual_mileage * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
-            $TotalParticulateMatterdamagecostsavings = Math.round($annual_mileage * $remaining_life * $no_of_buses_converted * $BlendedaveragePMsaving / 1000000);
-            $Operationalcostsavings = Math.round(($est_annual_op_cost * $no_of_buses_converted * $remaining_life) / 3);
-            $Capitalcostsavingsoverbuyingnewelectricbuses = Math.round($no_of_buses_converted * $Incrementalcaptialcostsavings);
+            $TotalCO2savings = parseInt(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000);
+            $TotalNOxdamagecostsavings = parseInt($annual_mileage * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
+            $TotalParticulateMatterdamagecostsavings = parseInt($annual_mileage * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
+            $TotalParticulateMatterdamagecostsavings = parseInt($annual_mileage * $remaining_life * $no_of_buses_converted * $BlendedaveragePMsaving / 1000000);
+            $Operationalcostsavings = parseInt(($est_annual_op_cost * $no_of_buses_converted * $remaining_life) / 3);
+            $Capitalcostsavingsoverbuyingnewelectricbuses = parseInt($no_of_buses_converted * $Incrementalcaptialcostsavings);
 
             jQuery('#TotalCO2savings').text($TotalCO2savings.toLocaleString('en-US'));
             jQuery('#TotalNOxdamagecostsavings').text($TotalNOxdamagecostsavings.toLocaleString('en-US'));
