@@ -1295,6 +1295,20 @@ section.savings-calculator {
         background-color: var(--accent-color);
         &.form-result {
             background-color: var(--primary-color);
+            .holder {
+                overflow: hidden;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    top: 0;
+                    left: 0;
+                    transform: translateY(-50%) rotate(90deg);
+                    background-color: var(--white-color);
+                }
+            }
         }
     }
     

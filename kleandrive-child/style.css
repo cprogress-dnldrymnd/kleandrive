@@ -901,6 +901,18 @@ section.savings-calculator {
     background-color: var(--accent-color); }
     section.savings-calculator .form-part.form-result {
       background-color: var(--primary-color); }
+      section.savings-calculator .form-part.form-result .holder {
+        overflow: hidden;
+        position: relative; }
+        section.savings-calculator .form-part.form-result .holder:before {
+          content: '';
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          top: 0;
+          left: 0;
+          transform: translateY(-50%) rotate(90deg);
+          background-color: var(--white-color); }
   section.savings-calculator #calculator table {
     background-color: transparent;
     text-align: left; }
