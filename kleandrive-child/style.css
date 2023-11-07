@@ -908,6 +908,8 @@ section.savings-calculator {
     section.savings-calculator #calculator .form-group label {
       font-weight: 500; }
     section.savings-calculator #calculator .form-group input {
-      color: inherit; }
+      color: inherit;
+      border: 2px solid;
+      border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */
