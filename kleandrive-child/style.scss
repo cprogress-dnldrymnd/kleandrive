@@ -1290,11 +1290,11 @@ section.page-heading {
 section.savings-calculator {
     font-family: stolzl, sans-serif;
     margin-bottom: 100px;
+    color: var(--white-color);
     .bottom {
         background-color: var(--accent-color);
     }
     #calculator {
-        color: var(--white-color);
         .form-group {
             label {
                 font-weight: bold;

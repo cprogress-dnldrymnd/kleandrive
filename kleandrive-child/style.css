@@ -895,14 +895,13 @@ section.page-heading {
 
 section.savings-calculator {
   font-family: stolzl, sans-serif;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  color: var(--white-color); }
   section.savings-calculator .bottom {
     background-color: var(--accent-color); }
-  section.savings-calculator #calculator {
-    color: var(--white-color); }
-    section.savings-calculator #calculator .form-group label {
-      font-weight: bold; }
-    section.savings-calculator #calculator .form-group input {
-      color: inherit; }
+  section.savings-calculator #calculator .form-group label {
+    font-weight: bold; }
+  section.savings-calculator #calculator .form-group input {
+    color: inherit; }
 
 /*# sourceMappingURL=style.css.map */
