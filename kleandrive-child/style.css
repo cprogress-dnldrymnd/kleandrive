@@ -833,6 +833,11 @@ section.page-heading {
       text-align: center; }
       .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide .image-box img {
         max-height: 100px; }
+      .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide .name-box .name {
+        font-weight: 500;
+        color: var(--black-color); }
+      .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide .name-box .title {
+        font-weight: 300; }
     @media (max-width: 1024px) {
       .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder {
         display: none; } }

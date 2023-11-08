@@ -1401,6 +1401,15 @@ section.page-heading {
                         max-height: 100px;
                     }
                 }
+                .name-box {
+                    .name {
+                        font-weight: 500;
+                        color: var(--black-color);
+                    }
+                    .title {
+                        font-weight: 300;
+                    }
+                }
             }
 
             @media (max-width: 1024px) {
