@@ -994,4 +994,14 @@ section.savings-calculator {
     height: 100%;
     object-fit: cover; }
 
+.category.category .content_wrap {
+  max-width: var(--theme-var-page_fullwide_max);
+  margin: 0 auto;
+  width: 100% !important;
+  padding-left: var(--theme-var-page_fullwide_extra);
+  padding-right: var(--theme-var-page_fullwide_extra);
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /*# sourceMappingURL=style.css.map */
