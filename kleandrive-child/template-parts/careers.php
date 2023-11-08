@@ -52,7 +52,7 @@ $main_query = get_queried_object();
                                     </div>
                                     <div class="body">
                                         <div class="career-description d-none d-sm-block">
-                                            <h6>
+                                            <h6 class="mb-3">
                                                 <?= $location ?>
 
                                                 <?php if ($work_type) {
