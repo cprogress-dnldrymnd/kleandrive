@@ -379,7 +379,8 @@ html.overflow-hidden.overflow-hidden {
     max-width: 1320px; }
     .footer-cta .container .heading-box h2 {
       font-size: 39px;
-      color: var(--white-color); }
+      color: var(--white-color);
+      line-height: 1.3; }
     .footer-cta .container .sc_item_button {
       display: block; }
       .footer-cta .container .sc_item_button .sc_button.sc_button.sc_button {
