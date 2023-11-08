@@ -31,12 +31,14 @@ $partners = get_posts($args);
                     $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
                     $website = carbon_get_post_meta($partner->ID, 'website');
                     $logo_val = $alt_logo ? $alt_logo : $logo;
-                    echo '<pre>';
-                    var_dump(get_post_meta($partner->ID));
-                    echo '</pre>';
                     ?>
                     <div class="swiper-slide">
                         <div class="inner">
+                            <?php
+                            echo '<pre>';
+                            var_dump(get_post_meta($partner->ID));
+                            echo '</pre>';
+                            ?>
                             <?php if ($style == 'partner-style-2') { ?>
                                 <?php if ($logo_val) { ?>
                                     <div class="image image-mobile-only">
