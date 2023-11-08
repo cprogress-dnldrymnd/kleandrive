@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  Theme Name:   Kleandrive Child Theme
  Theme URI:    http://planty.themerex.net
@@ -18,9 +19,7 @@
   border-radius: 0 !important; }
 
 /*Blog*/
-.sc_blogger_default.sc_blogger_default_classic_time
-.sc_blogger_item_default.sc_blogger_item_on_plate
-.sc_blogger_item_content {
+.sc_blogger_default.sc_blogger_default_classic_time .sc_blogger_item_default.sc_blogger_item_on_plate .sc_blogger_item_content {
   padding: 45px 27px !important;
   background-color: #ffffff; }
 
@@ -807,6 +806,10 @@ section.page-heading {
     font-weight: 400;
     color: var(--primary-color);
     margin-top: 30px; }
+    .partner-slider.partner-style-2 .swiper-slide .inner .description-box p:first-child:before {
+      content: '“'; }
+    .partner-slider.partner-style-2 .swiper-slide .inner .description-box p:last-child:after {
+      content: '”'; }
     @media (min-width: 1025px) {
       .partner-slider.partner-style-2 .swiper-slide .inner .description-box {
         font-size: 25px;
@@ -828,6 +831,8 @@ section.page-heading {
     position: absolute; }
     .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide {
       text-align: center; }
+      .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide .image-box img {
+        max-height: 100px; }
     @media (max-width: 1024px) {
       .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder {
         display: none; } }
