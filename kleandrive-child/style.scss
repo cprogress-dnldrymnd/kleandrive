@@ -829,8 +829,7 @@ html {
             line-height: 1;
             a {
                 @include category-style();
-            border: 2px solid;
-
+                border: 2px solid var(--accent-color);
             }
             &.current-cat {
                 a {
