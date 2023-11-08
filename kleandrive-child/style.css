@@ -510,6 +510,9 @@ aside .post_item .post_title {
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box; }
+  .widget_area .post_item .post_title .blog-logo,
+  aside .post_item .post_title .blog-logo {
+    display: none !important; }
 .widget_area .post_item .post_info .post_categories > a,
 aside .post_item .post_info .post_categories > a {
   -webkit-border-radius: 15px;

@@ -915,6 +915,9 @@ aside .post_item {
         -webkit-box-orient: vertical;
         overflow: hidden;
         display: -webkit-box;
+        .blog-logo {
+            display: none !important
+        }
     }
 
     .post_info {
