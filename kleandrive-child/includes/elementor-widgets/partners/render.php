@@ -27,7 +27,7 @@ $partners = get_posts($args);
             <div class="swiper-wrapper">
                 <?php foreach ($partners as $partner) { ?>
                     <?php
-                    $logo = get_post_thumbnail_id();
+                    $logo = get_post_thumbnail_id($partner->ID);
                     $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
                     $website = carbon_get_post_meta($partner->ID, 'website');
                     $logo_val = $alt_logo ? $alt_logo : $logo;
@@ -86,7 +86,7 @@ $partners = get_posts($args);
                     <div class="swiper-wrapper">
                         <?php foreach ($partners as $partner) { ?>
                             <?php
-                            $logo = get_post_thumbnail_id();
+                            $logo = get_post_thumbnail_id($partner->ID);
                             $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
 
                             $logo_val = $alt_logo ? $alt_logo : $logo;
