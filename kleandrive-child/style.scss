@@ -1620,6 +1620,11 @@ section.savings-calculator {
 
         tr {
             border: none;
+            td {
+                &:nth-child(1) {
+                    width: 40%;
+                }
+            }
         }
     }
 }

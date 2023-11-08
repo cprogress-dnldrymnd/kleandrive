@@ -971,6 +971,8 @@ section.savings-calculator {
     border: 1px solid; }
   #assumptions table tr {
     border: none; }
+    #assumptions table tr td:nth-child(1) {
+      width: 40%; }
 
 .elementor-widget-trx_sc_blogger .post_featured.with_thumb {
   position: relative !important;
