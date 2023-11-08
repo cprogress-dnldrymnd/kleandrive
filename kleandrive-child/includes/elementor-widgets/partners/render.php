@@ -35,11 +35,6 @@ $partners = get_posts($args);
                     ?>
                     <div class="swiper-slide">
                         <div class="inner">
-                            <?php
-                            echo '<pre>';
-                            var_dump(get_post_meta($partner->ID, 'trx_addons_options', true));
-                            echo '</pre>';
-                            ?>
                             <?php if ($style == 'partner-style-2') { ?>
                                 <?php if ($logo_val) { ?>
                                     <div class="image image-mobile-only">
