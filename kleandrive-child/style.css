@@ -968,8 +968,7 @@ section.savings-calculator {
   #assumptions table td {
     text-align: left;
     background-color: transparent;
-    border: 1px solid;
-    color: var(--white-color); }
+    border: 1px solid; }
   #assumptions table tr {
     border: none; }
 
