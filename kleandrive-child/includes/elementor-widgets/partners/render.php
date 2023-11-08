@@ -31,12 +31,13 @@ $partners = get_posts($args);
                     $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
                     $website = carbon_get_post_meta($partner->ID, 'website');
                     $logo_val = $alt_logo ? $alt_logo : $logo;
+
                     ?>
                     <div class="swiper-slide">
                         <div class="inner">
                             <?php
                             echo '<pre>';
-                            var_dump(get_post_meta($partner->ID));
+                            var_dump(get_post_meta($partner->ID, 'trx_addons_options', true));
                             echo '</pre>';
                             ?>
                             <?php if ($style == 'partner-style-2') { ?>
