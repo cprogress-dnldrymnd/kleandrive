@@ -38,6 +38,8 @@ $main_query = get_queried_object();
                             $postterms = get_the_terms(get_the_ID(), 'location');
                             $salary = carbon_get_the_post_meta('salary');
                             $accordion = carbon_get_the_post_meta('accordion');
+                            $location = carbon_get_the_post_meta('location');
+                            $work_type = carbon_get_the_post_meta('work_type');
                             ?>
 
                             <div class="career-holder background-white post-item">
@@ -50,6 +52,13 @@ $main_query = get_queried_object();
                                     </div>
                                     <div class="body">
                                         <div class="career-description d-none d-sm-block">
+                                            <p>
+                                                <?= $work_type ?>
+                                            </p>
+                                            <p>
+                                                <?= $location ?>
+                                            </p>
+
                                             <?php the_content() ?>
                                         </div>
                                         <?php if ($accordion) { ?>
