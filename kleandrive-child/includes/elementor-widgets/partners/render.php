@@ -31,7 +31,9 @@ $partners = get_posts($args);
                     $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
                     $website = carbon_get_post_meta($partner->ID, 'website');
                     $logo_val = $alt_logo ? $alt_logo : $logo;
-
+                    echo '<pre>';
+                    var_dump(get_post_meta($partner->ID));
+                    echo '</pre>';
                     ?>
                     <div class="swiper-slide">
                         <div class="inner">
@@ -90,7 +92,6 @@ $partners = get_posts($args);
                             $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
 
                             $logo_val = $alt_logo ? $alt_logo : $logo;
-                            var_dump(get_post_meta($partner->ID));
                             ?>
                             <div class="swiper-slide">
                                 <?php if ($logo) { ?>
