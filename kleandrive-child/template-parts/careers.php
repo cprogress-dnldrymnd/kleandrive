@@ -52,14 +52,14 @@ $main_query = get_queried_object();
                                     </div>
                                     <div class="body">
                                         <div class="career-description d-none d-sm-block">
-                                            <p>
+                                            <h6>
                                                 <?= $location ?>
 
                                                 <?php if ($work_type) {
                                                     echo ', ' . $work_type;
                                                 }
                                                 ?>
-                                            </p>
+                                            </h6>
 
 
                                             <?php the_content() ?>
