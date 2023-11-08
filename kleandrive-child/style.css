@@ -455,11 +455,11 @@ html.overflow-hidden.overflow-hidden {
       color: var(--accent-color);
       pointer-events: none; }
 
-.blog .sidebar_default[class*="scheme_"] .sidebar_inner {
+.blog .sidebar_default[class*="scheme_"] .sidebar_inner, .category .sidebar_default[class*="scheme_"] .sidebar_inner {
   background-color: transparent;
   padding: 0;
   border-radius: 0; }
-  .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget {
+  .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget, .category .sidebar_default[class*="scheme_"] .sidebar_inner .widget {
     padding: 50px;
     background-color: var(--theme-color-alter_bg_color);
     color: var(--theme-color-alter_text);
@@ -467,10 +467,10 @@ html.overflow-hidden.overflow-hidden {
     -ms-border-radius: 15px;
     border-radius: 15px;
     box-shadow: 0px 20px 44px #0000000d; }
-    .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search {
+    .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search, .category .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search {
       border-radius: 15px 15px 0 0;
       position: relative; }
-      .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search:before {
+      .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search:before, .category .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_search:before {
         content: "";
         position: absolute;
         bottom: -10px;
@@ -479,11 +479,11 @@ html.overflow-hidden.overflow-hidden {
         right: 0;
         background-color: var(--white-color);
         z-index: 1; }
-    .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories {
+    .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories, .category .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories {
       margin-top: 0;
       border-radius: 0 0 15px 15px;
       position: relative; }
-      .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories:before {
+      .blog .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories:before, .category .sidebar_default[class*="scheme_"] .sidebar_inner .widget.widget_categories:before {
         content: "";
         height: 1px;
         left: 50px;
