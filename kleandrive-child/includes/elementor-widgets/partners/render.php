@@ -30,7 +30,7 @@ $partners = get_posts($args);
             <div class="swiper-wrapper">
                 <?php foreach ($partners as $partner) { ?>
                     <?php
-                    $logo = carbon_get_post_meta($partner->ID, 'logo');
+                    $logo = get_post_thumbnail_id();
                     $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
                     $website = carbon_get_post_meta($partner->ID, 'website');
                     $logo_val = $alt_logo ? $alt_logo : $logo;
