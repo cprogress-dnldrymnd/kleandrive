@@ -73,6 +73,8 @@ function action_planty_action_before_body()
 {
 	if (is_home()) {
 		echo do_shortcode('[trx_sc_layouts layout="22919"]');
+	} else if(is_category()) {
+		echo do_shortcode('[trx_sc_layouts layout="23588"]');
 	}
 }
 
