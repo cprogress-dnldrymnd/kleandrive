@@ -133,7 +133,10 @@ $description = carbon_get_the_post_meta('description');
                         </div>
 
                         <div class="table-holder">
-                            <h4>Damage cost assumptions: Greenhouse gas reporting: conversion factors 2021 - GOV.UK (www.gov.uk)</h4>
+                            <h4>Other assumptions</h4>
+                            <p>
+                                Greenhouse gas reporting: conversion factors 2021 - GOV.UK (www.gov.uk)
+                            </p>
                             <table>
                                 <tr>
                                     <td>Blended average CO2 saving per 1 vehicle/ km (g)</td>
