@@ -540,6 +540,14 @@ aside .post_item .post_info .post_categories > a {
   .widget_area .post_item .post_info .post_categories > a:before,
   aside .post_item .post_info .post_categories > a:before {
     content: none !important; }
+@media (max-width: 1700px) {
+  .widget_area .post_item .post_info,
+  aside .post_item .post_info {
+    display: flex;
+    flex-direction: column; }
+    .widget_area .post_item .post_info .post_info_item:after,
+    aside .post_item .post_info .post_info_item:after {
+      content: none !important; } }
 
 .page-template-page-template-process {
   font-family: stolzl, sans-serif;

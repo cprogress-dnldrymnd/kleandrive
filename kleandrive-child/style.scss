@@ -925,6 +925,15 @@ aside .post_item {
                 margin-right: 5px;
             }
         }
+        @media(max-width: 1700px) {
+            display: flex;
+            flex-direction: column;
+            .post_info_item  {
+                &:after {
+                    content: none !important;
+                }
+            }
+        }
     }
 }
 
