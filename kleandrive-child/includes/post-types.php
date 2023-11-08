@@ -165,7 +165,7 @@ new newTaxonomy(array(
 		'rewrite' => array('slug' => 'careers-category')
 	)
 ));
-
+/*
 new newPostType(array(
 	'name' => 'Partners',
 	'singular_name' => 'Partner',
@@ -176,3 +176,4 @@ new newPostType(array(
 	'publicly_queryable' => false,
 	'show_in_admin_bar' => false,
 ));
+*/
