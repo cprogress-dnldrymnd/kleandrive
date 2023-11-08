@@ -177,3 +177,14 @@ function action_wp_footer()
 }
 
 add_action('wp_footer', 'action_wp_footer');
+
+
+
+add_filter('body_class', 'custom_class');
+function custom_class($classes)
+{
+	if (is_category()) {
+		$classes[] = 'body_style_fullwide';
+	}
+	return $classes;
+}
