@@ -1,9 +1,20 @@
 <?php
 $style = $settings['style'];
+$group = $settings['group'];
 $args = array(
     'numberposts' => -1,
     'post_type'   => 'partners'
 );
+
+if ($group) {
+    $args['tax_query'] = array(
+        array(
+            'taxonomy' => 'cpt_testimonials_group',
+            'field'    => 'term_id',
+            'terms'    => $group
+        )
+    );
+}
 
 $partners = get_posts($args);
 ?>
@@ -11,7 +22,8 @@ $partners = get_posts($args);
     <div class="partner-wrapper">
 
 
-        <div class="swiper mySwiperPartner <?= $style == 'partner-style-2' ? 'mySwiperPartnerThumb' : 'mySwiperPartnernoThumb' ?>">
+        <div
+            class="swiper mySwiperPartner <?= $style == 'partner-style-2' ? 'mySwiperPartnerThumb' : 'mySwiperPartnernoThumb' ?>">
             <div class="swiper-wrapper">
                 <?php foreach ($partners as $partner) { ?>
                     <?php
@@ -26,7 +38,8 @@ $partners = get_posts($args);
                             <?php if ($style == 'partner-style-2') { ?>
                                 <?php if ($logo_val) { ?>
                                     <div class="image image-mobile-only">
-                                        <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>" alt="<?= $partner->post_title ?>">
+                                        <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>"
+                                            alt="<?= $partner->post_title ?>">
                                     </div>
                                 <?php } ?>
                             <?php } ?>
@@ -38,7 +51,8 @@ $partners = get_posts($args);
                                 <div class="logo-box">
                                     <?php if ($logo) { ?>
                                         <div class="image">
-                                            <img src="<?= wp_get_attachment_image_url($logo, 'medium') ?>" alt="<?= $partner->post_title ?>">
+                                            <img src="<?= wp_get_attachment_image_url($logo, 'medium') ?>"
+                                                alt="<?= $partner->post_title ?>">
                                         </div>
                                     <?php } ?>
 
@@ -50,10 +64,12 @@ $partners = get_posts($args);
 
                                     </div>
                                 </div>
-                            <?php } else { ?>
+                            <?php }
+                            else { ?>
                                 <?php if ($website) { ?>
                                     <div class="sc_item_button sc_button_wrap">
-                                        <a target="_blank" href="<?= $website ?>" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
+                                        <a target="_blank" href="<?= $website ?>"
+                                            class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
                                             <span class="sc_button_text"><span class="sc_button_title">Visit Website</span></span>
                                         </a>
                                     </div>
@@ -61,7 +77,7 @@ $partners = get_posts($args);
                             <?php } ?>
                         </div>
                     </div>
-                <?php }  ?>
+                <?php } ?>
             </div>
         </div>
         <?php if ($style == 'partner-style-2') { ?>
@@ -78,7 +94,8 @@ $partners = get_posts($args);
                             <div class="swiper-slide">
                                 <?php if ($logo) { ?>
                                     <div class="image-box">
-                                        <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>" alt="<?= $partner->post_title ?>">
+                                        <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>"
+                                            alt="<?= $partner->post_title ?>">
                                     </div>
                                 <?php } ?>
                             </div>
@@ -86,7 +103,6 @@ $partners = get_posts($args);
                     </div>
                 </div>
             </div>
-
         <?php } ?>
     </div>
     <div class="swiper-pagination swiper-pagination-style"></div>
