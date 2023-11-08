@@ -827,9 +827,10 @@ html {
             margin-bottom: 15px;
             margin-top: 0;
             line-height: 1;
-            border: 2px solid;
             a {
                 @include category-style();
+            border: 2px solid;
+
             }
             &.current-cat {
                 a {
