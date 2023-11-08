@@ -1392,7 +1392,9 @@ section.page-heading {
             border-radius: 13px;
             box-shadow: 0px 12px 44px #00000029;
             position: absolute;
-
+            .swiper-wrapper {
+                align-items: center;
+            }
             .swiper-slide {
                 text-align: center;
 

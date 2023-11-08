@@ -829,6 +829,8 @@ section.page-heading {
     border-radius: 13px;
     box-shadow: 0px 12px 44px #00000029;
     position: absolute; }
+    .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-wrapper {
+      align-items: center; }
     .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide {
       text-align: center; }
       .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide .image-box img {
