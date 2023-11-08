@@ -9,7 +9,6 @@
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
 @mixin inputs {
-
     input[type="text"],
     input[type="email"],
     input[type="number"],
@@ -24,115 +23,115 @@
 }
 
 @mixin respond-to($breakpoint) {
-    @if $breakpoint =="xxxs" {
+    @if $breakpoint == "xxxs" {
         @media screen and (max-width: 360px) {
             @content;
         }
     }
 
-    @if $breakpoint =="xxs" {
+    @if $breakpoint == "xxs" {
         @media screen and (max-width: 480px) {
             @content;
         }
     }
 
-    @if $breakpoint =="mobile" {
+    @if $breakpoint == "mobile" {
         @media screen and (max-width: 575px) {
             @content;
         }
     }
 
-    @if $breakpoint =="mobile-xs" {
+    @if $breakpoint == "mobile-xs" {
         @media (min-width: 576px) and (max-width: 767px) {
             @content;
         }
     }
 
-    @if $breakpoint =="mobile-sm" {
+    @if $breakpoint == "mobile-sm" {
         @media (min-width: 576px) and (max-width: 991px) {
             @content;
         }
     }
 
-    @if $breakpoint =="mobile-md" {
+    @if $breakpoint == "mobile-md" {
         @media (min-width: 576px) and (max-width: 1199px) {
             @content;
         }
     }
 
-    @if $breakpoint =="mobile-lg" {
+    @if $breakpoint == "mobile-lg" {
         @media (min-width: 576px) {
             @content;
         }
     }
 
-    @if $breakpoint =="xs" {
+    @if $breakpoint == "xs" {
         @media screen and (max-width: 767px) {
             @content;
         }
     }
 
-    @if $breakpoint =="xs-sm" {
+    @if $breakpoint == "xs-sm" {
         @media screen and (max-width: 991px) {
             @content;
         }
     }
 
-    @if $breakpoint =="xs-md" {
+    @if $breakpoint == "xs-md" {
         @media screen and (max-width: 1199px) {
             @content;
         }
     }
 
-    @if $breakpoint =="sm" {
+    @if $breakpoint == "sm" {
         @media (min-width: 768px) and (max-width: 991px) {
             @content;
         }
     }
 
-    @if $breakpoint =="sm-lg" {
+    @if $breakpoint == "sm-lg" {
         @media (min-width: 768px) {
             @content;
         }
     }
 
-    @if $breakpoint =="sm-md" {
+    @if $breakpoint == "sm-md" {
         @media (min-width: 768px) and (max-width: 1199px) {
             @content;
         }
     }
 
-    @if $breakpoint =="md" {
+    @if $breakpoint == "md" {
         @media (min-width: 992px) and (max-width: 1199px) {
             @content;
         }
     }
 
-    @if $breakpoint =="md-lg" {
+    @if $breakpoint == "md-lg" {
         @media screen and (min-width: 992px) {
             @content;
         }
     }
 
-    @if $breakpoint =="lg" {
+    @if $breakpoint == "lg" {
         @media screen and (min-width: 1200px) {
             @content;
         }
     }
 
-    @if $breakpoint =="small-lg" {
+    @if $breakpoint == "small-lg" {
         @media (min-width: 1200px) and (max-width: 1439px) {
             @content;
         }
     }
 
-    @if $breakpoint =="xs-lg" {
+    @if $breakpoint == "xs-lg" {
         @media screen and (max-width: 1439px) {
             @content;
         }
     }
 
-    @if $breakpoint =="lg-lg" {
+    @if $breakpoint == "lg-lg" {
         @media screen and (min-width: 1440px) {
             @content;
         }
@@ -141,17 +140,13 @@
 
 @mixin on-event($self: false) {
     @if $self {
-
         &,
         &:hover,
         &:active,
         &:focus {
             @content;
         }
-    }
-
-    @else {
-
+    } @else {
         &:hover,
         &:active,
         &:focus {
@@ -173,7 +168,9 @@
 }
 
 /*Blog*/
-.sc_blogger_default.sc_blogger_default_classic_time .sc_blogger_item_default.sc_blogger_item_on_plate .sc_blogger_item_content {
+.sc_blogger_default.sc_blogger_default_classic_time
+    .sc_blogger_item_default.sc_blogger_item_on_plate
+    .sc_blogger_item_content {
     padding: 45px 27px !important;
     background-color: #ffffff;
 }
@@ -277,7 +274,7 @@ h2.sc_item_title {
 .wp-block-quote.wp-block-quote.wp-block-quote {
     padding: 30px 40px 30px 60px;
 
-    >* {
+    > * {
         position: relative;
         z-index: 1;
 
@@ -712,7 +709,7 @@ html {
 }
 
 .sc_team {
-    .trx_addons_columns_wrap>[class*="trx_addons_column-"] {
+    .trx_addons_columns_wrap > [class*="trx_addons_column-"] {
         padding-right: 20px;
     }
 }
@@ -902,7 +899,7 @@ aside .post_item {
 
     .post_info {
         .post_categories {
-            >a {
+            > a {
                 @include category-style();
                 margin-bottom: 5px;
                 margin-right: 5px;
@@ -1354,13 +1351,13 @@ section.page-heading {
                     p {
                         &:first-child {
                             &:before {
-                                content: '“';
+                                content: "“";
                             }
                         }
 
                         &:last-child {
                             &:after {
-                                content: '”';
+                                content: "”";
                             }
                         }
                     }
@@ -1554,32 +1551,6 @@ section.savings-calculator {
     }
 
     #calculator {
-        table {
-            background-color: transparent;
-            text-align: left;
-
-            th {
-                font-weight: 400;
-                width: 70%;
-            }
-
-            td {
-                width: 30%;
-            }
-
-            th,
-            td {
-                text-align: left;
-                background-color: transparent;
-                border: 1px solid;
-                color: var(--white-color);
-            }
-
-            tr {
-                border: none;
-            }
-        }
-
         .holder {
             max-width: 1000px;
             margin-left: auto;
@@ -1622,6 +1593,34 @@ section.savings-calculator {
                     }
                 }
             }
+        }
+    }
+}
+
+#assumptions {
+    table {
+        background-color: transparent;
+        text-align: left;
+
+        th {
+            font-weight: 400;
+            width: 70%;
+        }
+
+        td {
+            width: 30%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            background-color: transparent;
+            border: 1px solid;
+            color: var(--white-color);
+        }
+
+        tr {
+            border: none;
         }
     }
 }
