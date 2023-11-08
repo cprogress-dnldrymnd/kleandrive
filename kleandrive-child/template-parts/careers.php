@@ -53,10 +53,10 @@ $main_query = get_queried_object();
                                     <div class="body">
                                         <div class="career-description d-none d-sm-block">
                                             <p>
-                                                <?= $work_type ?>
+                                                <?= $location ?>
 
-                                                <?php if ($location) {
-                                                    echo ', ' . $location;
+                                                <?php if ($work_type) {
+                                                    echo ', ' . $work_type;
                                                 }
                                                 ?>
                                             </p>
