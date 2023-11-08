@@ -91,7 +91,7 @@ $description = carbon_get_the_post_meta('description');
                         </li>
                         <li>
                             <th>Total Particulate Matter damage cost savings (£): </span>
-                            <span id="TotalParticulateMatterdamagecostsavings"></span>
+                                <span id="TotalParticulateMatterdamagecostsavings"></span>
                         </li>
                         <li>
                             <span>Operational cost savings (£): </span>
@@ -99,74 +99,13 @@ $description = carbon_get_the_post_meta('description');
                         </li>
                         <li>
                             <th>Capital cost savings over buying new electric buses (£): </span>
-                            <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+                                <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="form-part py-5 d-none">
-            <div class="container">
-                <div class="holder">
-                    <div class="table-holder mb-4">
-                        <h4>Damage cost assumptions:</h4>
-                        <table>
-                            <tr>
-                                <td>NOx Road Transport / tonne (£2022)</td>
-                                <td>£17,893</td>
-                                <td>Air Quality damage cost update 2023 – FINAL Report Report for Defra ECM_61369</td>
-                            </tr>
-                            <tr>
-                                <td>Particulate Matter Road Transport PM2.5/ tonne (£2002)</td>
-                                <td>£130,884</td>
-                                <td>Air Quality damage cost update 2023 – FINAL Report Report for Defra ECM_61369</td>
-                            </tr>
-                        </table>
-                    </div>
 
-                    <div class="table-holder">
-                        <h4>Damage cost assumptions: Greenhouse gas reporting: conversion factors 2021 - GOV.UK (www.gov.uk)</h4>
-                        <table>
-                            <tr>
-                                <td>Blended average CO2 saving per 1 vehicle/ km (g)</td>
-                                <td>1,312</td>
-                                <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
-                            </tr>
-                            <tr>
-                                <td>Blended average NOx saving per 1 vehicle/ km (g)</td>
-                                <td>4.921623633</td>
-                                <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
-                            </tr>
-                            <tr>
-                                <td>Blended average PM saving per 1 vehicle/ km (g)</td>
-                                <td>0.03670732422</td>
-                                <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
-                            </tr>
-                            <tr>
-                                <td>Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)</td>
-                                <td>227.7</td>
-                                <td>"40 to 80 percent of life cycle impacts of battery electric bus are in it's manufacture'' 1</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>NB. Adjusted down by a third to exclude battery and powertrain</td>
-                            </tr>
-                            <tr>
-                                <td>Incremental captial cost savings (new bev cost - repower)</td>
-                                <td>£ 350,000.00</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Assumed opertational costs?</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 </section>
@@ -174,18 +113,68 @@ $description = carbon_get_the_post_meta('description');
 <section class="bottom py-5">
     <div class="container">
         <div class="holder">
-            <h2>
-                Lorem ipsum dolor sit amet
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis eius accusamus, possimus vitae quia, sed assumenda odit voluptatem tempora illo, accusantium nobis impedit ipsum. Delectus neque qui architecto quos.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis eius accusamus, possimus vitae quia, sed assumenda odit voluptatem tempora illo, accusantium nobis impedit ipsum. Delectus neque qui architecto quos.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis eius accusamus, possimus vitae quia, sed assumenda odit voluptatem tempora illo, accusantium nobis impedit ipsum. Delectus neque qui architecto quos.
-            </p>
+            <div class="form-part py-5">
+                <div class="container">
+                    <div class="holder">
+                        <div class="table-holder mb-4">
+                            <h4>Damage cost assumptions:</h4>
+                            <table>
+                                <tr>
+                                    <td>NOx Road Transport / tonne (£2022)</td>
+                                    <td>£17,893</td>
+                                    <td>Air Quality damage cost update 2023 – FINAL Report Report for Defra ECM_61369</td>
+                                </tr>
+                                <tr>
+                                    <td>Particulate Matter Road Transport PM2.5/ tonne (£2002)</td>
+                                    <td>£130,884</td>
+                                    <td>Air Quality damage cost update 2023 – FINAL Report Report for Defra ECM_61369</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="table-holder">
+                            <h4>Damage cost assumptions: Greenhouse gas reporting: conversion factors 2021 - GOV.UK (www.gov.uk)</h4>
+                            <table>
+                                <tr>
+                                    <td>Blended average CO2 saving per 1 vehicle/ km (g)</td>
+                                    <td>1,312</td>
+                                    <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
+                                </tr>
+                                <tr>
+                                    <td>Blended average NOx saving per 1 vehicle/ km (g)</td>
+                                    <td>4.921623633</td>
+                                    <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
+                                </tr>
+                                <tr>
+                                    <td>Blended average PM saving per 1 vehicle/ km (g)</td>
+                                    <td>0.03670732422</td>
+                                    <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
+                                </tr>
+                                <tr>
+                                    <td>Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)</td>
+                                    <td>227.7</td>
+                                    <td>"40 to 80 percent of life cycle impacts of battery electric bus are in it's manufacture'' 1</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>NB. Adjusted down by a third to exclude battery and powertrain</td>
+                                </tr>
+                                <tr>
+                                    <td>Incremental captial cost savings (new bev cost - repower)</td>
+                                    <td>£ 350,000.00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Assumed opertational costs?</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>x
