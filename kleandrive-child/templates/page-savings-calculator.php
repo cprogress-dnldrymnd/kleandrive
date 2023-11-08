@@ -117,7 +117,7 @@ $description = carbon_get_the_post_meta('description');
                 <div class="container">
                     <div class="holder" id="assumptions">
                         <div class="table-holder mb-4">
-                            <h4>Damage cost assumptions:</h4>
+                            <h4>Damage cost assumptions</h4>
                             <table>
                                 <tr>
                                     <td>NOx Road Transport / tonne (£2022)</td>
