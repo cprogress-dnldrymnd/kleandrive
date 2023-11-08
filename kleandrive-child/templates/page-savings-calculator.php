@@ -80,28 +80,28 @@ $description = carbon_get_the_post_meta('description');
             <div class="container">
                 <div class="holder py-5">
                     <h4 class="mb-4">Summary outputs</h4>
-                    <table class="table w-100">
-                        <tr>
-                            <th>Total CO2 savings (tonnes)</th>
-                            <td id="TotalCO2savings"></td>
-                        </tr>
-                        <tr>
-                            <th>Total NOx damage cost savings (£)</th>
-                            <td id="TotalNOxdamagecostsavings"></td>
-                        </tr>
-                        <tr>
-                            <th>Total Particulate Matter damage cost savings (£)</th>
-                            <td id="TotalParticulateMatterdamagecostsavings"></td>
-                        </tr>
-                        <tr>
-                            <th>Operational cost savings (£)</th>
-                            <td id="Operationalcostsavings"></td>
-                        </tr>
-                        <tr>
-                            <th>Capital cost savings over buying new electric buses (£)</th>
-                            <td id="Capitalcostsavingsoverbuyingnewelectricbuses"></td>
-                        </tr>
-                    </table>
+                    <ul class="list-inline">
+                        <li>
+                            <span>Total CO2 savings (tonnes): </span>
+                            <span id="TotalCO2savings"></span>
+                        </li>
+                        <li>
+                            <span>Total NOx damage cost savings (£): </span>
+                            <span id="TotalNOxdamagecostsavings"></span>
+                        </li>
+                        <li>
+                            <th>Total Particulate Matter damage cost savings (£): </span>
+                            <span id="TotalParticulateMatterdamagecostsavings"></span>
+                        </li>
+                        <li>
+                            <span>Operational cost savings (£): </span>
+                            <span id="Operationalcostsavings"></span>
+                        </li>
+                        <li>
+                            <th>Capital cost savings over buying new electric buses (£): </span>
+                            <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
