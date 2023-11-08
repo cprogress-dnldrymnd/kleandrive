@@ -804,10 +804,13 @@ html {
     letter-spacing: 0.6px;
     display: inline-block;
     font-weight: 300;
+    border: 2px solid var(--accent-color);
 
     @include on-event() {
         color: var(--white-color) !important;
         background-color: var(--primary-color);
+        border: 2px solid var(--primary-color);
+
     }
 
     &:before {
@@ -829,7 +832,6 @@ html {
             line-height: 1;
             a {
                 @include category-style();
-                border: 2px solid var(--accent-color);
             }
             &.current-cat {
                 a {
