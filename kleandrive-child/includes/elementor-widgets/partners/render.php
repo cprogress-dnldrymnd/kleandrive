@@ -90,6 +90,7 @@ $partners = get_posts($args);
                             $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
 
                             $logo_val = $alt_logo ? $alt_logo : $logo;
+                            var_dump(get_post_meta($partner->ID));
                             ?>
                             <div class="swiper-slide">
                                 <?php if ($logo) { ?>
@@ -99,11 +100,11 @@ $partners = get_posts($args);
                                     </div>
                                 <?php }
                                 else { ?>
-                                <?php $title = get_post_meta( $partner->ID, 'trx_addons_options_field_subtitle', true) ; ?>
-                                <div class="name-box">
-                                    <div class="name"><?= $partner->post_title ?></div>
-                                    <div class="title"><?= $title?></div>
-                                </div>
+                                    <?php $title = get_post_meta($partner->ID, 'trx_addons_options_field_subtitle', true); ?>
+                                    <div class="name-box">
+                                        <div class="name"><?= $partner->post_title ?></div>
+                                        <div class="title"><?= $title ?></div>
+                                    </div>
                                 <?php } ?>
                             </div>
                         <?php } ?>
