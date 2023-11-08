@@ -19,7 +19,9 @@
   border-radius: 0 !important; }
 
 /*Blog*/
-.sc_blogger_default.sc_blogger_default_classic_time .sc_blogger_item_default.sc_blogger_item_on_plate .sc_blogger_item_content {
+.sc_blogger_default.sc_blogger_default_classic_time
+.sc_blogger_item_default.sc_blogger_item_on_plate
+.sc_blogger_item_content {
   padding: 45px 27px !important;
   background-color: #ffffff; }
 
@@ -807,9 +809,9 @@ section.page-heading {
     color: var(--primary-color);
     margin-top: 30px; }
     .partner-slider.partner-style-2 .swiper-slide .inner .description-box p:first-child:before {
-      content: '“'; }
+      content: "“"; }
     .partner-slider.partner-style-2 .swiper-slide .inner .description-box p:last-child:after {
-      content: '”'; }
+      content: "”"; }
     @media (min-width: 1025px) {
       .partner-slider.partner-style-2 .swiper-slide .inner .description-box {
         font-size: 25px;
@@ -926,22 +928,6 @@ section.savings-calculator {
           left: 0;
           transform: translate(15px, -50%) rotate(135deg);
           background-color: var(--accent-color); }
-  section.savings-calculator #calculator table {
-    background-color: transparent;
-    text-align: left; }
-    section.savings-calculator #calculator table th {
-      font-weight: 400;
-      width: 70%; }
-    section.savings-calculator #calculator table td {
-      width: 30%; }
-    section.savings-calculator #calculator table th,
-    section.savings-calculator #calculator table td {
-      text-align: left;
-      background-color: transparent;
-      border: 1px solid;
-      color: var(--white-color); }
-    section.savings-calculator #calculator table tr {
-      border: none; }
   section.savings-calculator #calculator .holder {
     max-width: 1000px;
     margin-left: auto;
@@ -969,6 +955,23 @@ section.savings-calculator {
       section.savings-calculator #calculator .form-group input[type="number"]::-webkit-outer-spin-button, section.savings-calculator #calculator .form-group input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0; }
+
+#assumptions table {
+  background-color: transparent;
+  text-align: left; }
+  #assumptions table th {
+    font-weight: 400;
+    width: 70%; }
+  #assumptions table td {
+    width: 30%; }
+  #assumptions table th,
+  #assumptions table td {
+    text-align: left;
+    background-color: transparent;
+    border: 1px solid;
+    color: var(--white-color); }
+  #assumptions table tr {
+    border: none; }
 
 .elementor-widget-trx_sc_blogger .post_featured.with_thumb {
   position: relative !important;
