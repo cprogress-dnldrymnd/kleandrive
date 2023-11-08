@@ -119,7 +119,7 @@ function smashing_post_column($column, $post_id)
 
 function action_the_title($title, $id = null)
 {
-	if (get_post_type($id) == 'post') {
+	if (get_post_type($id) == 'post' && !is_admin()) {
 		$logo = carbon_get_the_post_meta('logo');
 
 		if ($logo) {
