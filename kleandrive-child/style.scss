@@ -1626,16 +1626,19 @@ section.savings-calculator {
     }
 }
 
-.post_featured.with_thumb {
-    position: relative !important;
-    padding: 35%;
-    display: block !important;
-    img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+.elementor-widget-trx_sc_blogger {
+    .post_featured.with_thumb {
+        position: relative !important;
+        padding: 35%;
+        display: block !important;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
