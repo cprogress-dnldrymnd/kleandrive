@@ -97,6 +97,13 @@ $partners = get_posts($args);
                                         <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>"
                                             alt="<?= $partner->post_title ?>">
                                     </div>
+                                <?php }
+                                else { ?>
+                                <?php $title = get_post_meta( $partners->post_id, 'trx_addons_options_field_subtitle', true) ;
+                                <div class="name-box">
+                                    <div class="name"><?= $partner->post_title ?></div>
+                                    <div class="title"><?= $title?></div>
+                                </div>
                                 <?php } ?>
                             </div>
                         <?php } ?>
