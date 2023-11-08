@@ -994,4 +994,7 @@ section.savings-calculator {
     height: 100%;
     object-fit: cover; }
 
+body.body_style_wide:not(.expand_content).category [class*="content_wrap"] > .content, body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
+  width: 100% !important; }
+
 /*# sourceMappingURL=style.css.map */
