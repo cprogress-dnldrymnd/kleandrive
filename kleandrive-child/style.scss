@@ -188,7 +188,7 @@
 
 .sc_button_wrap {
     margin-bottom: 0 !important;
-    @media(max-width: 575px) {
+    @media (max-width: 575px) {
         display: flex !important;
         flex-direction: column;
         justify-content: flex-start;
@@ -196,7 +196,7 @@
         .sc_button.sc_button {
             margin-left: 0 !important;
             &:not(:last-child) {
-                margin-bottom: 20px  !important;
+                margin-bottom: 20px !important;
             }
         }
     }
@@ -855,7 +855,8 @@ html {
     }
 }
 
-.blog, .category {
+.blog,
+.category {
     .sidebar_default[class*="scheme_"] {
         .sidebar_inner {
             background-color: transparent;
@@ -863,7 +864,7 @@ html {
             border-radius: 0;
 
             .widget {
-                padding: 50px;
+                padding: 50px !important;
                 background-color: var(--theme-color-alter_bg_color);
                 color: var(--theme-color-alter_text);
                 -webkit-border-radius: 15px;
@@ -903,6 +904,14 @@ html {
                         z-index: 2;
                     }
                 }
+                @media (max-width: 767px) {
+                    padding: 20px !important;
+                }
+            }
+            @media (max-width: 1023px) {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
             }
         }
     }
@@ -916,7 +925,7 @@ aside .post_item {
         overflow: hidden;
         display: -webkit-box;
         .blog-logo {
-            display: none !important
+            display: none !important;
         }
     }
 
@@ -928,10 +937,10 @@ aside .post_item {
                 margin-right: 5px;
             }
         }
-        @media(max-width: 1700px) {
+        @media (max-width: 1700px) {
             display: flex;
             flex-direction: column;
-            .post_info_item  {
+            .post_info_item {
                 &:after {
                     content: none !important;
                 }
@@ -1678,6 +1687,7 @@ section.savings-calculator {
     }
 }
 
-body.body_style_wide:not(.expand_content).category [class*="content_wrap"] > .content, body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
+body.body_style_wide:not(.expand_content).category [class*="content_wrap"] > .content,
+body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     width: 100% !important;
 }
