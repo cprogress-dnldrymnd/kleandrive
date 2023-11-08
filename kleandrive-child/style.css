@@ -448,6 +448,11 @@ html.overflow-hidden.overflow-hidden {
         background-color: var(--primary-color); }
       .widget_categories.widget_categories ul li a:before {
         content: none !important; }
+    .widget_categories.widget_categories ul li.current-cat a {
+      background-color: transparent;
+      color: var(--accent-color);
+      border: 2px solid;
+      pointer-events: none; }
 
 .blog .sidebar_default[class*="scheme_"] .sidebar_inner {
   background-color: transparent;

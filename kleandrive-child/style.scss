@@ -831,6 +831,14 @@ html {
             a {
                 @include category-style();
             }
+            &.current-cat {
+                a {
+                    background-color: transparent;
+                    color: var(--accent-color);
+                    border: 2px solid;
+                    pointer-events: none;
+                }
+            }
         }
     }
 }
