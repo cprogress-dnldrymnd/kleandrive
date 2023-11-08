@@ -4,17 +4,18 @@ $group = $settings['group'];
 
 $args = array(
     'numberposts' => -1,
-    'post_type'   => 'partners',
-    'tax_query'   => array(
+    'post_type'   => 'cpt_testimonials',
+);
+
+if ($group) {
+    $args['tax_query'] = array(
         array(
             'taxonomy' => 'cpt_testimonials_group',
             'field'    => 'term_id',
             'terms'    => $group
         )
-    )
-);
-
-
+    );
+}
 
 var_dump($args);
 
