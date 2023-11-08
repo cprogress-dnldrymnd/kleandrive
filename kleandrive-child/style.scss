@@ -189,14 +189,14 @@
 .sc_button_wrap {
     margin-bottom: 0 !important;
     @media(max-width: 575px) {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         .sc_button.sc_button {
-            margin-left: 0;
+            margin-left: 0 !important;
             &:not(:last-child) {
-                margin-bottom: 20px;
+                margin-bottom: 20px  !important;
             }
         }
     }

@@ -38,14 +38,14 @@
   margin-bottom: 0 !important; }
   @media (max-width: 575px) {
     .sc_button_wrap {
-      display: flex;
+      display: flex !important;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start; }
       .sc_button_wrap .sc_button.sc_button {
-        margin-left: 0; }
+        margin-left: 0 !important; }
         .sc_button_wrap .sc_button.sc_button:not(:last-child) {
-          margin-bottom: 20px; } }
+          margin-bottom: 20px  !important; } }
   .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default {
     border: 2px solid var(--theme-color-text_hover) !important; }
     .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary {
