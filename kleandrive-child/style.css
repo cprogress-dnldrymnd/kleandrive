@@ -970,4 +970,16 @@ section.savings-calculator {
         -webkit-appearance: none;
         margin: 0; }
 
+.post_featured.with_thumb {
+  position: relative !important;
+  padding: 35%;
+  display: block !important; }
+  .post_featured.with_thumb img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
 /*# sourceMappingURL=style.css.map */
