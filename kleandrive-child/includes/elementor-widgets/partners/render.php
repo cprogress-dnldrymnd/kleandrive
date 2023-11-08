@@ -1,6 +1,7 @@
 <?php
 $style = $settings['style'];
 $group = $settings['group'];
+
 $args = array(
     'numberposts' => -1,
     'post_type'   => 'partners'
@@ -15,6 +16,8 @@ if ($group) {
         )
     );
 }
+
+var_dump($args);
 
 $partners = get_posts($args);
 ?>
