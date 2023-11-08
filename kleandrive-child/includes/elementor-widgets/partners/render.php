@@ -104,7 +104,7 @@ $partners = get_posts($args);
                                     </div>
                                 <?php }
                                 else { ?>
-                                    <?php $title = get_post_meta($partner->ID, 'trx_addons_options_field_subtitle', true); ?>
+                                    <?php $title = get_post_meta($partner->ID, 'trx_addons_options', true)['subtitle'] ?>
                                     <div class="name-box">
                                         <div class="name"><?= $partner->post_title ?></div>
                                         <div class="title"><?= $title ?></div>
