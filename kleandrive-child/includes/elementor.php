@@ -15,7 +15,7 @@ function _get_taxonomy_terms($taxonomy)
         $arr[$term->term_id] = $term->name;
     }
 
-    return $arr
+    return $arr;
 }
 function register_new_widgets($widgets_manager)
 {
