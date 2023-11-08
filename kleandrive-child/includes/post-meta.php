@@ -136,6 +136,5 @@ Container::make('post_meta', __('Settings'))
     ->or_where('post_type', '=', 'cpt_testimonials')
     ->add_fields(array(
         Field::make('text', 'website', 'Website'),
-        Field::make('image', 'logo', 'Logo'),
         Field::make('image', 'alt_logo', 'Alt Logo'),
     ));
