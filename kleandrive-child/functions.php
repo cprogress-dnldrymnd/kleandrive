@@ -73,13 +73,19 @@ function action_planty_action_before_body()
 {
 	if (is_home()) {
 		echo do_shortcode('[trx_sc_layouts layout="22919"]');
-	} else if(is_category()) {
+	} else if (is_category()) {
 		echo do_shortcode('[trx_sc_layouts layout="23588"]');
 	}
 }
 
 add_action('planty_action_content_wrap_start', 'action_planty_action_before_body');
 
+function term_name()
+{
+	return get_queried_object()->name;
+}
+
+add_shortcode('term_name', 'term_name');
 
 
 function append_query_string($url, $post, $leavename = false)
