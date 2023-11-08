@@ -131,8 +131,9 @@ Container::make('post_meta', __('Our Process Settings'))
 /*-----------------------------------------------------------------------------------*/
 /* Our Process Page Settings
 /*-----------------------------------------------------------------------------------*/
-Container::make('post_meta', __('Partner Settings'))
+Container::make('post_meta', __('Settings'))
     ->where('post_type', '=', 'partners')
+    ->or_where('post_type', '=', 'cpt_testimonials')
     ->add_fields(array(
         Field::make('text', 'website', 'Website'),
         Field::make('image', 'logo', 'Logo'),
