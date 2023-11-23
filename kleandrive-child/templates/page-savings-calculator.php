@@ -335,7 +335,7 @@ $description = carbon_get_the_post_meta('description');
             format: {
                 // 'to' the formatted value. Receives a number.
                 to: function(value) {
-                    return value + ',-';
+                    return value;
                 },
                 // 'from' the formatted value.
                 // Receives a string, should return a number.
