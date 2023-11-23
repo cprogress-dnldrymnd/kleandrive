@@ -1546,7 +1546,9 @@ section.page-heading {
 
 section.savings-calculator {
     color: var(--white-color);
-
+    .tab-holder {
+        color: var(--black-color);
+    }
     .form-part {
         background-color: var(--accent-color);
 
