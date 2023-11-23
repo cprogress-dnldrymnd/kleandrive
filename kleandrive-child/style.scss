@@ -1551,6 +1551,9 @@ section.savings-calculator {
         padding-top: 80px;
         padding-bottom: 80px;
         color: var(--black-color);
+        .description-box {
+            font-weight: 300;
+        }
     }
     .tab-holder {
         color: var(--black-color);
