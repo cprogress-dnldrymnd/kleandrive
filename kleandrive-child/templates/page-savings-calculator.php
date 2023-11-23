@@ -328,8 +328,16 @@ $description = carbon_get_the_post_meta('description');
         noUiSlider.create(rangeSlider, {
             start: [4000],
             range: {
-                'min': [2000],
-                'max': [10000]
+                'min': [0],
+                'max': [100000]
+            },
+            pips: {
+                mode: 'steps',
+                density: 1000,
+                format: wNumb({
+                    decimals: 2,
+                    suffix: 'km'
+                })
             }
         });
     });
