@@ -1563,6 +1563,7 @@ section.savings-calculator {
         .col-lg-4 {
             border-radius: 1px solid;
         }
+
         .slider-input {
             border: 1px solid #d1d1d1;
             padding: 10px;
@@ -1758,4 +1759,10 @@ section.savings-calculator {
 body.body_style_wide:not(.expand_content).category [class*="content_wrap"] > .content,
 body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     width: 100% !important;
+}
+
+.slider-handles {
+    .noUi-connect {
+        background-color: var(--accent-color);
+    }
 }
