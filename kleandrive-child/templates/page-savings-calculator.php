@@ -95,7 +95,7 @@ $description = carbon_get_the_post_meta('description');
                                 <div class="min col-auto">0km</div>
                                 <div class="col range-holder">
                                     <input type="text" id="slider-range-annual-mileage-value">
-                                    <div class="slider-handles" id="slider-range-annual-mileage"></div>
+                                    <div class="slider-handles" id="slider-range-annual-mileage" min="0" max="100000" start="80000"></div>
                                 </div>
                                 <div class="max col-auto">100,000km</div>
                             </div>
@@ -325,10 +325,10 @@ $description = carbon_get_the_post_meta('description');
 
 <script>
     jQuery(document).ready(function() {
-        range_slider('slider-range-annual-mileage', 'slider-range-annual-mileage-value');
+        range_slider('#slider-range-annual-mileage', '#slider-range-annual-mileage-value');
 
         function range_slider($range_id, $input_id) {
-            var rangeSlider = document.getElementById($range_id);
+            var rangeSlider = jQuery($range_id);
             noUiSlider.create(rangeSlider, {
                 start: [80000],
                 range: {
@@ -348,7 +348,7 @@ $description = carbon_get_the_post_meta('description');
                 }
             });
 
-            var inputFormat = document.getElementById($input_id);
+            var inputFormat = jQuery($input_id);
             rangeSlider.noUiSlider.on('update', function(values, handle) {
                 inputFormat.value = values[handle];
             });
