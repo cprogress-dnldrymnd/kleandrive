@@ -858,7 +858,8 @@ section.page-heading {
     font-weight: 500;
     color: var(--black-color); }
   .partner-slider.partner-style-2 .swiper-slide .inner .name-box .title {
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 14px; }
   .partner-slider.partner-style-2 .swiper-slide .inner .description-box {
     font-weight: 400;
     color: var(--primary-color);
