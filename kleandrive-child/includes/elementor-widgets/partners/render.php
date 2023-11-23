@@ -59,6 +59,18 @@ $partners = get_posts($args);
                                     </div>
                                 </div>
                             <?php } else { ?>
+
+                                <?php if ($logo) { ?>
+                                    <div class="image-box">
+                                        <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>" alt="<?= $partner->post_title ?>">
+                                    </div>
+                                <?php } ?>
+                                <?php $title = get_post_meta($partner->ID, 'trx_addons_options', true)['subtitle'] ?>
+                                <div class="name-box">
+                                    <div class="name"><?= $partner->post_title ?></div>
+                                    <div class="title"><?= $title ?></div>
+                                </div>
+
                                 <?php if ($website) { ?>
                                     <div class="sc_item_button sc_button_wrap">
                                         <a target="_blank" href="<?= $website ?>" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
