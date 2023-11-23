@@ -91,7 +91,7 @@ $description = carbon_get_the_post_meta('description');
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
                             <label for="Range-AnnualMileage" class="form-label">Annual mileage (km)</label>
-                            <input type="text" id="slider-range-annual-mileage-value">
+                            <input type="text" class="slider-input" id="slider-range-annual-mileage-value">
                             <div class="row justify-content-space-between">
                                 <div class="min col-auto">0km</div>
                                 <div class="col range-holder">
