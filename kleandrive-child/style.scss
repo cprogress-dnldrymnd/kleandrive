@@ -1548,6 +1548,12 @@ section.savings-calculator {
     color: var(--white-color);
     .tab-holder {
         color: var(--black-color);
+        .nav-link {
+            color: var(--primary-color);
+            &:not(.active) {
+                opacity: 0.5;
+            }
+        }
     }
     .form-part {
         background-color: var(--accent-color);
