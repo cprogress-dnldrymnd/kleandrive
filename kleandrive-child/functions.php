@@ -20,8 +20,8 @@ if (!function_exists('planty_child_load_rtl')) {
 		}
 
 		if (is_page_template('templates/page-savings-calculator.php')) {
-			wp_enqueue_style('noui', 'https: //cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js');
-			wp_enqueue_script('noui', 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css');
+			wp_enqueue_style('noui', 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css');
+			wp_enqueue_script('noui', 'https: //cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js');
 			
 		}
 		if (is_rtl()) {
