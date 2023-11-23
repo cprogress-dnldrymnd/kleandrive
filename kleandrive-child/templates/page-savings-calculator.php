@@ -29,6 +29,20 @@ $description = carbon_get_the_post_meta('description');
         </div>
     </div>
 
+    <div class="results-holder">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="image-box">
+                        <img src="https://kleandrive.earth/wp-content/uploads/2023/09/Kleanbus-1.png">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="tab-holder mb-5">
         <div class="container">
