@@ -1097,9 +1097,9 @@ body.body_style_wide:not(.expand_content).category [class*="content_wrap"] > .co
 body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   width: 100% !important; }
 
-.slider-handles .noUi-connect {
+#calculator-slider .slider-handles .noUi-connect {
   background-color: var(--accent-color); }
-.slider-handles .noUi-handle {
+#calculator-slider .slider-handles .noUi-handle {
   box-shadow: none;
   border-radius: 100px;
   width: 38px;
@@ -1109,7 +1109,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   top: -11px;
   outline: 0;
   transition: all 0.3s ease-out; }
-  .slider-handles .noUi-handle .noUi-touch-area {
+  #calculator-slider .slider-handles .noUi-handle .noUi-touch-area {
     border: 1px solid transparent;
     position: absolute;
     top: -10px;

@@ -87,7 +87,7 @@ $description = carbon_get_the_post_meta('description');
                     </div>
 
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8" id="calculator-slider">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
                             <div>
