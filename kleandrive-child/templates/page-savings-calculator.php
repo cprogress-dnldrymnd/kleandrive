@@ -94,7 +94,7 @@ $description = carbon_get_the_post_meta('description');
                             <div class="row justify-content-space-between">
                                 <div class="min col-auto">0</div>
                                 <div class="col range-holder">
-                                    <div class="slider-handles"></div>
+                                    <div class="slider-handles" id="slider-range"></div>
                                 </div>
                                 <div class="max col-auto">100,000km</div>
                             </div>
@@ -275,7 +275,6 @@ $description = carbon_get_the_post_meta('description');
 
 <script>
     var rangeSlider = document.getElementById('slider-range');
-
     noUiSlider.create(rangeSlider, {
         start: [4000],
         range: {
