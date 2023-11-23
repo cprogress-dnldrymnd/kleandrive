@@ -1097,7 +1097,7 @@ body.body_style_wide:not(.expand_content).category [class*="content_wrap"] > .co
 body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   width: 100% !important; }
 
-.slider-handles .noUi-connect {
+.slider-handles .noUi-connects {
   background-color: var(--accent-color); }
 .slider-handles .noUi-handle .noUi-touch-area {
   border: 1px solid transparent;
