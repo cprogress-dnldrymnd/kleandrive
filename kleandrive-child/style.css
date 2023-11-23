@@ -1119,13 +1119,13 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     top: 50%;
     background-color: transparent; }
   #calculator-slider .slider-handles .noUi-handle:before {
-    left: 10px;
+    left: 5px;
     right: auto;
     transform: rotate(45deg) translateY(-50%); }
   #calculator-slider .slider-handles .noUi-handle:after {
-    right: 10px;
+    right: 5px;
     left: auto;
-    transform: rotate(45deg) translateY(-50%); }
+    transform: rotate(-135deg) translateY(-50%); }
   #calculator-slider .slider-handles .noUi-handle .noUi-touch-area {
     border: 1px solid transparent;
     position: absolute;

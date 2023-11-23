@@ -1787,14 +1787,14 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
                 background-color: transparent;
             }
             &:before {
-                left: 10px;
+                left: 5px;
                 right: auto;
                 transform: rotate(45deg) translateY(-50%);
             }
             &:after {
-                right: 10px;
+                right: 5px;
                 left: auto;
-                transform: rotate(45deg) translateY(-50%);
+                transform: rotate(-135deg) translateY(-50%);
             }
             .noUi-touch-area {
                 border: 1px solid transparent;
