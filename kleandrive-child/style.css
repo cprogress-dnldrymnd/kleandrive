@@ -950,7 +950,8 @@ section.savings-calculator {
     section.savings-calculator .tab-holder .nav-link {
       color: var(--primary-color);
       background-color: transparent;
-      border-radius: 0; }
+      border-radius: 0;
+      padding: 10px 0; }
       section.savings-calculator .tab-holder .nav-link:not(.active) {
         opacity: 0.5; }
   section.savings-calculator .form-part {

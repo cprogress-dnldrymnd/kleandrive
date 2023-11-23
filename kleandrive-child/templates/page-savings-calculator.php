@@ -30,7 +30,7 @@ $description = carbon_get_the_post_meta('description');
     </div>
 
 
-    <div class="tab-holder">
+    <div class="tab-holder mb-5">
         <div class="container">
             <div class="heading-box mb-5">
                 <h4>
