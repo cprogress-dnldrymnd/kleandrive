@@ -112,6 +112,7 @@ Container::make('post_meta', __('Footer Settings'))
 Container::make('post_meta', __('Our Process Settings'))
     ->where('post_template', '=', 'templates/page-template-process.php')
     ->add_fields(array(
+        Field::make('text', 'subtitle', 'Subtitle'),
         Field::make('textarea', 'description', 'Description'),
         Field::make('complex', 'process', 'Process')
             ->add_fields(array(
