@@ -330,11 +330,13 @@ $description = carbon_get_the_post_meta('description');
         function range_slider($range_id, $input_id) {
             var rangeSlider = document.getElementById($range_id);
             start = rangeSlider.getAttribute("start");
+            min = rangeSlider.getAttribute("min");
+            max = rangeSlider.getAttribute("max");
             noUiSlider.create(rangeSlider, {
                 start: [start],
                 range: {
-                    'min': [0],
-                    'max': [100000]
+                    'min': [min],
+                    'max': [max]
                 },
                 format: {
                     // 'to' the formatted value. Receives a number.
