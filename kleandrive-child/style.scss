@@ -1556,6 +1556,9 @@ section.savings-calculator {
         background-color: var(--light-gray);
         padding-top: 80px;
         padding-bottom: 80px;
+        .col-lg-4 {
+            border-radius: 1px solid;
+        }
         .nav-link {
             color: var(--primary-color);
             background-color: transparent;
