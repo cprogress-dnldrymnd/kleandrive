@@ -65,7 +65,11 @@ $description = carbon_get_the_post_meta('description');
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
                             <label for="Range-AnnualMileage" class="form-label">Annual mileage (km)</label>
-                            <input type="range" class="form-range" min="0" max="100000" step="0.5" id="Range-AnnualMileage">
+                            <div class="range-holder d-flex justify-content-space-between">
+                                <div class="min">0</div>
+                                <input type="range" class="form-range" min="0" max="100000" step="0.5" id="Range-AnnualMileage">
+                                <div class="max">100,000km</div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-remaining-life" role="tabpanel" aria-labelledby="v-pills-remaining-life-tab">
 
