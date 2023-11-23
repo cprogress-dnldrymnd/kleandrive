@@ -838,6 +838,13 @@ section.page-heading {
     @media (max-width: 1024px) {
       .partner-slider.partner-style-2 .image-mobile-only {
         display: block; } }
+  .partner-slider.partner-style-2 .image-box img {
+    max-height: 100px; }
+  .partner-slider.partner-style-2 .name-box .name {
+    font-weight: 500;
+    color: var(--black-color); }
+  .partner-slider.partner-style-2 .name-box .title {
+    font-weight: 300; }
   .partner-slider.partner-style-2 .partner-wrapper {
     position: relative; }
     .partner-slider.partner-style-2 .partner-wrapper:before {
@@ -868,29 +875,6 @@ section.page-heading {
     .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:hover, .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:active, .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:focus {
       background-color: var(--primary-color) !important;
       border: 2px solid var(--primary-color) !important; }
-  .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder {
-    padding: 40px;
-    display: inline-block;
-    max-width: 355px;
-    transform: translate(calc(-100% - 85px), -10px);
-    background-color: var(--white-color);
-    border-radius: 13px;
-    box-shadow: 0px 12px 44px #00000029;
-    position: absolute; }
-    .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-wrapper {
-      align-items: center; }
-    .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide {
-      text-align: center; }
-      .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide .image-box img {
-        max-height: 100px; }
-      .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide .name-box .name {
-        font-weight: 500;
-        color: var(--black-color); }
-      .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder .swiper-slide .name-box .title {
-        font-weight: 300; }
-    @media (max-width: 1024px) {
-      .partner-slider.partner-style-2 .mySwiperPartnerThumbImages-Holder {
-        display: none; } }
   .partner-slider.partner-style-2 .swiper-pagination-style {
     text-align: left; }
 
