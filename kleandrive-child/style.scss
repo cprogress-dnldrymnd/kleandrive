@@ -1765,6 +1765,9 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
         .noUi-connect {
             background-color: var(--accent-color);
         }
+        .noUi-horizontal {
+            height: 10px;
+        }
         .noUi-handle {
             box-shadow: none;
             border-radius: 100px;

@@ -1099,6 +1099,8 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 
 #calculator-slider .slider-handles .noUi-connect {
   background-color: var(--accent-color); }
+#calculator-slider .slider-handles .noUi-horizontal {
+  height: 10px; }
 #calculator-slider .slider-handles .noUi-handle {
   box-shadow: none;
   border-radius: 100px;
