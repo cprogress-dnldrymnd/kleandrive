@@ -326,7 +326,7 @@ $description = carbon_get_the_post_meta('description');
     jQuery(document).ready(function() {
         var rangeSlider = document.getElementById('slider-range-annual-mileage');
         noUiSlider.create(rangeSlider, {
-            start: [4000],
+            start: [80000],
             range: {
                 'min': [0],
                 'max': [100000]
@@ -334,7 +334,10 @@ $description = carbon_get_the_post_meta('description');
             pips: {
                 mode: 'steps',
                 density: 1000,
-              
+                format: wNumb({
+                    decimals: 2,
+                    suffix: 'km'
+                })
             }
         });
     });
