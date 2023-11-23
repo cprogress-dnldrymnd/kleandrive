@@ -344,14 +344,14 @@ $description = carbon_get_the_post_meta('description');
                 }
             }
         });
-        
+
         var inputFormat = document.getElementById('slider-range-annual-mileage-value');
-        sliderFormat.noUiSlider.on('update', function(values, handle) {
+        rangeSlider.noUiSlider.on('update', function(values, handle) {
             inputFormat.value = values[handle];
         });
 
         inputFormat.addEventListener('change', function() {
-            sliderFormat.noUiSlider.set(this.value);
+            rangeSlider.noUiSlider.set(this.value);
         });
     });
 </script>
