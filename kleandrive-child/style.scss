@@ -1365,22 +1365,7 @@ section.page-heading {
                 display: block;
             }
         }
-        .image-box {
-            img {
-                max-height: 100px;
-            }
-        }
 
-        .name-box {
-            .name {
-                font-weight: 500;
-                color: var(--black-color);
-            }
-
-            .title {
-                font-weight: 300;
-            }
-        }
         .partner-wrapper {
             position: relative;
 
@@ -1399,6 +1384,25 @@ section.page-heading {
 
         .swiper-slide {
             .inner {
+                .sc_item_button {
+                    margin-top: 30px;
+                }
+                .image-box {
+                    img {
+                        max-height: 100px;
+                    }
+                }
+
+                .name-box {
+                    .name {
+                        font-weight: 500;
+                        color: var(--black-color);
+                    }
+
+                    .title {
+                        font-weight: 300;
+                    }
+                }
                 .description-box {
                     font-weight: 400;
                     color: var(--primary-color);
