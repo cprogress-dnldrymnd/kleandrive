@@ -969,10 +969,11 @@ section.savings-calculator {
     section.savings-calculator .tab-holder .range-holder input[type="range"]::-webkit-slider-thumb {
       -webkit-appearance: none;
       border: 1px solid #000000;
-      height: 36px;
-      width: 16px;
-      border-radius: 3px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
       background: #ffffff;
+      border: 1px solid;
       cursor: pointer;
       margin-top: -14px;
       /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
