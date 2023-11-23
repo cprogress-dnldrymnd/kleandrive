@@ -274,13 +274,15 @@ $description = carbon_get_the_post_meta('description');
 </section>
 
 <script>
-    var rangeSlider = document.getElementById('slider-range');
-    noUiSlider.create(rangeSlider, {
-        start: [4000],
-        range: {
-            'min': [2000],
-            'max': [10000]
-        }
+    jQuery(document).ready(function() {
+        var rangeSlider = document.getElementById('slider-range');
+        noUiSlider.create(rangeSlider, {
+            start: [4000],
+            range: {
+                'min': [2000],
+                'max': [10000]
+            }
+        });
     });
 </script>
 
