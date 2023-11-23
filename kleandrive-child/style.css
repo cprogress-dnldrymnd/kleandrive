@@ -1097,46 +1097,46 @@ body.body_style_wide:not(.expand_content).category [class*="content_wrap"] > .co
 body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   width: 100% !important; }
 
-#calculator-slider .slider-handles .noUi-connect {
-  background-color: var(--accent-color); }
-#calculator-slider .slider-handles .noUi-horizontal {
+#calculator-slider .slider-handles {
   height: 10px; }
-#calculator-slider .slider-handles .noUi-handle {
-  box-shadow: none;
-  border-radius: 100px;
-  width: 38px;
-  height: 38px;
-  border-width: 2px;
-  border-style: solid;
-  top: -11px;
-  outline: 0;
-  transition: all 0.3s ease-out;
-  cursor: pointer;
-  border: 3px solid; }
-  #calculator-slider .slider-handles .noUi-handle:before, #calculator-slider .slider-handles .noUi-handle:after {
-    border-left: 3px solid;
-    border-bottom: 3px solid;
-    width: 10px;
-    height: 10px;
-    background-color: transparent; }
-  #calculator-slider .slider-handles .noUi-handle:before {
-    left: 3px;
-    right: auto;
-    transform: rotate(45deg) translateY(-50%);
-    top: 15px; }
-  #calculator-slider .slider-handles .noUi-handle:after {
-    right: 3px;
-    left: auto;
-    transform: rotate(-135deg) translateY(-50%);
-    top: 8px; }
-  #calculator-slider .slider-handles .noUi-handle .noUi-touch-area {
-    border: 1px solid transparent;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    width: auto;
-    height: auto; }
+  #calculator-slider .slider-handles .noUi-connect {
+    background-color: var(--accent-color); }
+  #calculator-slider .slider-handles .noUi-handle {
+    box-shadow: none;
+    border-radius: 100px;
+    width: 38px;
+    height: 38px;
+    border-width: 2px;
+    border-style: solid;
+    top: -11px;
+    outline: 0;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    border: 3px solid; }
+    #calculator-slider .slider-handles .noUi-handle:before, #calculator-slider .slider-handles .noUi-handle:after {
+      border-left: 3px solid;
+      border-bottom: 3px solid;
+      width: 10px;
+      height: 10px;
+      background-color: transparent; }
+    #calculator-slider .slider-handles .noUi-handle:before {
+      left: 3px;
+      right: auto;
+      transform: rotate(45deg) translateY(-50%);
+      top: 15px; }
+    #calculator-slider .slider-handles .noUi-handle:after {
+      right: 3px;
+      left: auto;
+      transform: rotate(-135deg) translateY(-50%);
+      top: 8px; }
+    #calculator-slider .slider-handles .noUi-handle .noUi-touch-area {
+      border: 1px solid transparent;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      width: auto;
+      height: auto; }
 
 /*# sourceMappingURL=style.css.map */
