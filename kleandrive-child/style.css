@@ -951,7 +951,7 @@ section.savings-calculator {
     padding-bottom: 80px; }
   section.savings-calculator .tab-holder {
     color: var(--black-color);
-    backface-visibility: var(--light-gray);
+    background-color: var(--light-gray);
     padding-top: 80px;
     padding-bottom: 80px; }
     section.savings-calculator .tab-holder .nav-link {
