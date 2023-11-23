@@ -1123,7 +1123,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     transform: rotate(45deg) translateY(-50%);
     top: 15px; }
   #calculator-slider .slider-handles .noUi-handle:after {
-    right: 1px;
+    right: 3px;
     left: auto;
     transform: rotate(-135deg) translateY(-50%);
     top: 8px; }
