@@ -945,6 +945,8 @@ section.page-heading {
 
 section.savings-calculator {
   color: var(--white-color); }
+  section.savings-calculator .tab-holder {
+    color: var(--black-color); }
   section.savings-calculator .form-part {
     background-color: var(--accent-color); }
     section.savings-calculator .form-part.form-result {
