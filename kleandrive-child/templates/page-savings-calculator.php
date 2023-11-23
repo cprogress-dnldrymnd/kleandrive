@@ -333,11 +333,6 @@ $description = carbon_get_the_post_meta('description');
             },
             pips: {
                 mode: 'steps',
-                density: 1000,
-                format: wNumb({
-                    decimals: 2,
-                    suffix: 'km'
-                })
             }
         });
     });
