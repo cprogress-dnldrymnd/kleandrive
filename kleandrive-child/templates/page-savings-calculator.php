@@ -40,16 +40,20 @@ $description = carbon_get_the_post_meta('description');
             <div class="d-flex align-items-start">
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button class="nav-link text-start active" id="v-pills-annual-mileage-tab" data-bs-toggle="pill" data-bs-target="#v-pills-annual-mileage" type="button" role="tab" aria-controls="v-pills-annual-mileage" aria-selected="true">
-                        Annual mileage (km)
+                        <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/distance.png' ?>"></span>
+                        <span class="text">Annual mileage (km)</span>
                     </button>
                     <button class="nav-link text-start" id="v-pills-remaining-life-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remaining-life" type="button" role="tab" aria-controls="v-pills-remaining-life" aria-selected="false">
-                        Remaining life (Yrs)
+                        <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/calendar.png' ?>"></span>
+                        <span class="text">Remaining life (Yrs)</span>
                     </button>
                     <button class="nav-link text-start" id="v-pills-number-of-buses-converted-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number-of-buses-converted" type="button" role="tab" aria-controls="v-pills-number-of-buses-converted" aria-selected="false">
-                        No of buses converted
+                        <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/bus.png' ?>"></span>
+                        <span class="text">No of buses converted</span>
                     </button>
                     <button class="nav-link text-start" id="v-pills-Estimated-annual-operational-costs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Estimated-annual-operational-costs" type="button" role="tab" aria-controls="v-pills-Estimated-annual-operational-costs" aria-selected="false">
-                        Estimated annual operational costs for existing bus
+                        <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/pound.png' ?>"></span>
+                        <span class="text">Estimated annual operational costs for existing bus</span>
                     </button>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
