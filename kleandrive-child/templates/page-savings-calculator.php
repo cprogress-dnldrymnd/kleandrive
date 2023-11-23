@@ -92,10 +92,10 @@ $description = carbon_get_the_post_meta('description');
                         <div class="tab-pane fade show active" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
                             <label for="Range-AnnualMileage" class="form-label">Annual mileage (km)</label>
                             <div class="row justify-content-space-between">
-                                <div class="min col-auto">0</div>
+                                <div class="min col-auto">0km</div>
                                 <div class="col range-holder">
-                                    <div class="slider-handles" id="slider-range-annual-mileage"></div>
                                     <input type="text" id="slider-range-annual-mileage-value">
+                                    <div class="slider-handles" id="slider-range-annual-mileage"></div>
                                 </div>
                                 <div class="max col-auto">100,000km</div>
                             </div>
@@ -326,6 +326,7 @@ $description = carbon_get_the_post_meta('description');
 <script>
     jQuery(document).ready(function() {
         range_slider('slider-range-annual-mileage', 'slider-range-annual-mileage-value');
+
         function range_slider($range_id, $input_id) {
             var rangeSlider = document.getElementById($range_id);
             noUiSlider.create(rangeSlider, {
