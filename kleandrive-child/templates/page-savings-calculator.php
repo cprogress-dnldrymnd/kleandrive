@@ -38,7 +38,11 @@ $description = carbon_get_the_post_meta('description');
                     </div>
                 </div>
                 <div class="col-lg-6">
-
+                    <div class="heading-box">
+                        <h4>
+                            Summary outputs
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
