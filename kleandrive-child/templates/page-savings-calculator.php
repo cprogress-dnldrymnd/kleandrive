@@ -31,7 +31,7 @@ $description = carbon_get_the_post_meta('description');
 
     <div class="results-holder">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <div class="image-box">
                         <img src="https://kleandrive.earth/wp-content/uploads/2023/09/Kleanbus-1.png">
@@ -55,7 +55,7 @@ $description = carbon_get_the_post_meta('description');
                     Kleanbus model assumptions
                 </h4>
             </div>
-            <div class="row">
+            <div class="row g-5">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-start">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
