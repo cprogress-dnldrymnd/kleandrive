@@ -94,7 +94,7 @@ $description = carbon_get_the_post_meta('description');
                             <div class="row justify-content-space-between">
                                 <div class="min col-auto">0</div>
                                 <div class="col range-holder">
-                                    <input type="range" class="form-range" min="0" max="100000" step="0.5" id="Range-AnnualMileage">
+                                    <div class="slider-handles"></div>
                                 </div>
                                 <div class="max col-auto">100,000km</div>
                             </div>
@@ -273,7 +273,17 @@ $description = carbon_get_the_post_meta('description');
     </div>x
 </section>
 
+<script>
+    var rangeSlider = document.getElementById('slider-range');
 
+    noUiSlider.create(rangeSlider, {
+        start: [4000],
+        range: {
+            'min': [2000],
+            'max': [10000]
+        }
+    });
+</script>
 
 <script>
     jQuery(document).ready(function() {
