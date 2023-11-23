@@ -95,6 +95,7 @@ $description = carbon_get_the_post_meta('description');
                                 <div class="min col-auto">0</div>
                                 <div class="col range-holder">
                                     <div class="slider-handles" id="slider-range-annual-mileage"></div>
+                                    <input type="text" id="slider-range-annual-mileage-value">
                                 </div>
                                 <div class="max col-auto">100,000km</div>
                             </div>
@@ -342,6 +343,15 @@ $description = carbon_get_the_post_meta('description');
                     return Number(value.replace(',-', ''));
                 }
             }
+        });
+        
+        var inputFormat = document.getElementById('slider-range-annual-mileage-value');
+        sliderFormat.noUiSlider.on('update', function(values, handle) {
+            inputFormat.value = values[handle];
+        });
+
+        inputFormat.addEventListener('change', function() {
+            sliderFormat.noUiSlider.set(this.value);
         });
     });
 </script>
