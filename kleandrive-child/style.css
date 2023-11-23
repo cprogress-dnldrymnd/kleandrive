@@ -1099,5 +1099,14 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 
 .slider-handles .noUi-connect {
   background-color: var(--accent-color); }
+.slider-handles .noUi-handle .noUi-touch-area {
+  border: 1px solid transparent;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  width: auto;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */
