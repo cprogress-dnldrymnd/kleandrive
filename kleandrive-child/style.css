@@ -1108,7 +1108,8 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   border-style: solid;
   top: -11px;
   outline: 0;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  cursor: pointer; }
   #calculator-slider .slider-handles .noUi-handle:before, #calculator-slider .slider-handles .noUi-handle:after {
     border-left: 3px solid;
     border-bottom: 3px solid;
