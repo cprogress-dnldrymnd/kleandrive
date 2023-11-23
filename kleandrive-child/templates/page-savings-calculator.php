@@ -93,7 +93,10 @@ $description = carbon_get_the_post_meta('description');
                             <div>
                                 <label for="Range-AnnualMileage" class="form-label">Annual mileage (km)</label>
                             </div>
-                            <input type="text" class="slider-input mb-3" id="slider-range-annual-mileage-value">
+                            <div class="slider-input mb-3">
+                                <input type="text" class="" id="slider-range-annual-mileage-value">
+                                km
+                            </div>
                             <div class="row justify-content-space-between">
                                 <div class="min col-auto">0km</div>
                                 <div class="col range-holder">

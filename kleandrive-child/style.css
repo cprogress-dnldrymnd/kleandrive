@@ -959,6 +959,12 @@ section.savings-calculator {
     padding-bottom: 80px; }
     section.savings-calculator .tab-holder .col-lg-4 {
       border-radius: 1px solid; }
+    section.savings-calculator .tab-holder .slider-input {
+      border: 1px solid #d1d1d1;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: var(--white-color);
+      padding-right: 40px; }
     section.savings-calculator .tab-holder .range-holder input[type="range"] {
       -webkit-appearance: none;
       /* Hides the slider so that custom slider can be made */

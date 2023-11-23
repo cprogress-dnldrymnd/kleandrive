@@ -1564,7 +1564,11 @@ section.savings-calculator {
             border-radius: 1px solid;
         }
         .slider-input {
-            
+            border: 1px solid #d1d1d1;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: var(--white-color);
+            padding-right: 40px;
         }
         .range-holder {
             input[type="range"] {
@@ -1586,7 +1590,7 @@ section.savings-calculator {
                 box-shadow:
                     1px 1px 1px #000000,
                     0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
-                    background-image: url(https://kleandrive.earth/wp-content/uploads/2023/09/Kleanbus-1.png);
+                background-image: url(https://kleandrive.earth/wp-content/uploads/2023/09/Kleanbus-1.png);
             }
 
             input[type="range"]:focus {
