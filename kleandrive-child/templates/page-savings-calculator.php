@@ -325,33 +325,38 @@ $description = carbon_get_the_post_meta('description');
 
 <script>
     jQuery(document).ready(function() {
-        var rangeSlider = document.getElementById('slider-range-annual-mileage');
-        noUiSlider.create(rangeSlider, {
-            start: [80000],
-            range: {
-                'min': [0],
-                'max': [100000]
-            },
-            format: {
-                // 'to' the formatted value. Receives a number.
-                to: function(value) {
-                    return Math.round( value );
+        range_slider('slider-range-annual-mileage', 'slider-range-annual-mileage-value');
+        function range_slider($range_id, $input_id) {
+            var rangeSlider = document.getElementById('');
+            noUiSlider.create(rangeSlider, {
+                start: [80000],
+                range: {
+                    'min': [0],
+                    'max': [100000]
                 },
-                // 'from' the formatted value.
-                // Receives a string, should return a number.
-                from: function(value) {
-                    return Number(Math.round( value ));
+                format: {
+                    // 'to' the formatted value. Receives a number.
+                    to: function(value) {
+                        return Math.round(value);
+                    },
+                    // 'from' the formatted value.
+                    // Receives a string, should return a number.
+                    from: function(value) {
+                        return Number(Math.round(value));
+                    }
                 }
-            }
-        });
+            });
 
-        var inputFormat = document.getElementById('slider-range-annual-mileage-value');
-        rangeSlider.noUiSlider.on('update', function(values, handle) {
-            inputFormat.value = values[handle];
-        });
+            var inputFormat = document.getElementById('');
+            rangeSlider.noUiSlider.on('update', function(values, handle) {
+                inputFormat.value = values[handle];
+            });
 
-        inputFormat.addEventListener('change', function() {
-            rangeSlider.noUiSlider.set(this.value);
-        });
+            inputFormat.addEventListener('change', function() {
+                rangeSlider.noUiSlider.set(this.value);
+            });
+
+        }
+
     });
 </script>
