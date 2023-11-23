@@ -331,9 +331,6 @@ $description = carbon_get_the_post_meta('description');
                 'min': [0],
                 'max': [100000]
             },
-            pips: {
-                mode: 'steps',
-            }
         });
     });
 </script>
