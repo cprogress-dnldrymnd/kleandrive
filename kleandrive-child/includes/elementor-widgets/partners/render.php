@@ -31,13 +31,6 @@ $partners = get_posts($args);
                     ?>
                     <div class="swiper-slide">
                         <div class="inner">
-                            <?php if ($style == 'partner-style-2') { ?>
-                                <?php if ($logo_val) { ?>
-                                    <div class="image image-mobile-only">
-                                        <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>" alt="<?= $partner->post_title ?>">
-                                    </div>
-                                <?php } ?>
-                            <?php } ?>
                             <div class="description-box">
                                 <?= $partner->post_content ?>
                             </div>
