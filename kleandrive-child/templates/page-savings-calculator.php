@@ -40,8 +40,16 @@ $description = carbon_get_the_post_meta('description');
                 <div class="col-lg-6">
                     <div class="heading-box">
                         <h4>
-                            Summary outputs
+                            Estimated Impacts
                         </h4>
+                    </div>
+                    <div class="description-box">
+                        <p>
+                            This model estimates savings of CO2, damage due to air pollution, operational and capital costs that can be achieved by repowering existing diesel buses with electric drivetrains.
+                        </p>
+                        <p>
+                            The indicative estimates are based on the average UK buses and emissions factors, sourced from government data and independent testing. Costs do not consider those arising from customers' internal labour/workforce. Please contact us for a more detailed free analysis of the savings you can make.
+                        </p>
                     </div>
                 </div>
             </div>
