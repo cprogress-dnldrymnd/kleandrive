@@ -329,9 +329,9 @@ $description = carbon_get_the_post_meta('description');
 
         function range_slider($range_id, $input_id) {
             var rangeSlider = document.getElementById($range_id);
-            start = rangeSlider.getAttribute("start");
-            min = rangeSlider.getAttribute("min");
-            max = rangeSlider.getAttribute("max");
+            start = parseInt(rangeSlider.getAttribute("start"));
+            min = parseInt(rangeSlider.getAttribute("min"));
+            max = parseInt(rangeSlider.getAttribute("max"));
             noUiSlider.create(rangeSlider, {
                 start: [start],
                 range: {
