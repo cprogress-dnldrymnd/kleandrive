@@ -327,7 +327,7 @@ $description = carbon_get_the_post_meta('description');
     jQuery(document).ready(function() {
         range_slider('slider-range-annual-mileage', 'slider-range-annual-mileage-value');
         function range_slider($range_id, $input_id) {
-            var rangeSlider = document.getElementById('');
+            var rangeSlider = document.getElementById($range_id);
             noUiSlider.create(rangeSlider, {
                 start: [80000],
                 range: {
@@ -347,7 +347,7 @@ $description = carbon_get_the_post_meta('description');
                 }
             });
 
-            var inputFormat = document.getElementById('');
+            var inputFormat = document.getElementById($input_id);
             rangeSlider.noUiSlider.on('update', function(values, handle) {
                 inputFormat.value = values[handle];
             });
