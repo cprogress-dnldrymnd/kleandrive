@@ -339,6 +339,7 @@ $description = carbon_get_the_post_meta('description');
             max = parseInt(rangeSlider.getAttribute("max"));
             noUiSlider.create(rangeSlider, {
                 start: [start],
+                connect: 'lower',
                 range: {
                     'min': [min],
                     'max': [max]
