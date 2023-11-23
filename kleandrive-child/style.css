@@ -1116,16 +1116,17 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     border-bottom: 3px solid;
     width: 10px;
     height: 10px;
-    top: 50%;
     background-color: transparent; }
   #calculator-slider .slider-handles .noUi-handle:before {
-    left: 5px;
+    left: 1px;
     right: auto;
-    transform: rotate(45deg) translateY(-50%); }
+    transform: rotate(45deg) translateY(-50%);
+    top: 15px; }
   #calculator-slider .slider-handles .noUi-handle:after {
-    right: 5px;
+    right: 1px;
     left: auto;
-    transform: rotate(-135deg) translateY(-50%); }
+    transform: rotate(-135deg) translateY(-50%);
+    top: 8px; }
   #calculator-slider .slider-handles .noUi-handle .noUi-touch-area {
     border: 1px solid transparent;
     position: absolute;
