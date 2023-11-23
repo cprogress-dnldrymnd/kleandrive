@@ -977,7 +977,8 @@ section.savings-calculator {
       margin-top: -14px;
       /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-      /* Add cool effects to your sliders! */ }
+      /* Add cool effects to your sliders! */
+      background-image: url(https://kleandrive.earth/wp-content/uploads/2023/09/Kleanbus-1.png); }
     section.savings-calculator .tab-holder .range-holder input[type="range"]:focus {
       outline: none;
       /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
