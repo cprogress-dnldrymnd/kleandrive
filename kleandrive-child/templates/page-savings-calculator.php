@@ -270,21 +270,10 @@ $description = carbon_get_the_post_meta('description');
             </div>
         </div>
     </div>
-    </div>x
+    </div>
 </section>
 
-<script>
-    jQuery(document).ready(function() {
-        var rangeSlider = document.getElementById('slider-range');
-        noUiSlider.create(rangeSlider, {
-            start: [4000],
-            range: {
-                'min': [2000],
-                'max': [10000]
-            }
-        });
-    });
-</script>
+
 
 <script>
     jQuery(document).ready(function() {
@@ -332,3 +321,16 @@ $description = carbon_get_the_post_meta('description');
     });
 </script>
 <?php get_footer() ?>
+
+<script>
+    jQuery(document).ready(function() {
+        var rangeSlider = document.getElementById('slider-range');
+        noUiSlider.create(rangeSlider, {
+            start: [4000],
+            range: {
+                'min': [2000],
+                'max': [10000]
+            }
+        });
+    });
+</script>
