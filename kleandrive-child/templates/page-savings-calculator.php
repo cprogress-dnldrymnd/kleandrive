@@ -340,7 +340,7 @@ $description = carbon_get_the_post_meta('description');
                 // 'from' the formatted value.
                 // Receives a string, should return a number.
                 from: function(value) {
-                    return Number(value);
+                    return Number(Math.round( value ));
                 }
             }
         });
