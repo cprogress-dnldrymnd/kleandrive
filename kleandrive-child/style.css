@@ -13,6 +13,7 @@
   --accent-color: #0e62f2;
   --white-color: #fff;
   --black-color: #000;
+  --light-gray: #ebebeb;
   --light-blue-color: #0e62f20d; }
 
 .no-border-radius img {
@@ -945,8 +946,14 @@ section.page-heading {
 
 section.savings-calculator {
   color: var(--white-color); }
+  section.savings-calculator .results-holder {
+    padding-top: 80px;
+    padding-bottom: 80px; }
   section.savings-calculator .tab-holder {
-    color: var(--black-color); }
+    color: var(--black-color);
+    backface-visibility: var(--light-gray);
+    padding-top: 80px;
+    padding-bottom: 80px; }
     section.savings-calculator .tab-holder .nav-link {
       color: var(--primary-color);
       background-color: transparent;

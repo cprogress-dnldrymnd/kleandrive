@@ -160,6 +160,7 @@
     --accent-color: #0e62f2;
     --white-color: #fff;
     --black-color: #000;
+    --light-gray: #ebebeb;
     --light-blue-color: #0e62f20d;
 }
 
@@ -1546,8 +1547,15 @@ section.page-heading {
 
 section.savings-calculator {
     color: var(--white-color);
+    .results-holder {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
     .tab-holder {
         color: var(--black-color);
+        backface-visibility: var(--light-gray);
+        padding-top: 80px;
+        padding-bottom: 80px;
         .nav-link {
             color: var(--primary-color);
             background-color: transparent;
