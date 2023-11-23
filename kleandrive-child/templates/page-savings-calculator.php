@@ -32,8 +32,7 @@ $description = carbon_get_the_post_meta('description');
 
     <div class="tab-holder">
         <div class="container">
-
-            <div class="heading-box">
+            <div class="heading-box mb-5">
                 <h4>
                     Kleanbus model assumptions
                 </h4>
