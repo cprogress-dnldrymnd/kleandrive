@@ -1118,7 +1118,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     height: 10px;
     background-color: transparent; }
   #calculator-slider .slider-handles .noUi-handle:before {
-    left: 1px;
+    left: 3px;
     right: auto;
     transform: rotate(45deg) translateY(-50%);
     top: 15px; }
