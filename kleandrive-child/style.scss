@@ -1568,7 +1568,9 @@ section.savings-calculator {
             padding: 10px;
             border-radius: 10px;
             background-color: var(--white-color);
-            padding-right: 40px;
+            input {
+                border: none;
+            }
         }
         .range-holder {
             input[type="range"] {
