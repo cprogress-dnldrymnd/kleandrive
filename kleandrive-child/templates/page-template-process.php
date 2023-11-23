@@ -12,7 +12,7 @@ $subtitle = carbon_get_the_post_meta('subtitle');
 ?>
 <section class="page-heading">
     <div class="container">
-        <h1><?php the_title() ?></h1>
+        <h1 class="mb-4"><?php the_title() ?></h1>
         <?php if ($process) { ?>
             <h2 class="subtitle"><?= $subtitle ?></h2>
         <?php } ?>
