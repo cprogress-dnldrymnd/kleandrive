@@ -145,7 +145,7 @@ $description = carbon_get_the_post_meta('description');
         <div class="form-part form-result">
             <div class="container">
                 <div class="holder py-5">
-                    <h4 class="mb-4">Summary outputs</h4>
+                    <h4 class="mb-5">Summary outputs</h4>
                     <ul class="list-inline">
                         <li>
                             <span>Total CO2 savings (tonnes): </span>
