@@ -9,7 +9,7 @@
 $process = carbon_get_the_post_meta('process');
 $description = carbon_get_the_post_meta('description');
 
-function slider_range($label, $id, $min, $max, $start = 0)
+function slider_range($label, $measurement, $id, $min, $max, $start = 0)
 {
     ob_start();
 ?>
@@ -18,14 +18,14 @@ function slider_range($label, $id, $min, $max, $start = 0)
     </div>
     <div class="slider-input mb-3">
         <input type="text" class="" id="<?= $id ?>" name="<?= $id ?>">
-        km
+        <?= $measurement ?>
     </div>
     <div class="row justify-content-space-between">
-        <div class="min col-auto"><?= $min ?>km</div>
+        <div class="min col-auto"><?= $min ?> <?= $measurement ?></div>
         <div class="col range-holder">
             <div class="slider-handles" id="slider-range-<?= $id ?>" min="<?= $min ?>" max="<?= $max ?>" start="<?= $start ?>"></div>
         </div>
-        <div class="max col-auto"><?= $max ?>km</div>
+        <div class="max col-auto"><?= $max ?> <?= $measurement ?></div>
     </div>
 <?php
     return ob_get_clean();
@@ -94,10 +94,10 @@ function slider_range($label, $id, $min, $max, $start = 0)
                 <div class="col-lg-8" id="calculator-slider">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
-                            <?= slider_range('Number of buses to be Repowered', 'number_of_buses', '0', '100') ?>
+                            <?= slider_range('Number of buses to be Repowered', 'buses', 'number_of_buses', '0', '100') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
-                            <?= slider_range('Annual mileage (km)', 'annual_mileage', '0', '100000') ?>
+                            <?= slider_range('Annual mileage (km)', 'km', 'annual_mileage', '0', '100000') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-remaining-life" role="tabpanel" aria-labelledby="v-pills-remaining-life-tab">
 
@@ -239,6 +239,7 @@ function slider_range($label, $id, $min, $max, $start = 0)
     jQuery(document).ready(function() {
         range_slider('slider-range-annual_mileage', 'annual_mileage');
         range_slider('slider-range-number_of_buses', 'number_of_buses');
+
         function range_slider($range_id, $input_id) {
             var rangeSlider = document.getElementById($range_id);
             start = parseInt(rangeSlider.getAttribute("start"));
