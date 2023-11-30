@@ -10,7 +10,7 @@ use Carbon_Fields\Field;
 /*-----------------------------------------------------------------------------------*/
 
 Container::make('theme_options', __('Theme Settings'))
-    ->add_tab('FOOTER CTA', array(
+    ->add_tab('Footer CTA', array(
         Field::make('select', 'footer_cta_target', 'Target')
             ->set_options(array(
                 '_self' => 'Same Window',
@@ -19,6 +19,11 @@ Container::make('theme_options', __('Theme Settings'))
         Field::make('text', 'footer_cta_heading', 'Heading'),
         Field::make('text', 'footer_cta_button_text', 'Button Text'),
         Field::make('text', 'footer_cta_button_url', 'Button URL'),
+    ))
+    ->add_tab('Savings Calculator', array(
+        Field::make('html', 'fuel_costs_html')->set_html('<h4> Fuel Costs </h4>'),
+        Field::make('text', 'diesel', 'Diesel'),
+        Field::make('text', 'electricity', 'Electricity '),
     ));
 
 
@@ -138,5 +143,5 @@ Container::make('post_meta', __('Settings'))
         Field::make('text', 'website', 'Website'),
         Field::make('image', 'alt_logo', 'Alt Logo'),
         Field::make('textarea', 'partner_description', 'Partner Description(Optional)')
-        ->set_help_text('Text to be display under partner description'),
+            ->set_help_text('Text to be display under partner description'),
     ));
