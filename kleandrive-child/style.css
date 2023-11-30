@@ -567,12 +567,16 @@ aside .post_item .post_info .post_categories > a {
       content: none !important; } }
 
 .page-template-page-template-process,
-.post-type-archive-careers, .page-template-page-savings-calculator {
+.post-type-archive-careers,
+.page-template-page-savings-calculator {
   font-family: stolzl, sans-serif;
   font-weight: 300; }
-  .page-template-page-template-process .custom_links_list, .page-template-page-template-process .elementor-icon-list-item,
+  .page-template-page-template-process .custom_links_list,
+  .page-template-page-template-process .elementor-icon-list-item,
   .post-type-archive-careers .custom_links_list,
-  .post-type-archive-careers .elementor-icon-list-item, .page-template-page-savings-calculator .custom_links_list, .page-template-page-savings-calculator .elementor-icon-list-item {
+  .post-type-archive-careers .elementor-icon-list-item,
+  .page-template-page-savings-calculator .custom_links_list,
+  .page-template-page-savings-calculator .elementor-icon-list-item {
     font-weight: 400; }
 
 .page-template-page-template-process .page_content_wrap {
@@ -1142,5 +1146,11 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 .social-icon .elementor-icon:hover {
   background-color: var(--primary-color) !important;
   color: var(--white-color) !important; }
+
+.vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content {
+  background-color: var(--primary-color);
+  color: var(--white-color); }
+  .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content p {
+    color: inherit; }
 
 /*# sourceMappingURL=style.css.map */

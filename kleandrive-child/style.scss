@@ -964,10 +964,13 @@ aside .post_item {
 }
 
 .page-template-page-template-process,
-.post-type-archive-careers, .page-template-page-savings-calculator {
+.post-type-archive-careers,
+.page-template-page-savings-calculator {
     font-family: stolzl, sans-serif;
     font-weight: 300;
-    .custom_links_list, .elementor-icon-list-item {
+
+    .custom_links_list,
+    .elementor-icon-list-item {
         font-weight: 400;
     }
 }
@@ -1859,6 +1862,19 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"]>.content {
         &:hover {
             background-color: var(--primary-color) !important;
             color: var(--white-color) !important;
+        }
+    }
+}
+
+.vehicle-icons {
+    .elementor-image-box-wrapper {
+        .elementor-image-box-content {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+
+            p {
+                color: inherit;
+            }
         }
     }
 }
