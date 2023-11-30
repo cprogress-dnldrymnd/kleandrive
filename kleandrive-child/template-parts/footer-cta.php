@@ -65,13 +65,13 @@ else {
                 </div>
             </div>
             <div class="col-lg-5">
-                <div class="row">
+                <div class="row justify-content-end">
                     <div class="sc_item_button sc_button_wrap col-auto">
                         <a href="/savings-calculator"
                             class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark">
                             <span class="sc_button_text">
                                 <span class="sc_button_title">
-                                    SAVINGS CALCULATOR
+                                     CALCULATOR
                                 </span>
                             </span>
                         </a>
