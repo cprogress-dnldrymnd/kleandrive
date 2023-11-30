@@ -811,7 +811,7 @@ section.page-heading {
       height: auto !important; }
     @media (max-width: 1024px) {
       .partner-slider .partner-wrapper-grid .swiper-button-next, .partner-slider .partner-wrapper-grid .swiper-button-prev {
-        display: none; } }
+        display: none !important; } }
     @media (min-width: 1025px) {
       .partner-slider .partner-wrapper-grid .swiper-pagination {
         display: none; } }

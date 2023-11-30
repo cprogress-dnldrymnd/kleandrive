@@ -1321,7 +1321,7 @@ section.page-heading {
         }
         .swiper-button-next, .swiper-button-prev {
             @media(max-width: 1024px) {
-                display: none;
+                display: none !important;
             }
         }
         .swiper-pagination {
