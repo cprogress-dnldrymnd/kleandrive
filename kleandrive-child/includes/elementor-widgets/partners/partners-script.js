@@ -20,6 +20,7 @@ jQuery(document).ready(function () {
         loop: true,
         autoplay: true,
         slidesPerView: 1,
+        margin: 30,
         pagination: {
             el: ".swiper-pagination",
             clickable: true
