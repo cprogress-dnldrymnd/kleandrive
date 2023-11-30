@@ -37,7 +37,7 @@ jQuery(document).ready(function () {
             disableOnInteraction: true,
         },
         slidesPerView: 1,
-        margin: 30,
+        spacing: 30,
         pagination: {
             el: ".swiper-pagination",
             clickable: true
