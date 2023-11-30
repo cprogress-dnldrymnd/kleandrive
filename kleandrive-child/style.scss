@@ -1307,6 +1307,15 @@ section.page-heading {
     .swiper {
         z-index: 1;
     }
+    .sc_button.sc_button.sc_button {
+        background-color: var(--accent-color) !important;
+        border: 2px solid var(--accent-color) !important;
+
+        @include on-event() {
+            background-color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color) !important;
+        }
+    }
     .partner-wrapper-grid {
         .row {
             --bs-gutter-x: 1.5rem;
@@ -1486,16 +1495,6 @@ section.page-heading {
                     @media (min-width: 1025px) {
                         font-size: 25px;
                         line-height: 45px;
-                    }
-                }
-
-                .sc_button {
-                    background-color: var(--accent-color) !important;
-                    border: 2px solid var(--accent-color) !important;
-
-                    @include on-event() {
-                        background-color: var(--primary-color) !important;
-                        border: 2px solid var(--primary-color) !important;
                     }
                 }
             }

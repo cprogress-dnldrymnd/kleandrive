@@ -801,6 +801,12 @@ section.page-heading {
   position: relative; }
   .partner-slider .swiper {
     z-index: 1; }
+  .partner-slider .sc_button.sc_button.sc_button {
+    background-color: var(--accent-color) !important;
+    border: 2px solid var(--accent-color) !important; }
+    .partner-slider .sc_button.sc_button.sc_button:hover, .partner-slider .sc_button.sc_button.sc_button:active, .partner-slider .sc_button.sc_button.sc_button:focus {
+      background-color: var(--primary-color) !important;
+      border: 2px solid var(--primary-color) !important; }
   .partner-slider .partner-wrapper-grid .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -909,12 +915,6 @@ section.page-heading {
       .partner-slider.partner-style-2 .swiper-slide .inner .description-box {
         font-size: 25px;
         line-height: 45px; } }
-  .partner-slider.partner-style-2 .swiper-slide .inner .sc_button {
-    background-color: var(--accent-color) !important;
-    border: 2px solid var(--accent-color) !important; }
-    .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:hover, .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:active, .partner-slider.partner-style-2 .swiper-slide .inner .sc_button:focus {
-      background-color: var(--primary-color) !important;
-      border: 2px solid var(--primary-color) !important; }
   .partner-slider.partner-style-2 .swiper-pagination-style {
     text-align: left; }
 
