@@ -81,7 +81,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                             </button>
                             <button class="nav-link text-start" id="v-pills-remaining-life-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remaining-life" type="button" role="tab" aria-controls="v-pills-remaining-life" aria-selected="false">
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/calendar.png' ?>"></span>
-                                <span class="text">Remaining life (Yrs)</span>
+                                <span class="text">Average remaining life of the vehicles</span>
                             </button>
                             <button class="nav-link text-start" id="v-pills-Estimated-annual-operational-costs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Estimated-annual-operational-costs" type="button" role="tab" aria-controls="v-pills-Estimated-annual-operational-costs" aria-selected="false">
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/pound.png' ?>"></span>
@@ -136,7 +136,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="remaining_life">Remaining life (Yrs)</label>
+                                <label for="remaining_life">Average remaining life of the vehicles</label>
                                 <input type="number" class="form-control" id="remaining_life" name="remaining_life" value="13.5">
                             </div>
                         </div>
