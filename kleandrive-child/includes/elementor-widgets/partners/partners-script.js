@@ -18,10 +18,7 @@ jQuery(document).ready(function () {
 
     const mySwiperPartnerThumb = new Swiper(".mySwiperPartnerThumb", {
         loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: true,
-        },
+        autoplay: true,
         slidesPerView: 1,
         pagination: {
             el: ".swiper-pagination",
@@ -35,7 +32,10 @@ jQuery(document).ready(function () {
 
     const mySwiperPartnerGrid = new Swiper(".mySwiperPartnerGrid", {
         loop: true,
-        autoplay: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
         slidesPerView: 1,
         margin: 30,
         pagination: {
