@@ -150,7 +150,6 @@ function action_wp_footer()
 ?>
 	<script>
 		jQuery(document).ready(function() {
-			jQuery('.cpt_team .sc_team_item_link').removeAttr('href');
 			<?php if (is_home() || is_category()) { ?>
 				jQuery(document).ready(function() {
 					$all_link = jQuery('<li class="cat-item cat-all <?= is_home() ? 'current-cat' : '' ?>"><a href="<?= get_permalink(get_option('page_for_posts')); ?>">All</a></li>');
