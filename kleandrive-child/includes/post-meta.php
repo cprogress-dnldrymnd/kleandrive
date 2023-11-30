@@ -9,7 +9,7 @@ use Carbon_Fields\Field;
 /* Footer Settings
 /*-----------------------------------------------------------------------------------*/
 
-Container::make('theme_options', __('Theme Settings'))
+$theme_settings = Container::make('theme_options', __('Theme Settings'))
     ->add_tab('FOOTER CTA', array(
         Field::make('select', 'footer_cta_target', 'Target')
             ->set_options(array(
@@ -27,7 +27,7 @@ Container::make('theme_options', __('Theme Settings'))
 /*-----------------------------------------------------------------------------------*/
 
 Container::make('theme_options', __('Savings Calculator'))
-    ->set_page_parent('admin.php?page=crb_carbon_fields_container_theme_settings.php')
+    ->set_page_parent($theme_settings)
     ->add_tab('Fuel Costs', array(
         Field::make('text', 'diesel', 'Diesel'),
         Field::make('text', 'electricity', 'Electricity '),
