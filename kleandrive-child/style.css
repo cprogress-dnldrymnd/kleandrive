@@ -1068,20 +1068,18 @@ section.savings-calculator {
         margin-right: 1rem; }
       section.savings-calculator .tab-holder .nav-link:not(.active) {
         opacity: 0.5; }
-  section.savings-calculator .form-part {
-    background-color: var(--accent-color); }
-    section.savings-calculator .form-part.form-result .holder {
-      overflow: hidden;
-      position: relative; }
-      section.savings-calculator .form-part.form-result .holder:before {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        top: 0;
-        left: 0;
-        transform: translate(15px, -50%) rotate(135deg);
-        background-color: var(--accent-color); }
+  section.savings-calculator .form-part.form-result .holder {
+    overflow: hidden;
+    position: relative; }
+    section.savings-calculator .form-part.form-result .holder:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: 0;
+      transform: translate(15px, -50%) rotate(135deg);
+      background-color: var(--accent-color); }
   section.savings-calculator #calculator .holder {
     max-width: 1000px;
     margin-left: auto;
