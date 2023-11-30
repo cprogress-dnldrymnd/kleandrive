@@ -82,43 +82,46 @@ $partners = get_posts($args);
         <div class="swiper-pagination swiper-pagination-style"></div>
     <?php } else { ?>
         <div class="partner-wrapper partner-wrapper-grid">
-            <div class="row">
-                <?php foreach ($partners as $partner) { ?>
-                    <?php
-                    $logo = get_post_thumbnail_id($partner->ID);
-                    $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
-                    $website = carbon_get_post_meta($partner->ID, 'website');
-                    $partner_description = carbon_get_post_meta($partner->ID, 'partner_description');
-                    $logo_val = $alt_logo ? $alt_logo : $logo;
-                    ?>
-                    <div class="col-lg-4">
-                        <div class="column-holder">
-                            <div class="top">
-                                <?php if ($logo_val) { ?>
-                                    <div class="image-box">
-                                        <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>" alt="<?= $partner->post_title ?>">
+            <div class="swiper mySwiperPartnerGrid">
+                <div class="swiper-wrapper">
+                    <?php foreach ($partners as $partner) { ?>
+                        <?php
+                        $logo = get_post_thumbnail_id($partner->ID);
+                        $alt_logo = carbon_get_post_meta($partner->ID, 'alt_logo');
+                        $website = carbon_get_post_meta($partner->ID, 'website');
+                        $partner_description = carbon_get_post_meta($partner->ID, 'partner_description');
+                        $logo_val = $alt_logo ? $alt_logo : $logo;
+                        ?>
+                        <div class="swiper-slide">
+                            <div class="column-holder">
+                                <div class="top">
+                                    <?php if ($logo_val) { ?>
+                                        <div class="image-box">
+                                            <img src="<?= wp_get_attachment_image_url($logo_val, 'medium') ?>" alt="<?= $partner->post_title ?>">
+                                        </div>
+                                    <?php } ?>
+                                    <div class="heading-box">
+                                        <h2><?= $partner->post_title ?></h2>
                                     </div>
-                                <?php } ?>
-                                <div class="heading-box">
-                                    <h2><?= $partner->post_title ?></h2>
-                                </div>
-                                <div class="description-box">
-                                    <?= wpautop($partner_description) ?>
-                                </div>
+                                    <div class="description-box">
+                                        <?= wpautop($partner_description) ?>
+                                    </div>
 
-                            </div>
-                            <div class="bottom">
-                                <?php if ($website) { ?>
-                                    <div class="sc_item_button sc_button_wrap">
-                                        <a target="_blank" href="<?= $website ?>" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
-                                            <span class="sc_button_text"><span class="sc_button_title">Visit Website</span></span>
-                                        </a>
-                                    </div>
-                                <?php } ?>
+                                </div>
+                                <div class="bottom">
+                                    <?php if ($website) { ?>
+                                        <div class="sc_item_button sc_button_wrap">
+                                            <a target="_blank" href="<?= $website ?>" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
+                                                <span class="sc_button_text"><span class="sc_button_title">Visit Website</span></span>
+                                            </a>
+                                        </div>
+                                    <?php } ?>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php } ?>
+                    <?php } ?>
+                </div>
+                <div class="swiper-pagination swiper-pagination-style"></div>
             </div>
         </div>
     <?php } ?>

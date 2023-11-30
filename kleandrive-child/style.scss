@@ -725,7 +725,6 @@ html {
 }
 
 .sc_team {
-   
     .trx_addons_columns_wrap > [class*="trx_addons_column-"] {
         padding-right: 20px;
     }
@@ -1315,52 +1314,30 @@ section.page-heading {
         }
     }
     .partner-wrapper-grid {
-        .row {
-            --bs-gutter-x: 2rem;
-            --bs-gutter-y: 2rem;
+        .column-holder {
+            background-color: var(--white-color);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.050980392156862744);
+            height: 100%;
             display: flex;
-            flex-wrap: wrap;
-            margin-top: calc(var(--bs-gutter-y) * -1);
-            margin-right: calc(var(--bs-gutter-x) * -0.5);
-            margin-left: calc(var(--bs-gutter-x) * -0.5);
-            .col-lg-4 {
-                flex-shrink: 0;
-                width: 100%;
-                max-width: 100%;
-                padding-right: calc(var(--bs-gutter-x) * 0.5);
-                padding-left: calc(var(--bs-gutter-x) * 0.5);
-                margin-top: var(--bs-gutter-y);
-
-                .column-holder {
-                    background-color: var(--white-color);
-                    padding: 2rem;
-                    border-radius: 20px;
-                    box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.050980392156862744);
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    .image-box {
-                        height: 70px;
-                        img {
-                            max-height: 70px;
-                            object-fit: contain;
-                        }
-                    }
-                    .description-box {
-                        p {
-                            font-size: 15px;
-                        }
-                    }
-                    .heading-box {
-                        h2 {
-                            font-size: 35px;
-                        }
-                    }
+            flex-direction: column;
+            justify-content: space-between;
+            .image-box {
+                height: 70px;
+                img {
+                    max-height: 70px;
+                    object-fit: contain;
                 }
-                @media (min-width: 992px) {
-                    flex: 0 0 auto;
-                    width: 33.33333333%;
+            }
+            .description-box {
+                p {
+                    font-size: 15px;
+                }
+            }
+            .heading-box {
+                h2 {
+                    font-size: 35px;
                 }
             }
         }
@@ -1648,7 +1625,8 @@ section.savings-calculator {
                 font-size: 13px;
             }
         }
-        .slider-input, select {
+        .slider-input,
+        select {
             border: 1px solid #d1d1d1;
             padding: 10px;
             border-radius: 10px;
@@ -1754,7 +1732,6 @@ section.savings-calculator {
     }
 
     #calculator {
-
         h4 {
             color: inherit;
         }
