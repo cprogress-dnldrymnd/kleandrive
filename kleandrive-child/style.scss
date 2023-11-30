@@ -1348,7 +1348,11 @@ section.page-heading {
                             max-height: 70px;
                             object-fit: contain;
                         }
-                       
+                    }
+                    .description-box {
+                        p {
+                            font-size: 15px;
+                        }
                     }
                     .heading-box {
                         h2 {

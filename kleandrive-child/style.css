@@ -836,6 +836,8 @@ section.page-heading {
           .partner-slider .partner-wrapper-grid .row .col-lg-4 .column-holder .image-box img {
             max-height: 70px;
             object-fit: contain; }
+        .partner-slider .partner-wrapper-grid .row .col-lg-4 .column-holder .description-box p {
+          font-size: 15px; }
         .partner-slider .partner-wrapper-grid .row .col-lg-4 .column-holder .heading-box h2 {
           font-size: 35px; }
       @media (min-width: 992px) {
