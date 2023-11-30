@@ -1007,14 +1007,14 @@ section.savings-calculator {
     padding-bottom: 80px; }
     section.savings-calculator .tab-holder .col-lg-4 {
       border-radius: 1px solid; }
-    section.savings-calculator .tab-holder .slider-input {
+    section.savings-calculator .tab-holder .slider-input, section.savings-calculator .tab-holder select {
       border: 1px solid #d1d1d1;
       padding: 10px;
       border-radius: 10px;
       background-color: var(--white-color);
       display: inline-flex;
       align-items: center; }
-      section.savings-calculator .tab-holder .slider-input input {
+      section.savings-calculator .tab-holder .slider-input input, section.savings-calculator .tab-holder select input {
         border: none; }
     section.savings-calculator .tab-holder .range-holder input[type="range"] {
       -webkit-appearance: none;
