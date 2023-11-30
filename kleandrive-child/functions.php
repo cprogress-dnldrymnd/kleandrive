@@ -147,6 +147,21 @@ function action_the_title($title, $id = null)
 add_filter('the_title', 'action_the_title', 10, 2);
 
 
+add_filter('register_post_type_args', 'customize_team_post_type_labels', 10, 2);
+function customize_team_post_type_labels($args, $post_type)
+{
+	// Let's make sure that we're customizing the post type we really need
+	if ($post_type !== 'cpt_team') {
+		return $args;
+	}
+
+
+	$args['publicly_queryable'] = false;
+	$args['exclude_from_search'] = true;
+	$args['show_in_nav_menus'] = false;
+
+	return $args;
+}
 
 
 function action_wp_footer()
