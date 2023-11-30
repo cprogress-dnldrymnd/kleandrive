@@ -1325,6 +1325,11 @@ section.page-heading {
                 margin-top: var(--bs-gutter-y);
 
                 .column-holder {
+                    .heading-box {
+                        h2 {
+                            font-size: 35px;
+                        }
+                    }
                 }
                 @media (min-width: 992px) {
                     flex: 0 0 auto;

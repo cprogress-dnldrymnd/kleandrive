@@ -816,6 +816,8 @@ section.page-heading {
       padding-right: calc(var(--bs-gutter-x) * 0.5);
       padding-left: calc(var(--bs-gutter-x) * 0.5);
       margin-top: var(--bs-gutter-y); }
+      .partner-slider .partner-wrapper-grid .row .col-lg-4 .column-holder .heading-box h2 {
+        font-size: 35px; }
       @media (min-width: 992px) {
         .partner-slider .partner-wrapper-grid .row .col-lg-4 {
           flex: 0 0 auto;
