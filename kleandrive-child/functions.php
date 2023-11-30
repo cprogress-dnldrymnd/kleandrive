@@ -102,9 +102,7 @@ function append_query_string($url, $post, $leavename = false)
 		} else {
 			$url = add_query_arg('foo', 'bar', $url);
 		}
-	} else 	if ($post->post_type == 'cpt_team') {
-		$url = "#";
-	}
+	} 
 	return $url;
 }
 add_filter('post_link', 'append_query_string', 10, 3);
@@ -147,6 +145,7 @@ function action_the_title($title, $id = null)
 add_filter('the_title', 'action_the_title', 10, 2);
 
 
+
 function action_wp_footer()
 {
 ?>
@@ -176,3 +175,10 @@ function custom_class($classes)
 	}
 	return $classes;
 }
+
+function wpdocs_remove_menusTwo() {
+    remove_menu_page('theme-editor.ph');
+    remove_menu_page('admin.php?page=trx_addons_theme_panel');
+}
+ 
+add_action('admin_init', 'wpdocs_remove_menusTwo');
