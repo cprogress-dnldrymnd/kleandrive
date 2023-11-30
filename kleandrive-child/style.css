@@ -1148,9 +1148,6 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   color: var(--white-color) !important; }
 
 .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content {
-  background-color: var(--primary-color);
-  color: var(--white-color); }
-  .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content p {
-    color: inherit !important; }
+  background-color: var(--primary-color); }
 
 /*# sourceMappingURL=style.css.map */

@@ -1870,11 +1870,6 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"]>.content {
     .elementor-image-box-wrapper {
         .elementor-image-box-content {
             background-color: var(--primary-color);
-            color: var(--white-color);
-
-            p {
-                color: inherit !important;
-            }
         }
     }
 }
