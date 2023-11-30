@@ -71,7 +71,7 @@ else {
                             class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark">
                             <span class="sc_button_text">
                                 <span class="sc_button_title">
-                                     CALCULATOR
+                                    SAVINGS CALCULATOR
                                 </span>
                             </span>
                         </a>
