@@ -741,7 +741,12 @@ html {
     * {
         box-sizing: border-box;
     }
-
+    .justify-content-between {
+        justify-content: space-between;
+    }
+    .justify-content-end {
+        justify-content: flex-end;
+    }
     .container {
         max-width: 1320px;
 
@@ -1376,6 +1381,8 @@ section.page-heading {
                 position: absolute;
                 right: 0;
             }
+        }
+        .partner-wrapper-grid {
         }
     }
 

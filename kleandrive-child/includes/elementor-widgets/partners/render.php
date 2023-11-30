@@ -81,7 +81,7 @@ $partners = get_posts($args);
         </div>
         <div class="swiper-pagination swiper-pagination-style"></div>
     <?php } else { ?>
-        <div class="partner-wrapper">
+        <div class="partner-wrapper partner-wrapper-grid">
             <div class="row">
                 <?php foreach ($partners as $partner) { ?>
                     <?php

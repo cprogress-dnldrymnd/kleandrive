@@ -388,6 +388,10 @@ html.overflow-hidden.overflow-hidden {
   padding-bottom: 60px; }
   .footer-cta * {
     box-sizing: border-box; }
+  .footer-cta .justify-content-between {
+    justify-content: space-between; }
+  .footer-cta .justify-content-end {
+    justify-content: flex-end; }
   .footer-cta .container {
     max-width: 1320px; }
     .footer-cta .container .heading-box h2 {
