@@ -790,6 +790,9 @@ html {
                 flex: 0 0 auto;
                 padding-left: 1rem;
                 padding-right: 1rem;
+                @media(max-width: 1024px) {
+                    flex: 0 0 100%;
+                }
             }
 
             .col-lg-8 {
