@@ -122,6 +122,7 @@ $partners = get_posts($args);
                     <?php } ?>
                 </div>
             </div>
+            <div class="swiper-pagination swiper-pagination-style"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>

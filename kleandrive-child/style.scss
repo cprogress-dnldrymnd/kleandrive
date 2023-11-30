@@ -1317,6 +1317,9 @@ section.page-heading {
         .swiper-slide {
             height: auto !important;
           }
+          .swiper-button-prev {
+            left: -50px;
+          }
         .column-holder {
             background-color: var(--white-color);
             padding: 2rem;
