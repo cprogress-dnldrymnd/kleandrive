@@ -37,6 +37,13 @@ $description = carbon_get_the_post_meta('description');
                 </h4>
             </div>
             <div class="row g-5">
+                <input type="hidden" name="NOxRoadTransport" value="17892.6280819244">
+                <input type="hidden" name="ParticulateMatterRoadTransport" value="130884.092045588">
+                <input type="hidden" name="BlendedaverageCO2saving" value="1311.648328125">
+                <input type="hidden" name="BlendedaverageNOxsaving" value="4.9216236328125">
+                <input type="hidden" name="BlendedaveragePMsaving" value="0.03670732421875">
+                <input type="hidden" name="IncrementalCO2benefitvsNewBEV" value="227.7">
+                <input type="hidden" name="Incrementalcaptialcostsavings" value="350000">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-start">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -67,7 +74,7 @@ $description = carbon_get_the_post_meta('description');
                                 <label for="Range-AnnualMileage" class="form-label">Annual mileage (km)</label>
                             </div>
                             <div class="slider-input mb-3">
-                                <input type="text" class="" id="slider-range-annual-mileage-value">
+                                <input type="text" class="" id="annual_mileage" id="annual_mileage" name="annual_mileage">
                                 km
                             </div>
                             <div class="row justify-content-space-between">
@@ -94,16 +101,6 @@ $description = carbon_get_the_post_meta('description');
         </div>
     </div>
     <div id="calculator">
-
-
-
-        <input type="hidden" name="NOxRoadTransport" value="17892.6280819244">
-        <input type="hidden" name="ParticulateMatterRoadTransport" value="130884.092045588">
-        <input type="hidden" name="BlendedaverageCO2saving" value="1311.648328125">
-        <input type="hidden" name="BlendedaverageNOxsaving" value="4.9216236328125">
-        <input type="hidden" name="BlendedaveragePMsaving" value="0.03670732421875">
-        <input type="hidden" name="IncrementalCO2benefitvsNewBEV" value="227.7">
-        <input type="hidden" name="Incrementalcaptialcostsavings" value="350000">
         <div class="form-part py-5">
             <div class="container">
                 <div class="holder">
@@ -228,7 +225,7 @@ $description = carbon_get_the_post_meta('description');
 
 <script>
     jQuery(document).ready(function() {
-        range_slider('slider-range-annual-mileage', 'slider-range-annual-mileage-value');
+        range_slider('slider-range-annual-mileage', 'annual_mileage');
 
         function range_slider($range_id, $input_id) {
             var rangeSlider = document.getElementById($range_id);
