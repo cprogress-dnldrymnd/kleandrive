@@ -994,11 +994,10 @@ section.page-heading {
     width: auto; }
 
 section.savings-calculator {
-  color: var(--white-color); }
+  color: var(--black-color); }
   section.savings-calculator .results-holder {
     padding-top: 80px;
-    padding-bottom: 80px;
-    color: var(--black-color); }
+    padding-bottom: 80px; }
     section.savings-calculator .results-holder .description-box {
       font-weight: 300; }
   section.savings-calculator .tab-holder {
