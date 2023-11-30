@@ -1319,6 +1319,16 @@ section.page-heading {
         .swiper-slide {
             height: auto !important;
         }
+        .swiper-button-next, .swiper-button-prev {
+            @media(max-width: 1024px) {
+                display: none;
+            }
+        }
+        .swiper-pagination {
+            @media (min-width: 1025px) {
+                display: none;
+            }
+        }
         .column-holder {
             background-color: var(--white-color);
             padding: 2rem;
