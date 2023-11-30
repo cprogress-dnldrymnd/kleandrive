@@ -31,8 +31,23 @@ Container::make('theme_options', __('Savings Calculator'))
     ->add_tab('Fuel Costs', array(
         Field::make('text', 'diesel', 'Diesel'),
         Field::make('text', 'electricity', 'Electricity '),
-    ));
+    ))
+    ->add_tab('Grant Funding', array(
+        Field::make('select', 'elegible_for_bsog', 'Are you eleigible for the Bus Service Opertators Grant (BSOG)?')
+            ->add_options(array(
+                'yes' => __('Yes'),
+                'no' => __('No'),
+            )),
+        Field::make('select', 'elegible_for_nsg', 'Are you eligible for Network Support Grant (Scotland)?')
+            ->add_options(array(
+                'yes' => __('Yes'),
+                'no' => __('No'),
+            )),
+        Field::make('text', 'bsog_nsg_rate', 'Current Rate of BSOG/NSG '),
+        Field::make('text', 'bsog_nsg_rate_repowered', 'Rate of BSOG/NSG for repowered vehicle '),
 
+    ));
+    
 
 /*-----------------------------------------------------------------------------------*/
 /* Career Settings
