@@ -397,7 +397,6 @@ html.overflow-hidden.overflow-hidden {
       .footer-cta .container .sc_item_button .sc_button.sc_button.sc_button {
         color: var(--white-color) !important;
         border-color: var(--white-color) !important;
-        max-width: 200px;
         width: 100%;
         margin: 0 !important;
         justify-content: center; }
