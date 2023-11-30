@@ -65,8 +65,8 @@ else {
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="button-group-box">
-                    <div class="sc_item_button sc_button_wrap">
+                <div class="row">
+                    <div class="sc_item_button sc_button_wrap col-auto">
                         <a href="/savings-calculator"
                             class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark">
                             <span class="sc_button_text">
@@ -76,7 +76,7 @@ else {
                             </span>
                         </a>
                     </div>
-                    <div class="sc_item_button sc_button_wrap">
+                    <div class="sc_item_button sc_button_wrap col-auto">
                         <a target="<?= $target_val ?>" href="<?= $button_url_val ?>"
                             class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark">
                             <span class="sc_button_text">
