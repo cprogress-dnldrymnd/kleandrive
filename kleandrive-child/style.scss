@@ -1314,14 +1314,10 @@ section.page-heading {
         }
     }
     .partner-wrapper-grid {
+        --swiper-navigation-sides-offset: -50px;
+
         .swiper-slide {
             height: auto !important;
-        }
-        .swiper {
-            --swiper-navigation-sides-offset: -50px;
-        }
-        .swiper-button-prev {
-            left: -50px;
         }
         .column-holder {
             background-color: var(--white-color);

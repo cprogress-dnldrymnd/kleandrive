@@ -805,30 +805,28 @@ section.page-heading {
     .partner-slider .sc_button.sc_button.sc_button:hover, .partner-slider .sc_button.sc_button.sc_button:active, .partner-slider .sc_button.sc_button.sc_button:focus {
       background-color: var(--primary-color) !important;
       border: 2px solid var(--primary-color) !important; }
-  .partner-slider .partner-wrapper-grid .swiper-slide {
-    height: auto !important; }
-  .partner-slider .partner-wrapper-grid .swiper {
+  .partner-slider .partner-wrapper-grid {
     --swiper-navigation-sides-offset: -50px; }
-  .partner-slider .partner-wrapper-grid .swiper-button-prev {
-    left: -50px; }
-  .partner-slider .partner-wrapper-grid .column-holder {
-    background-color: var(--white-color);
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.0509803922);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    .partner-slider .partner-wrapper-grid .column-holder .image-box {
-      height: 70px; }
-      .partner-slider .partner-wrapper-grid .column-holder .image-box img {
-        max-height: 70px;
-        object-fit: contain; }
-    .partner-slider .partner-wrapper-grid .column-holder .description-box p {
-      font-size: 15px; }
-    .partner-slider .partner-wrapper-grid .column-holder .heading-box h2 {
-      font-size: 35px; }
+    .partner-slider .partner-wrapper-grid .swiper-slide {
+      height: auto !important; }
+    .partner-slider .partner-wrapper-grid .column-holder {
+      background-color: var(--white-color);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.0509803922);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .partner-slider .partner-wrapper-grid .column-holder .image-box {
+        height: 70px; }
+        .partner-slider .partner-wrapper-grid .column-holder .image-box img {
+          max-height: 70px;
+          object-fit: contain; }
+      .partner-slider .partner-wrapper-grid .column-holder .description-box p {
+        font-size: 15px; }
+      .partner-slider .partner-wrapper-grid .column-holder .heading-box h2 {
+        font-size: 35px; }
   .partner-slider .swiper-slide .inner .description-box {
     font-size: 15px;
     line-height: 28px;
