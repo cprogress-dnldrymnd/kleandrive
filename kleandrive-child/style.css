@@ -48,7 +48,7 @@
         .sc_button_wrap .sc_button.sc_button:not(:last-child) {
           margin-bottom: 20px !important; } }
   .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default {
-    border: 2px solid !important; }
+    border: 2px solid var(--accent-color) !important; }
     .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary {
       border-color: var(--primary-color) !important; }
       .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary:hover, .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary:active, .sc_button_wrap .sc_button.sc_button:not(.sc_button_simple):not(.sc_button_bg_image).sc_button_default.button-border-pimary:focus {
