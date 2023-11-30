@@ -827,18 +827,15 @@ section.page-heading {
         padding: 2rem;
         border-radius: 20px;
         box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.0509803922);
-        height: 100%; }
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
         .partner-slider .partner-wrapper-grid .row .col-lg-4 .column-holder .image-box {
-          padding: 20%;
-          position: relative; }
+          height: 70px; }
           .partner-slider .partner-wrapper-grid .row .col-lg-4 .column-holder .image-box img {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: left center; }
+            max-height: 70px;
+            object-fit: contain; }
         .partner-slider .partner-wrapper-grid .row .col-lg-4 .column-holder .heading-box h2 {
           font-size: 35px; }
       @media (min-width: 992px) {
