@@ -1334,6 +1334,23 @@ section.page-heading {
                 margin-top: var(--bs-gutter-y);
 
                 .column-holder {
+                    background-color: var(--white-color);
+                    padding: 2rem;
+                    border-radius: 20px;
+                    box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.050980392156862744);
+                    .image-box {
+                        padding: 20%;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            object-position: left center;
+                        }
+                    }
                     .heading-box {
                         h2 {
                             font-size: 35px;
