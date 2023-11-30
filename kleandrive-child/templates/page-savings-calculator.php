@@ -47,11 +47,11 @@ $description = carbon_get_the_post_meta('description');
                 <div class="col-lg-4">
                     <div class="d-flex align-items-start">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link text-start" id="v-pills-number-of-buses-converted-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number-of-buses-converted" type="button" role="tab" aria-controls="v-pills-number-of-buses-converted" aria-selected="false">
+                            <button class="nav-link text-start active" id="v-pills-number-of-buses-converted-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number-of-buses-converted" type="button" role="tab" aria-controls="v-pills-number-of-buses-converted" aria-selected="true">
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/bus.png' ?>"></span>
                                 <span class="text">No of buses converted</span>
                             </button>
-                            <button class="nav-link text-start active" id="v-pills-annual-mileage-tab" data-bs-toggle="pill" data-bs-target="#v-pills-annual-mileage" type="button" role="tab" aria-controls="v-pills-annual-mileage" aria-selected="true">
+                            <button class="nav-link text-start " id="v-pills-annual-mileage-tab" data-bs-toggle="pill" data-bs-target="#v-pills-annual-mileage" type="button" role="tab" aria-controls="v-pills-annual-mileage" aria-selected="false">
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/distance.png' ?>"></span>
                                 <span class="text">Annual mileage (km)</span>
                             </button>
@@ -69,10 +69,10 @@ $description = carbon_get_the_post_meta('description');
                 </div>
                 <div class="col-lg-8" id="calculator-slider">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
+                        <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
 
                         </div>
-                        <div class="tab-pane fade show active" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
+                        <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
                             <div>
                                 <label for="Range-AnnualMileage" class="form-label">Annual mileage (km)</label>
                             </div>
