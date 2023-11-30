@@ -1010,6 +1010,8 @@ section.savings-calculator {
     section.savings-calculator .tab-holder select {
       min-height: 65px;
       color: var(--black-color); }
+    section.savings-calculator .tab-holder .slider-input-holder .description {
+      font-size: 13px; }
     section.savings-calculator .tab-holder .slider-input, section.savings-calculator .tab-holder select {
       border: 1px solid #d1d1d1;
       padding: 10px;

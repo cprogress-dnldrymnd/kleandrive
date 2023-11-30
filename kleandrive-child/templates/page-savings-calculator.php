@@ -30,7 +30,7 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
         </div>
 
         <?php if ($description) { ?>
-            <div class="description">
+            <div class="description mt-2">
                 <p>
                     <?= $description ?>
                 </p>

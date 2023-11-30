@@ -1645,7 +1645,11 @@ section.savings-calculator {
             min-height: 65px;
             color: var(--black-color);
         }
-
+        .slider-input-holder {
+            .description {
+                font-size: 13px;
+            }
+        }
         .slider-input, select {
             border: 1px solid #d1d1d1;
             padding: 10px;
