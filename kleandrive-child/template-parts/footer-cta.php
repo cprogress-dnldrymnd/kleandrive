@@ -56,7 +56,7 @@ else {
 
 <section class="footer-cta">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-between">
             <div class="col-lg-7">
                 <div class="heading-box">
                     <h2>
