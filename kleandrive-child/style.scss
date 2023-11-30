@@ -1640,7 +1640,11 @@ section.savings-calculator {
         .col-lg-4 {
             border-radius: 1px solid;
         }
-        
+
+        select {
+            min-height: 65px;
+            color: var(--black-color);
+        }
 
         .slider-input, select {
             border: 1px solid #d1d1d1;
@@ -1649,7 +1653,8 @@ section.savings-calculator {
             background-color: var(--white-color) !important;
             display: inline-flex;
             align-items: center;
-
+            max-width: 280px;
+            width: 100%;
             input {
                 border: none;
             }
