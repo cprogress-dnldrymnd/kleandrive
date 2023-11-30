@@ -85,7 +85,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                             </button>
                             <button class="nav-link text-start" id="v-pills-Estimated-annual-operational-costs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Estimated-annual-operational-costs" type="button" role="tab" aria-controls="v-pills-Estimated-annual-operational-costs" aria-selected="false">
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/pound.png' ?>"></span>
-                                <span class="text">Estimated annual operational costs for existing bus</span>
+                                <span class="text"> Existing annual diesel vehicle service and maintenance cost </span>
                             </button>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                             <div class="label mt-5">
                                 <label for="number_of_buses" class="form-label">Are they single or double deck buses</label>
                             </div>
-                            <select name="single_or_double" id="single_or_double" >
+                            <select name="single_or_double" id="single_or_double">
                                 <option value="single"> Single </option>
                                 <option value="double"> Double </option>
                             </select>
@@ -149,7 +149,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                         <div class="col-lg-6">
 
                             <div class="form-group">
-                                <label for="est_annual_op_cost">Estimated annual operational costs for existing bus</label>
+                                <label for="est_annual_op_cost"> Existing annual diesel vehicle service and maintenance cost </label>
                                 <input type="number" class="form-control" id="est_annual_op_cost" name="est_annual_op_cost" value="0">
                             </div>
                         </div>
