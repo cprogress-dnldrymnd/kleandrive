@@ -20,9 +20,7 @@
   border-radius: 0 !important; }
 
 /*Blog*/
-.sc_blogger_default.sc_blogger_default_classic_time
-.sc_blogger_item_default.sc_blogger_item_on_plate
-.sc_blogger_item_content {
+.sc_blogger_default.sc_blogger_default_classic_time .sc_blogger_item_default.sc_blogger_item_on_plate .sc_blogger_item_content {
   padding: 45px 27px !important;
   background-color: #ffffff; }
 
@@ -568,11 +566,17 @@ aside .post_item .post_info .post_categories > a {
     aside .post_item .post_info .post_info_item:after {
       content: none !important; } }
 
-.page-template-page-template-process {
+.page-template-page-template-process,
+.post-type-archive-careers, .page-template-page-savings-calculator {
   font-family: stolzl, sans-serif;
   font-weight: 300; }
-  .page-template-page-template-process .page_content_wrap {
-    background-color: #f2f7ff; }
+  .page-template-page-template-process .custom_links_list, .page-template-page-template-process .elementor-icon-list-item,
+  .post-type-archive-careers .custom_links_list,
+  .post-type-archive-careers .elementor-icon-list-item, .page-template-page-savings-calculator .custom_links_list, .page-template-page-savings-calculator .elementor-icon-list-item {
+    font-weight: 400; }
+
+.page-template-page-template-process .page_content_wrap {
+  background-color: #f2f7ff; }
 
 section.our-process-page {
   padding-bottom: 200px; }
@@ -939,9 +943,6 @@ section.page-heading {
   .blog-logo img {
     max-height: 70px;
     width: auto; }
-
-.page-template-page-savings-calculator {
-  font-family: stolzl, sans-serif; }
 
 section.savings-calculator {
   color: var(--white-color); }

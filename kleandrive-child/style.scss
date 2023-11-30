@@ -9,6 +9,7 @@
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
 @mixin inputs {
+
     input[type="text"],
     input[type="email"],
     input[type="number"],
@@ -23,115 +24,115 @@
 }
 
 @mixin respond-to($breakpoint) {
-    @if $breakpoint == "xxxs" {
+    @if $breakpoint =="xxxs" {
         @media screen and (max-width: 360px) {
             @content;
         }
     }
 
-    @if $breakpoint == "xxs" {
+    @if $breakpoint =="xxs" {
         @media screen and (max-width: 480px) {
             @content;
         }
     }
 
-    @if $breakpoint == "mobile" {
+    @if $breakpoint =="mobile" {
         @media screen and (max-width: 575px) {
             @content;
         }
     }
 
-    @if $breakpoint == "mobile-xs" {
+    @if $breakpoint =="mobile-xs" {
         @media (min-width: 576px) and (max-width: 767px) {
             @content;
         }
     }
 
-    @if $breakpoint == "mobile-sm" {
+    @if $breakpoint =="mobile-sm" {
         @media (min-width: 576px) and (max-width: 991px) {
             @content;
         }
     }
 
-    @if $breakpoint == "mobile-md" {
+    @if $breakpoint =="mobile-md" {
         @media (min-width: 576px) and (max-width: 1199px) {
             @content;
         }
     }
 
-    @if $breakpoint == "mobile-lg" {
+    @if $breakpoint =="mobile-lg" {
         @media (min-width: 576px) {
             @content;
         }
     }
 
-    @if $breakpoint == "xs" {
+    @if $breakpoint =="xs" {
         @media screen and (max-width: 767px) {
             @content;
         }
     }
 
-    @if $breakpoint == "xs-sm" {
+    @if $breakpoint =="xs-sm" {
         @media screen and (max-width: 991px) {
             @content;
         }
     }
 
-    @if $breakpoint == "xs-md" {
+    @if $breakpoint =="xs-md" {
         @media screen and (max-width: 1199px) {
             @content;
         }
     }
 
-    @if $breakpoint == "sm" {
+    @if $breakpoint =="sm" {
         @media (min-width: 768px) and (max-width: 991px) {
             @content;
         }
     }
 
-    @if $breakpoint == "sm-lg" {
+    @if $breakpoint =="sm-lg" {
         @media (min-width: 768px) {
             @content;
         }
     }
 
-    @if $breakpoint == "sm-md" {
+    @if $breakpoint =="sm-md" {
         @media (min-width: 768px) and (max-width: 1199px) {
             @content;
         }
     }
 
-    @if $breakpoint == "md" {
+    @if $breakpoint =="md" {
         @media (min-width: 992px) and (max-width: 1199px) {
             @content;
         }
     }
 
-    @if $breakpoint == "md-lg" {
+    @if $breakpoint =="md-lg" {
         @media screen and (min-width: 992px) {
             @content;
         }
     }
 
-    @if $breakpoint == "lg" {
+    @if $breakpoint =="lg" {
         @media screen and (min-width: 1200px) {
             @content;
         }
     }
 
-    @if $breakpoint == "small-lg" {
+    @if $breakpoint =="small-lg" {
         @media (min-width: 1200px) and (max-width: 1439px) {
             @content;
         }
     }
 
-    @if $breakpoint == "xs-lg" {
+    @if $breakpoint =="xs-lg" {
         @media screen and (max-width: 1439px) {
             @content;
         }
     }
 
-    @if $breakpoint == "lg-lg" {
+    @if $breakpoint =="lg-lg" {
         @media screen and (min-width: 1440px) {
             @content;
         }
@@ -140,13 +141,17 @@
 
 @mixin on-event($self: false) {
     @if $self {
+
         &,
         &:hover,
         &:active,
         &:focus {
             @content;
         }
-    } @else {
+    }
+
+    @else {
+
         &:hover,
         &:active,
         &:focus {
@@ -169,9 +174,7 @@
 }
 
 /*Blog*/
-.sc_blogger_default.sc_blogger_default_classic_time
-    .sc_blogger_item_default.sc_blogger_item_on_plate
-    .sc_blogger_item_content {
+.sc_blogger_default.sc_blogger_default_classic_time .sc_blogger_item_default.sc_blogger_item_on_plate .sc_blogger_item_content {
     padding: 45px 27px !important;
     background-color: #ffffff;
 }
@@ -189,18 +192,22 @@
 
 .sc_button_wrap {
     margin-bottom: 0 !important;
+
     @media (max-width: 575px) {
         display: flex !important;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+
         .sc_button.sc_button {
             margin-left: 0 !important;
+
             &:not(:last-child) {
                 margin-bottom: 20px !important;
             }
         }
     }
+
     .sc_button.sc_button {
         &:not(.sc_button_simple):not(.sc_button_bg_image) {
             &.sc_button_default {
@@ -286,7 +293,7 @@ h2.sc_item_title {
 .wp-block-quote.wp-block-quote.wp-block-quote {
     padding: 30px 40px 30px 60px;
 
-    > * {
+    >* {
         position: relative;
         z-index: 1;
 
@@ -721,7 +728,7 @@ html {
 }
 
 .sc_team {
-    .trx_addons_columns_wrap > [class*="trx_addons_column-"] {
+    .trx_addons_columns_wrap>[class*="trx_addons_column-"] {
         padding-right: 20px;
     }
 }
@@ -755,6 +762,7 @@ html {
                 width: 100%;
                 margin: 0 !important;
                 justify-content: center;
+
                 @include on-event() {
                     background: var(--primary-color) !important;
                     border-color: var(--primary-color) !important;
@@ -840,9 +848,11 @@ html {
             margin-bottom: 15px;
             margin-top: 0;
             line-height: 1;
+
             a {
                 @include category-style();
             }
+
             &.current-cat {
                 a {
                     background-color: transparent;
@@ -903,10 +913,12 @@ html {
                         z-index: 2;
                     }
                 }
+
                 @media (max-width: 767px) {
                     padding: 20px !important;
                 }
             }
+
             @media (max-width: 1023px) {
                 display: flex;
                 flex-wrap: wrap;
@@ -923,6 +935,7 @@ aside .post_item {
         -webkit-box-orient: vertical;
         overflow: hidden;
         display: -webkit-box;
+
         .blog-logo {
             display: none !important;
         }
@@ -930,15 +943,17 @@ aside .post_item {
 
     .post_info {
         .post_categories {
-            > a {
+            >a {
                 @include category-style();
                 margin-bottom: 5px;
                 margin-right: 5px;
             }
         }
+
         @media (max-width: 1700px) {
             display: flex;
             flex-direction: column;
+
             .post_info_item {
                 &:after {
                     content: none !important;
@@ -948,10 +963,16 @@ aside .post_item {
     }
 }
 
-.page-template-page-template-process {
+.page-template-page-template-process,
+.post-type-archive-careers, .page-template-page-savings-calculator {
     font-family: stolzl, sans-serif;
     font-weight: 300;
+    .custom_links_list, .elementor-icon-list-item {
+        font-weight: 400;
+    }
+}
 
+.page-template-page-template-process {
     .page_content_wrap {
         background-color: #f2f7ff;
     }
@@ -1386,6 +1407,7 @@ section.page-heading {
                 .sc_item_button {
                     margin-top: 30px;
                 }
+
                 .image-box {
                     img {
                         max-height: 100px;
@@ -1403,6 +1425,7 @@ section.page-heading {
                         font-size: 14px;
                     }
                 }
+
                 .description-box {
                     font-weight: 400;
                     color: var(--primary-color);
@@ -1539,25 +1562,26 @@ section.page-heading {
     }
 }
 
-.page-template-page-savings-calculator {
-    font-family: stolzl, sans-serif;
-}
 
 section.savings-calculator {
     color: var(--white-color);
+
     .results-holder {
         padding-top: 80px;
         padding-bottom: 80px;
         color: var(--black-color);
+
         .description-box {
             font-weight: 300;
         }
     }
+
     .tab-holder {
         color: var(--black-color);
         background-color: var(--light-gray);
         padding-top: 80px;
         padding-bottom: 80px;
+
         .col-lg-4 {
             border-radius: 1px solid;
         }
@@ -1569,15 +1593,20 @@ section.savings-calculator {
             background-color: var(--white-color);
             display: inline-flex;
             align-items: center;
+
             input {
                 border: none;
             }
         }
+
         .range-holder {
             input[type="range"] {
-                -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-                width: 100%; /* Specific width is required for Firefox. */
-                background: transparent; /* Otherwise white in Chrome */
+                -webkit-appearance: none;
+                /* Hides the slider so that custom slider can be made */
+                width: 100%;
+                /* Specific width is required for Firefox. */
+                background: transparent;
+                /* Otherwise white in Chrome */
             }
 
             input[type="range"]::-webkit-slider-thumb {
@@ -1589,15 +1618,18 @@ section.savings-calculator {
                 background: #ffffff;
                 border: 1px solid;
                 cursor: pointer;
-                margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+                margin-top: -14px;
+                /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
                 box-shadow:
                     1px 1px 1px #000000,
-                    0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+                    0px 0px 1px #0d0d0d;
+                /* Add cool effects to your sliders! */
                 background-image: url(https://kleandrive.earth/wp-content/uploads/2023/09/Kleanbus-1.png);
             }
 
             input[type="range"]:focus {
-                outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                outline: none;
+                /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
             }
 
             input[type="range"]::-ms-track {
@@ -1610,6 +1642,7 @@ section.savings-calculator {
                 color: transparent;
             }
         }
+
         .nav-link {
             color: var(--primary-color);
             background-color: transparent;
@@ -1617,6 +1650,7 @@ section.savings-calculator {
             padding: 10px 0;
             display: flex;
             align-items: center;
+
             .icon {
                 width: 60px;
                 height: 60px;
@@ -1629,11 +1663,13 @@ section.savings-calculator {
                 padding: 10px;
                 margin-right: 1rem;
             }
+
             &:not(.active) {
                 opacity: 0.5;
             }
         }
     }
+
     .form-part {
         background-color: var(--accent-color);
 
@@ -1728,6 +1764,7 @@ section.savings-calculator {
 
         tr {
             border: none;
+
             td {
                 &:nth-child(1) {
                     width: 40%;
@@ -1754,10 +1791,11 @@ section.savings-calculator {
     }
 }
 
-body.body_style_wide:not(.expand_content).category [class*="content_wrap"] > .content,
-body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
+body.body_style_wide:not(.expand_content).category [class*="content_wrap"]>.content,
+body.body_style_boxed:not(.expand_content) [class*="content_wrap"]>.content {
     width: 100% !important;
 }
+
 #calculator-slider {
     .slider-handles {
         height: 10px;
@@ -1765,6 +1803,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
         .noUi-connect {
             background-color: var(--accent-color);
         }
+
         .noUi-handle {
             box-shadow: none;
             border-radius: 100px;
@@ -1777,6 +1816,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
             transition: all 0.3s ease-out;
             cursor: pointer;
             border: 3px solid;
+
             &:before,
             &:after {
                 border-left: 3px solid;
@@ -1785,18 +1825,21 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
                 height: 10px;
                 background-color: transparent;
             }
+
             &:before {
                 left: 3px;
                 right: auto;
                 transform: rotate(45deg) translateY(-50%);
                 top: 15px;
             }
+
             &:after {
                 right: 3px;
                 left: auto;
                 transform: rotate(-135deg) translateY(-50%);
                 top: 8px;
             }
+
             .noUi-touch-area {
                 border: 1px solid transparent;
                 position: absolute;
