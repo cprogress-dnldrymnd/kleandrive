@@ -9,23 +9,33 @@
 $process = carbon_get_the_post_meta('process');
 $description = carbon_get_the_post_meta('description');
 
-function slider_range($label, $measurement, $id, $min, $max, $start = 0)
+function slider_range($label, $measurement, $description = '', $id, $min, $max, $start = 0)
 {
     ob_start();
 ?>
-    <div class="label">
-        <label for="<?= $id ?>" class="form-label"><?= $label ?></label>
-    </div>
-    <div class="slider-input mb-3">
-        <input type="text" class="" id="<?= $id ?>" name="<?= $id ?>">
-        <?= $measurement ?>
-    </div>
-    <div class="row justify-content-space-between">
-        <div class="min col-auto"><?= $min ?> <?= $measurement ?></div>
-        <div class="col range-holder">
-            <div class="slider-handles" id="slider-range-<?= $id ?>" min="<?= $min ?>" max="<?= $max ?>" start="<?= $start ?>"></div>
+    <div class="slider-input-holder">
+        <div class="label">
+            <label for="<?= $id ?>" class="form-label"><?= $label ?></label>
         </div>
-        <div class="max col-auto"><?= $max ?> <?= $measurement ?></div>
+        <div class="slider-input mb-3">
+            <input type="text" class="" id="<?= $id ?>" name="<?= $id ?>">
+            <?= $measurement ?>
+        </div>
+        <div class="row justify-content-space-between">
+            <div class="min col-auto"><?= $min ?> <?= $measurement ?></div>
+            <div class="col range-holder">
+                <div class="slider-handles" id="slider-range-<?= $id ?>" min="<?= $min ?>" max="<?= $max ?>" start="<?= $start ?>"></div>
+            </div>
+            <div class="max col-auto"><?= $max ?> <?= $measurement ?></div>
+        </div>
+
+        <?php if ($description) { ?>
+            <div class="description">
+                <p>
+                    <?= $description ?>
+                </p>
+            </div>
+        <?php } ?>
     </div>
 <?php
     return ob_get_clean();
@@ -94,7 +104,8 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                 <div class="col-lg-8" id="calculator-slider">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
-                            <?= slider_range('Number of buses to be Repowered', 'buses', 'number_of_buses', '0', '100') ?>
+                            <?php $description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus molestias. Nihil dolores repellat in provident! Itaque, nam? Culpa voluptatum natus aliquam, minus maxime reprehenderit laudantium labore aut doloremque esse!'; ?>
+                            <?= slider_range('Number of buses to be Repowered', 'buses', $description, 'number_of_buses', '0', '100') ?>
                             <div class="label mt-5">
                                 <label for="number_of_buses" class="form-label">Are they single or double deck buses</label>
                             </div>
@@ -104,7 +115,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                             </select>
                         </div>
                         <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
-                            <?= slider_range('Annual average distance travelled per bus', 'km', 'average_distance', '0', '100000') ?>
+                            <?= slider_range('Annual average distance travelled per bus', 'km', $description, 'average_distance', '0', '100000') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-remaining-life" role="tabpanel" aria-labelledby="v-pills-remaining-life-tab">
 
