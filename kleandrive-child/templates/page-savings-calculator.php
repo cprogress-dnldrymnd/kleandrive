@@ -77,7 +77,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                             </button>
                             <button class="nav-link text-start " id="v-pills-annual-mileage-tab" data-bs-toggle="pill" data-bs-target="#v-pills-annual-mileage" type="button" role="tab" aria-controls="v-pills-annual-mileage" aria-selected="false">
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/distance.png' ?>"></span>
-                                <span class="text">Annual mileage (km)</span>
+                                <span class="text">Annual average distance travelled per bus</span>
                             </button>
                             <button class="nav-link text-start" id="v-pills-remaining-life-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remaining-life" type="button" role="tab" aria-controls="v-pills-remaining-life" aria-selected="false">
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/calendar.png' ?>"></span>
@@ -104,7 +104,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                             </select>
                         </div>
                         <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
-                            <?= slider_range('Annual mileage (km)', 'km', 'annual_mileage', '0', '100000') ?>
+                            <?= slider_range('Annual average distance travelled per bus', 'km', 'average_distance', '0', '100000') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-remaining-life" role="tabpanel" aria-labelledby="v-pills-remaining-life-tab">
 
@@ -130,8 +130,8 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                     <div class="row g-4">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="annual_mileage">Annual mileage (km)</label>
-                                <input type="number" class="form-control" id="annual_mileage" name="annual_mileage" value="80000">
+                                <label for="average_distance">Annual average distance travelled per bus</label>
+                                <input type="number" class="form-control" id="average_distance" name="average_distance" value="80000">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -208,7 +208,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
         }
 
         jQuery('#calculate').click(function(e) {
-            $annual_mileage = input_value(parseFloat(jQuery('input[name="annual_mileage"]').val()));
+            $average_distance = input_value(parseFloat(jQuery('input[name="average_distance"]').val()));
             $remaining_life = input_value(parseFloat(jQuery('input[name="remaining_life"]').val()));
             $no_of_buses_converted = input_value(parseFloat(jQuery('input[name="no_of_buses_converted"]').val()));
             $est_annual_op_cost = input_value(parseFloat(jQuery('input[name="est_annual_op_cost"]').val()));
@@ -222,9 +222,9 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
             $Incrementalcaptialcostsavings = input_value(parseFloat(jQuery('input[name="Incrementalcaptialcostsavings"]').val()));
 
 
-            $TotalCO2savings = Math.round(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_mileage / 1000000);
-            $TotalNOxdamagecostsavings = Math.round($annual_mileage * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
-            $TotalParticulateMatterdamagecostsavings = Math.round($annual_mileage * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
+            $TotalCO2savings = Math.round(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $average_distance / 1000000);
+            $TotalNOxdamagecostsavings = Math.round($average_distance * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
+            $TotalParticulateMatterdamagecostsavings = Math.round($average_distance * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
             $Operationalcostsavings = Math.round(($est_annual_op_cost * $no_of_buses_converted * $remaining_life) / 3);
             $Capitalcostsavingsoverbuyingnewelectricbuses = Math.round($no_of_buses_converted * $Incrementalcaptialcostsavings);
 
@@ -245,7 +245,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
 
 <script>
     jQuery(document).ready(function() {
-        range_slider('slider-range-annual_mileage', 'annual_mileage');
+        range_slider('slider-range-average_distance', 'average_distance');
         range_slider('slider-range-number_of_buses', 'number_of_buses');
 
         function range_slider($range_id, $input_id) {
