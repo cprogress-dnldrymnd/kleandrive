@@ -50,7 +50,7 @@ class Elementor_Partners extends \Elementor\Widget_Base
             [
                 'label'           => esc_html__('', 'textdomain'),
                 'type'            => \Elementor\Controls_Manager::RAW_HTML,
-                'raw'             => esc_html__('This widget will display partners slider', 'textdomain'),
+                'raw'             => esc_html__('This widget will display partners/testimonials', 'textdomain'),
                 'content_classes' => '',
             ]
         );
