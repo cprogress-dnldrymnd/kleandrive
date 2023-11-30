@@ -57,14 +57,14 @@ else {
 <section class="footer-cta">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-7">
                 <div class="heading-box">
                     <h2>
                         <?= $heading_val ?>
                     </h2>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-5">
                 <div class="row">
                     <div class="sc_item_button sc_button_wrap col-auto">
                         <a href="/savings-calculator"
