@@ -29,4 +29,27 @@ jQuery(document).ready(function () {
         },
     });
 
+
+    const mySwiperPartnerGrid = new Swiper(".mySwiperPartnerGrid", {
+        loop: true,
+        autoplay: true,
+        slidesPerView: 1,
+        speed: 5000,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+            },
+
+            992: {
+                slidesPerView: 3,
+            },
+
+        },
+    });
+
 });
