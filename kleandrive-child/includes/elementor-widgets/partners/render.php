@@ -104,6 +104,14 @@ $partners = get_posts($args);
                             <div class="description-box">
                                 <?= wpautop($partner_description) ?>
                             </div>
+
+                            <?php if ($website) { ?>
+                                <div class="sc_item_button sc_button_wrap">
+                                    <a target="_blank" href="<?= $website ?>" class="apply-button sc_button sc_button_bordered sc_button_size_normal sc_button_icon_left color_style_link3">
+                                        <span class="sc_button_text"><span class="sc_button_title">Visit Website</span></span>
+                                    </a>
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 <?php } ?>
