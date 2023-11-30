@@ -95,6 +95,9 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
                             <?= slider_range('Number of buses to be Repowered', 'buses', 'number_of_buses', '0', '100') ?>
+                            <div class="label">
+                                <label for="number_of_buses" class="form-label">Are they single or double deck buses</label>
+                            </div>
                             <select name="single_or_double" id="single_or_double">
                                 <option value="single"> Single </option>
                                 <option value="double"> Double </option>
@@ -104,10 +107,8 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                             <?= slider_range('Annual mileage (km)', 'km', 'annual_mileage', '0', '100000') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-remaining-life" role="tabpanel" aria-labelledby="v-pills-remaining-life-tab">
-                            <div class="label">
-                                <label for="number_of_buses" class="form-label">Are they single or double deck buses</label>
-                            </div>
-                         
+
+
                         </div>
 
                         <div class="tab-pane fade" id="v-pills-Estimated-annual-operational-costs" role="tabpanel" aria-labelledby="v-pills-Estimated-annual-operational-costs-tab">
