@@ -23,13 +23,10 @@ $description = carbon_get_the_post_meta('description');
 </section>
 
 <section class="savings-calculator">
-    <div class="top">
-        <div class="container">
-
-        </div>
-    </div>
-
     <div class="results-holder">
+        <div class="container">
+            <?php the_content() ?>
+        </div>
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
