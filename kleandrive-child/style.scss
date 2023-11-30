@@ -1314,6 +1314,9 @@ section.page-heading {
         }
     }
     .partner-wrapper-grid {
+        .swiper-slide {
+            height: auto !important;
+          }
         .column-holder {
             background-color: var(--white-color);
             padding: 2rem;
