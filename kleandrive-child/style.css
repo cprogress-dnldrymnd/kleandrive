@@ -8,6 +8,9 @@
 */
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
+body, html {
+  overflow-x: hidden !important; }
+
 :root {
   --primary-color: #19191a;
   --accent-color: #0e62f2;

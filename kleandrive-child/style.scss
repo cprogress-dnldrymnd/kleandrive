@@ -8,6 +8,9 @@
 
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
+body,html {
+    overflow-x: hidden !important;
+}
 @mixin inputs {
     input[type="text"],
     input[type="email"],
