@@ -790,9 +790,7 @@ html {
                 flex: 0 0 auto;
                 padding-left: 1rem;
                 padding-right: 1rem;
-                @media(max-width: 1024px) {
-                    flex: 0 0 100%;
-                }
+               
             }
 
             .col-lg-8 {
@@ -801,6 +799,7 @@ html {
                 @media (max-width: 1024px) {
                     width: 100%;
                     margin-bottom: 2rem;
+                    flex: 0 0 100%;
                 }
             }
 
@@ -809,6 +808,7 @@ html {
 
                 @media (max-width: 1024px) {
                     width: 100%;
+                    flex: 0 0 100%;
                 }
             }
         }
