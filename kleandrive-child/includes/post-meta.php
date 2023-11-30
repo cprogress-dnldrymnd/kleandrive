@@ -27,7 +27,7 @@ Container::make('theme_options', __('Theme Settings'))
 /*-----------------------------------------------------------------------------------*/
 
 Container::make('theme_options', __('Savings Calculator'))
-    ->set_parent_page('admin.php?page=crb_carbon_fields_container_theme_settings.php')
+    ->set_page_parent('admin.php?page=crb_carbon_fields_container_theme_settings.php')
     ->add_tab('Fuel Costs', array(
         Field::make('text', 'diesel', 'Diesel'),
         Field::make('text', 'electricity', 'Electricity '),
