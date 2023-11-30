@@ -32,7 +32,7 @@ function slider_range($label, $id, $min, $max, $start = 0)
 }
 ?>
 
-<?= slider_range('Annual mileage (km)', 'annual_mileage', '0', '100000') ?>
+
 <section class="page-heading">
     <div class="container">
         <h1><?php the_title() ?></h1>
@@ -94,7 +94,7 @@ function slider_range($label, $id, $min, $max, $start = 0)
                 <div class="col-lg-8" id="calculator-slider">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
-                            <?= slider_range() ?>
+                            <?= slider_range('Annual mileage (km)', 'annual_mileage', '0', '100000') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
 
