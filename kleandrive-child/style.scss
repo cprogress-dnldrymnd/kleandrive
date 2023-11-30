@@ -1398,6 +1398,10 @@ section.page-heading {
                     padding-right: calc(var(--bs-gutter-x) * 0.5);
                     padding-left: calc(var(--bs-gutter-x) * 0.5);
                     margin-top: var(--bs-gutter-y);
+
+                    .column-holder {
+                        
+                    }
                     @media (min-width: 992px) {
                         flex: 0 0 auto;
                         width: 33.33333333%;
