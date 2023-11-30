@@ -809,7 +809,7 @@ section.page-heading {
       border: 2px solid var(--primary-color) !important; }
   .partner-slider .partner-wrapper-grid .row {
     --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+    --bs-gutter-y: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(var(--bs-gutter-y) * -1);
@@ -826,7 +826,8 @@ section.page-heading {
         background-color: var(--white-color);
         padding: 2rem;
         border-radius: 20px;
-        box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.0509803922); }
+        box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.0509803922);
+        height: 100%; }
         .partner-slider .partner-wrapper-grid .row .col-lg-4 .column-holder .image-box {
           padding: 20%;
           position: relative; }

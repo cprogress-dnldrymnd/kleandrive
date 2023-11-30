@@ -1319,7 +1319,7 @@ section.page-heading {
     .partner-wrapper-grid {
         .row {
             --bs-gutter-x: 1.5rem;
-            --bs-gutter-y: 0;
+            --bs-gutter-y: 1.5rem;
             display: flex;
             flex-wrap: wrap;
             margin-top: calc(var(--bs-gutter-y) * -1);
@@ -1338,6 +1338,7 @@ section.page-heading {
                     padding: 2rem;
                     border-radius: 20px;
                     box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.050980392156862744);
+                    height: 100%;
                     .image-box {
                         padding: 20%;
                         position: relative;
