@@ -130,4 +130,35 @@ $partners = get_posts($args);
     <?php } ?>
 
 </div>
-<?
+<?php if (\Elementor\Plugin::$instance->editor->is_edit_mode()) { ?>
+    <script>
+        const mySwiperPartnerGrid = new Swiper(".mySwiperPartnerGrid", {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                },
+
+                992: {
+                    slidesPerView: 3,
+                },
+
+            },
+        });
+    </script>
+<?php } ?>
