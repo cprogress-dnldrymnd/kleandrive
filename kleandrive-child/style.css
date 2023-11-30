@@ -1151,6 +1151,6 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   background-color: var(--primary-color);
   color: var(--white-color); }
   .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content p {
-    color: inherit; }
+    color: inherit !important; }
 
 /*# sourceMappingURL=style.css.map */
