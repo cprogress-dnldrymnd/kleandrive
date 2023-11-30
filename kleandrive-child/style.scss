@@ -1873,7 +1873,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"]>.content {
             color: var(--white-color);
 
             p {
-                color: inherit;
+                color: inherit !important;
             }
         }
     }
