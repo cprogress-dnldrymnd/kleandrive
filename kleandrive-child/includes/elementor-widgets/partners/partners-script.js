@@ -53,7 +53,7 @@ jQuery(document).ready(function () {
             },
 
             767: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
 
 
