@@ -808,8 +808,8 @@ section.page-heading {
       background-color: var(--primary-color) !important;
       border: 2px solid var(--primary-color) !important; }
   .partner-slider .partner-wrapper-grid .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 1.5rem;
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(var(--bs-gutter-y) * -1);
