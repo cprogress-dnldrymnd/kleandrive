@@ -1307,7 +1307,32 @@ section.page-heading {
     .swiper {
         z-index: 1;
     }
+    .partner-wrapper-grid {
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(var(--bs-gutter-y) * -1);
+            margin-right: calc(var(--bs-gutter-x) * -0.5);
+            margin-left: calc(var(--bs-gutter-x) * -0.5);
+            .col-lg-4 {
+                flex-shrink: 0;
+                width: 100%;
+                max-width: 100%;
+                padding-right: calc(var(--bs-gutter-x) * 0.5);
+                padding-left: calc(var(--bs-gutter-x) * 0.5);
+                margin-top: var(--bs-gutter-y);
 
+                .column-holder {
+                }
+                @media (min-width: 992px) {
+                    flex: 0 0 auto;
+                    width: 33.33333333%;
+                }
+            }
+        }
+    }
     .swiper-slide {
         .inner {
             .description-box {
@@ -1380,33 +1405,6 @@ section.page-heading {
                 transform: translateY(-100%);
                 position: absolute;
                 right: 0;
-            }
-        }
-        .partner-wrapper-grid {
-            .row {
-                --bs-gutter-x: 1.5rem;
-                --bs-gutter-y: 0;
-                display: flex;
-                flex-wrap: wrap;
-                margin-top: calc(var(--bs-gutter-y) * -1);
-                margin-right: calc(var(--bs-gutter-x) * -0.5);
-                margin-left: calc(var(--bs-gutter-x) * -0.5);
-                .col-lg-4 {
-                    flex-shrink: 0;
-                    width: 100%;
-                    max-width: 100%;
-                    padding-right: calc(var(--bs-gutter-x) * 0.5);
-                    padding-left: calc(var(--bs-gutter-x) * 0.5);
-                    margin-top: var(--bs-gutter-y);
-
-                    .column-holder {
-                        
-                    }
-                    @media (min-width: 992px) {
-                        flex: 0 0 auto;
-                        width: 33.33333333%;
-                    }
-                }
             }
         }
     }
