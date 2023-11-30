@@ -1138,4 +1138,8 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
       width: auto;
       height: auto; }
 
+.social-icon .elementor-icon:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important; }
+
 /*# sourceMappingURL=style.css.map */
