@@ -238,7 +238,7 @@ function slider_range($label, $id, $min, $max, $start = 0)
 <script>
     jQuery(document).ready(function() {
         range_slider('slider-range-annual_mileage', 'annual_mileage');
-
+        range_slider('slider-range-number_of_buses', 'number_of_buses');
         function range_slider($range_id, $input_id) {
             var rangeSlider = document.getElementById($range_id);
             start = parseInt(rangeSlider.getAttribute("start"));
