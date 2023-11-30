@@ -98,7 +98,7 @@ function slider_range($label, $measurement, $id, $min, $max, $start = 0)
                             <div class="label">
                                 <label for="number_of_buses" class="form-label">Are they single or double deck buses</label>
                             </div>
-                            <select name="single_or_double" id="single_or_double">
+                            <select name="single_or_double" id="single_or_double" class="mt-5">
                                 <option value="single"> Single </option>
                                 <option value="double"> Double </option>
                             </select>
