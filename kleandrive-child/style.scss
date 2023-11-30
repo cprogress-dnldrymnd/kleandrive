@@ -214,13 +214,13 @@
                     border-color: var(--primary-color) !important;
 
                     @include on-event {
-                        border-color: var(--theme-color-text_hover) !important;
+                        border-color: var(--accent-color) !important;
                     }
                 }
 
                 @include on-event {
                     background-color: transparent;
-                    color: var(--theme-color-text_hover);
+                    color: var(--accent-color);
                 }
             }
         }
