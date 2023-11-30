@@ -20,7 +20,6 @@ jQuery(document).ready(function () {
         loop: true,
         autoplay: true,
         slidesPerView: 1,
-        margin: 30,
         pagination: {
             el: ".swiper-pagination",
             clickable: true
@@ -35,7 +34,7 @@ jQuery(document).ready(function () {
         loop: true,
         autoplay: true,
         slidesPerView: 1,
-        speed: 5000,
+        margin: 30,
         pagination: {
             el: ".swiper-pagination",
             clickable: true
