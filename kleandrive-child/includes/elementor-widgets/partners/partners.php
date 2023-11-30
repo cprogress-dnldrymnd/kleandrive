@@ -39,7 +39,7 @@ class Elementor_Partners extends \Elementor\Widget_Base
         $this->start_controls_section(
             'content_section',
             [
-                'label' => esc_html__('Partners Slider', 'elementor-oembed-widget'),
+                'label' => esc_html__('Partners', 'elementor-oembed-widget'),
                 'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -62,8 +62,9 @@ class Elementor_Partners extends \Elementor\Widget_Base
                 'type'    => \Elementor\Controls_Manager::SELECT,
                 'default' => 'partner-style-1',
                 'options' => [
-                    'partner-style-1' => esc_html__('Style 1', 'textdomain'),
-                    'partner-style-2' => esc_html__('Style 2', 'textdomain'),
+                    'partner-style-1' => esc_html__('Style 1(Slider)', 'textdomain'),
+                    'partner-style-2' => esc_html__('Style 2(Slider)', 'textdomain'),
+                    'partner-style-3' => esc_html__('Style 3(Grid)', 'textdomain'),
                 ],
             ]
         );
