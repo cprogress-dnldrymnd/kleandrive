@@ -175,83 +175,8 @@ $description = carbon_get_the_post_meta('description');
             </div>
         </div>
 
-
     </div>
 </section>
-
-<section class="bottom py-5">
-    <div class="container">
-        <div class="holder">
-            <div class="form-part ">
-                <div class="container">
-                    <div class="holder" id="assumptions">
-                        <div class="table-holder mb-4">
-                            <h4>Damage cost assumptions</h4>
-                            <table>
-                                <tr>
-                                    <td>NOx Road Transport / tonne (£2022)</td>
-                                    <td>£17,893</td>
-                                    <td>Air Quality damage cost update 2023 – FINAL Report Report for Defra ECM_61369</td>
-                                </tr>
-                                <tr>
-                                    <td>Particulate Matter Road Transport PM2.5/ tonne (£2002)</td>
-                                    <td>£130,884</td>
-                                    <td>Air Quality damage cost update 2023 – FINAL Report Report for Defra ECM_61369</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="table-holder">
-                            <h4>Other assumptions</h4>
-                            <p>
-                                Greenhouse gas reporting: conversion factors 2021 - GOV.UK (www.gov.uk)
-                            </p>
-                            <table>
-                                <tr>
-                                    <td>Blended average CO2 saving per 1 vehicle/ km (g)</td>
-                                    <td>1,312</td>
-                                    <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
-                                </tr>
-                                <tr>
-                                    <td>Blended average NOx saving per 1 vehicle/ km (g)</td>
-                                    <td>4.921623633</td>
-                                    <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
-                                </tr>
-                                <tr>
-                                    <td>Blended average PM saving per 1 vehicle/ km (g)</td>
-                                    <td>0.03670732422</td>
-                                    <td>Refer to 'Zemo assumptions' sheet for detailed breakdown</td>
-                                </tr>
-                                <tr>
-                                    <td>Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)</td>
-                                    <td>227.7</td>
-                                    <td>"40 to 80 percent of life cycle impacts of battery electric bus are in it's manufacture'' 1</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>NB. Adjusted down by a third to exclude battery and powertrain</td>
-                                </tr>
-                                <tr>
-                                    <td>Incremental captial cost savings (new bev cost - repower)</td>
-                                    <td>£ 350,000.00</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Assumed opertational costs?</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
 
 
 <script>
