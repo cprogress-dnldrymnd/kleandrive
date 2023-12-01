@@ -6,7 +6,6 @@
 <?php get_header() ?>
 
 <?php
-$process = carbon_get_the_post_meta('process');
 $description = carbon_get_the_post_meta('description');
 function slider_range($label, $measurement, $id)
 {
@@ -20,7 +19,7 @@ function slider_range($label, $measurement, $id)
             <label for="<?= $id ?>" class="form-label"><?= $label ?></label>
         </div>
         <div class="slider-input mb-3">
-            <input type="text" class="" id="<?= $id ?>" name="<?= $id ?>">
+            <input type="text" class="calculation-input" id="<?= $id ?>" name="<?= $id ?>">
             <?= $measurement ?>
         </div>
         <div class="row justify-content-space-between">
@@ -71,13 +70,6 @@ function slider_range($label, $measurement, $id)
                 </h4>
             </div>
             <div class="row g-5">
-                <input type="hidden" name="NOxRoadTransport" value="17892.6280819244">
-                <input type="hidden" name="ParticulateMatterRoadTransport" value="130884.092045588">
-                <input type="hidden" name="BlendedaverageCO2saving" value="1311.648328125">
-                <input type="hidden" name="BlendedaverageNOxsaving" value="4.9216236328125">
-                <input type="hidden" name="BlendedaveragePMsaving" value="0.03670732421875">
-                <input type="hidden" name="IncrementalCO2benefitvsNewBEV" value="227.7">
-                <input type="hidden" name="Incrementalcaptialcostsavings" value="350000">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-start">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -130,6 +122,46 @@ function slider_range($label, $measurement, $id)
         </div>
     </div>
     <div id="calculator">
+
+        <?php
+        $diesel = carbon_get_theme_option('diesel');
+        $electricity = carbon_get_theme_option('electricity');
+        $elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
+        $elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
+        $bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
+        $bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');
+        ?>
+
+        <!--- Damage cost assumptions --->
+        <input type="hidden" name="NOx Road Transport / tonne (£2022)" value="17892.6280819244">
+        <input type="hidden" name="Particulate Matter Road Transport PM2.5/ tonne (£2002)" value="130884.092045588">
+
+        <!--- Other assumptions --->
+        <input type="hidden" name="Blended average CO2 saving per 1 vehicle/ km (g)" value="1312">
+        <input type="hidden" name="Blended average NOx saving per 1 vehicle/ km (g)" value="4.921623633">
+        <input type="hidden" name="Blended average PM saving per 1 vehicle/ km (g)" value="0.03670732422">
+        <input type="hidden" name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)" value="227.7">
+        <input type="hidden" name="Incremental single captial cost savings (new bev cost - repower)" value=" 185000">
+        <input type="hidden" name="Incremental double capital cost savings (new bev cost - repower)" value="325000">
+
+        <!--- Assumptions --->
+        <input type="hidden" name="Wholesale price of diesel (Large Fleet Operator)" value="<?= $diesel ?>">
+        <input type="hidden" name="Double Deck Bus – 6 MPG (47.1 litres/100km)" value="0.471">
+        <input type="hidden" name="Cost per km" value="">
+        <input type="hidden" name="BSOG rate England¹" value="">
+        <input type="hidden" name="BSOG rate England" value="<?= $bsog_nsg_rate ?>">
+        <input type="hidden" name="Maintenance - external (body) - glass, accidents, vandalism" value="">
+        <input type="hidden" name="Maintenance - internal (drivetrain) - engine parts, suspension, brakes, filters" value="">
+        <input type="hidden" name="Upgrades (new engine, gearbox). £20k spend in Yrs 8-10." value="">
+        <input type="hidden" name="DPF (diesel particulate filter) clean" value="">
+        <input type="hidden" name="Cost of electricity per kWh" value="<?= $electricity ?>">
+        <input type="hidden" name="Battery Electric Energy Consumption (kWh/km)" value="1.15">
+        <input type="hidden" name="Cost per km" value="">
+        <input type="hidden" name="BSOG rate England" value="<?= $bsog_nsg_rate_repowered ?>">
+        <input type="hidden" name="Maintenance - internal (drivetrain)" value="1750">
+        <input type="hidden" name="Upgrades" value="0">
+        <input type="hidden" name="Telematics subscription" value="240">
+
         <div class="form-part form-result">
             <div class="container">
                 <div class="holder py-5">
@@ -224,7 +256,6 @@ function slider_range($label, $measurement, $id)
                                 <div class="result-heading">
                                     <b><span> Capital cost savings over buying new electric buses </span></b>
                                     <span result="Capital cost savings over buying new electric buses"></span>
-
                                 </div>
                             </div>
                         </div>
@@ -248,32 +279,21 @@ function slider_range($label, $measurement, $id)
             }
         }
 
+
+
+
+        jQuery('.calculation-input').change(function (e) { 
+            console.log('teststs');
+            
+        });
+
         jQuery('#calculate').click(function(e) {
             $annual_average_distance_travel = input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val()));
-            $remaining_life = input_value(parseFloat(jQuery('input[name="remaining_life"]').val()));
-            $no_of_buses_converted = input_value(parseFloat(jQuery('input[name="no_of_buses_converted"]').val()));
-            $est_annual_op_cost = input_value(parseFloat(jQuery('input[name="est_annual_op_cost"]').val()));
-
-            $NOxRoadTransport = input_value(parseFloat(jQuery('input[name="NOxRoadTransport"]').val()));
-            $ParticulateMatterRoadTransport = input_value(parseFloat(jQuery('input[name="ParticulateMatterRoadTransport"]').val()));
-            $BlendedaverageCO2saving = input_value(parseFloat(jQuery('input[name="BlendedaverageCO2saving"]').val()));
-            $BlendedaverageNOxsaving = input_value(parseFloat(jQuery('input[name="BlendedaverageNOxsaving"]').val()));
-            $BlendedaveragePMsaving = input_value(parseFloat(jQuery('input[name="BlendedaveragePMsaving"]').val()));
-            $IncrementalCO2benefitvsNewBEV = input_value(parseFloat(jQuery('input[name="IncrementalCO2benefitvsNewBEV"]').val()));
-            $Incrementalcaptialcostsavings = input_value(parseFloat(jQuery('input[name="Incrementalcaptialcostsavings"]').val()));
+            
 
 
-            $TotalCO2savings = Math.round(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_average_distance_travel / 1000000);
-            $TotalNOxdamagecostsavings = Math.round($annual_average_distance_travel * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
-            $TotalParticulateMatterdamagecostsavings = Math.round($annual_average_distance_travel * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
-            $Operationalcostsavings = Math.round(($est_annual_op_cost * $no_of_buses_converted * $remaining_life) / 3);
-            $Capitalcostsavingsoverbuyingnewelectricbuses = Math.round($no_of_buses_converted * $Incrementalcaptialcostsavings);
 
-            jQuery('#TotalCO2savings').text($TotalCO2savings.toLocaleString('en-US'));
-            jQuery('#TotalNOxdamagecostsavings').text($TotalNOxdamagecostsavings.toLocaleString('en-US'));
-            jQuery('#TotalParticulateMatterdamagecostsavings').text($TotalParticulateMatterdamagecostsavings.toLocaleString('en-US'));
-            jQuery('#Operationalcostsavings').text($Operationalcostsavings.toLocaleString('en-US'));
-            jQuery('#Capitalcostsavingsoverbuyingnewelectricbuses').text($Capitalcostsavingsoverbuyingnewelectricbuses.toLocaleString('en-US'));
+            //jQuery('#Capitalcostsavingsoverbuyingnewelectricbuses').text($Capitalcostsavingsoverbuyingnewelectricbuses.toLocaleString('en-US'));
 
 
 
