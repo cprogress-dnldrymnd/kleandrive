@@ -1083,7 +1083,7 @@ section.savings-calculator {
       left: 0;
       transform: translate(15px, -50%) rotate(135deg);
       background-color: var(--accent-color); }
-  section.savings-calculator .form-part.form-result .row .column-holder .icon-box img {
+  section.savings-calculator .form-part.form-result .row .column-holder .result-icon img {
     max-width: 100px; }
   section.savings-calculator #calculator h4 {
     color: inherit; }
