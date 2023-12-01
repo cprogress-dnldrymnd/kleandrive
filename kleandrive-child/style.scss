@@ -1753,6 +1753,8 @@ section.savings-calculator {
             }
             .row {
                 .column-holder {
+                    background-color: var(--white-color);
+                    padding: 2rem;
                     > div {
                         &:not(:last-child) {
                             margin-bottom: 1rem;
