@@ -156,7 +156,7 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="DPF (diesel particulate filter) clean" value="">
         <input type="hidden" name="Cost of electricity per kWh" value="<?= $electricity ?>">
         <input type="hidden" name="Battery Electric Energy Consumption (kWh/km)" value="1.15">
-        <input type="hidden" name="Cost per km" value="">
+        <input type="hidden" name="Cost per km 2" value="">
         <input type="hidden" name="BSOG rate England" value="<?= $bsog_nsg_rate_repowered ?>">
         <input type="hidden" name="Maintenance - internal (drivetrain)" value="1750">
         <input type="hidden" name="Upgrades" value="0">
@@ -339,7 +339,7 @@ function slider_range($label, $measurement, $id)
             rangeSlider.noUiSlider.on('update', function(values, handle) {
                 inputFormat.value = values[handle];
 
-                console.log('teststs');
+                calculate();
 
             });
 
@@ -349,6 +349,22 @@ function slider_range($label, $measurement, $id)
 
 
 
+        }
+
+        function calculate() {
+            Wholesale_price_of_diesel = jQuery('input[name="Wholesale price of diesel (Large Fleet Operator)"]').val();
+            Double_Deck_Bus_6_MPG = jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val();
+
+            Cost_per_km_val = parseFloat(Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG);
+
+            Cost_per_km = jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
+
+            console.log(Cost_per_km_val);
+
+
+          
+        
+        
         }
 
     });
