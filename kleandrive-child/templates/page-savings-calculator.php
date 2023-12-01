@@ -408,8 +408,11 @@ function slider_range($label, $measurement, $id)
 
             Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
             jQuery('span[result="Fuel savings"]').html(parseInt(Fuel_savings).toLocaleString('en-US'));
-
-
+           
+            //Compute Maintenance saving
+            Maintenance_saving = existing_vehicle_service_and_maintenance_cost - 2700;
+            jQuery('span[result="Maintenance saving"]').html(parseInt(Maintenance_saving).toLocaleString('en-US'));
+            
         }
 
     });
