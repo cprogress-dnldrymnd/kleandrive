@@ -300,36 +300,61 @@ function slider_range($label, $measurement, $id)
 
 <script>
     jQuery(document).ready(function() {
-        range_slider('slider-range-annual_average_distance_travel', 'annual_average_distance_travel');
-        range_slider('slider-range-num_of_buses', 'num_of_buses');
-        range_slider('slider-range-average_remaining_life', 'average_remaining_life');
-        range_slider('slider-range-existing_vehicle_service_and_maintenance_cost', 'existing_vehicle_service_and_maintenance_cost');
+        range_slider('slider-range-annual_average_distance_travel', 'annual_average_distance_travel', false);
+        range_slider('slider-range-num_of_buses', 'num_of_buses', false);
+        range_slider('slider-range-average_remaining_life', 'average_remaining_life', true);
+        range_slider('slider-range-existing_vehicle_service_and_maintenance_cost', 'existing_vehicle_service_and_maintenance_cost', false);
 
-        function range_slider($range_id, $input_id) {
+        function range_slider($range_id, $input_id, $allow_decimal = false) {
             var rangeSlider = document.getElementById($range_id);
             start = parseInt(rangeSlider.getAttribute("start"));
             min = parseInt(rangeSlider.getAttribute("min"));
             max = parseInt(rangeSlider.getAttribute("max"));
-            noUiSlider.create(rangeSlider, {
-                start: [start],
-                connect: 'lower',
-                step: 0.5,
-                range: {
-                    'min': [min],
-                    'max': [max]
-                },
-                format: {
-                    // 'to' the formatted value. Receives a number.
-                    to: function(value) {
-                        return parseFloat(value).toFixed(2);
+            if ($allow_decimal) {
+                noUiSlider.create(rangeSlider, {
+                    start: [start],
+                    connect: 'lower',
+                    step: 0.5,
+                    range: {
+                        'min': [min],
+                        'max': [max]
                     },
-                    // 'from' the formatted value.
-                    // Receives a string, should return a number.
-                    from: function(value) {
-                        return Number(parseFloat(value).toFixed(2));
+                    format: {
+                        // 'to' the formatted value. Receives a number.
+                        to: function(value) {
+                            return parseFloat(value).toFixed(2);
+                        },
+                        // 'from' the formatted value.
+                        // Receives a string, should return a number.
+                        from: function(value) {
+                            return Number(parseFloat(value).toFixed(2));
+                        }
                     }
-                }
-            });
+                });
+            } else {
+                noUiSlider.create(rangeSlider, {
+                    start: [start],
+                    connect: 'lower',
+                    step: 0.5,
+                    range: {
+                        'min': [min],
+                        'max': [max]
+                    },
+
+                    format: {
+                        // 'to' the formatted value. Receives a number.
+                        to: function(value) {
+                            return Math.round(value);
+                        },
+                        // 'from' the formatted value.
+                        // Receives a string, should return a number.
+                        from: function(value) {
+                            return Number(Math.round(value));
+                        }
+                    }
+                });
+            }
+
 
             var inputFormat = document.getElementById($input_id);
             rangeSlider.noUiSlider.on('update', function(values, handle) {
