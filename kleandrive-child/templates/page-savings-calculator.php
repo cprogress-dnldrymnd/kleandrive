@@ -134,7 +134,7 @@ function slider_range($label, $measurement, $id)
             <div class="container">
                 <div class="holder py-5">
                     <h4 class="mb-5">Estimated Impacts</h4>
-                    <div class="row g-5">
+                    <div class="row g-3">
                         <div class="col-lg-3">
                             <div class="column-holder text-center">
                                 <div class="result-icon">
