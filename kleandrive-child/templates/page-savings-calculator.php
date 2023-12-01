@@ -341,99 +341,95 @@ function slider_range($label, $measurement, $id)
             inputFormat.addEventListener('change', function() {
                 rangeSlider.noUiSlider.set(this.value);
             });
-
-
-
-        }
-
-        function input_value($input) {
-            if ($input) {
-                return $input;
-            } else {
-                return 0;
-            }
-        }
-
-
-
-        function calculate() {
-            num_of_buses = input_value(parseFloat(jQuery('input[name="num_of_buses"]').val()));
-            annual_average_distance_travel = input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val()));
-            average_remaining_life = input_value(parseFloat(jQuery('input[name="average_remaining_life"]').val()));
-            existing_vehicle_service_and_maintenance_cost = input_value(parseFloat(jQuery('input[name="existing_vehicle_service_and_maintenance_cost"]').val()));
-
-            Wholesale_price_of_diesel = input_value(parseFloat(jQuery('input[name="Wholesale price of diesel (Large Fleet Operator)"]').val()));
-            Double_Deck_Bus_6_MPG = input_value(parseFloat(jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val()));
-            Cost_of_electricity_per_kWh = input_value(parseFloat(jQuery('input[name="Cost of electricity per kWh"]').val()));
-            Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val()));
-            Blended_average_CO2_saving = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 vehicle/ km (g)"]').val()));
-            Incremental_CO2_benefit_vs_New_BEV = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val()));
-            NOx_Road_Transport = input_value(parseFloat(jQuery('input[name="NOx Road Transport / tonne (£2022)"]').val()));
-            Blended_average_NOx_saving = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 vehicle/ km (g)"]').val()));
-            Blended_average_PM_saving = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 vehicle/ km (g)"]').val()));
-            Particulate_Matter_Road_Transport = input_value(parseFloat(jQuery('input[name="Particulate Matter Road Transport PM2.5/ tonne (£2002)"]').val()));
-            Cost_per_km = jQuery('input[name="Cost per km"]').val();
-            Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val();
-            Current_Rate_of_BSOG = jQuery('input[name="Current Rate of BSOG"]').val();
-            Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
-            Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
-            Incremental_double_captial_cost_savings = jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)').val();
-
-
-
-            single_or_double = jQuery('#single_or_double').val();
-
-            //Compute Cost per km
-            Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
-            jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
-
-            //Compute Cost per km Electric
-            Cost_per_km_val = Cost_of_electricity_per_kWh * Battery_Electric_Energy_Consumption;
-            jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
-
-            //Compute Total CO2 saved
-            total_co2_saved_val = (Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
-            jQuery('span[result="Total CO2 saved"]').html(parseInt(total_co2_saved_val).toLocaleString('en-US') + '<div class="type">tonnes</div>');
-
-
-            //Compute Total NOx damage costs saved
-            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving / 1000000;
-            jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
-
-            //Compute Total Particulate Matter damage costs saved
-            Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving * Particulate_Matter_Road_Transport / 1000000;
-            jQuery('span[result="Total Particulate Matter damage costs saved"]').html('£' + parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
-
-
-            //Compute Total Annual operational cost savings 
-
-            Total_Annual_operational_cost_savings = Wholesale_price_of_diesel * average_remaining_life * num_of_buses / 3;
-            jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
-
-            //Compute Fuel savings
-
-            Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
-            jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
-
-            //Compute Maintenance saving
-            Maintenance_saving = existing_vehicle_service_and_maintenance_cost - 2750;
-            jQuery('span[result="Maintenance saving"]').html('£' + parseInt(Maintenance_saving).toLocaleString('en-US'));
-
-            //Compute Grant (BSOG/NSG) savings
-            Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) - (Current_Rate_of_BSOG * annual_average_distance_travel);
-            jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
-
-            //Compute Capital cost savings over buying new electric buses
-
-            if (single_or_double == 'double') {
-                Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_double_captial_cost_savings;
-            } else {
-                Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_single_captial_cost_savings;
-            }
-            jQuery('span[result="Capital cost savings over buying new electric buses"]').html('£' + parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
-
-
         }
 
     });
+
+    jQuery('#single_or_double').change(function(e) {
+        calculate();
+    });
+
+    function input_value($input) {
+        if ($input) {
+            return $input;
+        } else {
+            return 0;
+        }
+    }
+
+    function calculate() {
+        num_of_buses = input_value(parseFloat(jQuery('input[name="num_of_buses"]').val()));
+        annual_average_distance_travel = input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val()));
+        average_remaining_life = input_value(parseFloat(jQuery('input[name="average_remaining_life"]').val()));
+        existing_vehicle_service_and_maintenance_cost = input_value(parseFloat(jQuery('input[name="existing_vehicle_service_and_maintenance_cost"]').val()));
+
+        Wholesale_price_of_diesel = input_value(parseFloat(jQuery('input[name="Wholesale price of diesel (Large Fleet Operator)"]').val()));
+        Double_Deck_Bus_6_MPG = input_value(parseFloat(jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val()));
+        Cost_of_electricity_per_kWh = input_value(parseFloat(jQuery('input[name="Cost of electricity per kWh"]').val()));
+        Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val()));
+        Blended_average_CO2_saving = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 vehicle/ km (g)"]').val()));
+        Incremental_CO2_benefit_vs_New_BEV = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val()));
+        NOx_Road_Transport = input_value(parseFloat(jQuery('input[name="NOx Road Transport / tonne (£2022)"]').val()));
+        Blended_average_NOx_saving = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 vehicle/ km (g)"]').val()));
+        Blended_average_PM_saving = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 vehicle/ km (g)"]').val()));
+        Particulate_Matter_Road_Transport = input_value(parseFloat(jQuery('input[name="Particulate Matter Road Transport PM2.5/ tonne (£2002)"]').val()));
+        Cost_per_km = jQuery('input[name="Cost per km"]').val();
+        Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val();
+        Current_Rate_of_BSOG = jQuery('input[name="Current Rate of BSOG"]').val();
+        Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
+        Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
+        Incremental_double_captial_cost_savings = jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)').val();
+        single_or_double = jQuery('#single_or_double').val();
+
+        //Compute Cost per km
+        Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
+        jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
+
+        //Compute Cost per km Electric
+        Cost_per_km_val = Cost_of_electricity_per_kWh * Battery_Electric_Energy_Consumption;
+        jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
+
+        //Compute Total CO2 saved
+        total_co2_saved_val = (Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
+        jQuery('span[result="Total CO2 saved"]').html(parseInt(total_co2_saved_val).toLocaleString('en-US') + '<div class="type">tonnes</div>');
+
+
+        //Compute Total NOx damage costs saved
+        Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving / 1000000;
+        jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
+
+        //Compute Total Particulate Matter damage costs saved
+        Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving * Particulate_Matter_Road_Transport / 1000000;
+        jQuery('span[result="Total Particulate Matter damage costs saved"]').html('£' + parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
+
+
+        //Compute Total Annual operational cost savings 
+
+        Total_Annual_operational_cost_savings = Wholesale_price_of_diesel * average_remaining_life * num_of_buses / 3;
+        jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
+
+        //Compute Fuel savings
+
+        Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
+        jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
+
+        //Compute Maintenance saving
+        Maintenance_saving = existing_vehicle_service_and_maintenance_cost - 2750;
+        jQuery('span[result="Maintenance saving"]').html('£' + parseInt(Maintenance_saving).toLocaleString('en-US'));
+
+        //Compute Grant (BSOG/NSG) savings
+        Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) - (Current_Rate_of_BSOG * annual_average_distance_travel);
+        jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
+
+        //Compute Capital cost savings over buying new electric buses
+
+        if (single_or_double == 'double') {
+            Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_double_captial_cost_savings;
+        } else {
+            Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_single_captial_cost_savings;
+        }
+        jQuery('span[result="Capital cost savings over buying new electric buses"]').html('£' + parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
+
+
+    }
 </script>
