@@ -136,7 +136,7 @@ function slider_range($label, $measurement, $id)
                     <h4 class="mb-5">Estimated Impacts</h4>
                     <div class="row">
                         <div class="col-lg-4">
-                            <div class="column-holder">
+                            <div class="column-holder text-center">
                                 <div class="result-icon">
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
@@ -147,7 +147,7 @@ function slider_range($label, $measurement, $id)
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="column-holder">
+                            <div class="column-holder text-center">
                                 <div class="result-icon">
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
@@ -158,7 +158,7 @@ function slider_range($label, $measurement, $id)
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="column-holder">
+                            <div class="column-holder text-center">
                                 <div class="result-icon">
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
@@ -169,7 +169,7 @@ function slider_range($label, $measurement, $id)
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="column-holder">
+                            <div class="column-holder text-center">
                                 <div class="result-icon">
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
