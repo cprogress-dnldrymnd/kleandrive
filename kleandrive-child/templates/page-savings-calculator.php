@@ -393,12 +393,12 @@ function slider_range($label, $measurement, $id)
 
             //Compute Total CO2 saved
             total_co2_saved_val = (Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
-            jQuery('span[result="Total CO2 saved"]').html(parseInt(total_co2_saved_val).toLocaleString('en-US'));
+            jQuery('span[result="Total CO2 saved"]').html(parseInt(total_co2_saved_val).toLocaleString('en-US') + '<div class="type">tonnes</div>');
 
 
             //Compute Total NOx damage costs saved
             Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving / 1000000;
-            jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US') + '<span class="type">tonnes</span>');
+            jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
 
             //Compute Total Particulate Matter damage costs saved
             Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving * Particulate_Matter_Road_Transport / 1000000;
