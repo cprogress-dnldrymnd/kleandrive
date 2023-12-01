@@ -11,10 +11,9 @@ $description = carbon_get_the_post_meta('description');
 function slider_range($label, $measurement, $id)
 {
     ob_start();
-
-    $description = carbon_get_theme_option($id + '_desc');
-    $min = carbon_get_theme_option($id + '_min');
-    $max = carbon_get_theme_option($id + '_max');
+    $description = carbon_get_theme_option($id . '_desc');
+    $min = carbon_get_theme_option($id . '_min');
+    $max = carbon_get_theme_option($id . '_max');
 ?>
     <div class="slider-input-holder">
         <div class="label">
@@ -105,7 +104,6 @@ function slider_range($label, $measurement, $id)
                 <div class="col-lg-8" id="calculator-slider">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
-                            <?php $description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus molestias. Nihil dolores repellat in provident! Itaque, nam? Culpa voluptatum natus aliquam, minus maxime reprehenderit laudantium labore aut doloremque esse!'; ?>
                             <?= slider_range('Number of buses to be Repowered', 'buses', 'num_of_buses') ?>
                             <div class="label mt-5">
                                 <label for="num_of_buses" class="form-label">Are they single or double deck buses</label>
