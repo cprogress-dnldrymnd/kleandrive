@@ -282,13 +282,13 @@ function slider_range($label, $measurement, $id)
 
 
 
-        jQuery('.calculation-input').change(function (e) { 
+        jQuery('.calculation-input').change(function(e) {
             console.log('teststs');
         });
 
         jQuery('#calculate').click(function(e) {
             $annual_average_distance_travel = input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val()));
-            
+
 
 
 
@@ -342,7 +342,12 @@ function slider_range($label, $measurement, $id)
 
             inputFormat.addEventListener('change', function() {
                 rangeSlider.noUiSlider.set(this.value);
+
+                console.log('teststs');
+
             });
+
+
 
         }
 
