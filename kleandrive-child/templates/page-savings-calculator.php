@@ -370,18 +370,20 @@ function slider_range($label, $measurement, $id)
             Incremental_CO2_benefit_vs_New_BEV = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val()));
             NOx_Road_Transport = input_value(parseFloat(jQuery('input[name="NOx Road Transport / tonne (£2022)"]').val()));
             Blended_average_NOx_saving = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 vehicle/ km (g)"]').val()));
-            Blended_average_PM_saving  = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 vehicle/ km (g)"]').val()));
+            Blended_average_PM_saving = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 vehicle/ km (g)"]').val()));
             Particulate_Matter_Road_Transport = input_value(parseFloat(jQuery('input[name="Particulate Matter Road Transport PM2.5/ tonne (£2002)"]').val()));
+            Cost_per_km = jQuery('input[name="Cost per km"]').val();
+            Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val();
 
-            
+
 
             //Compute Cost per km
             Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
-            Cost_per_km = jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
+            jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
 
             //Compute Cost per km Electric
             Cost_per_km_val = Cost_of_electricity_per_kWh * Battery_Electric_Energy_Consumption;
-            Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
+            jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
 
             //Compute Total CO2 saved
             total_co2_saved_val = (Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
@@ -398,9 +400,15 @@ function slider_range($label, $measurement, $id)
 
 
             //Compute Total Annual operational cost savings 
-            
+
             Total_Annual_operational_cost_savings = Wholesale_price_of_diesel * average_remaining_life * num_of_buses / 3;
             jQuery('span[result="Total Annual operational cost savings"]').html(parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
+
+            //Compute Fuel savings
+
+            Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
+            jQuery('span[result="Fuel savings"]').html(parseInt(Fuel_savings).toLocaleString('en-US'));
+
 
         }
 
