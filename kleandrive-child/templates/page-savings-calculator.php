@@ -8,9 +8,13 @@
 <?php
 $process = carbon_get_the_post_meta('process');
 $description = carbon_get_the_post_meta('description');
-function slider_range($label, $measurement, $description = '', $id, $min, $max, $start = 0)
+function slider_range($label, $measurement, $id)
 {
     ob_start();
+
+    $description = carbon_get_theme_option($id + '_desc');
+    $min = carbon_get_theme_option($id + '_min');
+    $max = carbon_get_theme_option($id + '_max');
 ?>
     <div class="slider-input-holder">
         <div class="label">
@@ -23,7 +27,7 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
         <div class="row justify-content-space-between">
             <div class="min col-auto"><?= $min ?> <?= $measurement ?></div>
             <div class="col range-holder">
-                <div class="slider-handles" id="slider-range-<?= $id ?>" min="<?= $min ?>" max="<?= $max ?>" start="<?= $start ?>"></div>
+                <div class="slider-handles" id="slider-range-<?= $id ?>" min="<?= $min ?>" max="<?= $max ?>" start="0"></div>
             </div>
             <div class="max col-auto"><?= $max ?> <?= $measurement ?></div>
         </div>
