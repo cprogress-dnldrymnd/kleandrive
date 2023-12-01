@@ -8,7 +8,8 @@
 
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
-body,html {
+body,
+html {
     overflow-x: hidden !important;
 }
 @mixin inputs {
@@ -790,7 +791,6 @@ html {
                 flex: 0 0 auto;
                 padding-left: 1rem;
                 padding-right: 1rem;
-               
             }
 
             .col-lg-8 {
@@ -1325,8 +1325,9 @@ section.page-heading {
         .swiper-slide {
             height: auto !important;
         }
-        .swiper-button-next, .swiper-button-prev {
-            @media(max-width: 1024px) {
+        .swiper-button-next,
+        .swiper-button-prev {
+            @media (max-width: 1024px) {
                 display: none !important;
             }
         }
@@ -1752,7 +1753,17 @@ section.savings-calculator {
             }
             .row {
                 .column-holder {
-                    .result-icon{
+                    .result-icon {
+                        width: 60px;
+                        height: 60px;
+                        flex: 0 0 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 4px solid;
+                        border-radius: 50%;
+                        padding: 10px;
+                        margin-right: 1rem;
                         img {
                             max-width: 100px;
                         }

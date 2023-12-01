@@ -8,7 +8,8 @@
 */
 /* =Child-Theme customization starts here
 ------------------------------------------------------------ */
-body, html {
+body,
+html {
   overflow-x: hidden !important; }
 
 :root {
@@ -815,7 +816,8 @@ section.page-heading {
     .partner-slider .partner-wrapper-grid .swiper-slide {
       height: auto !important; }
     @media (max-width: 1024px) {
-      .partner-slider .partner-wrapper-grid .swiper-button-next, .partner-slider .partner-wrapper-grid .swiper-button-prev {
+      .partner-slider .partner-wrapper-grid .swiper-button-next,
+      .partner-slider .partner-wrapper-grid .swiper-button-prev {
         display: none !important; } }
     @media (min-width: 1025px) {
       .partner-slider .partner-wrapper-grid .swiper-pagination {
@@ -1083,8 +1085,19 @@ section.savings-calculator {
       left: 0;
       transform: translate(15px, -50%) rotate(135deg);
       background-color: var(--accent-color); }
-  section.savings-calculator .form-part.form-result .row .column-holder .result-icon img {
-    max-width: 100px; }
+  section.savings-calculator .form-part.form-result .row .column-holder .result-icon {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 1rem; }
+    section.savings-calculator .form-part.form-result .row .column-holder .result-icon img {
+      max-width: 100px; }
   section.savings-calculator #calculator h4 {
     color: inherit; }
   section.savings-calculator #calculator .btn {
