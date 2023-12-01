@@ -1015,7 +1015,8 @@ section.savings-calculator {
       display: inline-flex;
       align-items: center;
       max-width: 280px;
-      width: 100%; }
+      width: 100%;
+      justify-content: space-between; }
       section.savings-calculator .tab-holder .slider-input input,
       section.savings-calculator .tab-holder select input {
         border: none; }
