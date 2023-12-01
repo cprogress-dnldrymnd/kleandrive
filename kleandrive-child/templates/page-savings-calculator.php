@@ -41,8 +41,10 @@ function slider_range($label, $measurement, $id)
     </div>
 
     <script>
-        range_slider('slider-range-annual_average_distance_travel', 'annual_average_distance_travel');
-        range_slider('slider-range-num_of_buses', 'num_of_buses');
+        jQuery(document).ready(function() {
+            range_slider('slider-range-annual_average_distance_travel', 'annual_average_distance_travel');
+            range_slider('slider-range-num_of_buses', 'num_of_buses');
+        });
     </script>
 <?php
     return ob_get_clean();
