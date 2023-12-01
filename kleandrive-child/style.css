@@ -1090,15 +1090,14 @@ section.savings-calculator {
   section.savings-calculator .form-part.form-result .row .column-holder .result-icon {
     width: 60px;
     height: 60px;
-    flex: 0 0 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 4px solid;
     border-radius: 50%;
-    padding: 10px; }
-    section.savings-calculator .form-part.form-result .row .column-holder .result-icon img {
-      max-width: 100px; }
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto; }
   section.savings-calculator #calculator h4 {
     color: inherit; }
   section.savings-calculator #calculator .btn {
