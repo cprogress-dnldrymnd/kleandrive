@@ -148,8 +148,8 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Wholesale price of diesel (Large Fleet Operator)" value="<?= $diesel ?>">
         <input type="hidden" name="Double Deck Bus – 6 MPG (47.1 litres/100km)" value="0.471">
         <input type="hidden" name="Cost per km" value="">
-        <input type="hidden" name="BSOG rate England¹" value="">
-        <input type="hidden" name="BSOG rate England" value="<?= $bsog_nsg_rate ?>">
+        <input type="hidden" name="BSOG rate England" value="">
+        <input type="hidden" name="Current BSOG rate England" value="<?= $bsog_nsg_rate ?>">
         <input type="hidden" name="Maintenance - external (body) - glass, accidents, vandalism" value="">
         <input type="hidden" name="Maintenance - internal (drivetrain) - engine parts, suspension, brakes, filters" value="">
         <input type="hidden" name="Upgrades (new engine, gearbox). £20k spend in Yrs 8-10." value="">
@@ -157,7 +157,7 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Cost of electricity per kWh" value="<?= $electricity ?>">
         <input type="hidden" name="Battery Electric Energy Consumption (kWh/km)" value="1.15">
         <input type="hidden" name="Cost per km 2" value="">
-        <input type="hidden" name="BSOG rate England" value="<?= $bsog_nsg_rate_repowered ?>">
+        <input type="hidden" name="BSOG rate England Repowered" value="<?= $bsog_nsg_rate_repowered ?>">
         <input type="hidden" name="Maintenance - internal (drivetrain)" value="1750">
         <input type="hidden" name="Upgrades" value="0">
         <input type="hidden" name="Telematics subscription" value="240">
@@ -359,7 +359,7 @@ function slider_range($label, $measurement, $id)
 
             Cost_per_km = jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
 
-            console.log(Cost_per_km_val);
+            console.log(jQuery('input[name="Cost per km"]').val());
 
 
           
