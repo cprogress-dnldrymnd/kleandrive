@@ -159,7 +159,7 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Cost of electricity per kWh" value="<?= $electricity ?>">
         <input type="hidden" name="Battery Electric Energy Consumption (kWh/km)" value="1.15">
         <input type="hidden" name="Cost per km Electric" value="">
-        <input type="hidden" name="BSOG rate England Repowered" value="<?= $bsog_nsg_rate_repowered ?>">
+        <input type="hidden" name="Rate of BSOG/NSG for repowered vehicle" value="<?= $bsog_nsg_rate_repowered ?>">
         <input type="hidden" name="Maintenance - external (body)" value="750">
         <input type="hidden" name="Maintenance - internal (drivetrain)" value="1750">
         <input type="hidden" name="Upgrades" value="0">
@@ -374,9 +374,10 @@ function slider_range($label, $measurement, $id)
             Particulate_Matter_Road_Transport = input_value(parseFloat(jQuery('input[name="Particulate Matter Road Transport PM2.5/ tonne (£2002)"]').val()));
             Cost_per_km = jQuery('input[name="Cost per km"]').val();
             Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val();
-
-
-
+            Current_BSOG_rate_England = jQuery('input[name="Current BSOG rate England"]').val();
+            Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
+            
+            
             //Compute Cost per km
             Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
             jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
@@ -412,6 +413,17 @@ function slider_range($label, $measurement, $id)
             //Compute Maintenance saving
             Maintenance_saving = existing_vehicle_service_and_maintenance_cost - 2700;
             jQuery('span[result="Maintenance saving"]').html(parseInt(Maintenance_saving).toLocaleString('en-US'));
+
+            //Compute Grant (BSOG/NSG) savings
+            Grant_BSOG_NSG_savings = (Current_BSOG_rate_England * annual_average_distance_travel) -  (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel);
+            jQuery('span[result="Grant (BSOG/NSG) savings"]').html(parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
+
+
+
+            //Compute Capital cost savings over buying new electric buses
+            Capital_cost_savings_over_buying_new_electric_buses = 1;
+            jQuery('span[result="Capital cost savings over buying new electric buses').html(parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
+
             
         }
 
