@@ -417,8 +417,8 @@ function slider_range($label, $measurement, $id)
             //Compute Grant (BSOG/NSG) savings
             Grant_BSOG_NSG_savings = (Current_BSOG_rate_England * annual_average_distance_travel) -  (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel);
 
-            console.log(Current_BSOG_rate_England);
-            console.log(Rate_of_BSOG_NSG_for_repowered_vehicle);
+            console.log(Current_BSOG_rate_England * annual_average_distance_travel);
+            console.log(Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel);
             jQuery('span[result="Grant (BSOG/NSG) savings"]').html(parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
 
