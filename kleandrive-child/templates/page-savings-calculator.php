@@ -378,7 +378,7 @@ function slider_range($label, $measurement, $id)
 
             //Compute Total CO2 saved
 
-            total_co2_saved_val = parseFloat((Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * annual_average_distance_travel * average_remaining_life * num_of_buses / 1000000);
+            total_co2_saved_val = parseFloat((Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000);
             
             jQuery('span[result="Total CO2 saved"]').html(total_co2_saved_val.toLocaleString('en-US'));
 
