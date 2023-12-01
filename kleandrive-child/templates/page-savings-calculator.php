@@ -273,14 +273,6 @@ function slider_range($label, $measurement, $id)
 <script>
     jQuery(document).ready(function() {
 
-        function input_value($input) {
-            if ($input) {
-                return $input;
-            } else {
-                return 0;
-            }
-        }
-
 
 
 
@@ -289,7 +281,7 @@ function slider_range($label, $measurement, $id)
         });
 
         jQuery('#calculate').click(function(e) {
-            $annual_average_distance_travel = input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val()));
+            $annual_average_distance_travel = input_value(input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val())));
 
 
 
@@ -353,20 +345,28 @@ function slider_range($label, $measurement, $id)
 
         }
 
+        function input_value($input) {
+            if ($input) {
+                return $input;
+            } else {
+                return 0;
+            }
+        }
+
+
+
         function calculate() {
-            num_of_buses = parseFloat(jQuery('input[name="num_of_buses"]').val());
-            annual_average_distance_travel = parseFloat(jQuery('input[name="annual_average_distance_travel"]').val());
-            average_remaining_life = parseFloat(jQuery('input[name="average_remaining_life"]').val());
-            existing_vehicle_service_and_maintenance_cost = parseFloat(jQuery('input[name="existing_vehicle_service_and_maintenance_cost"]').val());
+            num_of_buses = input_value(parseFloat(jQuery('input[name="num_of_buses"]').val()));
+            annual_average_distance_travel = input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val()));
+            average_remaining_life = input_value(parseFloat(jQuery('input[name="average_remaining_life"]').val()));
+            existing_vehicle_service_and_maintenance_cost = input_value(parseFloat(jQuery('input[name="existing_vehicle_service_and_maintenance_cost"]').val()));
 
-
-            Wholesale_price_of_diesel = parseFloat(jQuery('input[name="Wholesale price of diesel (Large Fleet Operator)"]').val());
-            Double_Deck_Bus_6_MPG = parseFloat(jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val());
-            Cost_of_electricity_per_kWh = parseFloat(jQuery('input[name="Cost of electricity per kWh"]').val());
-            Battery_Electric_Energy_Consumption = parseFloat(jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val());
-            Blended_average_CO2_saving = parseFloat(jQuery('input[name="Blended average CO2 saving per 1 vehicle/ km (g)"]').val());
-            Incremental_CO2_benefit_vs_New_BEV = parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val());
-
+            Wholesale_price_of_diesel = input_value(parseFloat(jQuery('input[name="Wholesale price of diesel (Large Fleet Operator)"]').val()));
+            Double_Deck_Bus_6_MPG = input_value(parseFloat(jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val()));
+            Cost_of_electricity_per_kWh = input_value(parseFloat(jQuery('input[name="Cost of electricity per kWh"]').val()));
+            Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val()));
+            Blended_average_CO2_saving = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 vehicle/ km (g)"]').val()));
+            Incremental_CO2_benefit_vs_New_BEV = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val()));
 
             //Compute Cost per km
             Cost_per_km_val = parseFloat(Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG);
@@ -378,9 +378,9 @@ function slider_range($label, $measurement, $id)
 
             //Compute Total CO2 saved
 
-            total_co2_saved_val = parseFloat((Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000);
-
+            total_co2_saved_val = (Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
             console.log(num_of_buses);
+            console.log(total_co2_saved_val);
 
             jQuery('span[result="Total CO2 saved"]').html(total_co2_saved_val.toLocaleString('en-US'));
 
