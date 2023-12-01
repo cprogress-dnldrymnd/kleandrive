@@ -389,7 +389,7 @@ function slider_range($label, $measurement, $id)
 
             //Compute Total NOx damage costs saved
             Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving / 1000000;
-            jQuery('span[result="Total NOx damage costs saved"]').html(Total_NOx_damage_costs_saved.toLocaleString('en-US'));
+            jQuery('span[result="Total NOx damage costs saved"]').html(parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
 
 
 
