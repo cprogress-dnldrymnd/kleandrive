@@ -1753,6 +1753,11 @@ section.savings-calculator {
             }
             .row {
                 .column-holder {
+                    > div {
+                        &:not(:last-child) {
+                            margin-bottom: 1rem;
+                        }
+                    }
                     .result-icon {
                         width: 60px;
                         height: 60px;
