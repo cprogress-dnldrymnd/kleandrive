@@ -430,7 +430,7 @@ function slider_range($label, $measurement, $id)
             } else {
                 Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_single_captial_cost_savings;
             }
-            jQuery('span[result="Capital cost savings over buying new electric buses').html(parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
+            jQuery('span[result="Capital cost savings over buying new electric buses"]').html(parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
 
 
         }
