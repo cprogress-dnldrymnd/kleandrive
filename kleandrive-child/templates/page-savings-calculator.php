@@ -321,12 +321,12 @@ function slider_range($label, $measurement, $id)
                 format: {
                     // 'to' the formatted value. Receives a number.
                     to: function(value) {
-                        return toFixed(value);
+                        return parseFloat(value);
                     },
                     // 'from' the formatted value.
                     // Receives a string, should return a number.
                     from: function(value) {
-                        return Number(toFixed(value));
+                        return Number(parseFloat(value));
                     }
                 }
             });
