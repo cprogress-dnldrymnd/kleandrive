@@ -376,8 +376,13 @@ function slider_range($label, $measurement, $id)
             Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val();
             Current_Rate_of_BSOG = jQuery('input[name="Current Rate of BSOG"]').val();
             Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
+            Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
+            Incremental_double_captial_cost_savings = jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)').val();
+
             
             
+            single_or_double = jQuery('#single_or_double').val();
+
             //Compute Cost per km
             Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
             jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
@@ -409,20 +414,25 @@ function slider_range($label, $measurement, $id)
 
             Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
             jQuery('span[result="Fuel savings"]').html(parseInt(Fuel_savings).toLocaleString('en-US'));
-           
+
             //Compute Maintenance saving
             Maintenance_saving = existing_vehicle_service_and_maintenance_cost - 2750;
             jQuery('span[result="Maintenance saving"]').html(parseInt(Maintenance_saving).toLocaleString('en-US'));
 
             //Compute Grant (BSOG/NSG) savings
-            Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) -  (Current_Rate_of_BSOG * annual_average_distance_travel);
+            Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) - (Current_Rate_of_BSOG * annual_average_distance_travel);
             jQuery('span[result="Grant (BSOG/NSG) savings"]').html(parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
             //Compute Capital cost savings over buying new electric buses
-            Capital_cost_savings_over_buying_new_electric_buses = 1;
+
+            if ($single_or_double == 'double') {
+                Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_double_captial_cost_savings;
+            } else {
+                Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_single_captial_cost_savings;
+            }
             jQuery('span[result="Capital cost savings over buying new electric buses').html(parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
 
-            
+
         }
 
     });
