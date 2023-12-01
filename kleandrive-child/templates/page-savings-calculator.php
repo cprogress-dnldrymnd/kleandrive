@@ -13,6 +13,7 @@ function slider_range($label, $measurement, $id)
     $description = carbon_get_theme_option($id . '_desc');
     $min = carbon_get_theme_option($id . '_min');
     $max = carbon_get_theme_option($id . '_max');
+    $start = carbon_get_theme_option($id . '_start');
 ?>
     <div class="slider-input-holder">
         <div class="label">
@@ -25,7 +26,7 @@ function slider_range($label, $measurement, $id)
         <div class="row justify-content-space-between">
             <div class="min col-auto"><?= $min ?> <?= $measurement ?></div>
             <div class="col range-holder">
-                <div class="slider-handles" id="slider-range-<?= $id ?>" min="<?= $min ?>" max="<?= $max ?>" start="0"></div>
+                <div class="slider-handles" id="slider-range-<?= $id ?>" min="<?= $min ?>" max="<?= $max ?>" start="<?= $start ? $start : 0 ?>"></div>
             </div>
             <div class="max col-auto"><?= $max ?> <?= $measurement ?></div>
         </div>
@@ -387,7 +388,7 @@ function slider_range($label, $measurement, $id)
 
 
             //Compute Total NOx damage costs saved
-            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving/ 1000000;
+            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving / 1000000;
             jQuery('span[result="Total NOx damage costs saved"]').html(Total_NOx_damage_costs_saved.toLocaleString('en-US'));
 
 
