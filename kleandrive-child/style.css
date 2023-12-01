@@ -1091,6 +1091,11 @@ section.savings-calculator {
     height: 100%; }
     section.savings-calculator .form-part.form-result .row .column-holder > div:not(:last-child) {
       margin-bottom: 1rem; }
+    section.savings-calculator .form-part.form-result .row .column-holder .result-heading span[result] {
+      font-size: 35px;
+      display: block;
+      font-weight: bold;
+      color: var(--accent-color); }
     section.savings-calculator .form-part.form-result .row .column-holder .result-icon {
       width: 60px;
       height: 60px;
