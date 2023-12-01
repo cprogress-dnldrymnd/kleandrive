@@ -282,7 +282,7 @@ function slider_range($label, $measurement, $id)
 
 
 
-        jQuery('.calculation-input').change(function (e) { 
+        jQuery('.calculation-input').keyup(function (e) { 
             console.log('teststs');
             
         });
