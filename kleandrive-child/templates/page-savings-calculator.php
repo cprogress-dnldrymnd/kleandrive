@@ -150,7 +150,7 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Double Deck Bus – 6 MPG (47.1 litres/100km)" value="0.471">
         <input type="hidden" name="Cost per km" value="">
         <input type="hidden" name="BSOG rate England" value="">
-        <input type="hidden" name="Current BSOG rate England" value="<?= $bsog_nsg_rate ?>">
+        <input type="hidden" name="Current Rate of BSOG" value="<?= $bsog_nsg_rate ?>">
         <input type="hidden" name="Maintenance - external (body) - glass, accidents, vandalism" value="750">
         <input type="hidden" name="Maintenance - internal (drivetrain) - engine parts, suspension, brakes, filters" value="4750">
         <input type="hidden" name="Upgrades (new engine, gearbox). £20k spend in Yrs 8-10." value="2857">
@@ -374,7 +374,7 @@ function slider_range($label, $measurement, $id)
             Particulate_Matter_Road_Transport = input_value(parseFloat(jQuery('input[name="Particulate Matter Road Transport PM2.5/ tonne (£2002)"]').val()));
             Cost_per_km = jQuery('input[name="Cost per km"]').val();
             Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val();
-            Current_BSOG_rate_England = jQuery('input[name="Current BSOG rate England"]').val();
+            Current_Rate_of_BSOG = jQuery('input[name="Current Rate of BSOG"]').val();
             Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
             
             
@@ -415,10 +415,7 @@ function slider_range($label, $measurement, $id)
             jQuery('span[result="Maintenance saving"]').html(parseInt(Maintenance_saving).toLocaleString('en-US'));
 
             //Compute Grant (BSOG/NSG) savings
-            Grant_BSOG_NSG_savings = (Current_BSOG_rate_England * annual_average_distance_travel) -  (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel);
-
-            console.log(Current_BSOG_rate_England * annual_average_distance_travel);
-            console.log(Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel);
+            Grant_BSOG_NSG_savings = (Current_Rate_of_BSOG * annual_average_distance_travel) -  (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel);
             jQuery('span[result="Grant (BSOG/NSG) savings"]').html(parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
 
