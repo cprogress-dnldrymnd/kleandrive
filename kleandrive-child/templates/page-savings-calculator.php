@@ -142,7 +142,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <strong><span> Total CO2 saved </span></strong>
-                                    <span id="TotalParticulateMatterdamagecostsavings"></span>
+                                    <span result="Total CO2 saved"></span>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +153,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <strong><span>Total NOx damage costs saved</span></strong>
-                                    <span id="TotalParticulateMatterdamagecostsavings"></span>
+                                    <span result="Total NOx damage costs saved"></span>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <strong><span>Total Particulate Matter damage costs saved</span></strong>
-                                    <span id="Operationalcostsavings"></span>
+                                    <span result="Total Particulate Matter damage costs saved"></span>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <strong><span>Total Annual operational cost savings</span></strong>
-                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+                                    <span result="Total Annual operational cost savings"></span>
 
                                 </div>
                             </div>
@@ -187,7 +187,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <strong><span> Fuel savings </span></strong>
-                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+                                    <span result="Fuel savings"></span>
 
                                 </div>
                             </div>
@@ -199,7 +199,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <strong><span> Maintenance saving </span></strong>
-                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+                                    <span result="Maintenance saving"></span>
 
                                 </div>
                             </div>
@@ -211,7 +211,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <strong><span> Grant (BSOG/NSG) savings </span></strong>
-                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+                                    <span result="Grant (BSOG/NSG) savings"></span>
 
                                 </div>
                             </div>
@@ -223,7 +223,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <strong><span> Capital cost savings over buying new electric buses </span></strong>
-                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+                                    <span result="Capital cost savings over buying new electric buses"></span>
 
                                 </div>
                             </div>
