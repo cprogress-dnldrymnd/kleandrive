@@ -39,13 +39,6 @@ function slider_range($label, $measurement, $id)
             </div>
         <?php } ?>
     </div>
-
-    <script>
-        jQuery(document).ready(function() {
-            range_slider('slider-range-annual_average_distance_travel', 'annual_average_distance_travel');
-            range_slider('slider-range-num_of_buses', 'num_of_buses');
-        });
-    </script>
 <?php
     return ob_get_clean();
 }
@@ -244,6 +237,10 @@ function slider_range($label, $measurement, $id)
 
 <script>
     jQuery(document).ready(function() {
+        range_slider('slider-range-annual_average_distance_travel', 'annual_average_distance_travel');
+        range_slider('slider-range-num_of_buses', 'num_of_buses');
+        range_slider('slider-range-average_remaining_life', 'average_remaining_life');
+        range_slider('slider-range-existing_vehicle_service_and_maintenance_cost', 'existing_vehicle_service_and_maintenance_cost');
 
         function range_slider($range_id, $input_id) {
             var rangeSlider = document.getElementById($range_id);
