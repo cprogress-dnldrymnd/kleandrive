@@ -397,7 +397,10 @@ function slider_range($label, $measurement, $id)
             jQuery('span[result="Total Particulate Matter damage costs saved"]').html(parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
 
 
-
+            //Compute Total Annual operational cost savings 
+            
+            Total_Annual_operational_cost_savings = Wholesale_price_of_diesel * average_remaining_life * num_of_buses / 3;
+            jQuery('span[result="Total Annual operational cost savings"]').html(parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
 
         }
 
