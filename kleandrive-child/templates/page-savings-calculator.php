@@ -394,7 +394,7 @@ function slider_range($label, $measurement, $id)
 
             //Compute Total Particulate Matter damage costs saved
             Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving * Particulate_Matter_Road_Transport / 1000000;
-            jQuery('span[result="Total Particulate Matter damage costs saved"]').html(parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
+            jQuery('span[result="Total Particulate Matter damage costs saved"]').html(parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
 
 
 
