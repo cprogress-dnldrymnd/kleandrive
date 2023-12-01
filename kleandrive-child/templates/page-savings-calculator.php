@@ -307,9 +307,9 @@ function slider_range($label, $measurement, $id)
 
         function range_slider($range_id, $input_id, $allow_decimal = false) {
             var rangeSlider = document.getElementById($range_id);
-            start = parseInt(rangeSlider.getAttribute("start"));
-            min = parseInt(rangeSlider.getAttribute("min"));
-            max = parseInt(rangeSlider.getAttribute("max"));
+            start = parseFloat(rangeSlider.getAttribute("start"));
+            min = parseFloat(rangeSlider.getAttribute("min"));
+            max = parseFloat(rangeSlider.getAttribute("max"));
             if ($allow_decimal) {
                 noUiSlider.create(rangeSlider, {
                     start: [start],
