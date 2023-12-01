@@ -141,7 +141,7 @@ function slider_range($label, $measurement, $id)
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
                                 <div class="result-heading">
-                                    <strong><span>Total NOx damage cost savings (£): </span></strong>
+                                    <strong><span> Total CO2 saved </span></strong>
                                     <span id="TotalParticulateMatterdamagecostsavings"></span>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ function slider_range($label, $measurement, $id)
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
                                 <div class="result-heading">
-                                    <strong><span>Total Particulate Matter damage cost savings (£): </span></strong>
+                                    <strong><span>Total NOx damage costs saved</span></strong>
                                     <span id="TotalParticulateMatterdamagecostsavings"></span>
                                 </div>
                             </div>
@@ -163,7 +163,7 @@ function slider_range($label, $measurement, $id)
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
                                 <div class="result-heading">
-                                    <strong><span>Operational cost savings (£):</span></strong>
+                                    <strong><span>Total Particulate Matter damage costs saved</span></strong>
                                     <span id="Operationalcostsavings"></span>
                                 </div>
                             </div>
@@ -174,7 +174,55 @@ function slider_range($label, $measurement, $id)
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
                                 <div class="result-heading">
-                                    <strong><span>Capital cost savings over buying new electric buses (£):</span></strong>
+                                    <strong><span>Total Annual operational cost savings</span></strong>
+                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="column-holder text-center">
+                                <div class="result-icon">
+                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                </div>
+                                <div class="result-heading">
+                                    <strong><span> Fuel savings </span></strong>
+                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="column-holder text-center">
+                                <div class="result-icon">
+                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                </div>
+                                <div class="result-heading">
+                                    <strong><span> Maintenance saving </span></strong>
+                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="column-holder text-center">
+                                <div class="result-icon">
+                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                </div>
+                                <div class="result-heading">
+                                    <strong><span> Grant (BSOG/NSG) savings </span></strong>
+                                    <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="column-holder text-center">
+                                <div class="result-icon">
+                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                </div>
+                                <div class="result-heading">
+                                    <strong><span> Capital cost savings over buying new electric buses </span></strong>
                                     <span id="Capitalcostsavingsoverbuyingnewelectricbuses"></span>
 
                                 </div>
