@@ -102,7 +102,7 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
                             <?php $description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus molestias. Nihil dolores repellat in provident! Itaque, nam? Culpa voluptatum natus aliquam, minus maxime reprehenderit laudantium labore aut doloremque esse!'; ?>
-                            <?= slider_range('Number of buses to be Repowered', 'buses', $description, 'num_of_buses', '0', '100') ?>
+                            <?= slider_range('Number of buses to be Repowered', 'buses', 'num_of_buses') ?>
                             <div class="label mt-5">
                                 <label for="num_of_buses" class="form-label">Are they single or double deck buses</label>
                             </div>
@@ -112,14 +112,14 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
                             </select>
                         </div>
                         <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
-                            <?= slider_range('Annual average distance travelled per bus', 'km', $description, 'annual_average_distance_travel', '0', '100000') ?>
+                            <?= slider_range('Annual average distance travelled per bus', 'km', 'annual_average_distance_travel', '0', '100000') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-remaining-life" role="tabpanel" aria-labelledby="v-pills-remaining-life-tab">
-                            <?= slider_range('Average remaining life of the vehicles', 'years', $description, 'average_remaining_life', '0', '100') ?>
+                            <?= slider_range('Average remaining life of the vehicles', 'years', 'average_remaining_life') ?>
                         </div>
 
                         <div class="tab-pane fade" id="v-pills-Estimated-annual-operational-costs" role="tabpanel" aria-labelledby="v-pills-Estimated-annual-operational-costs-tab">
-
+                            <?= slider_range('Existing annual diesel vehicle service and maintenance cost', '£', 'existing_vehicle_service_and_maintenance_cost') ?>
                         </div>
                     </div>
                 </div>

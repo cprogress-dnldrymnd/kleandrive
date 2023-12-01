@@ -37,15 +37,15 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('html', 'annual_average_distance_travel_html')->set_html('<h4>Annual average distance travelled per bus</h4>')->set_classes('styled'),
         Field::make('text', 'annual_average_distance_travel_min', 'Min')->set_attribute( 'type', 'number' ),
         Field::make('text', 'annual_average_distance_travel_min_max', 'Max')->set_attribute( 'type', 'number' ),
-        Field::make('textarea', 'annual_average_distance_travel_min_desc', 'Description'),
+        Field::make('textarea', 'annual_average_distance_travel_min', 'Description'),
         Field::make('html', 'average_remaining_life_html')->set_html('<h4>Average remaining life of the vehicles</h4>')->set_classes('styled'),
         Field::make('text', 'average_remaining_life_min', 'Min')->set_attribute( 'type', 'number' ),
         Field::make('text', 'average_remaining_life_min_max', 'Max')->set_attribute( 'type', 'number' ),
-        Field::make('textarea', 'average_remaining_life_min_desc', 'Description'),
+        Field::make('textarea', 'average_remaining_life_desc', 'Description'),
         Field::make('html', 'existing_vehicle_service_and_maintenance_cost_html')->set_html('<h4>Existing annual diesel vehicle service and maintenance cost</h4>')->set_classes('styled'),
         Field::make('text', 'existing_vehicle_service_and_maintenance_cost_min', 'Min')->set_attribute( 'type', 'number' ),
         Field::make('text', 'existing_vehicle_service_and_maintenance_cost_min_max', 'Max')->set_attribute( 'type', 'number' ),
-        Field::make('textarea', 'existing_vehicle_service_and_maintenance_cost_min_desc', 'Description'),
+        Field::make('textarea', 'existing_vehicle_service_and_maintenance_cost_desc', 'Description'),
     ))
     ->add_tab('Fuel Costs', array(
         Field::make('text', 'diesel', 'Diesel')->set_attribute( 'type', 'number' ),
