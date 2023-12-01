@@ -312,7 +312,6 @@ function slider_range($label, $measurement, $id)
             max = parseInt(rangeSlider.getAttribute("max"));
             noUiSlider.create(rangeSlider, {
                 start: [start],
-                step: 0.5,
                 connect: 'lower',
                 range: {
                     'min': [min],
@@ -321,12 +320,12 @@ function slider_range($label, $measurement, $id)
                 format: {
                     // 'to' the formatted value. Receives a number.
                     to: function(value) {
-                        return Math.round(value);
+                        return parseFloat(value);
                     },
                     // 'from' the formatted value.
                     // Receives a string, should return a number.
                     from: function(value) {
-                        return Number(Math.round(value));
+                        return parseFloat(value);
                     }
                 }
             });
