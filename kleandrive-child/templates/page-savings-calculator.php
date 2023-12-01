@@ -380,11 +380,7 @@ function slider_range($label, $measurement, $id)
 
             total_co2_saved_val = parseFloat((Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000);
 
-            console.log(Blended_average_CO2_saving);
-            console.log(Incremental_CO2_benefit_vs_New_BEV);
-
-            console.log(Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV);
-            console.log(parseFloat(num_of_buses * average_remaining_life * annual_average_distance_travel));
+            console.log(num_of_buses);
 
             jQuery('span[result="Total CO2 saved"]').html(total_co2_saved_val.toLocaleString('en-US'));
 
