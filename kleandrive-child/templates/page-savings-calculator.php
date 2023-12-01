@@ -338,13 +338,13 @@ function slider_range($label, $measurement, $id)
             var inputFormat = document.getElementById($input_id);
             rangeSlider.noUiSlider.on('update', function(values, handle) {
                 inputFormat.value = values[handle];
+
+                console.log('teststs');
+
             });
 
             inputFormat.addEventListener('change', function() {
                 rangeSlider.noUiSlider.set(this.value);
-
-                console.log('teststs');
-
             });
 
 
