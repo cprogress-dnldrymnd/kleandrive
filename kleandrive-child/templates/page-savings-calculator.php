@@ -369,11 +369,11 @@ function slider_range($label, $measurement, $id)
             Incremental_CO2_benefit_vs_New_BEV = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val()));
 
             //Compute Cost per km
-            Cost_per_km_val = parseFloat(Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG);
+            Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
             Cost_per_km = jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
 
             //Compute Cost per km Electric
-            Cost_per_km_val = parseFloat(Cost_of_electricity_per_kWh * Battery_Electric_Energy_Consumption);
+            Cost_per_km_val = Cost_of_electricity_per_kWh * Battery_Electric_Energy_Consumption;
             Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
 
             //Compute Total CO2 saved
