@@ -138,9 +138,9 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Particulate Matter Road Transport PM2.5/ tonne (£2002)" value="130884.092045588">
 
         <!--- Other assumptions --->
-        <input type="hidden" name="Blended average CO2 saving per 1 vehicle/ km (g)" value="1312">
-        <input type="hidden" name="Blended average NOx saving per 1 vehicle/ km (g)" value="4.921623633">
-        <input type="hidden" name="Blended average PM saving per 1 vehicle/ km (g)" value="0.03670732422">
+        <input type="hidden" name="Blended average CO2 saving per 1 vehicle/ km (g)" value="1311.648328125">
+        <input type="hidden" name="Blended average NOx saving per 1 vehicle/ km (g)" value="4.9216236328125">
+        <input type="hidden" name="Blended average PM saving per 1 vehicle/ km (g)" value="0.03670732421875">
         <input type="hidden" name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)" value="227.7">
         <input type="hidden" name="Incremental single captial cost savings (new bev cost - repower)" value=" 185000">
         <input type="hidden" name="Incremental double capital cost savings (new bev cost - repower)" value="325000">
