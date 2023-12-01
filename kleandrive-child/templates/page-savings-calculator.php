@@ -150,18 +150,19 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Cost per km" value="">
         <input type="hidden" name="BSOG rate England" value="">
         <input type="hidden" name="Current BSOG rate England" value="<?= $bsog_nsg_rate ?>">
-        <input type="hidden" name="Maintenance - external (body) - glass, accidents, vandalism" value="">
-        <input type="hidden" name="Maintenance - internal (drivetrain) - engine parts, suspension, brakes, filters" value="">
-        <input type="hidden" name="Upgrades (new engine, gearbox). £20k spend in Yrs 8-10." value="">
-        <input type="hidden" name="DPF (diesel particulate filter) clean" value="">
+        <input type="hidden" name="Maintenance - external (body) - glass, accidents, vandalism" value="750">
+        <input type="hidden" name="Maintenance - internal (drivetrain) - engine parts, suspension, brakes, filters" value="4750">
+        <input type="hidden" name="Upgrades (new engine, gearbox). £20k spend in Yrs 8-10." value="2857">
+        <input type="hidden" name="AdBlue consumption (£500 for 50,000km)" value="0.01">
+        <input type="hidden" name="DPF (diesel particulate filter) clean" value="150">
         <input type="hidden" name="Cost of electricity per kWh" value="<?= $electricity ?>">
         <input type="hidden" name="Battery Electric Energy Consumption (kWh/km)" value="1.15">
-        <input type="hidden" name="Cost per km 2" value="">
+        <input type="hidden" name="Cost per km Electric" value="">
         <input type="hidden" name="BSOG rate England Repowered" value="<?= $bsog_nsg_rate_repowered ?>">
         <input type="hidden" name="Maintenance - internal (drivetrain)" value="1750">
         <input type="hidden" name="Upgrades" value="0">
         <input type="hidden" name="Telematics subscription" value="240">
-
+   
         <div class="form-part form-result">
             <div class="container">
                 <div class="holder py-5">
@@ -352,17 +353,23 @@ function slider_range($label, $measurement, $id)
         }
 
         function calculate() {
+            //Compute Cost per km
             Wholesale_price_of_diesel = jQuery('input[name="Wholesale price of diesel (Large Fleet Operator)"]').val();
             Double_Deck_Bus_6_MPG = jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val();
 
             Cost_per_km_val = parseFloat(Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG);
-
             Cost_per_km = jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
 
-            console.log(jQuery('input[name="Cost per km"]').val());
+            //Compute Cost per km Electric
+            Cost_of_electricity_per_kWh = jQuery('input[name="Cost of electricity per kWh"]').val();
+            Battery_Electric_Energy_Consumption = jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val();
+            
+            Cost_per_km_val = parseFloat(Cost_of_electricity_per_kWh * Battery_Electric_Energy_Consumption);
+            Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
 
 
-          
+            console.log(Cost_per_km_electric.val());
+            
         
         
         }
