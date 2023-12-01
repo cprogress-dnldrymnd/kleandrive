@@ -28,24 +28,21 @@ $theme_settings = Container::make('theme_options', __('Theme Settings'))
 
 Container::make('theme_options', __('Savings Calculator'))
     ->set_page_parent($theme_settings)
-    ->add_tab('Input: Number of buses to be Repowered', array(
+    ->add_tab('Inputs', array(
         Field::make('html', 'style')->set_html('<style>.styled{background-color: #1d2327 !important; color: #fff !important}</style>'),
-        Field::make('html', 'num_of_buses_html')->set_html('<h4>Input: Number of buses to be Repowered</h4>')->set_classes('styled'),
+        Field::make('html', 'num_of_buses_html')->set_html('<h4>Number of buses to be Repowered</h4>')->set_classes('styled'),
         Field::make('text', 'num_of_buses_min', 'Min'),
         Field::make('text', 'num_of_buses_max', 'Max'),
         Field::make('textarea', 'num_of_buses_desc', 'Description'),
-    ))
-    ->add_tab('Input: Annual average distance travelled per bus', array(
+        Field::make('html', 'annual_average_distance_travel_html')->set_html('<h4>Annual average distance travelled per bus</h4>')->set_classes('styled'),
         Field::make('text', 'annual_average_distance_travel_min', 'Min'),
         Field::make('text', 'annual_average_distance_travel_min_max', 'Max'),
         Field::make('textarea', 'annual_average_distance_travel_min_desc', 'Description'),
-    ))
-    ->add_tab('Input: Average remaining life of the vehicles', array(
+        Field::make('html', 'average_remaining_life_html')->set_html('<h4>Average remaining life of the vehicles</h4>')->set_classes('styled'),
         Field::make('text', 'average_remaining_life_min', 'Min'),
         Field::make('text', 'average_remaining_life_min_max', 'Max'),
         Field::make('textarea', 'average_remaining_life_min_desc', 'Description'),
-    ))
-    ->add_tab('Input: Existing annual diesel vehicle service and maintenance cost ', array(
+        Field::make('html', 'existing_vehicle_service_and_maintenance_cost_html')->set_html('<h4>Existing annual diesel vehicle service and maintenance cost</h4>')->set_classes('styled'),
         Field::make('text', 'existing_vehicle_service_and_maintenance_cost_min', 'Min'),
         Field::make('text', 'existing_vehicle_service_and_maintenance_cost_min_max', 'Max'),
         Field::make('textarea', 'existing_vehicle_service_and_maintenance_cost_min_desc', 'Description'),
