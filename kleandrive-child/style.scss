@@ -1749,6 +1749,15 @@ section.savings-calculator {
                     background-color: var(--accent-color);
                 }
             }
+            .row {
+                .column-holder {
+                    .icon-box {
+                        img {
+                            max-width: 100px;
+                        }
+                    }
+                }
+            }
         }
     }
 
