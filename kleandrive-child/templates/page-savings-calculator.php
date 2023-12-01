@@ -379,8 +379,8 @@ function slider_range($label, $measurement, $id)
             Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
             Incremental_double_captial_cost_savings = jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)').val();
 
-            
-            
+
+
             single_or_double = jQuery('#single_or_double').val();
 
             //Compute Cost per km
@@ -398,30 +398,30 @@ function slider_range($label, $measurement, $id)
 
             //Compute Total NOx damage costs saved
             Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving / 1000000;
-            jQuery('span[result="Total NOx damage costs saved"]').html(parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
+            jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US') + '<span class="type">tonnes</span>');
 
             //Compute Total Particulate Matter damage costs saved
             Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving * Particulate_Matter_Road_Transport / 1000000;
-            jQuery('span[result="Total Particulate Matter damage costs saved"]').html(parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
+            jQuery('span[result="Total Particulate Matter damage costs saved"]').html('£' + parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
 
 
             //Compute Total Annual operational cost savings 
 
             Total_Annual_operational_cost_savings = Wholesale_price_of_diesel * average_remaining_life * num_of_buses / 3;
-            jQuery('span[result="Total Annual operational cost savings"]').html(parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
+            jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
 
             //Compute Fuel savings
 
             Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
-            jQuery('span[result="Fuel savings"]').html(parseInt(Fuel_savings).toLocaleString('en-US'));
+            jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
 
             //Compute Maintenance saving
             Maintenance_saving = existing_vehicle_service_and_maintenance_cost - 2750;
-            jQuery('span[result="Maintenance saving"]').html(parseInt(Maintenance_saving).toLocaleString('en-US'));
+            jQuery('span[result="Maintenance saving"]').html('£' + parseInt(Maintenance_saving).toLocaleString('en-US'));
 
             //Compute Grant (BSOG/NSG) savings
             Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) - (Current_Rate_of_BSOG * annual_average_distance_travel);
-            jQuery('span[result="Grant (BSOG/NSG) savings"]').html(parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
+            jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
             //Compute Capital cost savings over buying new electric buses
 
@@ -430,7 +430,7 @@ function slider_range($label, $measurement, $id)
             } else {
                 Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_single_captial_cost_savings;
             }
-            jQuery('span[result="Capital cost savings over buying new electric buses"]').html(parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
+            jQuery('span[result="Capital cost savings over buying new electric buses"]').html('£' + parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
 
 
         }
