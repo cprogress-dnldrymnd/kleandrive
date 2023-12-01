@@ -335,7 +335,7 @@ function slider_range($label, $measurement, $id)
                 noUiSlider.create(rangeSlider, {
                     start: [start],
                     connect: 'lower',
-                    step: 0.5,
+                    step: 1,
                     range: {
                         'min': [min],
                         'max': [max]
