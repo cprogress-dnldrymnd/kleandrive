@@ -1092,7 +1092,7 @@ section.savings-calculator {
     section.savings-calculator .form-part.form-result .row .column-holder > div:not(:last-child) {
       margin-bottom: 1rem; }
     section.savings-calculator .form-part.form-result .row .column-holder .result-heading span[result] {
-      font-size: 35px;
+      font-size: 30px;
       display: block;
       font-weight: bold;
       color: var(--accent-color); }
