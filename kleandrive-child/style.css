@@ -1087,7 +1087,8 @@ section.savings-calculator {
       background-color: var(--accent-color); }
   section.savings-calculator .form-part.form-result .row .column-holder {
     background-color: var(--white-color);
-    padding: 2rem; }
+    padding: 2rem;
+    height: 100%; }
     section.savings-calculator .form-part.form-result .row .column-holder > div:not(:last-child) {
       margin-bottom: 1rem; }
     section.savings-calculator .form-part.form-result .row .column-holder .result-icon {
