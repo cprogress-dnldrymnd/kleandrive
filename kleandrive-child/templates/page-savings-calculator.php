@@ -159,10 +159,11 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Battery Electric Energy Consumption (kWh/km)" value="1.15">
         <input type="hidden" name="Cost per km Electric" value="">
         <input type="hidden" name="BSOG rate England Repowered" value="<?= $bsog_nsg_rate_repowered ?>">
+        <input type="hidden" name="Maintenance - external (body)" value="750">
         <input type="hidden" name="Maintenance - internal (drivetrain)" value="1750">
         <input type="hidden" name="Upgrades" value="0">
         <input type="hidden" name="Telematics subscription" value="240">
-   
+
         <div class="form-part form-result">
             <div class="container">
                 <div class="holder py-5">
@@ -353,25 +354,36 @@ function slider_range($label, $measurement, $id)
         }
 
         function calculate() {
-            //Compute Cost per km
+            num_of_buses = jQuery('input[name="num_of_buses"]').val();
+            annual_average_distance_travel = jQuery('input[name="annual_average_distance_travel"]').val();
+            average_remaining_life = jQuery('input[name="average_remaining_life"]').val();
+            existing_vehicle_service_and_maintenance_cost = jQuery('input[name="existing_vehicle_service_and_maintenance_cost"]').val();
+
+
             Wholesale_price_of_diesel = jQuery('input[name="Wholesale price of diesel (Large Fleet Operator)"]').val();
             Double_Deck_Bus_6_MPG = jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val();
+            Cost_of_electricity_per_kWh = jQuery('input[name="Cost of electricity per kWh"]').val();
+            Battery_Electric_Energy_Consumption = jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val();
+            Blended_average_CO2_saving = jQuery('input[name="Blended average CO2 saving per 1 vehicle/ km (g)"]').val();
+            Incremental_CO2_benefit_vs_New_BEV = jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val();
 
+
+            //Compute Cost per km
             Cost_per_km_val = parseFloat(Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG);
             Cost_per_km = jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
 
             //Compute Cost per km Electric
-            Cost_of_electricity_per_kWh = jQuery('input[name="Cost of electricity per kWh"]').val();
-            Battery_Electric_Energy_Consumption = jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val();
-            
             Cost_per_km_val = parseFloat(Cost_of_electricity_per_kWh * Battery_Electric_Energy_Consumption);
             Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
 
+            //Compute Total CO2 saved
 
-            console.log(Cost_per_km_electric.val());
+            total_co2_saved_val = parseFloat((Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * annual_average_distance_travel * average_remaining_life * num_of_buses / 1000000);
             
-        
-        
+            jQuery('span[result="Total CO2 saved"]').val(total_co2_saved_val);
+
+
+
         }
 
     });
