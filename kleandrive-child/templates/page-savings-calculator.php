@@ -368,6 +368,7 @@ function slider_range($label, $measurement, $id)
             Blended_average_CO2_saving = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 vehicle/ km (g)"]').val()));
             Incremental_CO2_benefit_vs_New_BEV = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val()));
             NOx_Road_Transport = input_value(parseFloat(jQuery('input[name="NOx Road Transport / tonne (£2022)"]').val()));
+            Blended_average_NOx_saving = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 vehicle/ km (g)"]').val()));
 
 
 
@@ -386,7 +387,7 @@ function slider_range($label, $measurement, $id)
 
 
             //Compute Total NOx damage costs saved
-            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport / 1000000;
+            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving/ 1000000;
             jQuery('span[result="Total NOx damage costs saved"]').html(Total_NOx_damage_costs_saved.toLocaleString('en-US'));
 
 
