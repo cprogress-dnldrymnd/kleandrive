@@ -418,7 +418,8 @@ function slider_range($label, $measurement, $id)
             Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) -  (Current_Rate_of_BSOG * annual_average_distance_travel);
             jQuery('span[result="Grant (BSOG/NSG) savings"]').html(parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
-
+            console.log(Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel)
+            console.log(Current_Rate_of_BSOG * annual_average_distance_travel)
 
             //Compute Capital cost savings over buying new electric buses
             Capital_cost_savings_over_buying_new_electric_buses = 1;
