@@ -425,7 +425,7 @@ function slider_range($label, $measurement, $id)
 
             //Compute Capital cost savings over buying new electric buses
 
-            if ($single_or_double == 'double') {
+            if (single_or_double == 'double') {
                 Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_double_captial_cost_savings;
             } else {
                 Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_single_captial_cost_savings;
