@@ -102,9 +102,9 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
                             <?php $description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus molestias. Nihil dolores repellat in provident! Itaque, nam? Culpa voluptatum natus aliquam, minus maxime reprehenderit laudantium labore aut doloremque esse!'; ?>
-                            <?= slider_range('Number of buses to be Repowered', 'buses', $description, 'number_of_buses', '0', '100') ?>
+                            <?= slider_range('Number of buses to be Repowered', 'buses', $description, 'num_of_buses', '0', '100') ?>
                             <div class="label mt-5">
-                                <label for="number_of_buses" class="form-label">Are they single or double deck buses</label>
+                                <label for="num_of_buses" class="form-label">Are they single or double deck buses</label>
                             </div>
                             <select name="single_or_double" id="single_or_double">
                                 <option value="single"> Single </option>
@@ -112,11 +112,10 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
                             </select>
                         </div>
                         <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
-                            <?= slider_range('Annual average distance travelled per bus', 'km', $description, 'average_distance', '0', '100000') ?>
+                            <?= slider_range('Annual average distance travelled per bus', 'km', $description, 'annual_average_distance_travel', '0', '100000') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-remaining-life" role="tabpanel" aria-labelledby="v-pills-remaining-life-tab">
-
-
+                            <?= slider_range('Average remaining life of the vehicles', 'years', $description, 'average_remaining_life', '0', '100') ?>
                         </div>
 
                         <div class="tab-pane fade" id="v-pills-Estimated-annual-operational-costs" role="tabpanel" aria-labelledby="v-pills-Estimated-annual-operational-costs-tab">
@@ -129,47 +128,6 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
         </div>
     </div>
     <div id="calculator">
-        <div class="form-part py-5">
-            <div class="container">
-                <div class="holder">
-                    <h4 class="mb-4">
-                        Kleanbus model assumptions
-                    </h4>
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="average_distance">Annual average distance travelled per bus</label>
-                                <input type="number" class="form-control" id="average_distance" name="average_distance" value="80000">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="remaining_life">Average remaining life of the vehicles</label>
-                                <input type="number" class="form-control" id="remaining_life" name="remaining_life" value="13.5">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="no_of_buses_converted">No of buses converted</label>
-                                <input type="number" class="form-control" id="no_of_buses_converted" name="no_of_buses_converted" value="1000">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-
-                            <div class="form-group">
-                                <label for="est_annual_op_cost"> Existing annual diesel vehicle service and maintenance cost </label>
-                                <input type="number" class="form-control" id="est_annual_op_cost" name="est_annual_op_cost" value="0">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12">
-                            <button id="calculate" type="submit" class="btn btn-secondary">Calculate</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="form-part form-result">
             <div class="container">
                 <div class="holder py-5">
@@ -240,7 +198,7 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
         }
 
         jQuery('#calculate').click(function(e) {
-            $average_distance = input_value(parseFloat(jQuery('input[name="average_distance"]').val()));
+            $annual_average_distance_travel = input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val()));
             $remaining_life = input_value(parseFloat(jQuery('input[name="remaining_life"]').val()));
             $no_of_buses_converted = input_value(parseFloat(jQuery('input[name="no_of_buses_converted"]').val()));
             $est_annual_op_cost = input_value(parseFloat(jQuery('input[name="est_annual_op_cost"]').val()));
@@ -254,9 +212,9 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
             $Incrementalcaptialcostsavings = input_value(parseFloat(jQuery('input[name="Incrementalcaptialcostsavings"]').val()));
 
 
-            $TotalCO2savings = Math.round(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $average_distance / 1000000);
-            $TotalNOxdamagecostsavings = Math.round($average_distance * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
-            $TotalParticulateMatterdamagecostsavings = Math.round($average_distance * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
+            $TotalCO2savings = Math.round(($BlendedaverageCO2saving + $IncrementalCO2benefitvsNewBEV) * $no_of_buses_converted * $remaining_life * $annual_average_distance_travel / 1000000);
+            $TotalNOxdamagecostsavings = Math.round($annual_average_distance_travel * $remaining_life * $no_of_buses_converted * $NOxRoadTransport * $BlendedaverageNOxsaving / 1000000);
+            $TotalParticulateMatterdamagecostsavings = Math.round($annual_average_distance_travel * $remaining_life * $no_of_buses_converted * $ParticulateMatterRoadTransport * $BlendedaveragePMsaving / 1000000);
             $Operationalcostsavings = Math.round(($est_annual_op_cost * $no_of_buses_converted * $remaining_life) / 3);
             $Capitalcostsavingsoverbuyingnewelectricbuses = Math.round($no_of_buses_converted * $Incrementalcaptialcostsavings);
 
@@ -277,8 +235,8 @@ function slider_range($label, $measurement, $description = '', $id, $min, $max, 
 
 <script>
     jQuery(document).ready(function() {
-        range_slider('slider-range-average_distance', 'average_distance');
-        range_slider('slider-range-number_of_buses', 'number_of_buses');
+        range_slider('slider-range-annual_average_distance_travel', 'annual_average_distance_travel');
+        range_slider('slider-range-num_of_buses', 'num_of_buses');
 
         function range_slider($range_id, $input_id) {
             var rangeSlider = document.getElementById($range_id);
