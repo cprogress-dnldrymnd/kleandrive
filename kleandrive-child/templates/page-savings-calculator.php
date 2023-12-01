@@ -370,9 +370,10 @@ function slider_range($label, $measurement, $id)
             Incremental_CO2_benefit_vs_New_BEV = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val()));
             NOx_Road_Transport = input_value(parseFloat(jQuery('input[name="NOx Road Transport / tonne (£2022)"]').val()));
             Blended_average_NOx_saving = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 vehicle/ km (g)"]').val()));
+            Blended_average_PM_saving  = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 vehicle/ km (g)"]').val()));
+            Particulate_Matter_Road_Transport = input_value(parseFloat(jQuery('input[name="Particulate Matter Road Transport PM2.5/ tonne (£2002)"]').val()));
 
-
-
+            
 
             //Compute Cost per km
             Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
@@ -390,6 +391,11 @@ function slider_range($label, $measurement, $id)
             //Compute Total NOx damage costs saved
             Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving / 1000000;
             jQuery('span[result="Total NOx damage costs saved"]').html(parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
+
+            //Compute Total Particulate Matter damage costs saved
+            Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving * Particulate_Matter_Road_Transport / 1000000;
+            jQuery('span[result="Total Particulate Matter damage costs saved"]').html(parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
+
 
 
 
