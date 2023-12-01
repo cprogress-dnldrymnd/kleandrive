@@ -142,7 +142,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <div class="result-heading">
                                     <b><span> Total CO2 saved </span></b>
-                                    <span result="Total CO2 saved"></span>
+                                    <span result="Total CO2 saved">0</span>
                                 </div>
                             </div>
                         </div>
