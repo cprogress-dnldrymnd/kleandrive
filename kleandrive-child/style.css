@@ -1216,6 +1216,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 @media (max-width: 991px) {
   .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-img a {
     padding: 40%;
+    display: block;
     position: relative; }
     .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-img a img {
       position: absolute;

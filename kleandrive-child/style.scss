@@ -1961,6 +1961,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
         .elementor-image-box-img a {
             @media(max-width: 991px) {
                 padding: 40%;
+                display: block;
                 position: relative;
                 img {
                     position: absolute;
