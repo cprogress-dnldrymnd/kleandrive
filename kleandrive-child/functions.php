@@ -158,7 +158,7 @@ function action_wp_footer()
 					maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
 				});
 
-				jQuery('.features img').each(function() {
+				jQuery('.vehicle-icons img').each(function() {
 					jQuery(this).height(maxHeight);
 				});
 			}
