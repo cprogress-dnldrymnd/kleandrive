@@ -161,6 +161,8 @@ function action_wp_footer()
 				jQuery('.vehicle-icons img').each(function() {
 					jQuery(this).height(maxHeight);
 				});
+
+				jQuery('.vehicle-icons').addClass('show');
 			}
 
 			<?php if (is_home() || is_category()) { ?>
