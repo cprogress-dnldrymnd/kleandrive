@@ -1234,10 +1234,12 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   opacity: 1; }
 
 .sc_item_button_footer_cta .sc_button {
-  background-color: var(--white-color) !important;
-  border-color: var(--white-color) !important; }
+  background-color: transparent !important;
+  border-color: var(--white-color) !important;
+  color: var(--primary-color); }
   .sc_item_button_footer_cta .sc_button:hover {
     background-color: var(--primary-color) !important;
-    border-color: var(--primary-color) !important; }
+    border-color: var(--primary-color) !important;
+    color: var(--white-color); }
 
 /*# sourceMappingURL=style.css.map */
