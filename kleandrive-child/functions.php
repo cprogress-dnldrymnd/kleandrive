@@ -103,7 +103,7 @@ function append_query_string($url, $post, $leavename = false)
 		} else {
 			$url = add_query_arg('foo', 'bar', $url);
 		}
-	} 
+	}
 	return $url;
 }
 add_filter('post_link', 'append_query_string', 10, 3);
@@ -151,6 +151,18 @@ function action_wp_footer()
 ?>
 	<script>
 		jQuery(document).ready(function() {
+
+			if (jQuery('.vehicle-icons').length > 0) {
+				var maxHeight = 1;
+				jQuery('.vehicle-icons img').each(function() {
+					maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+				});
+
+				jQuery('.features img').each(function() {
+					jQuery(this).height(maxHeight);
+				});
+			}
+
 			<?php if (is_home() || is_category()) { ?>
 				jQuery(document).ready(function() {
 					$all_link = jQuery('<li class="cat-item cat-all <?= is_home() ? 'current-cat' : '' ?>"><a href="<?= get_permalink(get_option('page_for_posts')); ?>">All</a></li>');
@@ -176,9 +188,10 @@ function custom_class($classes)
 }
 
 
-function wpdocs_remove_menusTwo() {
-    remove_menu_page('theme-editor.ph');
-    remove_menu_page('admin.php?page=trx_addons_theme_panel');
+function wpdocs_remove_menusTwo()
+{
+	remove_menu_page('theme-editor.ph');
+	remove_menu_page('admin.php?page=trx_addons_theme_panel');
 }
- 
+
 add_action('admin_init', 'wpdocs_remove_menusTwo');
