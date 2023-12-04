@@ -1219,7 +1219,9 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   border-radius: 20px;
   transform: translateY(10px);
   opacity: 0;
-  position: relative; }
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px; }
   .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content:before {
     content: "";
     width: 0;
