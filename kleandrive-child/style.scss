@@ -1981,7 +1981,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 }
 
 .sc_item_button_footer_cta {
-    .sc_button {
+    .sc_button.sc_button.sc_button {
         background-color: transparent !important;
         border-color: var(--white-color) !important;
         color: var(--primary-color);
