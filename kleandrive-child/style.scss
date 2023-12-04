@@ -1980,8 +1980,10 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     }
 }
 
-.button-bordered-white {
+.sc_item_button_footer_cta {
     .sc_button {
+        background-color: var(--white-color) !important;
+        border-color: var(--white-color) !important;
         &:hover {
             background-color: var(--primary-color) !important;
             border-color: var(--primary-color) !important;

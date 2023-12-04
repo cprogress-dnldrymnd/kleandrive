@@ -50,7 +50,7 @@ function footer_cta_button()
     }
 
 ?>
-    <div class="sc_item_button sc_button_wrap">
+    <div class="sc_item_button sc_button_wrap sc_item_button_footer_cta">
         <a href="/savings-calculator" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left color_style_dark">
             <span class="sc_button_text">
                 <span class="sc_button_title">
