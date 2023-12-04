@@ -1216,7 +1216,6 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   .vehicle-icons > .elementor-element > .e-con-inner > .elementor-element {
     width: auto !important; }
   .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content {
-    background-color: var(--primary-color);
     transition: 300ms;
     border-radius: 20px;
     transform: translateY(10px);
@@ -1233,17 +1232,6 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
         padding-right: 5px; }
         .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content .elementor-image-box-title {
           font-size: 11px; } }
-    .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content:before {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid var(--primary-color);
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: -9px; }
   .vehicle-icons .elementor-image-box-wrapper:hover .elementor-image-box-content {
     transform: translateY(0);
     opacity: 1; }
