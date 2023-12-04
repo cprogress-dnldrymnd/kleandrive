@@ -1952,10 +1952,10 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 .vehicle-icons {
     opacity: 0;
     > .elementor-element {
-       > .e-con-inner {
-             > .elementor-element {
+        > .e-con-inner {
+            > .elementor-element {
                 width: auto !important;
-             }
+            }
         }
     }
     .elementor-image-box-wrapper {
@@ -1968,6 +1968,15 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
             position: relative;
             padding-left: 10px;
             padding-right: 10px;
+            @media (max-width: 575px) {
+                margin-left: -20px;
+                margin-right: -20px;
+                width: auto;
+                .elementor-image-box-title {
+                    font-size: 12px;
+                }
+            }
+
             &:before {
                 content: "";
                 width: 0;

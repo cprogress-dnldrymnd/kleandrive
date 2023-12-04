@@ -1224,6 +1224,13 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
+    @media (max-width: 575px) {
+      .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: auto; }
+        .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content .elementor-image-box-title {
+          font-size: 12px; } }
     .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content:before {
       content: "";
       width: 0;
