@@ -1237,6 +1237,8 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   background-color: transparent !important;
   border-color: var(--white-color) !important;
   color: var(--white-color) !important; }
+  .sc_item_button_footer_cta.sc_item_button_footer_cta.sc_item_button_footer_cta .sc_button.sc_button.sc_button:first-child {
+    margin-left: 0 !important; }
   .sc_item_button_footer_cta.sc_item_button_footer_cta.sc_item_button_footer_cta .sc_button.sc_button.sc_button:hover {
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;

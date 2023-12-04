@@ -1985,6 +1985,9 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
         background-color: transparent !important;
         border-color: var(--white-color) !important;
         color: var(--white-color) !important;
+        &:first-child {
+            margin-left: 0 !important;
+        }
         &:hover {
             background-color: var(--primary-color) !important;
             border-color: var(--primary-color) !important;
