@@ -155,7 +155,7 @@ function action_wp_footer()
 			if (jQuery('.vehicle-icons').length > 0) {
 				var maxHeight = 1;
 				jQuery('.vehicle-icons img').each(function() {
-					maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
+					maxHeight = maxHeight < jQuery(this).height() ? maxHeight : jQuery(this).height();
 				});
 
 				jQuery('.vehicle-icons img').each(function() {
