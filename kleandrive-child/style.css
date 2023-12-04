@@ -1253,6 +1253,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
       font-size: 13px; } }
   @media (max-width: 575px) {
     .sc_item_button_footer_cta.sc_item_button_footer_cta.sc_item_button_footer_cta .sc_button.sc_button.sc_button {
-      flex-direction: row !important; } }
+      flex-direction: row !important;
+      flex-wrap: wrap !important; } }
 
 /*# sourceMappingURL=style.css.map */

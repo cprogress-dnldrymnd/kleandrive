@@ -2003,6 +2003,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
         }
         @media (max-width: 575px) {
             flex-direction: row !important;
+            flex-wrap: wrap !important;
         }
     }
 }
