@@ -1236,6 +1236,9 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   .vehicle-icons.show-icons {
     opacity: 1; }
 
+.elementor-editor-active .vehicle-icons {
+  opacity: 1; }
+
 .sc_item_button_footer_cta.sc_item_button_footer_cta.sc_item_button_footer_cta .sc_button.sc_button.sc_button {
   background-color: transparent !important;
   border-color: var(--white-color) !important;
