@@ -1213,6 +1213,18 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 
 .vehicle-icons > .elementor-element > .e-con-inner > .elementor-element {
   width: auto !important; }
+@media (max-width: 991px) {
+  .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-img a {
+    padding: 40%;
+    position: relative; }
+    .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-img a img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center; } }
 .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content {
   background-color: var(--primary-color);
   transition: 300ms;
