@@ -153,7 +153,7 @@ function action_wp_footer()
 		jQuery(document).ready(function() {
 
 			if (jQuery('.vehicle-icons').length > 0) {
-				var maxHeight = 1;
+				var maxHeight = 200;
 				jQuery('.vehicle-icons img').each(function() {
 					maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
 				});
