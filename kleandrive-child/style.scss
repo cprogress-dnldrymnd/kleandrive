@@ -1950,7 +1950,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 }
 
 .vehicle-icons {
-    opacity: 1;
+    opacity: 0;
     > .elementor-element {
        > .e-con-inner {
              > .elementor-element {
@@ -1988,7 +1988,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
             }
         }
     }
-    &.show {
+    &.show-icons {
         opacity: 1;
     }
 }

@@ -1212,7 +1212,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   color: var(--white-color) !important; }
 
 .vehicle-icons {
-  opacity: 1; }
+  opacity: 0; }
   .vehicle-icons > .elementor-element > .e-con-inner > .elementor-element {
     width: auto !important; }
   .vehicle-icons .elementor-image-box-wrapper .elementor-image-box-content {
@@ -1238,7 +1238,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   .vehicle-icons .elementor-image-box-wrapper:hover .elementor-image-box-content {
     transform: translateY(0);
     opacity: 1; }
-  .vehicle-icons.show {
+  .vehicle-icons.show-icons {
     opacity: 1; }
 
 .sc_item_button_footer_cta.sc_item_button_footer_cta.sc_item_button_footer_cta .sc_button.sc_button.sc_button {

@@ -162,7 +162,7 @@ function action_wp_footer()
 					jQuery(this).height(maxHeight);
 				});
 
-				jQuery('.vehicle-icons').addClass('show');
+				jQuery('.vehicle-icons').addClass('show-icons');
 			}
 
 			<?php if (is_home() || is_category()) { ?>
