@@ -261,7 +261,7 @@ function slider_range($label, $measurement, $id)
                                     </div>
                                     <!-- Rounded switch -->
                                     <label class="switch">
-                                        <input type="checkbox">
+                                        <input type="checkbox" name="Grant (BSOG/NSG) savings">
                                         <span class="slider round"></span>
                                         <p>
                                             Certified KleanDrive repowers attract increased BSOG payments in the UK. Click here if you're eligible.
