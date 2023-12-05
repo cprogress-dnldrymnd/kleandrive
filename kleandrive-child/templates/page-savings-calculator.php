@@ -493,11 +493,11 @@ function slider_range($label, $measurement, $id)
         Rate_of_BSOG_NSG_for_repowered_vehicle = input_value(parseFloat(jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val()));
         Incremental_single_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val()));
         Incremental_double_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val()))
-      
+
 
         DD_Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="DD Battery Electric Energy Consumption (kWh/km)"]').val()));
         SD_Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="SD Battery Electric Energy Consumption (kWh/km)"]').val()));
-        
+
 
         single_or_double = jQuery('#single_or_double').val();
         Grant_BSOG_NSG_savings_toggle = jQuery('input[name="Grant (BSOG/NSG) savings"]');
@@ -530,9 +530,9 @@ function slider_range($label, $measurement, $id)
 
         //Compute Fuel savings
         if (single_or_double == 'double') {
-            Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG) - (Cost_of_electricity_per_kWh * DD_Battery_Electric_Energy_Consumption)))
+            Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG) - (Cost_of_electricity_per_kWh * DD_Battery_Electric_Energy_Consumption))) * average_remaining_life * num_of_buses;
         } else {
-            Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Single_Deck_Bus_8_MPG) - (Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption)))
+            Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Single_Deck_Bus_8_MPG) - (Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption))) * average_remaining_life * num_of_buses;
         }
 
 
