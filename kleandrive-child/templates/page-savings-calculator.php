@@ -362,10 +362,7 @@ function slider_range($label, $measurement, $id)
         range_slider('slider-range-num_of_buses', 'num_of_buses', false);
         range_slider('slider-range-average_remaining_life', 'average_remaining_life', true);
         range_slider('slider-range-existing_vehicle_service_and_maintenance_cost', 'existing_vehicle_service_and_maintenance_cost', false);
-        jQuery('.calculation-input').change(function(e) {
-            calculate();
-        });
-
+    
         function range_slider($range_id, $input_id, $allow_decimal = false) {
             var rangeSlider = document.getElementById($range_id);
             start = parseFloat(rangeSlider.getAttribute("start"));
@@ -435,6 +432,11 @@ function slider_range($label, $measurement, $id)
     jQuery('#single_or_double').change(function(e) {
         calculate();
     });
+    
+    jQuery('.calculation-input').change(function(e) {
+            calculate();
+        });
+
 
     function input_value($input) {
         if ($input) {
