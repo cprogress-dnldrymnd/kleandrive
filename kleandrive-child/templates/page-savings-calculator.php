@@ -537,7 +537,7 @@ function slider_range($label, $measurement, $id)
             total_co2_saved_val = (Blended_average_CO2_saving_per_1_SD_vehicle + Incremental_CO2_benefit_vs_New_SD_BEV_per_1_vehicle) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
         }
 
-        jQuery('span[result="Total CO2 saved"]').html(parseFloat(total_co2_saved_val).toLocaleString('en-US') + '<div class="type">tonnes</div>');
+        jQuery('span[result="Total CO2 saved"]').html(parseInt(total_co2_saved_val).toLocaleString('en-US') + '<div class="type">tonnes</div>');
 
 
         //Compute Total NOx damage costs saved
@@ -546,7 +546,7 @@ function slider_range($label, $measurement, $id)
         } else {
             Total_NOx_damage_costs_saved = annual_average_distance_travel * average_remaining_life * num_of_buses * NOx_Road_Transport * Blended_average_NOx_saving_per_1_SD_vehicle / 1000000;
         }
-        jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseFloat(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
+        jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
 
         //Compute Total Particulate Matter damage costs saved
 
@@ -555,12 +555,12 @@ function slider_range($label, $measurement, $id)
         } else {
             Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving_per_1_SD_vehicle * Particulate_Matter_Road_Transport / 1000000;
         }
-        jQuery('span[result="Total Particulate Matter damage costs saved"]').html('£' + parseFloat(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
+        jQuery('span[result="Total Particulate Matter damage costs saved"]').html('£' + parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
 
 
         //Compute Grant (BSOG/NSG) savings
         Grant_BSOG_NSG_savings = (BSOG_rate_England_Electric - BSOG_rate_England_Diesel) * annual_average_distance_travel * num_of_buses * average_remaining_life;
-        jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseFloat(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
+        jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
         //Compute Fuel savings
         if (single_or_double == 'double') {
@@ -568,11 +568,11 @@ function slider_range($label, $measurement, $id)
         } else {
             Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Single_Deck_Bus_8_MPG) - (Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption))) * average_remaining_life * num_of_buses;
         }
-        jQuery('span[result="Fuel savings"]').html('£' + parseFloat(Fuel_savings).toLocaleString('en-US'));
+        jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
 
         //Compute Maintenance saving
         Maintenance_saving = (existing_vehicle_service_and_maintenance_cost - 2750) * average_remaining_life * num_of_buses;
-        jQuery('span[result="Maintenance saving"]').html('£' + parseFloat(Maintenance_saving).toLocaleString('en-US'));
+        jQuery('span[result="Maintenance saving"]').html('£' + parseInt(Maintenance_saving).toLocaleString('en-US'));
 
         //Compute Total Lifetime operational cost savings 
         if (Grant_BSOG_NSG_savings_toggle.is(":checked")) {
@@ -582,12 +582,12 @@ function slider_range($label, $measurement, $id)
             Total_Annual_operational_cost_savings = Fuel_savings + Maintenance_saving;
             jQuery('.column-bosg').removeClass('active');
         }
-        jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseFloat(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
+        jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
 
 
         //Compute Total Lifetime operational cost savings
         Total_Lifetime_operational_cost_savings = Total_Annual_operational_cost_savings * num_of_buses;
-        jQuery('span[result="Total Lifetime operational cost savings').html('£' + parseFloat(Total_Lifetime_operational_cost_savings).toLocaleString('en-US'));
+        jQuery('span[result="Total Lifetime operational cost savings').html('£' + parseInt(Total_Lifetime_operational_cost_savings).toLocaleString('en-US'));
 
         //Compute Capital cost savings over buying new electric buses - DONE
         if (single_or_double == 'double') {
@@ -595,7 +595,7 @@ function slider_range($label, $measurement, $id)
         } else {
             Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_single_captial_cost_savings;
         }
-        jQuery('span[result="Capital cost savings over buying new electric buses"]').html('£' + parseFloat(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
+        jQuery('span[result="Capital cost savings over buying new electric buses"]').html('£' + parseInt(Capital_cost_savings_over_buying_new_electric_buses).toLocaleString('en-US'));
 
 
     }
