@@ -1272,4 +1272,12 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   .single-cpt_team .team_member_description_socials .team_member_socials .social_item .social_icon:hover {
     background-color: var(--primary-color); }
 
+.slider_pagination_wrap.slider_pagination_wrap .swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: none !important;
+  width: 6px;
+  height: 6px; }
+  .slider_pagination_wrap.slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--accent-color) !important; }
+
 /*# sourceMappingURL=style.css.map */
