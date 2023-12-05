@@ -102,15 +102,17 @@ function slider_range($label, $measurement, $id)
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-number-of-buses-converted" role="tabpanel" aria-labelledby="v-pills-number-of-buses-converted-tab">
                             <?= slider_range('Number of buses to be Repowered', 'buses', 'num_of_buses') ?>
-                            <div class="label mt-5">
-                                <label for="num_of_buses" class="form-label">Are they single or double deck buses</label>
-                            </div>
-                            <select name="single_or_double" id="single_or_double">
-                                <option value="single"> Single </option>
-                                <option value="double"> Double </option>
-                            </select>
-                            <div class="description mt-3">
-                                <p>Double deckers are generally heavier and have worst fuel consumption so our calculator accounts for this difference.  Plus new vehicles and repowering costs varying with this distinction.</p>
+                            <div class="slider-input-holder">
+                                <div class="label mt-5">
+                                    <label for="num_of_buses" class="form-label">Are they single or double deck buses</label>
+                                </div>
+                                <select name="single_or_double" id="single_or_double">
+                                    <option value="single"> Single </option>
+                                    <option value="double"> Double </option>
+                                </select>
+                                <div class="description mt-3">
+                                    <p>Double deckers are generally heavier and have worst fuel consumption so our calculator accounts for this difference. Plus new vehicles and repowering costs varying with this distinction.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
