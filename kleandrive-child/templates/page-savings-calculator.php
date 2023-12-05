@@ -514,8 +514,6 @@ function slider_range($label, $measurement, $id)
         } else {
             Cost_per_km_val = Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption;
         }
-
-        Cost_per_km_val = Cost_of_electricity_per_kWh * Battery_Electric_Energy_Consumption;
         jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
 
         //Compute Total CO2 saved
