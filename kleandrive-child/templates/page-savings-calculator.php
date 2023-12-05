@@ -487,18 +487,20 @@ function slider_range($label, $measurement, $id)
         Blended_average_NOx_saving = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 vehicle/ km (g)"]').val()));
         Blended_average_PM_saving = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 vehicle/ km (g)"]').val()));
         Particulate_Matter_Road_Transport = input_value(parseFloat(jQuery('input[name="Particulate Matter Road Transport PM2.5/ tonne (£2002)"]').val()));
-        Cost_per_km = jQuery('input[name="Cost per km"]').val();
-        Cost_per_km_electric = jQuery('input[name="Cost per km Electric"]').val();
-        Current_Rate_of_BSOG = jQuery('input[name="Current Rate of BSOG"]').val();
-        Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
-        Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
-        Incremental_double_captial_cost_savings = jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val();
+        Cost_per_km = input_value(parseFloat(jQuery('input[name="Cost per km"]').val()));
+        Cost_per_km_electric = input_value(parseFloat(jQuery('input[name="Cost per km Electric"]').val()));
+        Current_Rate_of_BSOG = input_value(parseFloat(jQuery('input[name="Current Rate of BSOG"]').val()));
+        Rate_of_BSOG_NSG_for_repowered_vehicle = input_value(parseFloat(jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val()));
+        Incremental_single_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val()));
+        Incremental_double_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val()))
+      
+
+        DD_Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="DD Battery Electric Energy Consumption (kWh/km)"]').val()));
+        SD_Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="SD Battery Electric Energy Consumption (kWh/km)"]').val()));
+        
+
         single_or_double = jQuery('#single_or_double').val();
         Grant_BSOG_NSG_savings_toggle = jQuery('input[name="Grant (BSOG/NSG) savings"]');
-
-        DD_Battery_Electric_Energy_Consumption = jQuery('input[name="DD Battery Electric Energy Consumption (kWh/km)"]').val();
-
-
 
         //Compute Cost per km
         Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
