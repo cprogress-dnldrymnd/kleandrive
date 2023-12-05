@@ -488,14 +488,19 @@ function slider_range($label, $measurement, $id)
 
         DD_Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="DD Battery Electric Energy Consumption (kWh/km)"]').val()));
         SD_Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="SD Battery Electric Energy Consumption (kWh/km)"]').val()));
+
         Blended_average_CO2_saving_per_1_DD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 DD vehicle/ km (g)"]').val()));
-        Blended_average_NOx_saving_per_1_DD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 DD vehicle/ km (g)"]').val()));
-        Blended_average_PM_saving_per_1_DD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 DD vehicle/ km (g)"]').val()));
         Blended_average_CO2_saving_per_1_SD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 SD vehicle/ km (g)"]').val()));
-        Blended_average_NOx_saving_per_1_SD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 SD vehicle/ km (g)"]').val()));
+
+        Blended_average_PM_saving_per_1_DD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 DD vehicle/ km (g)"]').val()));
         Blended_average_PM_saving_per_1_SD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 SD vehicle/ km (g)"]').val()));
+
+        Blended_average_NOx_saving_per_1_SD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 SD vehicle/ km (g)"]').val()));
+        Blended_average_NOx_saving_per_1_DD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 DD vehicle/ km (g)"]').val()));
+
         Incremental_CO2_benefit_vs_New_SD_BEV_per_1_vehicle = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New SD BEV per 1 vehicle/ km (g)"]').val()));
         Incremental_CO2_benefit_vs_New_DD_BEV_per_1_vehicle = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)"]').val()));
+
         Incremental_single_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val()));
         Incremental_double_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val()))
 
@@ -527,11 +532,20 @@ function slider_range($label, $measurement, $id)
 
 
         //Compute Total NOx damage costs saved
-        Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving / 1000000;
+        if (single_or_double == 'double') {
+            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving_per_1_DD_vehicle / 1000000;
+        } else {
+            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving_per_1_SD_vehicle / 1000000;
+        }
         jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
 
         //Compute Total Particulate Matter damage costs saved
-        Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving * Particulate_Matter_Road_Transport / 1000000;
+
+        if (single_or_double == 'double') {
+            Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving_per_1_DD_vehicle * Particulate_Matter_Road_Transport / 1000000;
+        } else {
+            Total_Particulate_Matter_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * Blended_average_PM_saving_per_1_SD_vehicle * Particulate_Matter_Road_Transport / 1000000;
+        }
         jQuery('span[result="Total Particulate Matter damage costs saved"]').html('£' + parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
 
 
