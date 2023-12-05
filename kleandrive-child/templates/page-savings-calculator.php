@@ -282,7 +282,7 @@ function slider_range($label, $measurement, $id)
                                     </div>
                                     <div class="result-heading">
                                         <b><span>Total Annual operational cost savings****</span></b>
-                                        <span result="Total Lifetime operational cost savings"></span>
+                                        <span result="Total Annual operational cost savings"></span>
 
                                     </div>
                                 </div>
@@ -498,7 +498,7 @@ function slider_range($label, $measurement, $id)
         //Compute Total Lifetime operational cost savings 
 
         Total_Annual_operational_cost_savings = Wholesale_price_of_diesel * average_remaining_life * num_of_buses / 3;
-        jQuery('span[result="Total Lifetime operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
+        jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
 
         //Compute Fuel savings
 
