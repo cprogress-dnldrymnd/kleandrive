@@ -161,7 +161,13 @@ function slider_range($label, $measurement, $id)
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="button-box">
+                <div class="sc_item_button sc_button_wrap">
+                    <a href="#calculator" id="calculate-results" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left">
+                        <span class="sc_button_text"><span class="sc_button_title">Calculate Results</span></span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -360,24 +366,7 @@ function slider_range($label, $measurement, $id)
 </section>
 
 
-<script>
-    jQuery(document).ready(function() {
 
-        jQuery('#calculate').click(function(e) {
-            $annual_average_distance_travel = input_value(input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val())));
-
-
-
-
-            //jQuery('#Capitalcostsavingsoverbuyingnewelectricbuses').text($Capitalcostsavingsoverbuyingnewelectricbuses.toLocaleString('en-US'));
-
-
-
-            e.preventDefault();
-
-        });
-    });
-</script>
 <?php get_footer() ?>
 
 <script>
@@ -386,7 +375,7 @@ function slider_range($label, $measurement, $id)
         range_slider('slider-range-num_of_buses', 'num_of_buses', false);
         range_slider('slider-range-average_remaining_life', 'average_remaining_life', true);
         range_slider('slider-range-existing_vehicle_service_and_maintenance_cost', 'existing_vehicle_service_and_maintenance_cost', false);
-
+        calculate();
         function range_slider($range_id, $input_id, $allow_decimal = false) {
             var rangeSlider = document.getElementById($range_id);
             start = parseFloat(rangeSlider.getAttribute("start"));
@@ -453,15 +442,7 @@ function slider_range($label, $measurement, $id)
 
     });
 
-    jQuery('#single_or_double').change(function(e) {
-        calculate();
-    });
-
-    jQuery('.calculation-input').change(function(e) {
-        calculate();
-    });
-
-    jQuery('.calculation-input').keyup(function(e) {
+    jQuery('#calculate-results').click(function(e) {
         calculate();
     });
 
