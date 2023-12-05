@@ -2022,3 +2022,9 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
         flex-wrap: wrap !important;
     }
 }
+
+.single-cpt_team {
+    .team_member_title {
+        color: var(--accent-color);
+    }
+}
