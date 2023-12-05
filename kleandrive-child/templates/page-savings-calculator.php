@@ -90,6 +90,10 @@ function slider_range($label, $measurement, $id)
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/pound.png' ?>"></span>
                                 <span class="text"> Existing annual diesel vehicle service and maintenance cost </span>
                             </button>
+                            <button class="nav-link text-start" id="v-pills-fuel-costs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fuel-costs" type="button" role="tab" aria-controls="v-pills-fuel-costs" aria-selected="false">
+                                <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/pound.png' ?>"></span>
+                                <span class="text"> Fuel Costs </span>
+                            </button>
                         </div>
                     </div>
 
@@ -115,6 +119,9 @@ function slider_range($label, $measurement, $id)
 
                         <div class="tab-pane fade" id="v-pills-Estimated-annual-operational-costs" role="tabpanel" aria-labelledby="v-pills-Estimated-annual-operational-costs-tab">
                             <?= slider_range('Existing annual diesel vehicle service and maintenance cost', '£', 'existing_vehicle_service_and_maintenance_cost') ?>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-fuel-costs" role="tabpanel" aria-labelledby="v-pills-fuel-costs-tab">
+                            <?= slider_range('Fuel Costs', '£', 'fuel_costs') ?>
                         </div>
                     </div>
                 </div>
