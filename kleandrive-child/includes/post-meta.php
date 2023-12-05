@@ -56,7 +56,9 @@ Container::make('theme_options', __('Savings Calculator'))
 
         Field::make('html', 'fuel_cots_html')->set_html('<h4>Fuel Costs</h4>')->set_classes('styled'),
         Field::make('text', 'diesel', 'Current cost of diesel £/litre default value')->set_attribute('type', 'number'),
-        Field::make('text', 'electricity', 'Electricity ')->set_attribute('type', 'number'),
+        Field::make('textarea', 'diesel_description', 'Current cost of diesel Description'),
+        Field::make('text', 'electricity', 'Cost of electricity £/kWh default value ')->set_attribute('type', 'number'),
+        Field::make('textarea', 'electricity_description', 'Cost of electricity Description'),
     ))
     ->add_tab('Grant Funding', array(
         
