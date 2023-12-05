@@ -29,7 +29,7 @@ $theme_settings = Container::make('theme_options', __('Theme Settings'))
 Container::make('theme_options', __('Savings Calculator'))
     ->set_page_parent($theme_settings)
     ->add_tab('Inputs', array(
-        Field::make('html', 'style')->set_html('<style>.styled{background-color: #1d2327 !important; color: #fff !important}</style>'),
+        Field::make('html', 'style')->set_html('<style>.styled{background-color: #1d2327 !important; color: #fff !important} .styled h4 { marign: 0 !important }</style>'),
         Field::make('html', 'num_of_buses_html')->set_html('<h4>Number of buses to be Repowered</h4>')->set_classes('styled'),
         Field::make('text', 'num_of_buses_min', 'Min')->set_attribute('type', 'number'),
         Field::make('text', 'num_of_buses_max', 'Max')->set_attribute('type', 'number'),
