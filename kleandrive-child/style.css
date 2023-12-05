@@ -1300,7 +1300,7 @@ h6 {
   height: 34px; }
   .switch + p {
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 10px;
     font-size: 14px;
     line-height: 1.2; }
   .switch input {
