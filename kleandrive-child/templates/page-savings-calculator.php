@@ -281,7 +281,7 @@ function slider_range($label, $measurement, $id)
                                         <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                     </div>
                                     <div class="result-heading">
-                                        <b><span>Total Annual operational cost savings****</span></b>
+                                        <b><span>Total Annual operational cost savings</span></b>
                                         <span result="Total Annual operational cost savings"></span>
 
                                     </div>
