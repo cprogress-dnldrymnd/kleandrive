@@ -264,6 +264,9 @@ function slider_range($label, $measurement, $id)
                                         <input type="checkbox">
                                         <span class="slider round"></span>
                                     </label>
+                                    <p>
+                                        Certified KleanDrive repowers attract increased BSOG payments in the UK. Click here if you're eligible.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-3">
