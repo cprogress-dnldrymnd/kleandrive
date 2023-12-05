@@ -54,7 +54,7 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('text', 'existing_vehicle_service_and_maintenance_cost_start', 'Start')->set_attribute('type', 'number'),
         Field::make('textarea', 'existing_vehicle_service_and_maintenance_cost_desc', 'Description'),
 
-        Field::make('html', 'num_of_buses_html')->set_html('<h4>Fuel Costs</h4>')->set_classes('styled'),
+        Field::make('html', 'fuel_cots_html')->set_html('<h4>Fuel Costs</h4>')->set_classes('styled'),
         Field::make('text', 'diesel', 'Current cost of diesel £/litre default value')->set_attribute('type', 'number'),
         Field::make('text', 'electricity', 'Electricity ')->set_attribute('type', 'number'),
     ))
