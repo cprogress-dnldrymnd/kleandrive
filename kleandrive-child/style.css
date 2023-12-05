@@ -839,7 +839,8 @@ section.page-heading {
       .partner-slider .partner-wrapper-grid .column-holder .description-box p {
         font-size: 15px; }
       .partner-slider .partner-wrapper-grid .column-holder .heading-box h2 {
-        font-size: 35px; }
+        font-size: 35px;
+        line-height: 1.3 !important; }
   .partner-slider .swiper-slide .inner .description-box {
     font-size: 15px;
     line-height: 28px;
