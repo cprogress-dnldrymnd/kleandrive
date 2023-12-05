@@ -175,29 +175,44 @@ function slider_range($label, $measurement, $id)
 
         <?php
 
-        $elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
+
         $bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
         $bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');
+        $nox_road_transport = carbon_get_theme_option('nox_road_transport');
+        $particulate_matter_road_transport = carbon_get_theme_option('particulate_matter_road_transport');
+        $blended_average_co2_saving_dd = carbon_get_theme_option('blended_average_co2_saving_dd');
+        $blended_average_nox_saving_dd = carbon_get_theme_option('blended_average_nox_saving_dd');
+        $blended_average_pm_saving_dd = carbon_get_theme_option('blended_average_pm_saving_dd');
+        $blended_average_co2_saving_sd = carbon_get_theme_option('blended_average_co2_saving_sd');
+        $blended_average_nox_saving_sd = carbon_get_theme_option('blended_average_nox_saving_sd');
+        $blended_average_pm_saving_pm = carbon_get_theme_option('blended_average_pm_saving_pm');
+        $incremental_co2_benefit_sd = carbon_get_theme_option('incremental_co2_benefit_sd');
+        $incremental_co2_benefit_dd = carbon_get_theme_option('incremental_co2_benefit_dd');
+        $incremental_single_captial_cost_savings = carbon_get_theme_option('incremental_single_captial_cost_savings');
+        $incremental_double_captial_cost_savings = carbon_get_theme_option('incremental_double_captial_cost_savings');
+        // $ = carbon_get_theme_option('');
+
+
         ?>
 
         <!--- Damage cost assumptions --->
-        <input type="hidden" name="NOx Road Transport / tonne (£2022)" value="17892.6280819244">
-        <input type="hidden" name="Particulate Matter Road Transport PM2.5/ tonne (£2002)" value="130884.092045588">
+        <input type="hidden" name="NOx Road Transport / tonne (£2022)" value="<?= $nox_road_transport ?>">
+        <input type="hidden" name="Particulate Matter Road Transport PM2.5/ tonne (£2002)" value="<?= $particulate_matter_road_transport ?>">
 
         <!--- Other assumptions Double --->
-        <input type="hidden" name="Blended average CO2 saving per 1 DD vehicle/ km (g)" value="1548.869578125">
-        <input type="hidden" name="Blended average NOx saving per 1 DD vehicle/ km (g)" value="5.08163528645833">
-        <input type="hidden" name="Blended average PM saving per 1 DD vehicle/ km (g)" value="0.0335630859375">
-        <input type="hidden" name="Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)" value="277.2">
-        <input type="hidden" name="Incremental double capital cost savings (new bev cost - repower)" value="325000">
+        <input type="hidden" name="Blended average CO2 saving per 1 DD vehicle/ km (g)" value="<?= $blended_average_co2_saving_dd ?>">
+        <input type="hidden" name="Blended average NOx saving per 1 DD vehicle/ km (g)" value="<?= $blended_average_nox_saving_dd ?>">
+        <input type="hidden" name="Blended average PM saving per 1 DD vehicle/ km (g)" value="<?= $blended_average_pm_saving_dd ?>">
+        <input type="hidden" name="Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)" value="<?= $incremental_co2_benefit_dd ?>">
+        <input type="hidden" name="Incremental double capital cost savings (new bev cost - repower)" value="<?= $incremental_double_captial_cost_savings ?>">
 
 
         <!--- Other assumptions Single --->
-        <input type="hidden" name="Blended average CO2 saving per 1 SD vehicle/ km (g)" value="1074.427078125">
-        <input type="hidden" name="Blended average NOx saving per 1 SD vehicle/ km (g)" value=" 4.76161197916667">
-        <input type="hidden" name="Blended average PM saving per 1 SD vehicle/ km (g)" value="0.0398515625">
-        <input type="hidden" name="Incremental CO2 benefit vs New SD BEV per 1 vehicle/ km (g)" value="178.2">
-        <input type="hidden" name="Incremental single captial cost savings (new bev cost - repower)" value="185000">
+        <input type="hidden" name="Blended average CO2 saving per 1 SD vehicle/ km (g)" value="<?= $blended_average_co2_saving_sd ?>">
+        <input type="hidden" name="Blended average NOx saving per 1 SD vehicle/ km (g)" value=" <?= $blended_average_nox_saving_sd ?>">
+        <input type="hidden" name="Blended average PM saving per 1 SD vehicle/ km (g)" value="<?= $blended_average_pm_saving_pm ?>">
+        <input type="hidden" name="Incremental CO2 benefit vs New SD BEV per 1 vehicle/ km (g)" value="<?= $incremental_co2_benefit_sd ?>">
+        <input type="hidden" name="Incremental single captial cost savings (new bev cost - repower)" value="<?= $incremental_single_captial_cost_savings ?>">
 
 
         <!--- Assumptions DIESEL--->
