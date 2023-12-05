@@ -77,9 +77,9 @@ $partners = get_posts($args);
                         </div>
                     <?php } ?>
                 </div>
+                <div class="swiper-pagination swiper-pagination-style"></div>
             </div>
         </div>
-        <div class="swiper-pagination swiper-pagination-style"></div>
     <?php } else { ?>
         <div class="partner-wrapper partner-wrapper-grid">
             <div class="swiper mySwiperPartnerGrid">
