@@ -199,20 +199,16 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Double Deck Bus – 6 MPG (47.1 litres/100km)" value="0.471">
         <input type="hidden" name="Single Deck Bus – 8 MPG (47.1 litres/100km)" value="0.353">
         <input type="hidden" name="Cost per km" value="">
-        <input type="hidden" name="BSOG rate England" value="">
-        <input type="hidden" name="Current Rate of BSOG" value="<?= $bsog_nsg_rate ?>">
-        <input type="hidden" name="Maintenance - external (body) - glass, accidents, vandalism" value="750">
-        <input type="hidden" name="Maintenance - internal (drivetrain) - engine parts, suspension, brakes, filters" value="4750">
-        <input type="hidden" name="Upgrades (new engine, gearbox). £20k spend in Yrs 8-10." value="2857">
-        <input type="hidden" name="AdBlue consumption (£500 for 50,000km)" value="0.01">
-        <input type="hidden" name="DPF (diesel particulate filter) clean" value="150">
-        <input type="hidden" name="Battery Electric Energy Consumption (kWh/km)" value="1.15">
+
+
+        <!--- Assumptions ELECTRIC--->
+        <input type="hidden" name="DD Battery Electric Energy Consumption (kWh/km)" value="1.15">
+        <input type="hidden" name="SD Battery Electric Energy Consumption (kWh/km)" value="1.05">
         <input type="hidden" name="Cost per km Electric" value="">
-        <input type="hidden" name="Rate of BSOG/NSG for repowered vehicle" value="<?= $bsog_nsg_rate_repowered ?>">
-        <input type="hidden" name="Maintenance - external (body)" value="750">
-        <input type="hidden" name="Maintenance - internal (drivetrain)" value="1750">
-        <input type="hidden" name="Upgrades" value="0">
-        <input type="hidden" name="Telematics subscription" value="240">
+
+
+        <input type="hidden" name="Current Rate of BSOG" value="<?= $bsog_nsg_rate ?>">
+
 
         <div class="form-part form-result">
             <div class="container">
@@ -364,9 +360,6 @@ function slider_range($label, $measurement, $id)
 <script>
     jQuery(document).ready(function() {
 
-
-
-
         jQuery('#calculate').click(function(e) {
             $annual_average_distance_travel = input_value(input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val())));
 
@@ -503,8 +496,10 @@ function slider_range($label, $measurement, $id)
         single_or_double = jQuery('#single_or_double').val();
         Grant_BSOG_NSG_savings_toggle = jQuery('input[name="Grant (BSOG/NSG) savings"]');
 
+        DD_Battery_Electric_Energy_Consumption = jQuery('input[name="DD Battery Electric Energy Consumption (kWh/km)"]').val();
 
-        
+
+
         //Compute Cost per km
         Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
         jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
@@ -533,13 +528,12 @@ function slider_range($label, $measurement, $id)
 
         //Compute Fuel savings
         if (single_or_double == 'double') {
-            
+            Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG) - (Cost_of_electricity_per_kWh - DD_Battery_Electric_Energy_Consumption)))
         } else {
-
+            Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
         }
 
 
-        Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
         jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
 
         //Compute Maintenance saving
@@ -561,7 +555,7 @@ function slider_range($label, $measurement, $id)
         Total_Lifetime_operational_cost_savings = Total_Annual_operational_cost_savings * num_of_buses;
         jQuery('span[result="Total Lifetime operational cost savings').html('£' + parseInt(Total_Lifetime_operational_cost_savings).toLocaleString('en-US'));
 
-        //Compute Capital cost savings over buying new electric buses
+        //Compute Capital cost savings over buying new electric buses - DONE
         if (single_or_double == 'double') {
             Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_double_captial_cost_savings;
         } else {
