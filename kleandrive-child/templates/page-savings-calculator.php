@@ -15,7 +15,6 @@ function slider_range($label, $measurement, $id)
     $max = carbon_get_theme_option($id . '_max');
     $start = carbon_get_theme_option($id . '_start');
 
-
     $diesel = carbon_get_theme_option('diesel');
     $electricity = carbon_get_theme_option('electricity');
     $elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
