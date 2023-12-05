@@ -169,6 +169,22 @@ function slider_range($label, $measurement, $id)
             <div class="container">
                 <div class="holder py-5">
                     <h4 class="mb-5">Estimated Impacts</h4>
+                    <div class="results-box">
+                        <h3>Capital & Lifetime Operational Savings</h3>
+                        <div class="row g3">
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span> Capital cost savings over buying new electric buses </span></b>
+                                        <span result="Capital cost savings over buying new electric buses"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row g-3">
                         <div class="col-lg-3">
                             <div class="column-holder text-center">
@@ -209,8 +225,8 @@ function slider_range($label, $measurement, $id)
                                     <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                 </div>
                                 <div class="result-heading">
-                                    <b><span>Total Annual operational cost savings</span></b>
-                                    <span result="Total Annual operational cost savings"></span>
+                                    <b><span>Total Lifetime operational cost savings</span></b>
+                                    <span result="Total Lifetime operational cost savings"></span>
 
                                 </div>
                             </div>
@@ -251,17 +267,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="column-holder text-center">
-                                <div class="result-icon">
-                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                </div>
-                                <div class="result-heading">
-                                    <b><span> Capital cost savings over buying new electric buses </span></b>
-                                    <span result="Capital cost savings over buying new electric buses"></span>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -429,10 +435,10 @@ function slider_range($label, $measurement, $id)
         jQuery('span[result="Total Particulate Matter damage costs saved"]').html('£' + parseInt(Total_Particulate_Matter_damage_costs_saved).toLocaleString('en-US'));
 
 
-        //Compute Total Annual operational cost savings 
+        //Compute Total Lifetime operational cost savings 
 
         Total_Annual_operational_cost_savings = Wholesale_price_of_diesel * average_remaining_life * num_of_buses / 3;
-        jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
+        jQuery('span[result="Total Lifetime operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
 
         //Compute Fuel savings
 
