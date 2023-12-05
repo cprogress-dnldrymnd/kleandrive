@@ -7,6 +7,12 @@
 
 <?php
 $description = carbon_get_the_post_meta('description');
+$diesel = carbon_get_theme_option('diesel');
+$electricity = carbon_get_theme_option('electricity');
+$elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
+$elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
+$bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
+$bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');
 function slider_range($label, $measurement, $id)
 {
     ob_start();
@@ -15,12 +21,7 @@ function slider_range($label, $measurement, $id)
     $max = carbon_get_theme_option($id . '_max');
     $start = carbon_get_theme_option($id . '_start');
 
-    $diesel = carbon_get_theme_option('diesel');
-    $electricity = carbon_get_theme_option('electricity');
-    $elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
-    $elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
-    $bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
-    $bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');
+  
 ?>
     <div class="slider-input-holder">
         <div class="label">
