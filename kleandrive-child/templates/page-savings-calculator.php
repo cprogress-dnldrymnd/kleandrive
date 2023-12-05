@@ -108,7 +108,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                                 <select name="single_or_double" id="single_or_double">
                                     <option value="single"> Single </option>
-                                    <option value="double"> Double </option>
+                                    <option value="double" selected> Double </option>
                                 </select>
                                 <div class="description mt-3">
                                     <p>Double deckers are generally heavier and have worst fuel consumption so our calculator accounts for this difference. Plus new vehicles and repowering costs varying with this distinction.</p>
