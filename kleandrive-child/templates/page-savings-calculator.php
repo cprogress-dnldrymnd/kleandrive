@@ -252,7 +252,7 @@ function slider_range($label, $measurement, $id)
                                         <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                     </div>
                                     <div class="result-heading">
-                                        <b><span> Capital cost savings over buying new electric buses </span></b>
+                                        <b><span> <strong>Capital</strong> cost savings over buying new electric buses </span></b>
                                         <span result="Capital cost savings over buying new electric buses"></span>
                                     </div>
                                 </div>
