@@ -191,7 +191,12 @@ function slider_range($label, $measurement, $id)
         $incremental_co2_benefit_dd = carbon_get_theme_option('incremental_co2_benefit_dd');
         $incremental_single_captial_cost_savings = carbon_get_theme_option('incremental_single_captial_cost_savings');
         $incremental_double_captial_cost_savings = carbon_get_theme_option('incremental_double_captial_cost_savings');
-        // $ = carbon_get_theme_option('');
+
+
+         $double_deck_bus_diesel = carbon_get_theme_option('double_deck_bus_diesel');
+         $single_deck_bus_diesel = carbon_get_theme_option('single_deck_bus_diesel');
+         $dd_battery_electric_energy_consumption = carbon_get_theme_option('dd_battery_electric_energy_consumption');
+         $sd_battery_electric_energy_consumption = carbon_get_theme_option('sd_battery_electric_energy_consumption');
 
 
         ?>
@@ -217,14 +222,14 @@ function slider_range($label, $measurement, $id)
 
 
         <!--- Assumptions DIESEL--->
-        <input type="hidden" name="Double Deck Bus – 6 MPG (47.1 litres/100km)" value="0.471">
-        <input type="hidden" name="Single Deck Bus – 8 MPG (47.1 litres/100km)" value="0.353">
+        <input type="hidden" name="Double Deck Bus – 6 MPG (47.1 litres/100km)" value="<?= $double_deck_bus_diesel ?>">
+        <input type="hidden" name="Single Deck Bus – 8 MPG (47.1 litres/100km)" value="<?= $single_deck_bus_diesel ?>">
         <input type="hidden" name="Cost per km" value="">
 
 
         <!--- Assumptions ELECTRIC--->
-        <input type="hidden" name="DD Battery Electric Energy Consumption (kWh/km)" value="1.15">
-        <input type="hidden" name="SD Battery Electric Energy Consumption (kWh/km)" value="1.05">
+        <input type="hidden" name="DD Battery Electric Energy Consumption (kWh/km)" value="<?= $dd_battery_electric_energy_consumption ?>">
+        <input type="hidden" name="SD Battery Electric Energy Consumption (kWh/km)" value="<?= $sd_battery_electric_energy_consumption ?>">
         <input type="hidden" name="Cost per km Electric" value="">
 
 
