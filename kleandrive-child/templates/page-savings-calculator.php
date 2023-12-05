@@ -598,7 +598,7 @@ function slider_range($label, $measurement, $id)
 
 
         //Compute Total Lifetime operational cost savings
-        Total_Lifetime_operational_cost_savings = Fuel_savings + Maintenance_saving;
+        Total_Lifetime_operational_cost_savings = Total_Annual_operational_cost_savings * average_remaining_life;
         jQuery('span[result="Total Lifetime operational cost savings').html('£' + Math.round(Total_Lifetime_operational_cost_savings).toLocaleString('en-US'));
 
         //Compute Capital cost savings over buying new electric buses - DONE
