@@ -126,7 +126,7 @@ function slider_range($label, $measurement, $id)
                                     <label for="cost_of_diesel" class="form-label">Current cost of diesel £/litre</label>
                                 </div>
                                 <div class="slider-input mb-3">
-                                    <input type="text" class="calculation-input fill_inited" id="cost_of_diesel" name="cost_of_diesel" value="1.35">
+                                    <input type="text" class="calculation-input fill_inited" id="cost_of_diesel" name="Wholesale price of diesel (Large Fleet Operator)" value="1.35">
                                     £
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ function slider_range($label, $measurement, $id)
                                     <label for="cost_of_electricity" class="form-label">Cost of electricity £/kWh</label>
                                 </div>
                                 <div class="slider-input mb-3">
-                                    <input type="text" class="calculation-input fill_inited" id="cost_of_electricity" name="cost_of_electricity" value="0.11">
+                                    <input type="text" class="calculation-input fill_inited" id="cost_of_electricity" name="Cost of electricity per kWh" value="0.11">
                                     £
                                 </div>
                             </div>
@@ -170,7 +170,6 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Incremental double capital cost savings (new bev cost - repower)" value="325000">
 
         <!--- Assumptions --->
-        <input type="hidden" name="Wholesale price of diesel (Large Fleet Operator)" value="<?= $diesel ?>">
         <input type="hidden" name="Double Deck Bus – 6 MPG (47.1 litres/100km)" value="0.471">
         <input type="hidden" name="Cost per km" value="">
         <input type="hidden" name="BSOG rate England" value="">
@@ -180,7 +179,6 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Upgrades (new engine, gearbox). £20k spend in Yrs 8-10." value="2857">
         <input type="hidden" name="AdBlue consumption (£500 for 50,000km)" value="0.01">
         <input type="hidden" name="DPF (diesel particulate filter) clean" value="150">
-        <input type="hidden" name="Cost of electricity per kWh" value="<?= $electricity ?>">
         <input type="hidden" name="Battery Electric Energy Consumption (kWh/km)" value="1.15">
         <input type="hidden" name="Cost per km Electric" value="">
         <input type="hidden" name="Rate of BSOG/NSG for repowered vehicle" value="<?= $bsog_nsg_rate_repowered ?>">
