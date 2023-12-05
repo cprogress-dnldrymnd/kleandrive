@@ -164,7 +164,7 @@ function slider_range($label, $measurement, $id)
             </div>
             <div class="button-box">
                 <div class="sc_item_button sc_button_wrap">
-                    <a href="#calculator" id="calculate-results" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left">
+                    <a href="#calculator-results" id="calculate-results" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left">
                         <span class="sc_button_text"><span class="sc_button_title">Calculate Results</span></span>
                     </a>
                 </div>
@@ -219,7 +219,7 @@ function slider_range($label, $measurement, $id)
 
 
 
-        <div class="form-part form-result">
+        <div class="form-part form-result" id="calculator-results">
             <div class="container">
                 <div class="holder py-5">
                     <h4 class="mb-5">Estimated Impacts</h4>
@@ -375,7 +375,7 @@ function slider_range($label, $measurement, $id)
         range_slider('slider-range-num_of_buses', 'num_of_buses', false);
         range_slider('slider-range-average_remaining_life', 'average_remaining_life', true);
         range_slider('slider-range-existing_vehicle_service_and_maintenance_cost', 'existing_vehicle_service_and_maintenance_cost', false);
-        calculate();
+
         function range_slider($range_id, $input_id, $allow_decimal = false) {
             var rangeSlider = document.getElementById($range_id);
             start = parseFloat(rangeSlider.getAttribute("start"));
@@ -430,6 +430,9 @@ function slider_range($label, $measurement, $id)
             var inputFormat = document.getElementById($input_id);
             rangeSlider.noUiSlider.on('update', function(values, handle) {
                 inputFormat.value = values[handle];
+
+                calculate();
+
             });
 
             inputFormat.addEventListener('change', function() {
@@ -439,6 +442,17 @@ function slider_range($label, $measurement, $id)
 
     });
 
+    jQuery('#single_or_double').change(function(e) {
+        calculate();
+    });
+
+    jQuery('.calculation-input').change(function(e) {
+        calculate();
+    });
+
+    jQuery('.calculation-input').keyup(function(e) {
+        calculate();
+    });
     jQuery('#calculate-results').click(function(e) {
         calculate();
     });
