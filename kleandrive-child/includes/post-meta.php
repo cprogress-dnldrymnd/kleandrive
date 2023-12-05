@@ -81,7 +81,7 @@ Container::make('theme_options', __('Savings Calculator'))
     ))
     ->add_tab('Diesel/Electric', array(
         Field::make('html', 'diesel_html')->set_html('<h4>Diesel</h4>')->set_classes('styled'),
-        Field::make('text', 'double_deck_bus_diese', 'doubl – 6 MPG (47.1 litres/100km)')->set_attribute('type', 'number'),
+        Field::make('text', 'double_deck_bus_diesel', 'Double Deck Bus – 6 MPG (47.1 litres/100km)')->set_attribute('type', 'number'),
         Field::make('text', 'single_deck_bus_diesel', 'Single Deck Bus – 8 MPG (47.1 litres/100km)')->set_attribute('type', 'number'),
         Field::make('text', 'bsog_nsg_rate', 'BSOG rate England ')->set_attribute('type', 'number'),
 
