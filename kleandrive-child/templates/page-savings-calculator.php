@@ -267,7 +267,7 @@ function slider_range($label, $measurement, $id)
                                         <p>
                                             Certified KleanDrive repowers attract increased BSOG payments in the UK. Click here if you're eligible.
                                             <label class="switch">
-                                                <input type="checkbox" name="Grant (BSOG/NSG) savings">
+                                                <input type="checkbox" class="calculation-input" name="Grant (BSOG/NSG) savings">
                                                 <span class="slider round"></span>
                                             </label>
                                         </p>
@@ -342,16 +342,8 @@ function slider_range($label, $measurement, $id)
 
 
 
-
-        jQuery('.calculation-input').change(function(e) {
-            console.log('teststs');
-        });
-
         jQuery('#calculate').click(function(e) {
             $annual_average_distance_travel = input_value(input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val())));
-
-
-
 
             //jQuery('#Capitalcostsavingsoverbuyingnewelectricbuses').text($Capitalcostsavingsoverbuyingnewelectricbuses.toLocaleString('en-US'));
 
@@ -370,6 +362,9 @@ function slider_range($label, $measurement, $id)
         range_slider('slider-range-num_of_buses', 'num_of_buses', false);
         range_slider('slider-range-average_remaining_life', 'average_remaining_life', true);
         range_slider('slider-range-existing_vehicle_service_and_maintenance_cost', 'existing_vehicle_service_and_maintenance_cost', false);
+        jQuery('.calculation-input').change(function(e) {
+            calculate();
+        });
 
         function range_slider($range_id, $input_id, $allow_decimal = false) {
             var rangeSlider = document.getElementById($range_id);
@@ -472,7 +467,7 @@ function slider_range($label, $measurement, $id)
         Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
         single_or_double = jQuery('#single_or_double').val();
         Grant_BSOG_NSG_savings_toggle = jQuery() = jQuery('input[name="Grant (BSOG/NSG) savings"])').val();
-        
+
 
         //Compute Cost per km
         Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
