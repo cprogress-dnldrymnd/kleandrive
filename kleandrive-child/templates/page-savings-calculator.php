@@ -480,23 +480,24 @@ function slider_range($label, $measurement, $id)
         Double_Deck_Bus_6_MPG = input_value(parseFloat(jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val()));
         Single_Deck_Bus_8_MPG = input_value(parseFloat(jQuery('input[name="Single Deck Bus – 8 MPG (47.1 litres/100km)"]').val()));
         Cost_of_electricity_per_kWh = input_value(parseFloat(jQuery('input[name="Cost of electricity per kWh"]').val()));
-        Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val()));
-        Blended_average_CO2_saving = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 vehicle/ km (g)"]').val()));
-        Incremental_CO2_benefit_vs_New_BEV = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)"]').val()));
         NOx_Road_Transport = input_value(parseFloat(jQuery('input[name="NOx Road Transport / tonne (£2022)"]').val()));
-        Blended_average_NOx_saving = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 vehicle/ km (g)"]').val()));
-        Blended_average_PM_saving = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 vehicle/ km (g)"]').val()));
         Particulate_Matter_Road_Transport = input_value(parseFloat(jQuery('input[name="Particulate Matter Road Transport PM2.5/ tonne (£2002)"]').val()));
         Cost_per_km = input_value(parseFloat(jQuery('input[name="Cost per km"]').val()));
         Cost_per_km_electric = input_value(parseFloat(jQuery('input[name="Cost per km Electric"]').val()));
         Current_Rate_of_BSOG = input_value(parseFloat(jQuery('input[name="Current Rate of BSOG"]').val()));
-        Rate_of_BSOG_NSG_for_repowered_vehicle = input_value(parseFloat(jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val()));
-        Incremental_single_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val()));
-        Incremental_double_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val()))
-
 
         DD_Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="DD Battery Electric Energy Consumption (kWh/km)"]').val()));
         SD_Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="SD Battery Electric Energy Consumption (kWh/km)"]').val()));
+        Blended_average_CO2_saving_per_1_DD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 DD vehicle/ km (g)"]').val()));
+        Blended_average_NOx_saving_per_1_DD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 DD vehicle/ km (g)"]').val()));
+        Blended_average_PM_saving_per_1_DD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 DD vehicle/ km (g)"]').val()));
+        Blended_average_CO2_saving_per_1_SD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 SD vehicle/ km (g)"]').val()));
+        Blended_average_NOx_saving_per_1_SD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average NOx saving per 1 SD vehicle/ km (g)"]').val()));
+        Blended_average_PM_saving_per_1_SD_vehicle = input_value(parseFloat(jQuery('input[name="Blended average PM saving per 1 SD vehicle/ km (g)"]').val()));
+        Incremental_CO2_benefit_vs_New_SD_BEV_per_1_vehicle = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New SD BEV per 1 vehicle/ km (g)"]').val()));
+        Incremental_CO2_benefit_vs_New_DD_BEV_per_1_vehicle = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)"]').val()));
+        Incremental_single_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val()));
+        Incremental_double_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val()))
 
 
         single_or_double = jQuery('#single_or_double').val();
@@ -511,7 +512,12 @@ function slider_range($label, $measurement, $id)
         jQuery('input[name="Cost per km Electric"]').val(Cost_per_km_val);
 
         //Compute Total CO2 saved
-        total_co2_saved_val = (Blended_average_CO2_saving + Incremental_CO2_benefit_vs_New_BEV) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
+        if (single_or_double == 'double') {
+            total_co2_saved_val = (Blended_average_CO2_saving_per_1_DD_vehicle + Incremental_CO2_benefit_vs_New_DD_BEV_per_1_vehicle) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
+        } else {
+            total_co2_saved_val = (Blended_average_CO2_saving_per_1_SD_vehicle + Incremental_CO2_benefit_vs_New_SD_BEV_per_1_vehicle) * num_of_buses * average_remaining_life * annual_average_distance_travel / 1000000;
+        }
+
         jQuery('span[result="Total CO2 saved"]').html(parseInt(total_co2_saved_val).toLocaleString('en-US') + '<div class="type">tonnes</div>');
 
 
