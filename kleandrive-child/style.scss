@@ -1757,11 +1757,15 @@ section.savings-calculator {
             }
             .row {
                 .column-holder {
-                    background-color: var(--white-color);
-                    padding: 2rem;
                     height: 100%;
-                    &.column-bosg {
+                    &:not(.column-bosg-holder) {
+                        padding: 2rem;
+                        background-color: var(--white-color);
+                    }
+                    .column-bosg {
                         opacity: 0.3;
+                        padding: 2rem;
+                        background-color: var(--white-color);
                     }
 
                     > div {

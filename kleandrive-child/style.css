@@ -1090,11 +1090,14 @@ section.savings-calculator {
       transform: translate(15px, -50%) rotate(135deg);
       background-color: var(--accent-color); }
   section.savings-calculator .form-part.form-result .row .column-holder {
-    background-color: var(--white-color);
-    padding: 2rem;
     height: 100%; }
-    section.savings-calculator .form-part.form-result .row .column-holder.column-bosg {
-      opacity: 0.3; }
+    section.savings-calculator .form-part.form-result .row .column-holder:not(.column-bosg-holder) {
+      padding: 2rem;
+      background-color: var(--white-color); }
+    section.savings-calculator .form-part.form-result .row .column-holder .column-bosg {
+      opacity: 0.3;
+      padding: 2rem;
+      background-color: var(--white-color); }
     section.savings-calculator .form-part.form-result .row .column-holder > div:not(:last-child) {
       margin-bottom: 1rem; }
     section.savings-calculator .form-part.form-result .row .column-holder .result-heading span[result] {

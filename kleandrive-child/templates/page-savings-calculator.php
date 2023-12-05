@@ -251,15 +251,17 @@ function slider_range($label, $measurement, $id)
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="column-holder column-bosg text-center">
-                                    <div class="result-icon">
-                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                    </div>
-                                    <div class="result-heading">
-                                        <b><span> Grant (BSOG/NSG) savings </span></b>
-                                        <span result="Grant (BSOG/NSG) savings"></span>
-                                    </div>
+                                <div class="column-holder column-bosg-holder text-center">
+                                    <div class="column-bosg ">
+                                        <div class="result-icon">
+                                            <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                        </div>
+                                        <div class="result-heading">
+                                            <b><span> Grant (BSOG/NSG) savings </span></b>
+                                            <span result="Grant (BSOG/NSG) savings"></span>
+                                        </div>
 
+                                    </div>
                                     <div class="bosg-toggle">
                                         <!-- Rounded switch -->
                                         <p>
