@@ -74,8 +74,8 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('text', 'blended_average_co2_saving_sd', 'Blended average CO2 saving per 1 SD vehicle/ km (g)')->set_attribute('type', 'number'),
         Field::make('text', 'blended_average_nox_saving_sd', 'Blended average NOx saving per 1 SD vehicle/ km (g)')->set_attribute('type', 'number'),
         Field::make('text', 'blended_average_pm_saving_pm', 'Blended average PM saving per 1 SD vehicle/ km (g)')->set_attribute('type', 'number'),
-        Field::make('text', 'incremental_CO2_benefit_sd', 'Incremental CO2 benefit vs New SD BEV per 1 vehicle/ km (g)')->set_attribute('type', 'number'),
-        Field::make('text', 'incremental_CO2_benefit_dd', 'Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'incremental_co2_benefit_sd', 'Incremental CO2 benefit vs New SD BEV per 1 vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'incremental_co2_benefit_dd', 'Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)')->set_attribute('type', 'number'),
         Field::make('text', 'incremental_single_captial_cost_savings', 'Incremental single captial cost savings (new bev cost - repower)')->set_attribute('type', 'number'),
         Field::make('text', 'incremental_double_captial_cost_savings', 'Incremental double capital cost savings (new bev cost - repower)')->set_attribute('type', 'number'),
     ));
