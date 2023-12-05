@@ -542,7 +542,7 @@ function slider_range($label, $measurement, $id)
 
         //Compute Total NOx damage costs saved
         if (single_or_double == 'double') {
-            Total_NOx_damage_costs_saved = annual_average_distance_travel * average_remaining_life * num_of_buses * NOx_Road_Transport * Blended_average_NOx_saving_per_1_DD_vehicle / 1000000;
+            Total_NOx_damage_costs_saved = (annual_average_distance_travel * average_remaining_life * num_of_buses * NOx_Road_Transport * Blended_average_NOx_saving_per_1_DD_vehicle) / 1000000;
         } else {
             Total_NOx_damage_costs_saved = annual_average_distance_travel * average_remaining_life * num_of_buses * NOx_Road_Transport * Blended_average_NOx_saving_per_1_SD_vehicle / 1000000;
         }
