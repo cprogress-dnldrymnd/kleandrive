@@ -80,8 +80,18 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('text', 'incremental_double_captial_cost_savings', 'Incremental double capital cost savings (new bev cost - repower)')->set_attribute('type', 'number'),
     ))
     ->add_tab('Diesel/Electric', array(
-        Field::make('text', 'bsog_nsg_rate', 'Current Rate of BSOG/NSG ')->set_attribute('type', 'number'),
-        Field::make('text', 'bsog_nsg_rate_repowered', 'Rate of BSOG/NSG for repowered vehicle ')->set_attribute('type', 'number'),
+        Field::make('html', 'diesel_html')->set_html('<h4>Diesel</h4>')->set_classes('styled'),
+        Field::make('text', 'double_deck_bus_diese', 'doubl – 6 MPG (47.1 litres/100km)')->set_attribute('type', 'number'),
+        Field::make('text', 'single_deck_bus_diesel', 'Single Deck Bus – 8 MPG (47.1 litres/100km)')->set_attribute('type', 'number'),
+        Field::make('text', 'bsog_nsg_rate', 'BSOG rate England ')->set_attribute('type', 'number'),
+
+        Field::make('html', 'electric_html')->set_html('<h4>Electric</h4>')->set_classes('styled'),
+        Field::make('text', 'dd_battery_electric_energy_consumption', 'DD Battery Electric Energy Consumption (kWh/km)')->set_attribute('type', 'number'),
+        Field::make('text', 'sd_battery_electric_energy_consumption', 'SD Battery Electric Energy Consumption (kWh/km)')->set_attribute('type', 'number'),
+        Field::make('text', 'bsog_nsg_rate_repowered', 'BSOG rate England ')->set_attribute('type', 'number'),
+
+
+
     ));
 
 
