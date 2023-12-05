@@ -211,7 +211,7 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="BSOG rate England Electric" value="<?= $bsog_nsg_rate_repowered ?>">
 
 
-        
+
 
         <div class="form-part form-result">
             <div class="container">
@@ -511,7 +511,7 @@ function slider_range($label, $measurement, $id)
         BSOG_rate_England_Electric = input_value(parseFloat(jQuery('input[name="BSOG rate England Electric"]').val()))
 
 
-        
+
 
 
         single_or_double = jQuery('#single_or_double').val();
@@ -542,9 +542,9 @@ function slider_range($label, $measurement, $id)
 
         //Compute Total NOx damage costs saved
         if (single_or_double == 'double') {
-            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving_per_1_DD_vehicle / 1000000;
+            Total_NOx_damage_costs_saved = annual_average_distance_travel * average_remaining_life * num_of_buses * NOx_Road_Transport * Blended_average_NOx_saving_per_1_DD_vehicle / 1000000;
         } else {
-            Total_NOx_damage_costs_saved = num_of_buses * average_remaining_life * annual_average_distance_travel * NOx_Road_Transport * Blended_average_NOx_saving_per_1_SD_vehicle / 1000000;
+            Total_NOx_damage_costs_saved = annual_average_distance_travel * average_remaining_life * num_of_buses * NOx_Road_Transport * Blended_average_NOx_saving_per_1_SD_vehicle / 1000000;
         }
         jQuery('span[result="Total NOx damage costs saved"]').html('£' + parseInt(Total_NOx_damage_costs_saved).toLocaleString('en-US'));
 
