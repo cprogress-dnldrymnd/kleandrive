@@ -129,6 +129,9 @@ function slider_range($label, $measurement, $id)
                             <?php
                             $diesel = carbon_get_theme_option('diesel');
                             $electricity = carbon_get_theme_option('electricity');
+                            $diesel_description = carbon_get_theme_option('diesel_description');
+                            $electricity_description = carbon_get_theme_option('electricity_description');
+
                             ?>
                             <div class="slider-input-holder">
                                 <div class="label">
@@ -139,9 +142,7 @@ function slider_range($label, $measurement, $id)
                                     £
                                 </div>
                                 <div class="description mt-3">
-                                    <p>
-                                        By accurately knowing what you are paying for diesel, we can refine our model accuracy.
-                                    </p>
+                                    <?= wpautop($diesel_description) ?>
                                 </div>
                             </div>
                             <div class="slider-input-holder">
@@ -153,9 +154,7 @@ function slider_range($label, $measurement, $id)
                                     £
                                 </div>
                                 <div class="description mt-3">
-                                    <p>
-                                        Our KleanDrive partners can typically arrange Power Purchase Agreements (PPA) at only £0.11 p/kWh, however, if you are locked into a PPA today, please tell us the rate to refine our model assumptions.
-                                    </p>
+                                    <?= wpautop($electricity_description) ?>
                                 </div>
                             </div>
                         </div>
