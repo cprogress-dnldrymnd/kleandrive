@@ -207,8 +207,11 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="Cost per km Electric" value="">
 
 
-        <input type="hidden" name="Current Rate of BSOG" value="<?= $bsog_nsg_rate ?>">
+        <input type="hidden" name="BSOG rate England Diesel" value="<?= $bsog_nsg_rate ?>">
+        <input type="hidden" name="BSOG rate England Electric" value="<?= $bsog_nsg_rate_repowered ?>">
 
+
+        
 
         <div class="form-part form-result">
             <div class="container">
@@ -502,7 +505,13 @@ function slider_range($label, $measurement, $id)
         Incremental_CO2_benefit_vs_New_DD_BEV_per_1_vehicle = input_value(parseFloat(jQuery('input[name="Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)"]').val()));
 
         Incremental_single_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val()));
-        Incremental_double_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val()))
+        Incremental_double_captial_cost_savings = input_value(parseFloat(jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val()));
+
+        BSOG_rate_England_Diesel = input_value(parseFloat(jQuery('input[name="BSOG rate England Diesel"]').val()))
+        BSOG_rate_England_Electric = input_value(parseFloat(jQuery('input[name="BSOG rate England Electric"]').val()))
+
+
+        
 
 
         single_or_double = jQuery('#single_or_double').val();
@@ -550,7 +559,7 @@ function slider_range($label, $measurement, $id)
 
 
         //Compute Grant (BSOG/NSG) savings
-        Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) - (Current_Rate_of_BSOG * annual_average_distance_travel);
+        Grant_BSOG_NSG_savings = (BSOG_rate_England_Electric * annual_average_distance_travel) - (BSOG_rate_England_Diesel * annual_average_distance_travel);
         jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
         //Compute Fuel savings
