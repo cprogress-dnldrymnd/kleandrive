@@ -1627,6 +1627,11 @@ section.savings-calculator {
         margin-right: 2rem;
         #calculate-results {
             background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            &:hover, &:active, &:focus {
+                background-color: var(--accent-color);
+                color: var(--white-color);
+            }
         }
     }
     .results-holder {
