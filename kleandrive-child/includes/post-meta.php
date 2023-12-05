@@ -37,7 +37,7 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('textarea', 'num_of_buses_desc', 'Description'),
         Field::make('textarea', 'single_double_desc', 'Are they single or double deck buses Description'),
 
-        
+
         Field::make('html', 'annual_average_distance_travel_html')->set_html('<h4>Annual average distance travelled per bus</h4>')->set_classes('styled'),
         Field::make('text', 'annual_average_distance_travel_min', 'Min')->set_attribute('type', 'number')->set_width(33),
         Field::make('text', 'annual_average_distance_travel_max', 'Max')->set_attribute('type', 'number')->set_width(33),
@@ -62,7 +62,7 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('text', 'electricity', 'Cost of electricity £/kWh default value ')->set_attribute('type', 'number'),
         Field::make('textarea', 'electricity_description', 'Cost of electricity Description'),
     ))
-    ->add_tab('ASSUMPTIONS', array(
+    ->add_tab('Assumptions', array(
         Field::make('html', 'damage_cost_html')->set_html('<h4>Damage cost assumptions</h4>')->set_classes('styled'),
         Field::make('text', 'nox_road_transport', 'NOx Road Transport / tonne (£2022)')->set_attribute('type', 'number'),
         Field::make('text', 'particulate_matter_road_transport', 'Particulate Matter Road Transport PM2.5/ tonne (£2002)')->set_attribute('type', 'number'),
@@ -78,6 +78,10 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('text', 'incremental_co2_benefit_dd', 'Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)')->set_attribute('type', 'number'),
         Field::make('text', 'incremental_single_captial_cost_savings', 'Incremental single captial cost savings (new bev cost - repower)')->set_attribute('type', 'number'),
         Field::make('text', 'incremental_double_captial_cost_savings', 'Incremental double capital cost savings (new bev cost - repower)')->set_attribute('type', 'number'),
+    ))
+    ->add_tab('Diesel/Electric', array(
+        Field::make('text', 'bsog_nsg_rate', 'Current Rate of BSOG/NSG ')->set_attribute('type', 'number'),
+        Field::make('text', 'bsog_nsg_rate_repowered', 'Rate of BSOG/NSG for repowered vehicle ')->set_attribute('type', 'number'),
     ));
 
 
