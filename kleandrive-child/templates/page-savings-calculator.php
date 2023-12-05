@@ -437,8 +437,6 @@ function slider_range($label, $measurement, $id)
         calculate();
     });
 
-
-
     jQuery('.calculation-input').change(function(e) {
         calculate();
     });
@@ -517,6 +515,7 @@ function slider_range($label, $measurement, $id)
         //Compute Total Lifetime operational cost savings 
         if (Grant_BSOG_NSG_savings_toggle.is(":checked")) {
             Total_Annual_operational_cost_savings = Fuel_savings + Maintenance_saving + Grant_BSOG_NSG_savings;
+            jQuery('.column-bosg').addClass('active');
         } else {
             Total_Annual_operational_cost_savings = Fuel_savings + Maintenance_saving;
         }

@@ -1098,6 +1098,8 @@ section.savings-calculator {
       opacity: 0.3;
       padding: 2rem;
       background-color: var(--white-color); }
+      section.savings-calculator .form-part.form-result .row .column-holder .column-bosg.active {
+        opacity: 1; }
     section.savings-calculator .form-part.form-result .row .column-holder > div:not(:last-child) {
       margin-bottom: 1rem; }
     section.savings-calculator .form-part.form-result .row .column-holder .result-heading span[result] {
