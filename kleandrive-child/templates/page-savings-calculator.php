@@ -473,7 +473,7 @@ function slider_range($label, $measurement, $id)
         Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
         Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
         single_or_double = jQuery('#single_or_double').val();
-        Grant_BSOG_NSG_savings_toggle = jQuery('input[name="Grant (BSOG/NSG) savings"]').val();
+        Grant_BSOG_NSG_savings_toggle = jQuery('input[name="Grant (BSOG/NSG) savings"]');
 
 
         //Compute Cost per km
@@ -517,6 +517,12 @@ function slider_range($label, $measurement, $id)
 
         //Compute Total Lifetime operational cost savings
         console.log(Grant_BSOG_NSG_savings_toggle);
+
+        if(Grant_BSOG_NSG_savings_toggle.is(":checked")) {
+            console.log('yes');
+        } else {
+            console.log('no');
+        }
         Total_Lifetime_operational_cost_savings = Total_Annual_operational_cost_savings;
         jQuery('span[result="Total Lifetime operational cost savings').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
