@@ -534,12 +534,10 @@ function slider_range($label, $measurement, $id)
         } else {
             Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Single_Deck_Bus_8_MPG) - (Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption))) * average_remaining_life * num_of_buses;
         }
-
-
         jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
 
         //Compute Maintenance saving
-        Maintenance_saving = existing_vehicle_service_and_maintenance_cost - 2750;
+        Maintenance_saving = (existing_vehicle_service_and_maintenance_cost - 2750) * average_remaining_life * num_of_buses;
         jQuery('span[result="Maintenance saving"]').html('£' + parseInt(Maintenance_saving).toLocaleString('en-US'));
 
         //Compute Total Lifetime operational cost savings 
