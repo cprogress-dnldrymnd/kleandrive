@@ -193,10 +193,10 @@ function slider_range($label, $measurement, $id)
         $incremental_double_captial_cost_savings = carbon_get_theme_option('incremental_double_captial_cost_savings');
 
 
-         $double_deck_bus_diesel = carbon_get_theme_option('double_deck_bus_diesel');
-         $single_deck_bus_diesel = carbon_get_theme_option('single_deck_bus_diesel');
-         $dd_battery_electric_energy_consumption = carbon_get_theme_option('dd_battery_electric_energy_consumption');
-         $sd_battery_electric_energy_consumption = carbon_get_theme_option('sd_battery_electric_energy_consumption');
+        $double_deck_bus_diesel = carbon_get_theme_option('double_deck_bus_diesel');
+        $single_deck_bus_diesel = carbon_get_theme_option('single_deck_bus_diesel');
+        $dd_battery_electric_energy_consumption = carbon_get_theme_option('dd_battery_electric_energy_consumption');
+        $sd_battery_electric_energy_consumption = carbon_get_theme_option('sd_battery_electric_energy_consumption');
 
 
         ?>
@@ -281,7 +281,7 @@ function slider_range($label, $measurement, $id)
                                         <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                     </div>
                                     <div class="result-heading">
-                                        <b><span> Fuel savings </span></b>
+                                        <b><span> <strong>Fuel</strong> savings </span></b>
                                         <span result="Fuel savings"></span>
 
                                     </div>
@@ -293,7 +293,7 @@ function slider_range($label, $measurement, $id)
                                         <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                     </div>
                                     <div class="result-heading">
-                                        <b><span> Maintenance saving </span></b>
+                                        <b><span> <strong>Maintenance</strong> saving </span></b>
                                         <span result="Maintenance saving"></span>
 
                                     </div>
@@ -306,7 +306,7 @@ function slider_range($label, $measurement, $id)
                                             <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                         </div>
                                         <div class="result-heading">
-                                            <b><span> Grant (BSOG/NSG) savings </span></b>
+                                            <b><span> <strong>Grant</strong> (BSOG/NSG) savings </span></b>
                                             <span result="Grant (BSOG/NSG) savings"></span>
                                         </div>
 
@@ -347,7 +347,7 @@ function slider_range($label, $measurement, $id)
                                         <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                     </div>
                                     <div class="result-heading">
-                                        <b><span> Total CO<sub>2</sub> saved </span></b>
+                                        <b><span> Total <strong>CO<sub>2</sub></strong> saved </span></b>
                                         <span result="Total CO2 saved"></span>
                                     </div>
                                 </div>
@@ -358,7 +358,7 @@ function slider_range($label, $measurement, $id)
                                         <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                     </div>
                                     <div class="result-heading">
-                                        <b><span>Total NOx damage costs saved</span></b>
+                                        <b><span>Total <strong>NOx</strong> damage costs saved</span></b>
                                         <span result="Total NOx damage costs saved"></span>
                                     </div>
                                 </div>
@@ -369,7 +369,7 @@ function slider_range($label, $measurement, $id)
                                         <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                     </div>
                                     <div class="result-heading">
-                                        <b><span>Total Particulate Matter damage costs saved</span></b>
+                                        <b><span>Total <strong>Particulate Matter</strong> damage costs saved</span></b>
                                         <span result="Total Particulate Matter damage costs saved"></span>
                                     </div>
                                 </div>
