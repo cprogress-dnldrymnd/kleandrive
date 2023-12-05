@@ -1760,6 +1760,20 @@ section.savings-calculator {
                     background-color: var(--white-color);
                     padding: 2rem;
                     height: 100%;
+                    &.column-bosg {
+                        opacity: 0.3;
+                    }
+                    .bosg-toggle {
+                        p {
+                            margin-bottom: 0;
+                            margin-top: 1rem;
+                            font-size: 14px;
+                            line-height: 1.2;
+                            label {
+                                display: inline;
+                            }
+                        }
+                    }
                     > div {
                         &:not(:last-child) {
                             margin-bottom: 1rem;
@@ -2069,14 +2083,8 @@ h6 {
     display: inline-block;
     width: 60px;
     height: 34px;
-    & + p {
-        margin-bottom: 0;
-        margin-top: 10px;
-        font-size: 14px;
-        line-height: 1.2;
-    }
-    input {
 
+    input {
         opacity: 0;
         width: 0;
         height: 0;

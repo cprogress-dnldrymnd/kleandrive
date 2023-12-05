@@ -251,7 +251,7 @@ function slider_range($label, $measurement, $id)
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="column-holder text-center">
+                                <div class="column-holder column-bosg text-center">
                                     <div class="result-icon">
                                         <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
                                     </div>
@@ -259,16 +259,16 @@ function slider_range($label, $measurement, $id)
                                         <b><span> Grant (BSOG/NSG) savings </span></b>
                                         <span result="Grant (BSOG/NSG) savings"></span>
                                     </div>
+                                </div>
+                                <div class="bosg-toggle">
                                     <!-- Rounded switch -->
-                                    <label class="switch">
-                                        <input type="checkbox" name="Grant (BSOG/NSG) savings">
-                                        <span class="slider round"></span>
-
-                                    </label>
                                     <p>
                                         Certified KleanDrive repowers attract increased BSOG payments in the UK. Click here if you're eligible.
+                                        <label class="switch">
+                                            <input type="checkbox" name="Grant (BSOG/NSG) savings">
+                                            <span class="slider round"></span>
+                                        </label>
                                     </p>
-
                                 </div>
                             </div>
                             <div class="col-lg-3">
