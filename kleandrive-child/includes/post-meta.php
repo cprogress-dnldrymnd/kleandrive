@@ -31,29 +31,37 @@ Container::make('theme_options', __('Savings Calculator'))
     ->add_tab('Inputs', array(
         Field::make('html', 'style')->set_html('<style>.styled{background-color: #1d2327 !important; color: #fff !important}</style>'),
         Field::make('html', 'num_of_buses_html')->set_html('<h4>Number of buses to be Repowered</h4>')->set_classes('styled'),
-        Field::make('text', 'num_of_buses_min', 'Min')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'num_of_buses_max', 'Max')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'num_of_buses_start', 'Start')->set_attribute( 'type', 'number' ),
+        Field::make('text', 'num_of_buses_min', 'Min')->set_attribute('type', 'number'),
+        Field::make('text', 'num_of_buses_max', 'Max')->set_attribute('type', 'number'),
+        Field::make('text', 'num_of_buses_start', 'Start')->set_attribute('type', 'number'),
         Field::make('textarea', 'num_of_buses_desc', 'Description'),
+
         Field::make('html', 'annual_average_distance_travel_html')->set_html('<h4>Annual average distance travelled per bus</h4>')->set_classes('styled'),
-        Field::make('text', 'annual_average_distance_travel_min', 'Min')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'annual_average_distance_travel_max', 'Max')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'annual_average_distance_travel_start', 'Start')->set_attribute( 'type', 'number' ),
+        Field::make('text', 'annual_average_distance_travel_min', 'Min')->set_attribute('type', 'number'),
+        Field::make('text', 'annual_average_distance_travel_max', 'Max')->set_attribute('type', 'number'),
+        Field::make('text', 'annual_average_distance_travel_start', 'Start')->set_attribute('type', 'number'),
         Field::make('textarea', 'annual_average_distance_travel_desc', 'Description'),
+
         Field::make('html', 'average_remaining_life_html')->set_html('<h4>Average remaining life of the vehicles</h4>')->set_classes('styled'),
-        Field::make('text', 'average_remaining_life_min', 'Min')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'average_remaining_life_max', 'Max')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'average_remaining_life_start', 'Start')->set_attribute( 'type', 'number' ),
+        Field::make('text', 'average_remaining_life_min', 'Min')->set_attribute('type', 'number'),
+        Field::make('text', 'average_remaining_life_max', 'Max')->set_attribute('type', 'number'),
+        Field::make('text', 'average_remaining_life_start', 'Start')->set_attribute('type', 'number'),
         Field::make('textarea', 'average_remaining_life_desc', 'Description'),
+
         Field::make('html', 'existing_vehicle_service_and_maintenance_cost_html')->set_html('<h4>Existing annual diesel vehicle service and maintenance cost</h4>')->set_classes('styled'),
-        Field::make('text', 'existing_vehicle_service_and_maintenance_cost_min', 'Min')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'existing_vehicle_service_and_maintenance_cost_max', 'Max')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'existing_vehicle_service_and_maintenance_cost_start', 'Start')->set_attribute( 'type', 'number' ),
+        Field::make('text', 'existing_vehicle_service_and_maintenance_cost_min', 'Min')->set_attribute('type', 'number'),
+        Field::make('text', 'existing_vehicle_service_and_maintenance_cost_max', 'Max')->set_attribute('type', 'number'),
+        Field::make('text', 'existing_vehicle_service_and_maintenance_cost_start', 'Start')->set_attribute('type', 'number'),
         Field::make('textarea', 'existing_vehicle_service_and_maintenance_cost_desc', 'Description'),
+
+        Field::make('html', 'num_of_buses_html')->set_html('<h4>Fuel Costs</h4>')->set_classes('styled'),
+        Field::make('text', 'bsog_nsg_rate', 'Current cost of diesel £/litre default value')->set_attribute('type', 'number'),
+        Field::make('text', 'bsog_nsg_rate_repowered', 'Cost of electricity £/kWh default value')->set_attribute('type', 'number'),
+
     ))
     ->add_tab('Fuel Costs', array(
-        Field::make('text', 'diesel', 'Diesel')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'electricity', 'Electricity ')->set_attribute( 'type', 'number' ),
+        Field::make('text', 'diesel', 'Diesel')->set_attribute('type', 'number'),
+        Field::make('text', 'electricity', 'Electricity ')->set_attribute('type', 'number'),
     ))
     ->add_tab('Grant Funding', array(
         Field::make('select', 'elegible_for_bsog', 'Are you eleigible for the Bus Service Opertators Grant (BSOG)?')
@@ -66,8 +74,7 @@ Container::make('theme_options', __('Savings Calculator'))
                 'yes' => __('Yes'),
                 'no' => __('No'),
             )),
-        Field::make('text', 'bsog_nsg_rate', 'Current Rate of BSOG/NSG ')->set_attribute( 'type', 'number' ),
-        Field::make('text', 'bsog_nsg_rate_repowered', 'Rate of BSOG/NSG for repowered vehicle ')->set_attribute( 'type', 'number' ),
+
 
     ));
 
