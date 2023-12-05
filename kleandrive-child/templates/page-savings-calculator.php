@@ -169,7 +169,7 @@ function slider_range($label, $measurement, $id)
             <div class="container">
                 <div class="holder py-5">
                     <h4 class="mb-5">Estimated Impacts</h4>
-                    <div class="results-box">
+                    <div class="results-box mb-4">
                         <h3>Capital & Lifetime Operational Savings</h3>
                         <div class="row g3">
                             <div class="col-lg-3">
@@ -183,89 +183,111 @@ function slider_range($label, $measurement, $id)
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span>Total Lifetime operational cost savings</span></b>
+                                        <span result="Total Lifetime operational cost savings"></span>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row g-3">
-                        <div class="col-lg-3">
-                            <div class="column-holder text-center">
-                                <div class="result-icon">
-                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                </div>
-                                <div class="result-heading">
-                                    <b><span> Total CO2 saved </span></b>
-                                    <span result="Total CO2 saved"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="column-holder text-center">
-                                <div class="result-icon">
-                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                </div>
-                                <div class="result-heading">
-                                    <b><span>Total NOx damage costs saved</span></b>
-                                    <span result="Total NOx damage costs saved"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="column-holder text-center">
-                                <div class="result-icon">
-                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                </div>
-                                <div class="result-heading">
-                                    <b><span>Total Particulate Matter damage costs saved</span></b>
-                                    <span result="Total Particulate Matter damage costs saved"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="column-holder text-center">
-                                <div class="result-icon">
-                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                </div>
-                                <div class="result-heading">
-                                    <b><span>Total Lifetime operational cost savings</span></b>
-                                    <span result="Total Lifetime operational cost savings"></span>
+                    <div class="results-box mb-4">
+                        <h3>Annual Operational Savings</h3>
+                        <div class="row g3">
 
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span> Fuel savings </span></b>
+                                        <span result="Fuel savings"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span> Maintenance saving </span></b>
+                                        <span result="Maintenance saving"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span> Grant (BSOG/NSG) savings </span></b>
+                                        <span result="Grant (BSOG/NSG) savings"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span>Total Annual operational cost savings****</span></b>
+                                        <span result="Total Lifetime operational cost savings"></span>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="column-holder text-center">
-                                <div class="result-icon">
-                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                </div>
-                                <div class="result-heading">
-                                    <b><span> Fuel savings </span></b>
-                                    <span result="Fuel savings"></span>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="column-holder text-center">
-                                <div class="result-icon">
-                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                </div>
-                                <div class="result-heading">
-                                    <b><span> Maintenance saving </span></b>
-                                    <span result="Maintenance saving"></span>
-
+                    </div>
+                    <div class="results-box mb-4">
+                        <h3>Environmental Impact</h3>
+                        <div class="row g-3">
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span> Total CO2 saved </span></b>
+                                        <span result="Total CO2 saved"></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="column-holder text-center">
-                                <div class="result-icon">
-                                    <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
-                                </div>
-                                <div class="result-heading">
-                                    <b><span> Grant (BSOG/NSG) savings </span></b>
-                                    <span result="Grant (BSOG/NSG) savings"></span>
-
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span>Total NOx damage costs saved</span></b>
+                                        <span result="Total NOx damage costs saved"></span>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-lg-3">
+                                <div class="column-holder text-center">
+                                    <div class="result-icon">
+                                        <img src="https://kleandrive.earth/wp-content/themes/kleandrive-child/assets/images/bus.png">
+                                    </div>
+                                    <div class="result-heading">
+                                        <b><span>Total Particulate Matter damage costs saved</span></b>
+                                        <span result="Total Particulate Matter damage costs saved"></span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
