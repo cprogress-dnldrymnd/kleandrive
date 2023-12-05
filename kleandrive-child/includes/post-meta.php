@@ -55,12 +55,7 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('textarea', 'existing_vehicle_service_and_maintenance_cost_desc', 'Description'),
 
         Field::make('html', 'num_of_buses_html')->set_html('<h4>Fuel Costs</h4>')->set_classes('styled'),
-        Field::make('text', 'bsog_nsg_rate', 'Current cost of diesel £/litre default value')->set_attribute('type', 'number'),
-        Field::make('text', 'bsog_nsg_rate_repowered', 'Cost of electricity £/kWh default value')->set_attribute('type', 'number'),
-
-    ))
-    ->add_tab('Fuel Costs', array(
-        Field::make('text', 'diesel', 'Diesel')->set_attribute('type', 'number'),
+        Field::make('text', 'diesel', 'Current cost of diesel £/litre default value')->set_attribute('type', 'number'),
         Field::make('text', 'electricity', 'Electricity ')->set_attribute('type', 'number'),
     ))
     ->add_tab('Grant Funding', array(
@@ -74,7 +69,8 @@ Container::make('theme_options', __('Savings Calculator'))
                 'yes' => __('Yes'),
                 'no' => __('No'),
             )),
-
+        Field::make('text', 'bsog_nsg_rate', 'Current Rate of BSOG/NSG ')->set_attribute('type', 'number'),
+        Field::make('text', 'bsog_nsg_rate_repowered', 'Rate of BSOG/NSG for repowered vehicle ')->set_attribute('type', 'number'),
 
     ));
 
