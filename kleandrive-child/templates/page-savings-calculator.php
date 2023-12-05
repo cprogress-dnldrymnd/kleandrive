@@ -518,6 +518,7 @@ function slider_range($label, $measurement, $id)
             jQuery('.column-bosg').addClass('active');
         } else {
             Total_Annual_operational_cost_savings = Fuel_savings + Maintenance_saving;
+            jQuery('.column-bosg').removeClass('active');
         }
         jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
 
