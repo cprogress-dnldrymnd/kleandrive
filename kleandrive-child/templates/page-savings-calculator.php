@@ -7,12 +7,6 @@
 
 <?php
 $description = carbon_get_the_post_meta('description');
-$diesel = carbon_get_theme_option('diesel');
-$electricity = carbon_get_theme_option('electricity');
-$elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
-$elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
-$bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
-$bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');
 function slider_range($label, $measurement, $id)
 {
     ob_start();
@@ -20,8 +14,6 @@ function slider_range($label, $measurement, $id)
     $min = carbon_get_theme_option($id . '_min');
     $max = carbon_get_theme_option($id . '_max');
     $start = carbon_get_theme_option($id . '_start');
-
-  
 ?>
     <div class="slider-input-holder">
         <div class="label">
@@ -129,6 +121,10 @@ function slider_range($label, $measurement, $id)
                             <?= slider_range('Existing annual diesel vehicle service and maintenance cost', '£', 'existing_vehicle_service_and_maintenance_cost') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-fuel-costs" role="tabpanel" aria-labelledby="v-pills-fuel-costs-tab">
+                            <?php
+                            $diesel = carbon_get_theme_option('diesel');
+                            $electricity = carbon_get_theme_option('electricity');
+                            ?>
                             <div class="slider-input-holder">
                                 <div class="label">
                                     <label for="cost_of_diesel" class="form-label">Current cost of diesel £/litre</label>
@@ -156,6 +152,13 @@ function slider_range($label, $measurement, $id)
     </div>
     <div id="calculator">
 
+        <?php
+
+        $elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
+        $elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
+        $bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
+        $bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');
+        ?>
 
         <!--- Damage cost assumptions --->
         <input type="hidden" name="NOx Road Transport / tonne (£2022)" value="17892.6280819244">
