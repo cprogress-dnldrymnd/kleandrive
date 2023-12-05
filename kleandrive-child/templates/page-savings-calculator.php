@@ -142,7 +142,7 @@ function slider_range($label, $measurement, $id)
                                     <input type="text" class="calculation-input fill_inited" id="cost_of_diesel" name="Wholesale price of diesel (Large Fleet Operator)" value="<?= $diesel ?>">
                                     £
                                 </div>
-                                <div class="description mt-3">
+                                <div class="description">
                                     <?= wpautop($diesel_description) ?>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@ function slider_range($label, $measurement, $id)
                                     <input type="text" class="calculation-input fill_inited" id="cost_of_electricity" name="Cost of electricity per kWh" value="<?= $electricity ?>">
                                     £
                                 </div>
-                                <div class="description mt-3">
+                                <div class="description">
                                     <?= wpautop($electricity_description) ?>
                                 </div>
                             </div>
