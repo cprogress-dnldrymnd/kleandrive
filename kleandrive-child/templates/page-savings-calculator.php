@@ -109,6 +109,9 @@ function slider_range($label, $measurement, $id)
                                 <option value="single"> Single </option>
                                 <option value="double"> Double </option>
                             </select>
+                            <div class="description mt-3">
+                                <p>Double deckers are generally heavier and have worst fuel consumption so our calculator accounts for this difference.  Plus new vehicles and repowering costs varying with this distinction.</p>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-annual-mileage" role="tabpanel" aria-labelledby="v-pills-annual-mileage-tab">
                             <?= slider_range('Annual average distance travelled per bus', 'km', 'annual_average_distance_travel', '0', '100000') ?>
