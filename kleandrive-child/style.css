@@ -995,8 +995,11 @@ section.page-heading {
 
 section.savings-calculator {
   color: var(--black-color); }
-  section.savings-calculator .button-calculate #calculate-results {
-    background-color: var(--primary-color); }
+  section.savings-calculator .button-calculate {
+    text-align: right;
+    margin-right: 2rem; }
+    section.savings-calculator .button-calculate #calculate-results {
+      background-color: var(--primary-color); }
   section.savings-calculator .results-holder {
     padding-top: 80px;
     padding-bottom: 80px; }

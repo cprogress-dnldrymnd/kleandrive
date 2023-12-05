@@ -1623,6 +1623,8 @@ section.page-heading {
 section.savings-calculator {
     color: var(--black-color);
     .button-calculate {
+        text-align: right;
+        margin-right: 2rem;
         #calculate-results {
             background-color: var(--primary-color);
         }
