@@ -267,7 +267,7 @@ function slider_range($label, $measurement, $id)
                                         <p>
                                             Certified KleanDrive repowers attract increased BSOG payments in the UK. Click here if you're eligible.
                                             <label class="switch">
-                                                <input type="checkbox" name="Grant (BSOG/NSG) savings">
+                                                <input type="checkbox" class="calculation-input" name="Grant (BSOG/NSG) savings">
                                                 <span class="slider round"></span>
                                             </label>
                                         </p>
@@ -342,10 +342,6 @@ function slider_range($label, $measurement, $id)
 
 
 
-
-        jQuery('.calculation-input').change(function(e) {
-            console.log('teststs');
-        });
 
         jQuery('#calculate').click(function(e) {
             $annual_average_distance_travel = input_value(input_value(parseFloat(jQuery('input[name="annual_average_distance_travel"]').val())));
@@ -441,6 +437,12 @@ function slider_range($label, $measurement, $id)
         calculate();
     });
 
+
+
+    jQuery('.calculation-input').change(function(e) {
+        calculate();
+    });
+
     function input_value($input) {
         if ($input) {
             return $input;
@@ -471,8 +473,8 @@ function slider_range($label, $measurement, $id)
         Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
         Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
         single_or_double = jQuery('#single_or_double').val();
-        Grant_BSOG_NSG_savings_toggle = jQuery() = jQuery('input[name="Grant (BSOG/NSG) savings"])').val();
-        
+        Grant_BSOG_NSG_savings_toggle = jQuery('input[name="Grant (BSOG/NSG) savings"])').val();
+
 
         //Compute Cost per km
         Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
@@ -513,7 +515,10 @@ function slider_range($label, $measurement, $id)
         Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) - (Current_Rate_of_BSOG * annual_average_distance_travel);
         jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
-        
+        //Compute Total Lifetime operational cost savings
+        console.log(Grant_BSOG_NSG_savings_toggle);
+        Total_Lifetime_operational_cost_savings = Total_Annual_operational_cost_savings;
+        jQuery('span[result="Total Lifetime operational cost savings').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
         //Compute Capital cost savings over buying new electric buses
         if (single_or_double == 'double') {
