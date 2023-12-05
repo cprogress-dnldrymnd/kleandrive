@@ -14,6 +14,14 @@ function slider_range($label, $measurement, $id)
     $min = carbon_get_theme_option($id . '_min');
     $max = carbon_get_theme_option($id . '_max');
     $start = carbon_get_theme_option($id . '_start');
+
+
+    $diesel = carbon_get_theme_option('diesel');
+    $electricity = carbon_get_theme_option('electricity');
+    $elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
+    $elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
+    $bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
+    $bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');
 ?>
     <div class="slider-input-holder">
         <div class="label">
@@ -126,7 +134,7 @@ function slider_range($label, $measurement, $id)
                                     <label for="cost_of_diesel" class="form-label">Current cost of diesel £/litre</label>
                                 </div>
                                 <div class="slider-input mb-3">
-                                    <input type="text" class="calculation-input fill_inited" id="cost_of_diesel" name="Wholesale price of diesel (Large Fleet Operator)" value="1.35">
+                                    <input type="text" class="calculation-input fill_inited" id="cost_of_diesel" name="Wholesale price of diesel (Large Fleet Operator)" value="<?= $diesel ?>">
                                     £
                                 </div>
                             </div>
@@ -135,7 +143,7 @@ function slider_range($label, $measurement, $id)
                                     <label for="cost_of_electricity" class="form-label">Cost of electricity £/kWh</label>
                                 </div>
                                 <div class="slider-input mb-3">
-                                    <input type="text" class="calculation-input fill_inited" id="cost_of_electricity" name="Cost of electricity per kWh" value="0.11">
+                                    <input type="text" class="calculation-input fill_inited" id="cost_of_electricity" name="Cost of electricity per kWh" value="<?= $electricity ?>">
                                     £
                                 </div>
                             </div>
@@ -148,14 +156,6 @@ function slider_range($label, $measurement, $id)
     </div>
     <div id="calculator">
 
-        <?php
-        $diesel = carbon_get_theme_option('diesel');
-        $electricity = carbon_get_theme_option('electricity');
-        $elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
-        $elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
-        $bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
-        $bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');
-        ?>
 
         <!--- Damage cost assumptions --->
         <input type="hidden" name="NOx Road Transport / tonne (£2022)" value="17892.6280819244">
