@@ -443,6 +443,10 @@ function slider_range($label, $measurement, $id)
         calculate();
     });
 
+    jQuery('.calculation-input').keyup(function(e) {
+        calculate();
+    });
+
     function input_value($input) {
         if ($input) {
             return $input;
