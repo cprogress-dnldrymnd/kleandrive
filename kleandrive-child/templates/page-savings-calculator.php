@@ -99,7 +99,7 @@ function slider_range($label, $measurement, $id)
                             </button>
                             <button class="nav-link text-start" id="v-pills-fuel-costs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fuel-costs" type="button" role="tab" aria-controls="v-pills-fuel-costs" aria-selected="false">
                                 <span class="icon"><img src="<?= get_stylesheet_directory_uri() . '/assets/images/pound.png' ?>"></span>
-                                <span class="text"> Fuel Costs </span>
+                                <span class="text"> Fuel costs </span>
                             </button>
                         </div>
                     </div>
