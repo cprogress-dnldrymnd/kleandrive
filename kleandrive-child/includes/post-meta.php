@@ -35,7 +35,9 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('text', 'num_of_buses_max', 'Max')->set_attribute('type', 'number')->set_width(33),
         Field::make('text', 'num_of_buses_start', 'Start')->set_attribute('type', 'number')->set_width(33),
         Field::make('textarea', 'num_of_buses_desc', 'Description'),
+        Field::make('textarea', 'single_double_desc', 'Are they single or double deck buses Description'),
 
+        
         Field::make('html', 'annual_average_distance_travel_html')->set_html('<h4>Annual average distance travelled per bus</h4>')->set_classes('styled'),
         Field::make('text', 'annual_average_distance_travel_min', 'Min')->set_attribute('type', 'number')->set_width(33),
         Field::make('text', 'annual_average_distance_travel_max', 'Max')->set_attribute('type', 'number')->set_width(33),
