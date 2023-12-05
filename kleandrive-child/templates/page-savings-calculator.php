@@ -138,6 +138,11 @@ function slider_range($label, $measurement, $id)
                                     <input type="text" class="calculation-input fill_inited" id="cost_of_diesel" name="Wholesale price of diesel (Large Fleet Operator)" value="<?= $diesel ?>">
                                     £
                                 </div>
+                                <div class="description mt-3">
+                                    <p>
+                                        By accurately knowing what you are paying for diesel, we can refine our model accuracy.
+                                    </p>
+                                </div>
                             </div>
                             <div class="slider-input-holder">
                                 <div class="label">
@@ -146,6 +151,11 @@ function slider_range($label, $measurement, $id)
                                 <div class="slider-input mb-3">
                                     <input type="text" class="calculation-input fill_inited" id="cost_of_electricity" name="Cost of electricity per kWh" value="<?= $electricity ?>">
                                     £
+                                </div>
+                                <div class="description mt-3">
+                                    <p>
+                                        Our KleanDrive partners can typically arrange Power Purchase Agreements (PPA) at only £0.11 p/kWh, however, if you are locked into a PPA today, please tell us the rate to refine our model assumptions.
+                                    </p>
                                 </div>
                             </div>
                         </div>
