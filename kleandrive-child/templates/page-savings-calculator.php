@@ -586,7 +586,7 @@ function slider_range($label, $measurement, $id)
         Maintenance_saving = (existing_vehicle_service_and_maintenance_cost - 2750) * average_remaining_life * num_of_buses;
         jQuery('span[result="Maintenance saving"]').html('£' + parseInt(Maintenance_saving).toLocaleString('en-US'));
 
-        //Compute Total Lifetime operational cost savings 
+        //Compute Total Annual operational cost savings 
         if (Grant_BSOG_NSG_savings_toggle.is(":checked")) {
             Total_Annual_operational_cost_savings = Fuel_savings + Maintenance_saving + Grant_BSOG_NSG_savings;
             jQuery('.column-bosg').addClass('active');
