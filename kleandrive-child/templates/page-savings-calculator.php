@@ -179,16 +179,25 @@ function slider_range($label, $measurement, $id)
         <input type="hidden" name="NOx Road Transport / tonne (£2022)" value="17892.6280819244">
         <input type="hidden" name="Particulate Matter Road Transport PM2.5/ tonne (£2002)" value="130884.092045588">
 
-        <!--- Other assumptions --->
-        <input type="hidden" name="Blended average CO2 saving per 1 vehicle/ km (g)" value="1311.648328125">
-        <input type="hidden" name="Blended average NOx saving per 1 vehicle/ km (g)" value="4.9216236328125">
-        <input type="hidden" name="Blended average PM saving per 1 vehicle/ km (g)" value="0.03670732421875">
-        <input type="hidden" name="Incremental CO2 benefit vs New BEV per 1 vehicle/ km (g)" value="227.7">
-        <input type="hidden" name="Incremental single captial cost savings (new bev cost - repower)" value=" 185000">
+        <!--- Other assumptions Double --->
+        <input type="hidden" name="Blended average CO2 saving per 1 DD vehicle/ km (g)" value="1548.869578125">
+        <input type="hidden" name="Blended average NOx saving per 1 DD vehicle/ km (g)" value="5.08163528645833">
+        <input type="hidden" name="Blended average PM saving per 1 DD vehicle/ km (g)" value="0.0335630859375">
+        <input type="hidden" name="Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)" value="277.2">
         <input type="hidden" name="Incremental double capital cost savings (new bev cost - repower)" value="325000">
 
-        <!--- Assumptions --->
+
+        <!--- Other assumptions Single --->
+        <input type="hidden" name="Blended average CO2 saving per 1 SD vehicle/ km (g)" value="1074.427078125">
+        <input type="hidden" name="Blended average NOx saving per 1 SD vehicle/ km (g)" value=" 4.76161197916667">
+        <input type="hidden" name="Blended average PM saving per 1 SD vehicle/ km (g)" value="0.0398515625">
+        <input type="hidden" name="Incremental CO2 benefit vs New SD BEV per 1 vehicle/ km (g)" value="178.2">
+        <input type="hidden" name="Incremental single captial cost savings (new bev cost - repower)" value="185000">
+
+
+        <!--- Assumptions DIESEL--->
         <input type="hidden" name="Double Deck Bus – 6 MPG (47.1 litres/100km)" value="0.471">
+        <input type="hidden" name="Single Deck Bus – 8 MPG (47.1 litres/100km)" value="0.353">
         <input type="hidden" name="Cost per km" value="">
         <input type="hidden" name="BSOG rate England" value="">
         <input type="hidden" name="Current Rate of BSOG" value="<?= $bsog_nsg_rate ?>">
@@ -476,6 +485,7 @@ function slider_range($label, $measurement, $id)
 
         Wholesale_price_of_diesel = input_value(parseFloat(jQuery('input[name="Wholesale price of diesel (Large Fleet Operator)"]').val()));
         Double_Deck_Bus_6_MPG = input_value(parseFloat(jQuery('input[name="Double Deck Bus – 6 MPG (47.1 litres/100km)"]').val()));
+        Single_Deck_Bus_8_MPG = input_value(parseFloat(jQuery('input[name="Single Deck Bus – 8 MPG (47.1 litres/100km)"]').val()));
         Cost_of_electricity_per_kWh = input_value(parseFloat(jQuery('input[name="Cost of electricity per kWh"]').val()));
         Battery_Electric_Energy_Consumption = input_value(parseFloat(jQuery('input[name="Battery Electric Energy Consumption (kWh/km)"]').val()));
         Blended_average_CO2_saving = input_value(parseFloat(jQuery('input[name="Blended average CO2 saving per 1 vehicle/ km (g)"]').val()));
@@ -494,6 +504,7 @@ function slider_range($label, $measurement, $id)
         Grant_BSOG_NSG_savings_toggle = jQuery('input[name="Grant (BSOG/NSG) savings"]');
 
 
+        
         //Compute Cost per km
         Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
         jQuery('input[name="Cost per km"]').val(Cost_per_km_val);
@@ -521,6 +532,13 @@ function slider_range($label, $measurement, $id)
         jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
         //Compute Fuel savings
+        if (single_or_double == 'double') {
+            
+        } else {
+
+        }
+
+
         Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
         jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
 
