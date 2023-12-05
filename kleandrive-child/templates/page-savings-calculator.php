@@ -126,7 +126,7 @@ function slider_range($label, $measurement, $id)
                                     <label for="cost_of_diesel" class="form-label">Current cost of diesel £/litre</label>
                                 </div>
                                 <div class="slider-input mb-3">
-                                    <input type="text" class="calculation-input fill_inited" id="cost_of_diesel" name="cost_of_diesel">
+                                    <input type="text" class="calculation-input fill_inited" id="cost_of_diesel" name="cost_of_diesel" value="1.35">
                                     £
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ function slider_range($label, $measurement, $id)
                                     <label for="cost_of_electricity" class="form-label">Cost of electricity £/kWh</label>
                                 </div>
                                 <div class="slider-input mb-3">
-                                    <input type="text" class="calculation-input fill_inited" id="cost_of_electricity" name="cost_of_electricity">
+                                    <input type="text" class="calculation-input fill_inited" id="cost_of_electricity" name="cost_of_electricity" value="0.11">
                                     £
                                 </div>
                             </div>
