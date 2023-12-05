@@ -67,7 +67,7 @@ function slider_range($label, $measurement, $id)
         <div class="container">
             <div class="heading-box mb-5">
                 <h4>
-                    Kleanbus model assumptions
+                    Kleanbus model inputs
                 </h4>
             </div>
             <div class="row g-5">
@@ -564,9 +564,9 @@ function slider_range($label, $measurement, $id)
 
         //Compute Fuel savings
         if (single_or_double == 'double') {
-            Fuel_savings = annual_average_distance_travel *(Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG - Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption) * average_remaining_life * num_of_buses;
+            Fuel_savings = annual_average_distance_travel * (Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG - Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption) * average_remaining_life * num_of_buses;
         } else {
-            Fuel_savings = annual_average_distance_travel *(Wholesale_price_of_diesel * Single_Deck_Bus_8_MPG - Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption) * average_remaining_life * num_of_buses;
+            Fuel_savings = annual_average_distance_travel * (Wholesale_price_of_diesel * Single_Deck_Bus_8_MPG - Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption) * average_remaining_life * num_of_buses;
         }
         jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
 
