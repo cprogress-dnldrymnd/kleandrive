@@ -62,8 +62,22 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('text', 'electricity', 'Cost of electricity £/kWh default value ')->set_attribute('type', 'number'),
         Field::make('textarea', 'electricity_description', 'Cost of electricity Description'),
     ))
-    ->add_tab('Grant Funding', array(
-        
+    ->add_tab('ASSUMPTIONS', array(
+        Field::make('html', 'damage_cost_html')->set_html('<h4>Damage cost assumptions</h4>')->set_classes('styled'),
+        Field::make('text', 'nox_road_transport', 'NOx Road Transport / tonne (£2022)')->set_attribute('type', 'number'),
+        Field::make('text', 'particulate_matter_road_transport', 'Particulate Matter Road Transport PM2.5/ tonne (£2002)')->set_attribute('type', 'number'),
+
+        Field::make('html', 'other_html')->set_html('<h4>Other assumptions</h4>')->set_classes('styled'),
+        Field::make('text', 'blended_average_co2_saving_dd', 'Blended average CO2 saving per 1 DD vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'blended_average_nox_saving_dd', 'Blended average NOx saving per 1 DD vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'blended_average_pm_saving_dd', 'Blended average PM saving per 1 DD vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'blended_average_co2_saving_sd', 'Blended average CO2 saving per 1 SD vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'blended_average_nox_saving_sd', 'Blended average NOx saving per 1 SD vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'blended_average_pm_saving_pm', 'Blended average PM saving per 1 SD vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'incremental_CO2_benefit_sd', 'Incremental CO2 benefit vs New SD BEV per 1 vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'incremental_CO2_benefit_dd', 'Incremental CO2 benefit vs New DD BEV per 1 vehicle/ km (g)')->set_attribute('type', 'number'),
+        Field::make('text', 'incremental_single_captial_cost_savings', 'Incremental single captial cost savings (new bev cost - repower)')->set_attribute('type', 'number'),
+        Field::make('text', 'incremental_double_captial_cost_savings', 'Incremental double capital cost savings (new bev cost - repower)')->set_attribute('type', 'number'),
     ));
 
 
