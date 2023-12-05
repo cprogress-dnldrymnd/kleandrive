@@ -259,17 +259,19 @@ function slider_range($label, $measurement, $id)
                                         <b><span> Grant (BSOG/NSG) savings </span></b>
                                         <span result="Grant (BSOG/NSG) savings"></span>
                                     </div>
+
+                                    <div class="bosg-toggle">
+                                        <!-- Rounded switch -->
+                                        <p>
+                                            Certified KleanDrive repowers attract increased BSOG payments in the UK. Click here if you're eligible.
+                                            <label class="switch">
+                                                <input type="checkbox" name="Grant (BSOG/NSG) savings">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="bosg-toggle">
-                                    <!-- Rounded switch -->
-                                    <p>
-                                        Certified KleanDrive repowers attract increased BSOG payments in the UK. Click here if you're eligible.
-                                        <label class="switch">
-                                            <input type="checkbox" name="Grant (BSOG/NSG) savings">
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </p>
-                                </div>
+
                             </div>
                             <div class="col-lg-3">
                                 <div class="column-holder text-center">

@@ -1343,6 +1343,6 @@ h6 {
     font-size: 14px;
     line-height: 1.2; }
     .bosg-toggle p label {
-      display: inline; }
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
