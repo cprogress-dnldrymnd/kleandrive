@@ -170,7 +170,7 @@ function slider_range($label, $measurement, $id)
                 <div class="holder py-5">
                     <h4 class="mb-5">Estimated Impacts</h4>
                     <div class="results-box mb-4">
-                        <h3>Capital & Lifetime Operational Savings</h3>
+                        <h5>Capital & Lifetime Operational Savings</h5>
                         <div class="row g3">
                             <div class="col-lg-3">
                                 <div class="column-holder text-center">
@@ -198,7 +198,7 @@ function slider_range($label, $measurement, $id)
                         </div>
                     </div>
                     <div class="results-box mb-4">
-                        <h3>Annual Operational Savings</h3>
+                        <h5>Annual Operational Savings</h5>
                         <div class="row g3">
 
                             <div class="col-lg-3">
@@ -252,7 +252,7 @@ function slider_range($label, $measurement, $id)
                         </div>
                     </div>
                     <div class="results-box mb-4">
-                        <h3>Environmental Impact</h3>
+                        <h5>Environmental Impact</h5>
                         <div class="row g-3">
                             <div class="col-lg-3">
                                 <div class="column-holder text-center">
