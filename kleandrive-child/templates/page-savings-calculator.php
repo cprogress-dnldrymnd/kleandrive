@@ -479,6 +479,7 @@ function slider_range($label, $measurement, $id)
         Current_Rate_of_BSOG = jQuery('input[name="Current Rate of BSOG"]').val();
         Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
         Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
+        Incremental_double_captial_cost_savings = jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)"]').val();
         single_or_double = jQuery('#single_or_double').val();
         Grant_BSOG_NSG_savings_toggle = jQuery('input[name="Grant (BSOG/NSG) savings"]');
 
