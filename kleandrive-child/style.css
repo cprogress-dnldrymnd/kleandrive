@@ -1004,7 +1004,7 @@ section.savings-calculator {
       section.savings-calculator .button-calculate #calculate-results:hover, section.savings-calculator .button-calculate #calculate-results:active, section.savings-calculator .button-calculate #calculate-results:focus {
         background-color: var(--accent-color);
         color: var(--white-color);
-        border-color: var(--primary-color) !important; }
+        border-color: var(--accent-color) !important; }
   section.savings-calculator .results-holder {
     padding-top: 80px;
     padding-bottom: 80px; }
