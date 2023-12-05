@@ -530,9 +530,9 @@ function slider_range($label, $measurement, $id)
 
         //Compute Fuel savings
         if (single_or_double == 'double') {
-            Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG) - (Cost_of_electricity_per_kWh - DD_Battery_Electric_Energy_Consumption)))
+            Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG) - (Cost_of_electricity_per_kWh * DD_Battery_Electric_Energy_Consumption)))
         } else {
-            Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
+            Fuel_savings = annual_average_distance_travel * (((Wholesale_price_of_diesel * Single_Deck_Bus_8_MPG) - (Cost_of_electricity_per_kWh * SD_Battery_Electric_Energy_Consumption)))
         }
 
 
