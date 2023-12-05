@@ -175,7 +175,6 @@ function slider_range($label, $measurement, $id)
 
         <?php
 
-        $elegible_for_bsog = carbon_get_theme_option('elegible_for_bsog');
         $elegible_for_nsg = carbon_get_theme_option('elegible_for_nsg');
         $bsog_nsg_rate = carbon_get_theme_option('bsog_nsg_rate');
         $bsog_nsg_rate_repowered = carbon_get_theme_option('bsog_nsg_rate_repowered');

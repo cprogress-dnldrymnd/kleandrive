@@ -59,19 +59,7 @@ Container::make('theme_options', __('Savings Calculator'))
         Field::make('text', 'electricity', 'Electricity ')->set_attribute('type', 'number'),
     ))
     ->add_tab('Grant Funding', array(
-        Field::make('select', 'elegible_for_bsog', 'Are you eleigible for the Bus Service Opertators Grant (BSOG)?')
-            ->add_options(array(
-                'yes' => __('Yes'),
-                'no' => __('No'),
-            )),
-        Field::make('select', 'elegible_for_nsg', 'Are you eligible for Network Support Grant (Scotland)?')
-            ->add_options(array(
-                'yes' => __('Yes'),
-                'no' => __('No'),
-            )),
-        Field::make('text', 'bsog_nsg_rate', 'Current Rate of BSOG/NSG ')->set_attribute('type', 'number'),
-        Field::make('text', 'bsog_nsg_rate_repowered', 'Rate of BSOG/NSG for repowered vehicle ')->set_attribute('type', 'number'),
-
+        
     ));
 
 
