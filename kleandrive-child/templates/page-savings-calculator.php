@@ -64,6 +64,13 @@ function slider_range($label, $measurement, $id)
     </div>
 
     <div class="tab-holder">
+        <?php
+        $diesel = carbon_get_theme_option('diesel');
+        $electricity = carbon_get_theme_option('electricity');
+        $diesel_description = carbon_get_theme_option('diesel_description');
+        $electricity_description = carbon_get_theme_option('electricity_description');
+        $single_double_desc = carbon_get_theme_option('single_double_desc');
+        ?>
         <div class="container">
             <div class="heading-box mb-5">
                 <h4>
@@ -111,7 +118,7 @@ function slider_range($label, $measurement, $id)
                                     <option value="double" selected> Double </option>
                                 </select>
                                 <div class="description mt-3">
-                                    <p>Double deckers are generally heavier and have worst fuel consumption so our calculator accounts for this difference. Plus new vehicles and repowering costs varying with this distinction.</p>
+                                    <?= wpautop($single_double_desc) ?>
                                 </div>
                             </div>
                         </div>
@@ -126,13 +133,7 @@ function slider_range($label, $measurement, $id)
                             <?= slider_range('Existing annual diesel vehicle service and maintenance cost', '£', 'existing_vehicle_service_and_maintenance_cost') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-fuel-costs" role="tabpanel" aria-labelledby="v-pills-fuel-costs-tab">
-                            <?php
-                            $diesel = carbon_get_theme_option('diesel');
-                            $electricity = carbon_get_theme_option('electricity');
-                            $diesel_description = carbon_get_theme_option('diesel_description');
-                            $electricity_description = carbon_get_theme_option('electricity_description');
 
-                            ?>
                             <div class="slider-input-holder">
                                 <div class="label">
                                     <label for="cost_of_diesel" class="form-label">Current cost of diesel £/litre</label>
