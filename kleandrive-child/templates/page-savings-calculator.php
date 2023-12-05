@@ -513,10 +513,7 @@ function slider_range($label, $measurement, $id)
         Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) - (Current_Rate_of_BSOG * annual_average_distance_travel);
         jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
-        //Compute Total Lifetime operational cost savings
-        console.log(Grant_BSOG_NSG_savings_toggle);
-        Total_Lifetime_operational_cost_savings = Total_Annual_operational_cost_savings;
-        jQuery('span[result="Total Lifetime operational cost savings').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
+        
 
         //Compute Capital cost savings over buying new electric buses
         if (single_or_double == 'double') {
