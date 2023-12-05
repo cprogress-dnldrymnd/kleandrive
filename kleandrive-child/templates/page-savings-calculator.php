@@ -121,7 +121,8 @@ function slider_range($label, $measurement, $id)
                             <?= slider_range('Existing annual diesel vehicle service and maintenance cost', '£', 'existing_vehicle_service_and_maintenance_cost') ?>
                         </div>
                         <div class="tab-pane fade" id="v-pills-fuel-costs" role="tabpanel" aria-labelledby="v-pills-fuel-costs-tab">
-                            <?= slider_range('Fuel Costs', '£', 'fuel_costs') ?>
+                            <?= slider_range('Current cost of diesel £/litre', '£', 'cost_of_diesel') ?>
+                            <?= slider_range('Cost of electricity £/kWh', '£', 'cost_of_electricity') ?>
                         </div>
                     </div>
                 </div>
@@ -339,7 +340,9 @@ function slider_range($label, $measurement, $id)
         range_slider('slider-range-num_of_buses', 'num_of_buses', false);
         range_slider('slider-range-average_remaining_life', 'average_remaining_life', true);
         range_slider('slider-range-existing_vehicle_service_and_maintenance_cost', 'existing_vehicle_service_and_maintenance_cost', false);
-
+        range_slider('slider-range-cost_of_diesel', 'cost_of_diesel', false);
+        range_slider('slider-range-cost_of_electricity', 'cost_of_electricity', false);
+        
         function range_slider($range_id, $input_id, $allow_decimal = false) {
             var rangeSlider = document.getElementById($range_id);
             start = parseFloat(rangeSlider.getAttribute("start"));
