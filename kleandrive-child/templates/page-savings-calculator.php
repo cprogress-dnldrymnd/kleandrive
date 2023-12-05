@@ -162,7 +162,7 @@ function slider_range($label, $measurement, $id)
                     </div>
                 </div>
             </div>
-            <div class="button-box">
+            <div class="button-box button-calculate">
                 <div class="sc_item_button sc_button_wrap">
                     <a href="#calculator-results" id="calculate-results" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left">
                         <span class="sc_button_text"><span class="sc_button_title">Calculate Results</span></span>

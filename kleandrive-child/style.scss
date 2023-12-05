@@ -1622,7 +1622,11 @@ section.page-heading {
 
 section.savings-calculator {
     color: var(--black-color);
-
+    .button-calculate {
+        #calculate-results {
+            background-color: var(--primary-color);
+        }
+    }
     .results-holder {
         padding-top: 80px;
         padding-bottom: 80px;
