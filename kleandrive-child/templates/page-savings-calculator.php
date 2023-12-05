@@ -470,8 +470,9 @@ function slider_range($label, $measurement, $id)
         Current_Rate_of_BSOG = jQuery('input[name="Current Rate of BSOG"]').val();
         Rate_of_BSOG_NSG_for_repowered_vehicle = jQuery('input[name="Rate of BSOG/NSG for repowered vehicle"]').val();
         Incremental_single_captial_cost_savings = jQuery('input[name="Incremental single captial cost savings (new bev cost - repower)"]').val();
-        Incremental_double_captial_cost_savings = jQuery('input[name="Incremental double capital cost savings (new bev cost - repower)').val();
         single_or_double = jQuery('#single_or_double').val();
+        Grant_BSOG_NSG_savings_toggle = jQuery() = jQuery('input[name="Grant (BSOG/NSG) savings"])').val();
+        
 
         //Compute Cost per km
         Cost_per_km_val = Wholesale_price_of_diesel * Double_Deck_Bus_6_MPG;
@@ -501,7 +502,6 @@ function slider_range($label, $measurement, $id)
         jQuery('span[result="Total Annual operational cost savings"]').html('£' + parseInt(Total_Annual_operational_cost_savings).toLocaleString('en-US'));
 
         //Compute Fuel savings
-
         Fuel_savings = (annual_average_distance_travel * Cost_per_km) - (annual_average_distance_travel * Cost_per_km_electric);
         jQuery('span[result="Fuel savings"]').html('£' + parseInt(Fuel_savings).toLocaleString('en-US'));
 
@@ -513,8 +513,12 @@ function slider_range($label, $measurement, $id)
         Grant_BSOG_NSG_savings = (Rate_of_BSOG_NSG_for_repowered_vehicle * annual_average_distance_travel) - (Current_Rate_of_BSOG * annual_average_distance_travel);
         jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
-        //Compute Capital cost savings over buying new electric buses
+        //Compute Total Lifetime operational cost savings
+        console.log(Grant_BSOG_NSG_savings_toggle);
+        Total_Lifetime_operational_cost_savings = Total_Annual_operational_cost_savings;
+        jQuery('span[result="Total Lifetime operational cost savings').html('£' + parseInt(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
 
+        //Compute Capital cost savings over buying new electric buses
         if (single_or_double == 'double') {
             Capital_cost_savings_over_buying_new_electric_buses = num_of_buses * Incremental_double_captial_cost_savings;
         } else {
