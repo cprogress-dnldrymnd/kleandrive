@@ -1262,7 +1262,14 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
     flex-direction: row !important;
     flex-wrap: wrap !important; } }
 
-.single-cpt_team .team_member_title {
+.single-cpt_team .team_member_title,
+.single-cpt_team .wp-block-heading {
   color: var(--accent-color); }
+.single-cpt_team .team_member_description_socials .team_member_socials .social_item .social_icon {
+  background-color: var(--accent-color); }
+  .single-cpt_team .team_member_description_socials .team_member_socials .social_item .social_icon .icon-linkedin {
+    color: var(--white-color); }
+  .single-cpt_team .team_member_description_socials .team_member_socials .social_item .social_icon:hover {
+    background-color: var(--primary-color); }
 
 /*# sourceMappingURL=style.css.map */

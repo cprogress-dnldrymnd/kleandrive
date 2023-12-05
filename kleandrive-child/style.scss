@@ -1975,7 +1975,6 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
                     font-size: 11px;
                 }
             }
-           
         }
         &:hover {
             .elementor-image-box-content {
@@ -2024,7 +2023,17 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
 }
 
 .single-cpt_team {
-    .team_member_title {
+    .team_member_title,
+    .wp-block-heading {
         color: var(--accent-color);
+    }
+    .team_member_description_socials .team_member_socials .social_item .social_icon {
+        background-color: var(--accent-color);
+        .icon-linkedin {
+            color: var(--white-color);
+        }
+        &:hover {
+            background-color: var(--primary-color);
+        }
     }
 }
