@@ -1284,4 +1284,7 @@ body.body_style_boxed:not(.expand_content) [class*="content_wrap"] > .content {
   .slider_pagination_wrap.slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--accent-color) !important; }
 
+h1, h2, h3, h4, h5, h6 {
+  hyphens: none !important; }
+
 /*# sourceMappingURL=style.css.map */
