@@ -582,8 +582,8 @@ function slider_range($label, $measurement, $id)
         }
 
         Fuel_savings_final_val = Fuel_savings * average_remaining_life;
-
-        jQuery('span[result="Fuel savings"]').html('£' + Math.round(Fuel_savings + Fuel_savings_final_val).toLocaleString('en-US'));
+        
+        jQuery('span[result="Fuel savings"]').html('£' + Math.round(Fuel_savings).toLocaleString('en-US') + Fuel_savings_final_val);
 
         //Compute Maintenance saving
         Maintenance_saving = (existing_vehicle_service_and_maintenance_cost - 2750) * average_remaining_life * num_of_buses;
