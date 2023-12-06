@@ -188,7 +188,7 @@ new newPostType(array(
 add_filter('manage_cpt_team_posts_columns', 'set_custom_edit_cpt_team_columns');
 function set_custom_edit_cpt_team_columns($columns)
 {
-	$columns['team_id'] = __('Shortcode', 'your_text_domain');
+	$columns['team_id'] = __('Team ID', 'your_text_domain');
 	return $columns;
 }
 
