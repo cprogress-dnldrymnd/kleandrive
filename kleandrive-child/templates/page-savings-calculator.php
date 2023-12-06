@@ -582,12 +582,13 @@ function slider_range($label, $measurement, $id)
         }
 
         Fuel_savings_final_val = Fuel_savings * average_remaining_life;
-        
+
         jQuery('span[result="Fuel savings"]').html('£' + Math.round(Fuel_savings).toLocaleString('en-US') + '<br> £' + Math.round(Fuel_savings_final_val).toLocaleString('en-US'));
 
         //Compute Maintenance saving
-        Maintenance_saving = (existing_vehicle_service_and_maintenance_cost - 2750) * average_remaining_life * num_of_buses;
-        jQuery('span[result="Maintenance saving"]').html('£' + Math.round(Maintenance_saving).toLocaleString('en-US'));
+        Maintenance_saving = (existing_vehicle_service_and_maintenance_cost - 2750) * num_of_buses;
+        Maintenance_saving_final_val = Maintenance_saving * average_remaining_life;
+        jQuery('span[result="Maintenance saving"]').html('£' + Math.round(Maintenance_saving).toLocaleString('en-US') + '<br> £' + Math.round(Maintenance_saving_final_val).toLocaleString('en-US'));
 
         //Compute Total Annual operational cost savings 
         if (Grant_BSOG_NSG_savings_toggle.is(":checked")) {
