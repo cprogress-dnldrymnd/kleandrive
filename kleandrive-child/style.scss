@@ -1791,13 +1791,14 @@ section.savings-calculator {
                             margin-bottom: 1rem;
                         }
                     }
-                    b {
-                        span {
-                            display: block;
-                            min-height: 45.5px;
-                        }
-                    }
+                 
                     .result-heading {
+                        b {
+                            span {
+                                display: block;
+                                min-height: 45.5px;
+                            }
+                        }
                         span[result] {
                             font-size: 30px;
                             display: block;
