@@ -1112,6 +1112,9 @@ section.savings-calculator {
         opacity: 1; }
     section.savings-calculator .form-part.form-result .row .column-holder > div:not(:last-child) {
       margin-bottom: 1rem; }
+    section.savings-calculator .form-part.form-result .row .column-holder .result-heading b span {
+      display: block;
+      min-height: 45.5px; }
     section.savings-calculator .form-part.form-result .row .column-holder .result-heading span[result] {
       font-size: 30px;
       display: block;
