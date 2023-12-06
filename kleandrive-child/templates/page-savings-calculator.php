@@ -571,8 +571,9 @@ function slider_range($label, $measurement, $id)
 
 
         //Compute Grant (BSOG/NSG) savings
-        Grant_BSOG_NSG_savings = (BSOG_rate_England_Electric - BSOG_rate_England_Diesel) * annual_average_distance_travel * num_of_buses * average_remaining_life;
-        jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + Math.round(Grant_BSOG_NSG_savings).toLocaleString('en-US'));
+        Grant_BSOG_NSG_savings = (BSOG_rate_England_Electric - BSOG_rate_England_Diesel) * annual_average_distance_travel * num_of_buses;
+        Grant_BSOG_NSG_savings_final_val = Grant_BSOG_NSG_savings * average_remaining_life;
+        jQuery('span[result="Grant (BSOG/NSG) savings"]').html('£' + Math.round(Grant_BSOG_NSG_savings).toLocaleString('en-US') + '<br>£' + Math.round(Grant_BSOG_NSG_savings_final_val).toLocaleString('en-US'));
 
         //Compute Fuel savings
         if (single_or_double == 'double') {
